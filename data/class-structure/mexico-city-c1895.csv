@@ -1,0 +1,5 @@
+class,share_pct_low,share_pct_high,defining_criterion,notes
+Jornaleros + domestic servants,60,65,"Day laborers and domestic service occupations","Combined category as reported in the catalog summary; INEGI 1895 PDF tables (see data-acquisition-checklist 1.2) needed to disaggregate"
+Artisans,,,"Skilled trades","Not yet transcribed from INEGI 1895"
+Middle / clerical,,,"Commerce, clerical, professional","Not yet transcribed from INEGI 1895"
+Elite,,,"Property-owning, high-income professional","Not yet transcribed from INEGI 1895"

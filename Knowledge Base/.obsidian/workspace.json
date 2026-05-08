@@ -1,0 +1,213 @@
+{
+  "main": {
+    "id": "89fa0edef5e3fa14",
+    "type": "split",
+    "children": [
+      {
+        "id": "95d299a78366d21e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "60106489e9a26390",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "0adb4f21305a9b15",
+    "type": "split",
+    "children": [
+      {
+        "id": "746f4ad04e2cb56c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7f96570256359003",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "db975befa539766d",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "a06f507ec4721ca1",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "17f780dd7974f88b",
+    "type": "split",
+    "children": [
+      {
+        "id": "784d8463705c9db7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3f302deed3554416",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "a26a3f4b2bb33e60",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "f54b233c9598d5c1",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "07647041700cd8fb",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "4cc7c3033bf01be7",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "7f96570256359003",
+  "lastOpenFiles": [
+    "outputs/figure-01-class-structure.md",
+    "outputs/data-acquisition-checklist.md",
+    "wiki/index.md",
+    "wiki/concepts/comparative-mechanism.md",
+    "wiki/concepts/racial-stratification-mexico-city.md",
+    "wiki/concepts/mexico-city-class-structure-1900.md",
+    "wiki/concepts/paris-class-structure-1865.md",
+    "wiki/concepts/iris-and-ageb.md",
+    "wiki/concepts/third-place-test.md",
+    "wiki/concepts/spatial-displacement.md",
+    "wiki/concepts/sanitation-as-pretext.md",
+    "wiki/concepts/porfiriato-urbanism.md",
+    "wiki/concepts/haussmannization.md",
+    "wiki/summaries/paris-espaces-verts-geojson.md",
+    "wiki/summaries/paris-arrondissements-geojson.md",
+    "wiki/summaries/hugo-les-miserables.md",
+    "wiki/summaries/zola-au-bonheur-des-dames.md",
+    "wiki/summaries/zola-lassommoir.md",
+    "wiki/summaries/baudelaire-paris-spleen.md",
+    "wiki/summaries/mexicocity-catalog.md",
+    "wiki/summaries/paris-catalog.md",
+    "raw/Paris/historical-data/jsfs-1865-cholera-by-arrondissement.pdf",
+    "raw/Paris/articles/banque-de-france-wp832-regional-income-1960-2018.pdf",
+    "raw/Paris/spatial/paris-arrondissements.geojson",
+    "raw/Paris/present-day-data/paris-espaces-verts.geojson",
+    "raw/MexicoCity/literature/prieto-memorias-de-mis-tiempos.pdf",
+    "raw/Paris/literature/hugo-miserables-complete-en.txt",
+    "raw/Paris/literature/hugo-miserables-tome4-plumet-fr.txt",
+    "raw/Paris/literature/hugo-miserables-tome2-cosette-fr.txt",
+    "raw/Paris/literature/hugo-miserables-tome1-fantine-fr.txt",
+    "raw/Paris/literature/zola-au-bonheur-des-dames-fr.txt"
+  ]
+}

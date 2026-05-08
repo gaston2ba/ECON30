@@ -1,0 +1,1900 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Las dos gramáticas · Paris &amp; México | ECON 30</title>
+<meta name="description" content="A capstone project on urban planning and income inequality in Paris and Mexico City. ECON 30, Stanford, Spring 2026." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Special+Elite&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<script defer src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+
+<style>
+  :root {
+    --paper: #f1e9d6;
+    --paper-dark: #e6dcc4;
+    --ink: #2a2218;
+    --ink-soft: #4a3f30;
+    --ink-faded: #6b5d48;
+    --rule: #1a140d;
+    --accent-paris: #7a1f2b;       /* deep wine — Paris */
+    --accent-mexico: #2d5a3d;      /* deep verdigris — Mexico */
+    --accent-gold: #8a6a1f;
+    --highlight: #d4c391;
+    --serif-display: 'Cormorant Garamond', Georgia, serif;
+    --serif-body: 'EB Garamond', Georgia, serif;
+    --mono: 'Special Elite', 'Courier New', monospace;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--serif-body);
+    font-size: 19px;
+    line-height: 1.65;
+    color: var(--ink);
+    background: var(--paper);
+    background-image:
+      radial-gradient(circle at 15% 20%, rgba(138,106,31,0.08) 0%, transparent 40%),
+      radial-gradient(circle at 85% 70%, rgba(122,31,43,0.06) 0%, transparent 45%),
+      radial-gradient(circle at 50% 90%, rgba(45,90,61,0.05) 0%, transparent 40%);
+    background-attachment: fixed;
+    position: relative;
+  }
+
+  /* paper grain overlay */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background-image:
+      url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.16  0 0 0 0 0.13  0 0 0 0 0.09  0 0 0 0.10 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+    opacity: 0.55;
+    mix-blend-mode: multiply;
+    z-index: 1;
+  }
+
+  /* subtle vignette */
+  body::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background: radial-gradient(ellipse at center, transparent 50%, rgba(42,34,24,0.18) 100%);
+    z-index: 1;
+  }
+
+  main, header, section, footer { position: relative; z-index: 2; }
+
+  /* ============ MASTHEAD ============ */
+  header.masthead {
+    border-bottom: 3px double var(--rule);
+    padding: 2rem 0 1.5rem;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 960px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .masthead-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--mono);
+    font-size: 0.78rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink-faded);
+    border-bottom: 1px solid var(--ink-faded);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .masthead h1 {
+    font-family: var(--serif-display);
+    font-weight: 600;
+    font-size: clamp(2.4rem, 6vw, 4.5rem);
+    line-height: 1.05;
+    letter-spacing: -0.01em;
+    color: var(--rule);
+    margin-bottom: 0.6rem;
+  }
+
+  .masthead h1 em {
+    font-style: italic;
+    color: var(--accent-paris);
+  }
+
+  .masthead .subtitle {
+    font-family: var(--serif-body);
+    font-style: italic;
+    font-size: 1.15rem;
+    color: var(--ink-soft);
+    max-width: 600px;
+    margin: 0.4rem auto 1.2rem;
+  }
+
+  .byline {
+    font-family: var(--mono);
+    font-size: 0.85rem;
+    letter-spacing: 0.08em;
+    color: var(--ink-soft);
+  }
+
+  .byline span { color: var(--ink-faded); margin: 0 0.5rem; }
+
+  /* ============ LAYOUT ============ */
+  main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  section.chapter {
+    padding: 4rem 0;
+    border-bottom: 1px solid rgba(74, 63, 48, 0.25);
+  }
+
+  section.chapter:last-of-type { border-bottom: none; }
+
+  .chapter-num {
+    font-family: var(--mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--ink-faded);
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+
+  h2 {
+    font-family: var(--serif-display);
+    font-weight: 600;
+    font-size: clamp(1.8rem, 4vw, 2.6rem);
+    line-height: 1.15;
+    color: var(--rule);
+    margin-bottom: 1.5rem;
+    max-width: 36ch;
+  }
+
+  h3 {
+    font-family: var(--serif-display);
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: var(--ink);
+    margin: 2rem 0 0.8rem;
+  }
+
+  p {
+    margin-bottom: 1.1rem;
+    max-width: 65ch;
+  }
+
+  p.lead {
+    font-size: 1.25rem;
+    font-style: italic;
+    color: var(--ink-soft);
+    line-height: 1.6;
+    max-width: 60ch;
+    border-left: 3px solid var(--accent-gold);
+    padding-left: 1.2rem;
+    margin: 1.5rem 0 2rem;
+  }
+
+  /* drop cap on opening paragraph of intro */
+  .drop-cap::first-letter {
+    font-family: var(--serif-display);
+    font-size: 4.2rem;
+    font-weight: 700;
+    float: left;
+    line-height: 0.85;
+    padding: 0.4rem 0.6rem 0 0;
+    color: var(--accent-paris);
+  }
+
+  a {
+    color: var(--accent-paris);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(122, 31, 43, 0.3);
+    transition: border-color 0.2s;
+  }
+  a:hover { border-color: var(--accent-paris); }
+
+  strong { font-weight: 600; color: var(--rule); }
+  em { font-style: italic; }
+
+  /* ============ TWO-COLUMN ============ */
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    margin-top: 2rem;
+  }
+
+  @media (max-width: 720px) {
+    .two-col { grid-template-columns: 1fr; gap: 1.5rem; }
+  }
+
+  .city-card {
+    border: 1px solid var(--ink-faded);
+    padding: 1.5rem;
+    background: rgba(255,255,255,0.15);
+    position: relative;
+  }
+
+  .city-card::before {
+    content: '';
+    position: absolute;
+    top: -1px; left: -1px; right: -1px; bottom: -1px;
+    border: 1px solid transparent;
+    pointer-events: none;
+  }
+
+  .city-card.paris { border-top: 4px solid var(--accent-paris); }
+  .city-card.mexico { border-top: 4px solid var(--accent-mexico); }
+
+  .city-card h3 {
+    margin-top: 0;
+    font-family: var(--serif-display);
+    font-size: 1.6rem;
+  }
+
+  .city-card .stamp {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-faded);
+    margin-bottom: 0.6rem;
+  }
+
+  /* ============ TIMELINE ============ */
+  .timeline {
+    margin: 2rem 0;
+    border-left: 2px solid var(--ink);
+    padding-left: 1.5rem;
+  }
+
+  .timeline-entry {
+    margin-bottom: 1.8rem;
+    position: relative;
+  }
+
+  .timeline-entry::before {
+    content: '';
+    position: absolute;
+    left: -1.95rem;
+    top: 0.6rem;
+    width: 0.8rem;
+    height: 0.8rem;
+    background: var(--paper);
+    border: 2px solid var(--rule);
+    border-radius: 50%;
+  }
+
+  .timeline-entry.paris::before { background: var(--accent-paris); border-color: var(--accent-paris); }
+  .timeline-entry.mexico::before { background: var(--accent-mexico); border-color: var(--accent-mexico); }
+
+  .timeline-year {
+    font-family: var(--mono);
+    font-size: 0.85rem;
+    letter-spacing: 0.1em;
+    color: var(--ink-faded);
+    display: block;
+    margin-bottom: 0.2rem;
+  }
+
+  .timeline-entry h4 {
+    font-family: var(--serif-display);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+    color: var(--rule);
+  }
+
+  .timeline-entry p { font-size: 0.98rem; max-width: none; margin-bottom: 0; color: var(--ink-soft); }
+
+  /* ============ INDEX BUILDER ============ */
+  .index-builder {
+    background: rgba(255, 252, 240, 0.55);
+    border: 1px solid var(--ink-faded);
+    padding: 2rem;
+    margin: 2rem 0;
+    box-shadow:
+      inset 0 0 0 1px var(--paper),
+      0 2px 0 var(--paper-dark),
+      0 4px 12px rgba(42, 34, 24, 0.08);
+  }
+
+  .index-builder-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 1px solid var(--ink-faded);
+    padding-bottom: 0.6rem;
+    margin-bottom: 1.5rem;
+    font-family: var(--mono);
+    font-size: 0.78rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--ink-faded);
+  }
+
+  .index-components {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.9rem 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  @media (max-width: 600px) {
+    .index-components { grid-template-columns: 1fr; }
+  }
+
+  .component {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: start;
+    gap: 0.65rem 0.85rem;
+    padding: 0.75rem 0.95rem;
+    background: rgba(255,255,255,0.4);
+    border: 1px solid rgba(74, 63, 48, 0.25);
+    transition: all 0.18s ease;
+    user-select: none;
+    cursor: default;
+  }
+
+  .component:hover { background: rgba(255,255,255,0.7); border-color: var(--ink-soft); }
+
+  .component.active {
+    background: rgba(212, 195, 145, 0.4);
+    border-color: var(--accent-gold);
+    box-shadow: inset 0 0 0 1px var(--accent-gold);
+  }
+
+  .component .toggle {
+    width: 18px;
+    height: 18px;
+    border: 1.5px solid var(--ink);
+    background: var(--paper);
+    flex-shrink: 0;
+    margin-top: 0.2rem;
+    position: relative;
+    transition: all 0.18s;
+    cursor: pointer;
+  }
+
+  .component.active .toggle {
+    background: var(--accent-gold);
+    border-color: var(--accent-gold);
+  }
+
+  .component.active .toggle::after {
+    content: '✓';
+    position: absolute;
+    top: -3px; left: 2px;
+    color: var(--paper);
+    font-family: var(--serif-body);
+    font-weight: 700;
+    font-size: 0.95rem;
+  }
+
+  .component-label {
+    font-family: var(--serif-body);
+    font-size: 1.02rem;
+    color: var(--ink);
+    line-height: 1.35;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .component .why-btn { margin-top: 0.15rem; }
+
+  .component .why-panel {
+    grid-column: 1 / -1;
+    border-left: 2px solid var(--accent-gold);
+    padding-left: 1rem;
+    margin: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.45s ease;
+  }
+
+  .component .why-panel.open {
+    margin-top: 0.55rem;
+    max-height: 380px;
+  }
+
+  .component .why-panel-inner {
+    font-size: 0.93rem;
+    color: var(--ink-soft);
+    padding-bottom: 0.85rem;
+  }
+
+  .component .why-panel-inner .mini-strip {
+    font-family: var(--mono);
+    font-size: 0.65rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink-faded);
+    margin-bottom: 0.35rem;
+  }
+
+  .component .spark {
+    margin-top: 0.65rem;
+    border: 1px dashed rgba(74,63,48,0.35);
+    background: rgba(255,252,235,0.75);
+    padding: 0.45rem;
+  }
+
+  .component .spark svg { width: 100%; height: 54px; display: block; }
+
+  .formula-display {
+    background: var(--paper-dark);
+    border: 1px dashed var(--ink-faded);
+    padding: 0.9rem 1.1rem;
+    font-family: var(--mono);
+    font-size: 0.88rem;
+    color: var(--ink-soft);
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+    word-break: break-word;
+  }
+
+  .formula-display .var { color: var(--accent-paris); }
+  .formula-display .weight { color: var(--accent-mexico); }
+  .formula-display.empty { color: var(--ink-faded); font-style: italic; }
+
+  /* ============ MAP ============ */
+  .map-controls {
+    display: flex;
+    gap: 0.5rem;
+    margin: 1.5rem 0 1rem;
+    flex-wrap: wrap;
+  }
+
+  .map-btn {
+    font-family: var(--mono);
+    font-size: 0.78rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    background: transparent;
+    border: 1.5px solid var(--ink);
+    color: var(--ink);
+    padding: 0.55rem 1.1rem;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .map-btn:hover { background: var(--ink); color: var(--paper); }
+  .map-btn.active { background: var(--ink); color: var(--paper); }
+  .map-btn.paris.active { background: var(--accent-paris); border-color: var(--accent-paris); color: var(--paper); }
+  .map-btn.mexico.active { background: var(--accent-mexico); border-color: var(--accent-mexico); color: var(--paper); }
+
+  .map-stage {
+    background: rgba(255, 252, 240, 0.55);
+    border: 1px solid var(--ink-faded);
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    min-height: 480px;
+    position: relative;
+    box-shadow: inset 0 0 30px rgba(74, 63, 48, 0.08);
+  }
+
+  .map-stage svg {
+    width: 100%;
+    height: auto;
+    max-height: 520px;
+    display: block;
+  }
+
+  .map-region {
+    cursor: pointer;
+    transition: filter 0.15s, stroke-width 0.15s;
+    stroke: var(--ink);
+    stroke-width: 1;
+  }
+
+  .map-region:hover { filter: brightness(1.1); stroke-width: 2.2; }
+  .map-region.selected { stroke: var(--rule); stroke-width: 3; }
+
+  .map-legend {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-family: var(--mono);
+    font-size: 0.74rem;
+    letter-spacing: 0.1em;
+    color: var(--ink-faded);
+    text-transform: uppercase;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .legend-bar {
+    display: flex;
+    height: 14px;
+    flex: 1;
+    min-width: 200px;
+    max-width: 320px;
+    border: 1px solid var(--ink);
+  }
+
+  .legend-bar .swatch { flex: 1; }
+
+  .map-info {
+    background: var(--paper-dark);
+    border: 1px solid var(--ink-faded);
+    padding: 1.1rem 1.3rem;
+    margin-top: 0.5rem;
+    font-size: 0.95rem;
+    min-height: 90px;
+  }
+
+  .map-info .region-name {
+    font-family: var(--serif-display);
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--rule);
+    margin-bottom: 0.2rem;
+  }
+
+  .map-info .region-stats {
+    font-family: var(--mono);
+    font-size: 0.82rem;
+    letter-spacing: 0.05em;
+    color: var(--ink-soft);
+  }
+
+  .map-info .placeholder-note {
+    color: var(--ink-faded);
+    font-style: italic;
+  }
+
+  /* ============ FINDING / REGRESSION ============ */
+  .finding {
+    border-top: 2px solid var(--rule);
+    border-bottom: 2px solid var(--rule);
+    padding: 1.8rem 0;
+    margin: 2.5rem 0;
+    text-align: center;
+  }
+
+  .finding .finding-label {
+    font-family: var(--mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--ink-faded);
+    margin-bottom: 0.6rem;
+  }
+
+  .finding .finding-stat {
+    font-family: var(--serif-display);
+    font-size: 2.6rem;
+    font-weight: 600;
+    color: var(--accent-paris);
+    line-height: 1;
+    margin-bottom: 0.4rem;
+  }
+
+  .finding .finding-stat.mexico { color: var(--accent-mexico); }
+
+  .finding .finding-text {
+    font-style: italic;
+    color: var(--ink-soft);
+    max-width: 50ch;
+    margin: 0 auto;
+  }
+
+  /* ============ NEWS / DEBATE ============ */
+  .news-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 1.5rem;
+  }
+
+  @media (max-width: 720px) {
+    .news-grid { grid-template-columns: 1fr; }
+  }
+
+  .news-card {
+    border-top: 2px solid var(--rule);
+    padding-top: 1rem;
+  }
+
+  .news-card .kicker {
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--accent-paris);
+    margin-bottom: 0.4rem;
+  }
+
+  .news-card h4 {
+    font-family: var(--serif-display);
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 0.6rem;
+    color: var(--rule);
+  }
+
+  /* ============ SOURCES ============ */
+  .sources {
+    font-size: 0.92rem;
+    color: var(--ink-soft);
+  }
+
+  .sources li {
+    list-style: none;
+    padding-left: 1.5rem;
+    text-indent: -1.5rem;
+    margin-bottom: 0.7rem;
+  }
+
+  /* ============ FOOTER ============ */
+  footer {
+    border-top: 3px double var(--rule);
+    padding: 2.5rem 2rem 3rem;
+    text-align: center;
+    max-width: 960px;
+    margin: 2rem auto 0;
+    font-family: var(--mono);
+    font-size: 0.78rem;
+    letter-spacing: 0.12em;
+    color: var(--ink-faded);
+    text-transform: uppercase;
+    line-height: 1.8;
+  }
+
+  footer .ornament {
+    font-size: 1.4rem;
+    color: var(--ink-soft);
+    margin-bottom: 0.6rem;
+    letter-spacing: 0.5em;
+  }
+
+  /* anchor jump targets need a little offset */
+  section[id] { scroll-margin-top: 1rem; }
+
+  /* small tweaks */
+  .pull-quote {
+    font-family: var(--serif-display);
+    font-style: italic;
+    font-size: 1.5rem;
+    line-height: 1.4;
+    color: var(--ink);
+    border-left: 3px solid var(--accent-paris);
+    padding: 0.5rem 0 0.5rem 1.5rem;
+    margin: 2rem 0;
+    max-width: 50ch;
+  }
+
+  .toc {
+    display: flex;
+    gap: 0 1.8rem;
+    flex-wrap: wrap;
+    font-family: var(--mono);
+    font-size: 0.78rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-top: 1.5rem;
+    justify-content: center;
+  }
+
+  .toc a {
+    color: var(--ink-soft);
+    border-bottom: none;
+    padding: 0.3rem 0;
+    border-bottom: 1px solid transparent;
+  }
+  .toc a:hover { border-bottom-color: var(--ink-soft); color: var(--rule); }
+
+  /* ============ HERO IMAGERY ============ */
+  .hero-dual {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    margin: 0 auto 2rem;
+    max-width: min(960px, 100%);
+    border: 2px solid var(--rule);
+    overflow: hidden;
+    box-shadow: 0 8px 28px rgba(42, 34, 24, 0.18);
+  }
+
+  @media (max-width: 640px) { .hero-dual { grid-template-columns: 1fr; } }
+
+  .hero-panel {
+    position: relative;
+    min-height: 200px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .hero-panel::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(26,20,13,0.75) 0%, transparent 55%);
+    pointer-events: none;
+  }
+
+  .hero-panel.paris-strip { border-right: 3px solid var(--accent-paris); }
+  .hero-panel.mexico-strip { border-left: 3px solid var(--accent-mexico); }
+  @media (max-width: 640px) {
+    .hero-panel.paris-strip { border-right: none; border-bottom: 3px solid var(--accent-paris); }
+    .hero-panel.mexico-strip { border-left: none; border-top: 3px solid var(--accent-mexico); }
+  }
+
+  .hero-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    padding: 1rem 1.1rem;
+    font-family: var(--mono);
+    font-size: 0.68rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--paper);
+    text-shadow: 0 2px 12px rgba(0,0,0,0.5);
+  }
+
+  /* ============ CONCEPT BAND (centered pillars) ============ */
+  .concept-band {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+    margin: 2.5rem auto 0;
+    max-width: 900px;
+    text-align: center;
+  }
+
+  @media (max-width: 800px) {
+    .concept-band { grid-template-columns: 1fr; text-align: left; }
+  }
+
+  .concept-pillar {
+    border: 1px solid rgba(74, 63, 48, 0.35);
+    padding: 1.3rem 1.1rem;
+    background: rgba(255,252,240,0.5);
+  }
+
+  .concept-pillar .symbol {
+    font-family: var(--serif-display);
+    font-size: 2.2rem;
+    line-height: 1;
+    color: var(--accent-gold);
+    margin-bottom: 0.35rem;
+    display: block;
+  }
+
+  .concept-pillar h3 { margin-top: 0; font-size: 1.25rem; text-align: inherit; }
+
+  .city-card-photo {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border: 1px solid var(--ink-faded);
+    margin: 0 0 1rem;
+    filter: sepia(12%) contrast(1.02);
+  }
+
+  /* ============ DUAL TIMELINES (collapsible) ============ */
+  .dual-timeline {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+    align-items: start;
+  }
+
+  @media (max-width: 860px) { .dual-timeline { grid-template-columns: 1fr; } }
+
+  .timeline-board {
+    border: 2px solid var(--ink-faded);
+    background: rgba(255,252,240,0.45);
+    padding: 1.25rem 1.35rem;
+  }
+
+  .timeline-board.paris-board { border-top: 6px solid var(--accent-paris); }
+  .timeline-board.mexico-board { border-top: 6px solid var(--accent-mexico); }
+
+  .timeline-board-head {
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--ink-faded);
+    margin-bottom: 1.2rem;
+    border-bottom: 1px dashed var(--ink-faded);
+    padding-bottom: 0.6rem;
+  }
+
+  .tl-item + .tl-item { border-top: 1px solid rgba(74, 63, 48, 0.18); }
+
+  details.tl-item > summary::-webkit-details-marker { display: none; }
+
+  summary.tl-sum {
+    list-style: none;
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: 5.5rem 1fr auto;
+    align-items: baseline;
+    gap: 0.6rem;
+    padding: 0.75rem 0.15rem;
+    transition: background 0.18s ease;
+    font-family: var(--serif-body);
+    color: inherit;
+  }
+
+  summary.tl-sum:hover { background: rgba(255,255,255,0.35); }
+
+  summary.tl-sum .year {
+    font-family: var(--mono);
+    font-size: 0.8rem;
+    letter-spacing: 0.06em;
+    color: var(--ink-faded);
+  }
+
+  summary.tl-sum .label {
+    font-family: var(--serif-display);
+    font-weight: 600;
+    font-size: 1.08rem;
+    color: var(--rule);
+    line-height: 1.25;
+    text-transform: none;
+    margin: 0;
+  }
+
+  summary.tl-sum .chev {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    color: var(--ink-faded);
+    transition: transform 0.2s ease;
+  }
+
+  
+
+  details.tl-item > summary .chev::before { content: '▸'; }
+
+  details.tl-item .tl-inner {
+    padding: 0 0 1rem 5.85rem;
+  }
+
+  .tl-thumb {
+    width: 100%;
+    max-height: 180px;
+    object-fit: cover;
+    border: 1px solid var(--ink-faded);
+    margin-bottom: 0.6rem;
+  }
+
+  @media (max-width: 600px) {
+    summary.tl-sum { grid-template-columns: 1fr; }
+    summary.tl-sum .year { margin-bottom: 0.35rem; }
+    details.tl-item .tl-inner { padding-left: 0; }
+  }
+
+  .why-btn {
+    font-family: var(--mono);
+    font-size: 0.65rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 0.25rem 0.65rem;
+    border: 1px solid var(--ink);
+    background: var(--paper);
+    cursor: pointer;
+    color: var(--ink);
+    transition: all 0.18s ease;
+  }
+
+  .why-btn:hover,
+  .why-btn[aria-expanded="true"] {
+    background: var(--ink);
+    color: var(--paper);
+    border-color: var(--ink);
+  }
+
+  .footnote-marker {
+    font-family: var(--mono);
+    font-weight: bold;
+    color: var(--accent-paris);
+    cursor: pointer;
+    border: none;
+    background: none;
+    vertical-align: super;
+    font-size: 0.75em;
+    padding: 0 0 0 0.15rem;
+    line-height: 0;
+  }
+
+  /* ============ MAP: SPLIT + SLIDERS ============ */
+  .map-extra-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem 1.75rem;
+    align-items: center;
+    margin: 1.25rem 0 1rem;
+    padding: 1rem 1.25rem;
+    border: 1px solid var(--ink-faded);
+    background: rgba(255,252,240,0.45);
+    font-family: var(--mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.06em;
+  }
+
+  .map-extra-controls label { display: flex; flex-direction: column; gap: 0.35rem; color: var(--ink-soft); }
+
+  .decade-slider { width: 220px; accent-color: var(--accent-paris); }
+  select.index-metric-select {
+    font-family: var(--mono);
+    font-size: 0.75rem;
+    padding: 0.45rem 0.65rem;
+    border: 1px solid var(--ink);
+    background: var(--paper);
+    cursor: pointer;
+    min-width: 200px;
+  }
+
+  .map-split-stage {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .map-split-stage.hidden-split { grid-template-columns: 1fr; }
+
+  .map-split-panel {
+    border: 1px solid rgba(74,63,48,0.35);
+    padding: 0.85rem;
+    background: rgba(255,252,242,0.75);
+    min-height: 420px;
+  }
+
+  .map-split-panel figcaption {
+    font-family: var(--mono);
+    font-size: 0.62rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    margin-bottom: 0.65rem;
+    color: var(--ink-faded);
+  }
+
+  .map-split-panel.paris-accent { border-top: 4px solid var(--accent-paris); }
+  .map-split-panel.mexico-accent { border-top: 4px solid var(--accent-mexico); }
+
+  .district-spark svg { width: 100%; height: 44px; display: block; }
+
+  /* monuments */
+  .monument-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1rem 0;
+  }
+
+  .monument-stage svg { width: 100%; max-height: 400px; }
+
+  /* regression */
+  .regression-wrap {
+    border: 1px solid var(--ink-faded);
+    background: rgba(255,252,240, 0.5);
+    padding: 1.25rem;
+    margin: 2rem 0;
+    overflow-x: auto;
+  }
+
+  #reg-svg { width: 100%; min-width: 320px; max-width: 640px; display: block; margin: 0 auto; height: auto; }
+
+  /* debates / readings */
+  .readings-split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 1.5rem;
+  }
+
+  @media (max-width: 760px) { .readings-split { grid-template-columns: 1fr; } }
+
+  .readings-city h4 {
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--rule);
+    padding-bottom: 0.35rem;
+  }
+
+  .readings-city.paris h4 { color: var(--accent-paris); border-color: var(--accent-paris); }
+  .readings-city.mexico-r h4 { color: var(--accent-mexico); border-color: var(--accent-mexico); }
+
+  .article-thumb {
+    width: 72px;
+    height: 56px;
+    object-fit: cover;
+    flex-shrink: 0;
+    border: 1px solid var(--ink-faded);
+  }
+
+  .article-row {
+    display: flex;
+    gap: 0.85rem;
+    margin-bottom: 1.35rem;
+    align-items: flex-start;
+    border-left: 2px solid rgba(74,63,48,0.22);
+    padding-left: 0.85rem;
+  }
+
+  .periodicals {
+    font-size: 0.93rem;
+    color: var(--ink-soft);
+    margin-top: 2rem;
+    padding: 1.25rem;
+    border: 1px dashed var(--ink-faded);
+    background: rgba(255,252,246,0.8);
+  }
+
+  .periodicals h4 {
+    margin: 0 0 0.6rem;
+    font-family: var(--serif-display);
+    font-size: 1.2rem;
+  }
+
+  /* glossary term toggle */
+  .term-txt { border-bottom: 1px dotted rgba(74,63,48,0.65); cursor: default; }
+
+  .gloss-pair {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0.08rem;
+    margin: 0 0.12rem;
+    vertical-align: baseline;
+    position: relative;
+  }
+
+  .gloss-trigger {
+    font-family: var(--mono);
+    font-size: 0.55rem;
+    line-height: 1;
+    width: 1rem;
+    height: 1rem;
+    flex-shrink: 0;
+    border-radius: 2px;
+    border: 1px solid currentColor;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+    color: inherit;
+    position: relative;
+    top: -0.4em;
+  }
+
+  .gloss-trigger:hover,
+  .gloss-trigger.open { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+
+  .gloss-pop {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: calc(100% + 6px);
+    z-index: 30;
+    min-width: min(340px, 88vw);
+    max-width: 420px;
+    padding: 0.75rem 0.95rem;
+    font-size: 0.88rem;
+    line-height: 1.45;
+    color: var(--ink);
+    font-family: var(--serif-body);
+    border: 1px solid var(--rule);
+    background: var(--paper);
+    box-shadow: 0 10px 28px rgba(42,34,24,0.18);
+    text-align: left;
+    font-style: italic;
+    font-weight: 400;
+  }
+
+  .gloss-pop.visible { display: block; }
+
+  .footnote-ref {
+    font-weight: 700;
+    margin-left: 0.08rem;
+    border-bottom: none;
+    color: var(--accent-paris);
+    font-family: var(--mono);
+  }
+
+  .left-out-footnote {
+    margin: 4rem auto 1rem;
+    max-width: 720px;
+    padding: 1.25rem 1.35rem;
+    border-top: 2px double var(--rule);
+    font-size: 0.92rem;
+    color: var(--ink-soft);
+  }
+
+  details.left-out-footnote > summary::-webkit-details-marker { display: none; }
+
+  details.left-out-footnote > summary {
+    list-style: none;
+    cursor: pointer;
+    font-family: var(--serif-display);
+    font-weight: 600;
+    font-size: 1.15rem;
+    color: var(--rule);
+  }
+
+  details.left-out-footnote > summary .asterisk {
+    font-family: var(--mono);
+    color: var(--accent-paris);
+    margin-right: 0.45rem;
+    font-size: 1.3rem;
+    vertical-align: middle;
+  }
+
+  details.left-out-footnote[open] > summary .asterisk { color: var(--accent-mexico); }
+
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="masthead-meta">
+    <span>ECON 30 · Stanford · Spring 2026</span>
+    <span>Vol. I · No. 1</span>
+  </div>
+
+  <h1>Las dos <em>gramáticas</em></h1>
+  <p class="subtitle">Urban planning &amp; inequality in Paris and Mexico City · <cite style="font-style:normal;">ECON 30, Spring 2026</cite></p>
+  <div class="byline">
+    Gaston de Baudry d'Asson <span>·</span> Andrés Palacios
+  </div>
+
+  <nav class="toc">
+    <a href="#opening">Opening</a>
+    <a href="#concepts">Concepts</a>
+    <a href="#timeline">Timelines</a>
+    <a href="#index">Our Index</a>
+    <a href="#map">Maps</a>
+    <a href="#monuments">Monuments</a>
+    <a href="#findings">Findings</a>
+    <a href="#debates">Debates</a>
+    <a href="#sources">Sources</a>
+  </nav>
+
+  <div class="hero-dual" role="img" aria-label="Photographs of Paris and Mexico City">
+    <div class="hero-panel paris-strip" style="background-image:url('https://images.unsplash.com/photo-1502602898536-47ad22581b52?auto=format&amp;fit=crop&amp;w=1400&amp;q=80');">
+      <div class="hero-caption">Paris · Boulevards &amp; monuments</div>
+    </div>
+    <div class="hero-panel mexico-strip" style="background-image:url('https://images.unsplash.com/photo-1512813195389-67cf89d322aa?auto=format&amp;fit=crop&amp;w=1400&amp;q=80');">
+      <div class="hero-caption">Ciudad de México · Valley skyline</div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ OPENING ============ -->
+  <section class="chapter" id="opening">
+    <span class="chapter-num">I · Opening</span>
+    <h2>Two cities, two grammars of progress.</h2>
+    <p class="drop-cap">Walk down the Boulevard Saint-Germain in Paris and you are walking inside a decision. The wide allée, the uniform façades, the angled intersections — all of it was drawn on a map in the 1850s by Baron Haussmann and stamped onto the city by imperial decree. Walk through Iztapalapa in Mexico City and you are walking inside a different kind of decision: the absence of one. The streets bend around hillsides. Houses rose first, sewers came later, deeds came later still. Both cities are the result of urban planning. One was planned by the state. The other was planned by everyone except the state.</p>
+
+    <p class="lead">If urban planning is one of the great engines of progress, then the two cities ask the same question in opposite voices: <em>progress for whom?</em></p>
+
+    <p>This project asks whether we can measure the <strong>quality of urban planning</strong> at the neighborhood level, and whether that quality predicts how rich or poor a neighborhood is. We compare the 20 arrondissements of Paris with the 16 alcaldías of Mexico City — units of roughly the same scale, in cities that are, in almost every other respect, opposites.</p>
+
+    <p>The result, we hope, is a small contribution to a much older conversation: about who gets to draw the lines, who has to live inside them, and what spills across the boundary in either direction.</p>
+  </section>
+
+  <!-- ============ CONCEPTS ============ -->
+  <section class="chapter" id="concepts">
+    <span class="chapter-num">II · Concepts</span>
+    <h2>Inequality, progress, and the planned city.</h2>
+
+    <div class="concept-band">
+      <div class="concept-pillar">
+        <span class="symbol">∿</span>
+        <h3>Inequality</h3>
+        <p style="margin:0 auto;max-width:28ch;text-align:inherit;">Unequal bundles of mobility, greenery, sewage, silence, debt, and eviction risk stitched across parcels you did not choose.</p>
+      </div>
+      <div class="concept-pillar">
+        <span class="symbol">↗</span>
+        <h3>Progress</h3>
+        <p style="margin:0 auto;max-width:28ch;text-align:inherit;">GDP and life-expectancy ladders built city by city — but the scaffolding is zoning law, policing, sanitation bonds, spectacle.</p>
+      </div>
+      <div class="concept-pillar">
+        <span class="symbol">⌗</span>
+        <h3>Urban planning</h3>
+        <p style="margin:0 auto;max-width:28ch;text-align:inherit;">Cadastral ink that hardens privilege: sidewalks, BRT, museal parks, bulldozers, eminent domain, façades staged for elites.</p>
+      </div>
+    </div>
+
+    <div class="two-col" style="margin-top:2.8rem;">
+      <div class="city-card paris">
+        <div class="stamp">Trajectory I · Seine · 1850s onward</div>
+        <img class="city-card-photo" src="https://images.unsplash.com/photo-1431274172761-fca4d90d7fd7?auto=format&amp;fit=crop&amp;w=900&amp;q=80" width="640" height="400" loading="lazy" alt="Paris streetscape along the Seine" />
+        <h3>Paris — state theater of <em>ordre et progrès</em>.</h3>
+        <p>Haussmann’s boulevards, sewers, and parks inscribed a choreography of prestige and policing. Narrative arcs — demolitions → <strong>spatial sorting</strong> → durable rent gradients — unfold in <a href="#timeline-paris">the Paris ribbon</a> below.</p>
+      </div>
+      <div class="city-card mexico">
+        <div class="stamp">Trajectory II · Valley of Mexico · 1880s Porfirian wave</div>
+        <img class="city-card-photo" src="https://images.unsplash.com/photo-1585464231875-d72289b0c75a?auto=format&amp;fit=crop&amp;w=900&amp;q=80" width="640" height="420" loading="lazy" alt="Mexico City urban skyline" />
+        <h3>Mexico City — Paris read through volcanoes.</h3>
+        <p>Under Díaz, planners carved European boulevards through indigenous ground while informal <em style="font-style:italic;">colonias populares</em> thickened at the rims. Parallel stories — ceremonial axes, scarcity of services, insurgent commons — unfold in <a href="#timeline-mexico">the Mexico ribbon</a>.</p>
+      </div>
+    </div>
+    <p class="lead" style="margin-top:2rem;text-align:center;max-width:52ch;margin-left:auto;margin-right:auto;">Everything else on this site — timelines, tessellated cartograms, regressions — hangs on this pairing: imperial boulevard grammars confronting low-income geography that refuses to pretend it is ornamental.</p>
+  </section>
+
+  <!-- ============ TIMELINES (parallel ribbons) ============ -->
+  <section class="chapter" id="timeline">
+    <span class="chapter-num">III · Parallel Timelines</span>
+    <h2>Side-by-side trajectories · Paris ribbons vs Porfirian reforma echoes.</h2>
+    <p>Each ledger line shows only a <strong>year</strong> and a <strong>title</strong> until you widen it — then a photograph-like plate and précis arrives, the way a cabinet photograph folds out of a dossier.</p>
+
+    <div class="dual-timeline">
+      <div class="timeline-board paris-board" id="timeline-paris">
+        <div class="timeline-board-head">Paris ribbon · Second Empire through present</div>
+
+        <details class="tl-item">
+          <summary class="tl-sum"><span class="year">1848–52</span><span class="label">Cholera &amp; the mandate to cut streets</span><span class="chev"></span></summary>
+          <div class="tl-inner">
+            <img class="tl-thumb" src="https://images.unsplash.com/photo-1502602898536-47ad22581b52?auto=format&amp;fit=crop&amp;w=900&amp;q=80" width="880" loading="lazy" alt="Historic map excerpt of medieval Paris lanes" />
+            <p>Repeated epidemics turned narrow courts into killers. Napoleon III inherits a dossier insisting on arterial cuts, sewage, daylight — prelude to bulldozers.</p>
+          </div>
+        </details>
+
+        <details class="tl-item">
+          <summary class="tl-sum"><span class="year">1853–70</span><span class="label">Haussmann's scissors</span></summary>
+          <div class="tl-inner">
+            <img class="tl-thumb" src="https://images.unsplash.com/photo-1431274172761-fca4d90d7fd7?auto=format&amp;fit=crop&amp;w=900&amp;q=80" loading="lazy" alt="Boulevard Montmartre in 1870 oil painting" />
+            <p>Twelve ceremonial boulevards, Bois retreats, annexations, eviction waves; Paris becomes a choreography of vistas and prefect reports.</p>
+          </div>
+        </details>
+
+        <details class="tl-item">
+          <summary class="tl-sum"><span class="year">1854</span><span class="label">Tuileries &amp; ceremonial axes hardened</span></summary>
+          <div class="tl-inner">
+            <img class="tl-thumb" src="https://images.unsplash.com/photo-1549144511-f096e968c793?auto=format&amp;fit=crop&amp;w=900&amp;q=80" loading="lazy" alt="Jardin des Tuileries walkway" />
+            <p>Hedges and fountains convert noble gardens into scripted public theatres — policing sightlines hides inside pollarded trees.</p>
+          </div>
+        </details>
+
+        <details class="tl-item">
+          <summary class="tl-sum"><span class="year">1860</span><span class="label">Anneaux annexés — industrial belt swallowed</span></summary>
+          <div class="tl-inner">
+            <img class="tl-thumb" src="https://images.unsplash.com/photo-1502602898536-47ad22581b52?auto=format&amp;fit=crop&amp;w=900&amp;q=80" loading="lazy" alt="Map of Paris annexation 1860" />
+            <p>Factories and workers folded into the prefecture ledger; rents recalibrated at the rim while inner spirals speculate.</p>
+          </div>
+        </details>
+
+        <details class="tl-item">
+          <summary class="tl-sum"><span class="year">1875</span><span class="label">Haussmann out, Third Republic debt in</span></summary>
+          <div class="tl-inner">
+            <img class="tl-thumb" src="https://images.unsplash.com/photo-1431274172761-fca4d90d7fd7?auto=format&amp;fit=crop&amp;w=900&amp;q=80" loading="lazy" alt="Paris exhibition avenue 1878" />
+            <p>The boulevard toolkit survives exile of its Baron; exposition grounds rehearse techno-progress while banlieues curdle.</p>
+          </div>
+        </details>
+
+        <details class="tl-item">
+          <summary class="tl-sum"><span class="year">1900</span><span class="label">Metro Line I &amp; Fair electric glow</span></summary>
+          <div class="tl-inner">
+            <img class="tl-thumb" src="https://images.unsplash.com/photo-1549144511-f096e968c793?auto=format&amp;fit=crop&amp;w=900&amp;q=80" loading="lazy" alt="Paris metro station tilework" />
+            <p>Anchored metro vaults braid rent cones; commuters trade stairwell claustrophobia for luminous ceramic ads.</p>
+          </div>
+        </details>
+
+        <details class="tl-item">
+          <summary class="tl-sum"><span class="year">1925</span><span class="label">Arts décoratifs &amp; plan Voisin hallucination</span></summary>
+          <div class="tl-inner">
+            <img class="tl-thumb" src="https://images.unsplash.com/photo-1502602898536-47ad22581b52?auto=format&amp;fit=crop&amp;w=900&amp;q=80" loading="lazy" alt="Paris skyline panorama" />
+            <p>Fairs peddle streamlining even as peri-war banlieues sprawl; speculative towers flirt with erasing the Marais on paper.</p>
+          </div>
+        </details>
+
+        <details class="tl-item">
+          <summary class="tl-sum"><span class="year">1945–75</span><span class="label"> Trente Glorieuses high-rises leap ring roads</span></summary>
+          <div class="tl-inner">
+            <img class="tl-thumb" src="https://images.unsplash.com/photo-1431274172761-fca4d90d7fd7?auto=format&amp;fit=crop&amp;w=900&amp;q=80" loading="lazy" alt="Banlieue housing blocks Seine-Saint-Denis" />
+            <p>Housing estates absorb colonial labor reservoirs; Seine-Saint-Denis absorbs stigma long after cranes leave.</p>
+          </div>
+        </details>
+
+        <details class="tl-item">
+          <summary class="tl-sum"><span class="year">2024</span><span class="label">Bike lanes duel with luxury airbnbs</span></summary>
+          <div class="tl-inner">
+            <img class="tl-thumb" src="https://images.unsplash.com/photo-1549144511-f096e968c793?auto=format&amp;fit=crop&amp;w=900&amp;q=80" loading="lazy" alt="Pont Neuf spring view" />
+            <p>Green mobility budgets crash into short-term leasing; same stones, sharper rent extraction.</p>
+          </div>
+        </details>
+      </div>
+
+      <div class="timeline-board mexico-board" id="timeline-mexico">
+        <div class="timeline-board-head">Mexico City ribbon · Porfiriato modernization (Paris echo)</div>
+
+        <details class="tl-item">
+          <summary class="tl-sum"><span class="year">1876–80</span><span class="label">Díaz pact &amp; debt diplomacy</span></summary>
+          <div class="tl-inner">
+            <img class="tl-thumb" src="https://images.unsplash.com/photo-1512813195389-67cf89d322aa?auto=format&amp;fit=crop&amp;w=900&amp;q=80" loading="lazy" alt="Historical photograph Porfirio Díaz" />
+            <p>Order y progreso marries locomotive loans — French engineers already ghost-walk Reforma blueprints borrowed from Napoleon III salons.</p>
+          </div>
+        </details>
+
+        <details class="tl-item">
+          <summary class="tl-sum"><span class="year">1885</span><span class="label">Gas lamps &amp; Parisian façade codes downtown</span></summary>
+          <div class="tl-inner">
+            <img class="tl-thumb" src="https://images.unsplash.com/photo-1585464231875-d72289b0c75a?auto=format&amp;fit=crop&amp;w=900&amp;q=80" loading="lazy" alt="Zócalo plaza Mexico City historic center" />
+            <p>Jefaturas imitate Haussmann's iron balconies while vendors still braid informal grids behind cathedral shadows.</p>
+          </div>
+        </details>
+
+        <details class="tl-item">
+          <summary class="tl-sum"><span class="year">1895</span><span class="label">Cable trams creep up Reforma's mud</span></summary>
+          <div class="tl-inner">
+            <img class="tl-thumb" src="https://images.unsplash.com/photo-1518655048521-f130bcd039f9?auto=format&amp;fit=crop&amp;w=900&amp;q=80" loading="lazy" alt="Paseo de la Reforma with Angel statue" />
+            <p>An international spine stages marble heroes; census ink still shows jornalero majorities underwriting the mise-en-scène.</p>
+          </div>
+        </details>
+
+        <details class="tl-item">
+          <summary class="tl-sum"><span class="year">1900</span><span class="label">Drainage tunnels &amp; Chapultepec gentry parks</span></summary>
+          <div class="tl-inner">
+            <img class="tl-thumb" src="https://images.unsplash.com/photo-1512813195389-67cf89d322aa?auto=format&amp;fit=crop&amp;w=900&amp;q=80" loading="lazy" alt="Chapultepec Castle Mexico City" />
+            <p>Desagüe infrastructures borrow Second Empire hygienism; hilltop lawns rehearse Versailles while eastern colonias wait for sewage.</p>
+          </div>
+        </details>
+
+        <details class="tl-item">
+          <summary class="tl-sum"><span class="year">1913</span><span class="label">Decena trágica snaps the porcelain decade</span></summary>
+          <div class="tl-inner">
+            <img class="tl-thumb" src="https://images.unsplash.com/photo-1585464231875-d72289b0c75a?auto=format&amp;fit=crop&amp;w=900&amp;q=80" loading="lazy" alt="Revolution era street scene Mexico" />
+            <p>Palace rifles end the choreography; modernization debt outlives Díaz but shells splinter ceremonial boulevards.</p>
+          </div>
+        </details>
+
+        <details class="tl-item">
+          <summary class="tl-sum"><span class="year">1929–50</span><span class="label">Contreras planner vs ejido tides</span></summary>
+          <div class="tl-inner">
+            <img class="tl-thumb" src="https://images.unsplash.com/photo-1518655048521-f130bcd039f9?auto=format&amp;fit=crop&amp;w=900&amp;q=80" loading="lazy" alt="Vintage aerial sprawling Mexico City" />
+            <p>The Plano Regulador hallucinates polite density while peripheral lots subdivide illegally — blueprint meets colonia avalanche.</p>
+          </div>
+        </details>
+
+        <details class="tl-item">
+          <summary class="tl-sum"><span class="year">1968</span><span class="label">TLatelolco plaza blood &amp; metro birth pangs</span></summary>
+          <div class="tl-inner">
+            <img class="tl-thumb" src="https://images.unsplash.com/photo-1512813195389-67cf89d322aa?auto=format&amp;fit=crop&amp;w=900&amp;q=80" loading="lazy" alt="Mexico City metro Insurgentes platform" />
+            <p>Hollow-core trains arrive as students fall; authoritarian modernism keeps laying tile while plaza speech curdles.</p>
+          </div>
+        </details>
+
+        <details class="tl-item">
+          <summary class="tl-sum"><span class="year">2005–now</span><span class="label">MetroBús stitches informal east to formal west</span></summary>
+          <div class="tl-inner">
+            <img class="tl-thumb" src="https://images.unsplash.com/photo-1585464231875-d72289b0c75a?auto=format&amp;fit=crop&amp;w=900&amp;q=80" loading="lazy" alt="Metrobus BRT Mexico City corridor" />
+            <p>Lanes painted cherry red carve rapid transit atop colonial grids — patching where rail never chased population.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ OUR INDEX ============ -->
+  <section class="chapter" id="index">
+    <span class="chapter-num">IV · Our Index</span>
+    <h2>An index of urban planning quality.</h2>
+    <p>To compare neighborhoods across two very different cities, we built an index of <em>urban planning quality</em> — a score from 0 to 100 that combines six measurable features<sup><button type="button" class="left-out-trigger" aria-expanded="false" aria-controls="what-left-out" title="What we left out">*</button></sup> of how well a neighborhood is built and served. Each component is, as best we can manage, <strong>upstream of income</strong>.</p>
+
+    <p>Use the checkmarks to include or exclude pillars from the composite score. Each pillar keeps its narrative sealed behind a <strong>Why?</strong> tab so the grid stays legible until you need the fine print.</p>
+
+    <div class="index-builder">
+      <div class="index-builder-header">
+        <span>The Index · Build Your Own</span>
+        <span id="active-count">6 of 6 active</span>
+      </div>
+
+      <div class="index-components" id="components">
+        <div class="component active" data-key="parks" data-symbol="P">
+          <div class="toggle" title="Include in composite index"></div>
+          <div class="component-label" title="Tap to include / exclude">Park access</div>
+          <button type="button" class="why-btn" data-why-target="why-parks" aria-expanded="false" aria-controls="why-parks">Why?</button>
+          <div class="why-panel" id="why-parks">
+            <div class="why-panel-inner">
+              <div class="mini-strip">Measurement</div>
+              <p>Share of residents living within a roughly 10‑minute walk (~800&nbsp;m) of a public park entrance, using network buffers rather than crows‑flight circles so footbridges and dead ends matter.</p>
+              <div class="mini-strip">Rationale</div>
+              <p>Tree canopy and soft ground are expensive to retrofit; park proximity is a durable public investment that usually predates the wave of <span class="gloss-pair"><span class="term-txt">gentrification</span><button type="button" class="gloss-trigger" aria-expanded="false">?</button><span class="gloss-pop" role="tooltip">Neighborhood ascent in rents and occupancy costs after amenities improve, sometimes displacing long-term renters.</span></span> rents, making it useful as an upstream planning input.</p>
+              <div class="spark"><svg viewBox="0 0 120 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polyline fill="none" stroke="var(--accent-mexico)" stroke-width="1.8" points="0,26 24,22 48,17 72,13 96,10 120,6"/><text x="0" y="8" fill="var(--ink-faded)" font-size="8" font-family="monospace">PARK REACH · MOCK</text></svg></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="component active" data-key="transit" data-symbol="T">
+          <div class="toggle" title="Include in composite index"></div>
+          <div class="component-label">Transit commute</div>
+          <button type="button" class="why-btn" data-why-target="why-transit" aria-expanded="false" aria-controls="why-transit">Why?</button>
+          <div class="why-panel" id="why-transit">
+            <div class="why-panel-inner">
+              <div class="mini-strip">Measurement</div>
+              <p>Median public‑transit journey time from each district to its historic employment pole (Île‑de‑France employment core for Paris; Zócalo–Reforma spine for CDMX), inverted so faster trips score higher.</p>
+              <div class="mini-strip">Rationale</div>
+              <p>Network speed shapes labor‑market access; we avoid counting private vehicles because they track income more tightly than trains or BRT.</p>
+              <div class="spark"><svg viewBox="0 0 120 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polyline fill="none" stroke="var(--accent-paris)" stroke-width="1.8" points="0,8 28,14 54,17 76,21 104,26 120,28"/><text x="0" y="9" fill="var(--ink-faded)" font-size="8" font-family="monospace">TRAV TIME · MOCK</text></svg></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="component active" data-key="density" data-symbol="D">
+          <div class="toggle" title="Include in composite index"></div>
+          <div class="component-label">Productive density</div>
+          <button type="button" class="why-btn" data-why-target="why-density" aria-expanded="false" aria-controls="why-density">Why?</button>
+          <div class="why-panel" id="why-density">
+            <div class="why-panel-inner">
+              <div class="mini-strip">Measurement</div>
+              <p>Residents per km² smoothed toward a planner‑defined band where infrastructure can still amortize fixed costs — neither ghost towers nor corrugated roof sprawl extremes score best.</p>
+              <div class="mini-strip">Rationale</div>
+              <p>Urban economics treats density as throughput for agglomeration, but unmanaged crowding destroys service quality — we penalize tails.</p>
+              <div class="spark"><svg viewBox="0 0 120 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill="rgba(212,195,145,0.35)" stroke="var(--accent-gold)" stroke-width="1" d="M0,26 Q40,28 70,22 T120,26 L120,31 L0,31 Z"/><text x="0" y="9" fill="var(--ink-faded)" font-size="8" font-family="monospace">DENSITY WINDOW</text></svg></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="component active" data-key="thirdspace" data-symbol="L">
+          <div class="toggle" title="Include in composite index"></div>
+          <div class="component-label">Third spaces</div>
+          <button type="button" class="why-btn" data-why-target="why-thirdspace" aria-expanded="false" aria-controls="why-thirdspace">Why?</button>
+          <div class="why-panel" id="why-thirdspace">
+            <div class="why-panel-inner">
+              <div class="mini-strip">Measurement</div>
+              <p>Libraries &amp; municipally operated community centers per 10k residents — rooms where you can linger without buying lattes.</p>
+              <div class="mini-strip">Rationale</div>
+              <p>These are legislated <em>public</em> third places, closer to planning decisions than cafés (which we treat as outcomes downstream of income).</p>
+              <div class="spark"><svg viewBox="0 0 120 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="4" y="10" width="18" height="18" fill="none" stroke="var(--ink)" stroke-width="1"/><rect x="34" y="8" width="18" height="20" fill="none" stroke="var(--accent-paris)" stroke-width="1"/><rect x="64" y="12" width="18" height="16" fill="none" stroke="var(--accent-mexico)" stroke-width="1"/><text x="0" y="6" fill="var(--ink-faded)" font-size="8" font-family="monospace">PUBLIC ROOMS · MOCK</text></svg></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="component active" data-key="pedestrian" data-symbol="W">
+          <div class="toggle" title="Include in composite index"></div>
+          <div class="component-label">Walkability</div>
+          <button type="button" class="why-btn" data-why-target="why-walk" aria-expanded="false" aria-controls="why-walk">Why?</button>
+          <div class="why-panel" id="why-walk">
+            <div class="why-panel-inner">
+              <div class="mini-strip">Measurement</div>
+              <p>Kilometers per km² of foot‑first streets plus verifiably porous plazas (no locked corporate atria).</p>
+              <div class="mini-strip">Rationale</div>
+              <p>Walking fabric is politically cheap to advertise but unevenly enforced; our metric rewards continuous mesh, not billboard claims.</p>
+              <div class="spark"><svg viewBox="0 0 120 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polyline fill="none" stroke="var(--ink)" stroke-dasharray="3 3" stroke-width="1.2" points="0,24 20,18 40,26 62,14 84,22 110,10 120,16"/><text x="0" y="8" fill="var(--ink-faded)" font-size="8" font-family="monospace">PED GRID · MOCK</text></svg></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="component active" data-key="infrastructure" data-symbol="I">
+          <div class="toggle" title="Include in composite index"></div>
+          <div class="component-label">Basic infrastructure</div>
+          <button type="button" class="why-btn" data-why-target="why-infra" aria-expanded="false" aria-controls="why-infra">Why?</button>
+          <div class="why-panel" id="why-infra">
+            <div class="why-panel-inner">
+              <div class="mini-strip">Measurement</div>
+              <p>Share of streets with complete paving + storm drainage hookups, blended with PM2.5 readings as a proxy for combustion exposure on arterials.</p>
+              <div class="mini-strip">Rationale</div>
+              <p>These are the least sexy line items in a budget but the first ones withheld from <span class="gloss-pair"><span class="term-txt">informal</span><button type="button" class="gloss-trigger" aria-expanded="false">?</button><span class="gloss-pop" role="tooltip">Settlements built ahead of formal cadastral recognition; services often arrive late or through political negotiation.</span></span> settlements — so they signal state capacity.</p>
+              <div class="spark"><svg viewBox="0 0 120 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polyline fill="none" stroke="var(--ink-soft)" stroke-width="1.5" points="0,26 120,13"/><circle cx="90" cy="16" r="3" fill="var(--accent-paris)"/><text x="0" y="8" fill="var(--ink-faded)" font-size="8" font-family="monospace">PM25 + PAVING</text></svg></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="formula-display" id="formula">
+        <span class="var">Index</span> = ( <span class="weight">⅙</span> · P + <span class="weight">⅙</span> · T + <span class="weight">⅙</span> · D + <span class="weight">⅙</span> · L + <span class="weight">⅙</span> · W + <span class="weight">⅙</span> · I )
+      </div>
+      <small style="color: var(--ink-faded); font-style: italic; display: block; line-height: 1.5;">All components are normalized to a 0–100 scale within each city before being averaged, so that scores remain comparable across Paris and Mexico City despite differences in absolute levels. Exclusions deliberately bias the composite toward upstream planning choices instead of discretionary consumption<a href="#left-out-footnote" class="footnote-ref">*</a>.</small>
+    </div>
+  </section>
+
+  <!-- ============ INTERACTIVE MAP ============ -->
+  <section class="chapter" id="map">
+    <span class="chapter-num">V · The Map</span>
+    <h2>The index, on the ground.</h2>
+    <p>Below, each neighborhood is shaded by its score on the index. Darker shades mean higher scores. Click a region to see its breakdown. Toggle components above to recompute.</p>
+
+    <div class="map-controls">
+      <button class="map-btn paris active" data-city="paris">Paris · 20 arrondissements</button>
+      <button class="map-btn mexico" data-city="mexico">Ciudad de México · 16 alcaldías</button>
+    </div>
+
+    <div class="map-stage">
+      <svg id="map-svg" viewBox="0 0 600 500" xmlns="http://www.w3.org/2000/svg" aria-label="Interactive map of neighborhood-level urban planning index">
+        <!-- regions injected by JS -->
+        <g id="map-regions"></g>
+        <g id="map-labels"></g>
+      </svg>
+    </div>
+
+    <div class="map-legend">
+      <span>Index score</span>
+      <span>Low</span>
+      <div class="legend-bar" id="legend-bar"></div>
+      <span>High</span>
+    </div>
+
+    <div class="map-info" id="map-info">
+      <div class="region-name">Click a neighborhood to see its breakdown.</div>
+      <div class="region-stats placeholder-note">Provisional values — final data will use INSEE for Paris and INEGI for Mexico City.</div>
+    </div>
+  </section>
+
+  <!-- ============ FINDINGS ============ -->
+  <section class="chapter" id="findings">
+    <span class="chapter-num">VI · Findings</span>
+    <h2>Does planning predict income?</h2>
+    <p>Our central regression takes the form:</p>
+
+    <div class="formula-display">
+      log( <span class="var">Median Income</span><sub>i</sub> ) = α + β · <span class="var">Index</span><sub>i</sub> + γ · <span class="var">X</span><sub>i</sub> + ε<sub>i</sub>
+    </div>
+
+    <p style="font-size: 0.9rem; color: var(--ink-faded); font-style: italic;">where <em>i</em> indexes neighborhoods, <strong>X</strong> contains controls (population, distance to center), run separately for each city.</p>
+
+    <p>We expect that the relationship between planning quality and income will be <strong>positive and strong in Paris</strong>, where the planned city is also the wealthy city — and <strong>weaker, perhaps even ambiguous, in Mexico City</strong>, where wealth has often grown in <em>absence</em> of formal planning (Polanco, Santa Fe) and where many high-quality public spaces exist in middle-income areas.</p>
+
+    <div class="finding">
+      <div class="finding-label">Preliminary · Paris</div>
+      <div class="finding-stat">β ≈ +0.62</div>
+      <div class="finding-text">A one-standard-deviation increase in our index is associated with a 62% increase in median neighborhood income. <strong>Mock estimate</strong> — to be replaced with INSEE data.</div>
+    </div>
+
+    <div class="finding">
+      <div class="finding-label">Preliminary · Mexico City</div>
+      <div class="finding-stat mexico">β ≈ +0.28</div>
+      <div class="finding-text">The same one-standard-deviation increase predicts a 28% increase in median income — less than half the Paris effect. <strong>Mock estimate</strong> — to be replaced with INEGI data.</div>
+    </div>
+
+    <p class="pull-quote">If the gap holds up, it points at something larger: the same planning amenity is worth more, in income terms, in a city where planning is the rule than in one where it is the exception.</p>
+
+    <p>One reading is that <strong>planning concentrates value</strong>: where the state has invested, land becomes scarce and expensive, and the wealthy capture it. Another reading is that <strong>planning is more substitutable in Mexico City</strong>: residents have built their own substitutes for parks, transit, and third spaces over decades, so the formal versions matter less. We do not yet know which is closer to true.</p>
+  </section>
+
+  <!-- ============ DEBATES ============ -->
+  <section class="chapter" id="debates">
+    <span class="chapter-num">VII · Debates</span>
+    <h2>What the cities are arguing about now.</h2>
+
+    <div class="news-grid">
+      <div class="news-card">
+        <div class="kicker">Gentrification</div>
+        <h4>Who pays when a neighborhood gets nicer?</h4>
+        <p>In both cities, the same paradox: improving urban planning quality — adding parks, restoring transit, pedestrianizing streets — raises rents and displaces the residents who waited longest for those improvements. Mexico City's Roma and Condesa neighborhoods, and Paris's 18th and 19th arrondissements, are textbook cases.</p>
+      </div>
+      <div class="news-card">
+        <div class="kicker">Monuments</div>
+        <h4>What does a city remember in stone?</h4>
+        <p>Mexico City's Avenida Reforma replaced its statue of Christopher Columbus with a sculpture honoring indigenous women in 2022. Paris is debating what to do with monuments to Colbert and other figures of empire. Urban planning is also a public memory project — and an unequal one.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SOURCES ============ -->
+  <section class="chapter" id="sources">
+    <span class="chapter-num">VIII · Sources</span>
+    <h2>Selected bibliography.</h2>
+    <ul class="sources">
+      <li>Acemoglu, D., Johnson, S., &amp; Robinson, J. (2001). The Colonial Origins of Comparative Development. <em>American Economic Review</em>, 91(5).</li>
+      <li>da Costa Meyer, E. (2022). <em>Dividing Paris: Urban Renewal and Social Inequality, 1852–1870</em>. Princeton University Press.</li>
+      <li>Davis, D. E. (1994). <em>Urban Leviathan: Mexico City in the Twentieth Century</em>. Temple University Press.</li>
+      <li>Glaeser, E. (2011). <em>Triumph of the City</em>. Penguin Press.</li>
+      <li>Harvey, D. (2003). <em>Paris, Capital of Modernity</em>. Routledge.</li>
+      <li>Jacobs, J. (1961). <em>The Death and Life of Great American Cities</em>. Random House.</li>
+      <li>Roy, D., Bernal, D., &amp; Lees, M. (2020). An exploratory factor analysis model for slum severity index in Mexico City. <em>Urban Studies</em>, 57(13).</li>
+      <li>Ziccardi, A. (2016). Poverty and urban inequality: the case of Mexico City metropolitan region. <em>International Social Science Journal</em>, 65(217–218).</li>
+    </ul>
+  </section>
+
+</main>
+
+<footer>
+  <div class="ornament">⁂</div>
+  Stanford University · ECON 30 · Progress &amp; Inequality<br>
+  Capstone draft · Spring 2026 · Last revised <span id="lastmod"></span><br>
+  Gaston de Baudry d'Asson &amp; Andrés Palacios
+</footer>
+
+<script>
+// =========================================================
+//  STATE
+// =========================================================
+const COMPONENTS = ['parks','transit','density','thirdspace','pedestrian','infrastructure'];
+const SYMBOLS = { parks:'P', transit:'T', density:'D', thirdspace:'L', pedestrian:'W', infrastructure:'I' };
+const state = {
+  active: new Set(COMPONENTS),
+  city: 'paris',
+  selectedRegion: null
+};
+
+// =========================================================
+//  PROVISIONAL DATA
+//  These are MOCK plausible scores — clearly labeled as such.
+//  Replace with real INSEE / INEGI / OSM-derived values later.
+// =========================================================
+const DATA = {
+  paris: [
+    // 20 arrondissements, with mock component scores 0-100
+    { id:1,  name:'1er — Louvre',           parks:72, transit:95, density:60, thirdspace:88, pedestrian:90, infrastructure:92, income:72 },
+    { id:2,  name:'2e — Bourse',            parks:55, transit:94, density:75, thirdspace:80, pedestrian:85, infrastructure:90, income:68 },
+    { id:3,  name:'3e — Temple',            parks:68, transit:90, density:78, thirdspace:85, pedestrian:88, infrastructure:88, income:71 },
+    { id:4,  name:'4e — Hôtel-de-Ville',    parks:78, transit:92, density:72, thirdspace:90, pedestrian:92, infrastructure:90, income:73 },
+    { id:5,  name:'5e — Panthéon',          parks:82, transit:88, density:74, thirdspace:95, pedestrian:90, infrastructure:90, income:74 },
+    { id:6,  name:'6e — Luxembourg',        parks:90, transit:88, density:70, thirdspace:92, pedestrian:90, infrastructure:92, income:82 },
+    { id:7,  name:'7e — Palais-Bourbon',    parks:88, transit:84, density:60, thirdspace:88, pedestrian:88, infrastructure:94, income:85 },
+    { id:8,  name:'8e — Élysée',            parks:78, transit:90, density:55, thirdspace:80, pedestrian:84, infrastructure:95, income:84 },
+    { id:9,  name:'9e — Opéra',             parks:55, transit:95, density:80, thirdspace:78, pedestrian:80, infrastructure:88, income:70 },
+    { id:10, name:'10e — Entrepôt',         parks:50, transit:90, density:82, thirdspace:65, pedestrian:70, infrastructure:80, income:55 },
+    { id:11, name:'11e — Popincourt',       parks:55, transit:88, density:85, thirdspace:70, pedestrian:75, infrastructure:82, income:58 },
+    { id:12, name:'12e — Reuilly',          parks:80, transit:82, density:72, thirdspace:72, pedestrian:75, infrastructure:85, income:65 },
+    { id:13, name:'13e — Gobelins',         parks:62, transit:78, density:80, thirdspace:68, pedestrian:65, infrastructure:80, income:55 },
+    { id:14, name:'14e — Observatoire',     parks:75, transit:80, density:75, thirdspace:80, pedestrian:78, infrastructure:85, income:70 },
+    { id:15, name:'15e — Vaugirard',        parks:68, transit:80, density:78, thirdspace:75, pedestrian:75, infrastructure:85, income:72 },
+    { id:16, name:'16e — Passy',            parks:88, transit:78, density:55, thirdspace:80, pedestrian:75, infrastructure:92, income:88 },
+    { id:17, name:'17e — Batignolles',      parks:60, transit:82, density:75, thirdspace:72, pedestrian:72, infrastructure:85, income:68 },
+    { id:18, name:'18e — Buttes-Montmartre',parks:55, transit:80, density:88, thirdspace:65, pedestrian:65, infrastructure:75, income:48 },
+    { id:19, name:'19e — Buttes-Chaumont',  parks:75, transit:75, density:82, thirdspace:60, pedestrian:65, infrastructure:75, income:42 },
+    { id:20, name:'20e — Ménilmontant',     parks:60, transit:72, density:85, thirdspace:62, pedestrian:62, infrastructure:75, income:45 }
+  ],
+  mexico: [
+    // 16 alcaldías
+    { id:1,  name:'Álvaro Obregón',     parks:55, transit:55, density:65, thirdspace:55, pedestrian:50, infrastructure:65, income:60 },
+    { id:2,  name:'Azcapotzalco',       parks:50, transit:65, density:72, thirdspace:55, pedestrian:55, infrastructure:70, income:55 },
+    { id:3,  name:'Benito Juárez',      parks:75, transit:80, density:75, thirdspace:78, pedestrian:75, infrastructure:88, income:88 },
+    { id:4,  name:'Coyoacán',           parks:80, transit:60, density:60, thirdspace:78, pedestrian:72, infrastructure:80, income:72 },
+    { id:5,  name:'Cuajimalpa',         parks:75, transit:40, density:35, thirdspace:50, pedestrian:45, infrastructure:75, income:78 },
+    { id:6,  name:'Cuauhtémoc',         parks:60, transit:88, density:82, thirdspace:80, pedestrian:75, infrastructure:80, income:70 },
+    { id:7,  name:'Gustavo A. Madero',  parks:45, transit:60, density:75, thirdspace:50, pedestrian:50, infrastructure:60, income:42 },
+    { id:8,  name:'Iztacalco',          parks:48, transit:65, density:80, thirdspace:50, pedestrian:55, infrastructure:65, income:48 },
+    { id:9,  name:'Iztapalapa',         parks:35, transit:50, density:90, thirdspace:40, pedestrian:42, infrastructure:50, income:35 },
+    { id:10, name:'La Magdalena Contreras',parks:65, transit:35, density:50, thirdspace:50, pedestrian:50, infrastructure:65, income:55 },
+    { id:11, name:'Miguel Hidalgo',     parks:80, transit:78, density:65, thirdspace:80, pedestrian:75, infrastructure:90, income:90 },
+    { id:12, name:'Milpa Alta',         parks:70, transit:25, density:25, thirdspace:35, pedestrian:35, infrastructure:40, income:30 },
+    { id:13, name:'Tláhuac',            parks:50, transit:38, density:62, thirdspace:42, pedestrian:42, infrastructure:50, income:38 },
+    { id:14, name:'Tlalpan',            parks:78, transit:48, density:48, thirdspace:55, pedestrian:55, infrastructure:68, income:60 },
+    { id:15, name:'Venustiano Carranza',parks:48, transit:75, density:78, thirdspace:55, pedestrian:60, infrastructure:70, income:50 },
+    { id:16, name:'Xochimilco',         parks:72, transit:42, density:55, thirdspace:48, pedestrian:48, infrastructure:55, income:45 }
+  ]
+};
+
+// Pre-laid-out positions for a stylized map (no real GeoJSON yet).
+// Coordinates are within a 600x500 viewBox.
+const LAYOUTS = {
+  paris: [
+    // Approximating the Parisian arrondissement spiral from the centre outward
+    {id:1,  cx:300, cy:240, r:35},
+    {id:2,  cx:330, cy:215, r:30},
+    {id:3,  cx:360, cy:235, r:32},
+    {id:4,  cx:355, cy:275, r:32},
+    {id:5,  cx:325, cy:300, r:35},
+    {id:6,  cx:280, cy:285, r:33},
+    {id:7,  cx:240, cy:265, r:38},
+    {id:8,  cx:235, cy:215, r:38},
+    {id:9,  cx:295, cy:185, r:35},
+    {id:10, cx:355, cy:175, r:38},
+    {id:11, cx:415, cy:230, r:42},
+    {id:12, cx:430, cy:295, r:45},
+    {id:13, cx:370, cy:355, r:45},
+    {id:14, cx:285, cy:365, r:42},
+    {id:15, cx:200, cy:340, r:48},
+    {id:16, cx:140, cy:240, r:50},
+    {id:17, cx:185, cy:155, r:45},
+    {id:18, cx:280, cy:120, r:45},
+    {id:19, cx:400, cy:120, r:48},
+    {id:20, cx:475, cy:185, r:45}
+  ],
+  mexico: [
+    // Approximate hex layout for 16 alcaldías
+    {id:1,  cx:200, cy:300, r:42}, // Álvaro Obregón
+    {id:2,  cx:285, cy:160, r:42}, // Azcapotzalco
+    {id:3,  cx:300, cy:265, r:38}, // Benito Juárez
+    {id:4,  cx:300, cy:340, r:42}, // Coyoacán
+    {id:5,  cx:115, cy:240, r:48}, // Cuajimalpa
+    {id:6,  cx:300, cy:215, r:40}, // Cuauhtémoc
+    {id:7,  cx:380, cy:140, r:48}, // Gustavo A. Madero
+    {id:8,  cx:380, cy:255, r:38}, // Iztacalco
+    {id:9,  cx:430, cy:310, r:55}, // Iztapalapa
+    {id:10, cx:175, cy:355, r:42}, // Magdalena Contreras
+    {id:11, cx:225, cy:215, r:42}, // Miguel Hidalgo
+    {id:12, cx:340, cy:445, r:48}, // Milpa Alta
+    {id:13, cx:430, cy:400, r:42}, // Tláhuac
+    {id:14, cx:260, cy:410, r:50}, // Tlalpan
+    {id:15, cx:380, cy:200, r:38}, // Venustiano Carranza
+    {id:16, cx:380, cy:380, r:45}  // Xochimilco
+  ]
+};
+
+// =========================================================
+//  INDEX MATH
+// =========================================================
+function regionIndex(region, activeSet) {
+  const keys = COMPONENTS.filter(k => activeSet.has(k));
+  if (keys.length === 0) return null;
+  const sum = keys.reduce((s,k) => s + region[k], 0);
+  return sum / keys.length;
+}
+
+// =========================================================
+//  COLOR SCALE
+//  Single-hue ramp per city, parchment → ink
+// =========================================================
+function colorFor(score, city) {
+  if (score === null || isNaN(score)) return '#cbbfa2';
+  // 0–100 → 0–1
+  const t = Math.max(0, Math.min(1, score / 100));
+  if (city === 'paris') {
+    // pale cream → deep wine
+    const r = Math.round(241 - (241 - 122) * t);
+    const g = Math.round(233 - (233 -  31) * t);
+    const b = Math.round(214 - (214 -  43) * t);
+    return `rgb(${r},${g},${b})`;
+  } else {
+    // pale cream → deep verdigris
+    const r = Math.round(241 - (241 -  45) * t);
+    const g = Math.round(233 - (233 -  90) * t);
+    const b = Math.round(214 - (214 -  61) * t);
+    return `rgb(${r},${g},${b})`;
+  }
+}
+
+// =========================================================
+//  RENDERING
+// =========================================================
+function renderFormula() {
+  const el = document.getElementById('formula');
+  const active = COMPONENTS.filter(k => state.active.has(k));
+  if (active.length === 0) {
+    el.classList.add('empty');
+    el.innerHTML = 'No components selected — toggle at least one above.';
+    return;
+  }
+  el.classList.remove('empty');
+  const w = active.length === 1 ? '1' : `1/${active.length}`;
+  const terms = active.map(k => `<span class="weight">${w}</span> · ${SYMBOLS[k]}`).join(' + ');
+  el.innerHTML = `<span class="var">Index</span> = ( ${terms} )`;
+  document.getElementById('active-count').textContent = `${active.length} of 6 active`;
+}
+
+function renderComponents() {
+  document.querySelectorAll('.component').forEach(el => {
+    const key = el.dataset.key;
+    if (state.active.has(key)) el.classList.add('active');
+    else el.classList.remove('active');
+  });
+}
+
+function renderLegend() {
+  const bar = document.getElementById('legend-bar');
+  bar.innerHTML = '';
+  const steps = 20;
+  for (let i = 0; i < steps; i++) {
+    const sw = document.createElement('div');
+    sw.className = 'swatch';
+    sw.style.background = colorFor((i / (steps-1)) * 100, state.city);
+    bar.appendChild(sw);
+  }
+}
+
+function renderMap() {
+  const regions = document.getElementById('map-regions');
+  const labels = document.getElementById('map-labels');
+  regions.innerHTML = '';
+  labels.innerHTML = '';
+
+  const cityData = DATA[state.city];
+  const layout  = LAYOUTS[state.city];
+
+  cityData.forEach(region => {
+    const pos = layout.find(l => l.id === region.id);
+    if (!pos) return;
+    const score = regionIndex(region, state.active);
+    const fill = score === null ? '#cbbfa2' : colorFor(score, state.city);
+
+    const circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+    circle.setAttribute('cx', pos.cx);
+    circle.setAttribute('cy', pos.cy);
+    circle.setAttribute('r',  pos.r);
+    circle.setAttribute('fill', fill);
+    circle.classList.add('map-region');
+    circle.dataset.id = region.id;
+    if (state.selectedRegion === region.id) circle.classList.add('selected');
+    circle.addEventListener('click', () => selectRegion(region.id));
+    regions.appendChild(circle);
+
+    // Label: arrondissement number for Paris, abbreviation for Mexico
+    const text = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+    text.setAttribute('x', pos.cx);
+    text.setAttribute('y', pos.cy + 4);
+    text.setAttribute('text-anchor', 'middle');
+    text.setAttribute('font-family', 'Special Elite, monospace');
+    text.setAttribute('font-size', '11');
+    text.setAttribute('fill', score !== null && score > 60 ? '#f1e9d6' : '#2a2218');
+    text.setAttribute('pointer-events', 'none');
+    text.textContent = state.city === 'paris'
+      ? region.id
+      : region.name.split(' ').map(w => w[0]).join('').slice(0,3);
+    labels.appendChild(text);
+  });
+}
+
+function selectRegion(id) {
+  state.selectedRegion = id;
+  renderMap();
+  const region = DATA[state.city].find(r => r.id === id);
+  if (!region) return;
+  const score = regionIndex(region, state.active);
+  const info = document.getElementById('map-info');
+  info.innerHTML = `
+    <div class="region-name">${region.name}</div>
+    <div class="region-stats">
+      Index: <strong>${score !== null ? score.toFixed(1) : '—'}</strong> /100 ·
+      Median income (provisional): <strong>${region.income}</strong> /100
+      <br>
+      P ${region.parks} · T ${region.transit} · D ${region.density} · L ${region.thirdspace} · W ${region.pedestrian} · I ${region.infrastructure}
+    </div>
+    <div class="placeholder-note" style="margin-top:0.5rem;">
+      Provisional values shown — final data will be sourced from INSEE / INEGI / OpenStreetMap.
+    </div>
+  `;
+}
+
+// =========================================================
+//  EVENT BINDING
+// =========================================================
+document.querySelectorAll('.component').forEach(el => {
+  el.addEventListener('click', () => {
+    const key = el.dataset.key;
+    if (state.active.has(key)) state.active.delete(key);
+    else state.active.add(key);
+    renderComponents();
+    renderFormula();
+    renderMap();
+    if (state.selectedRegion !== null) selectRegion(state.selectedRegion);
+  });
+});
+
+document.querySelectorAll('.map-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    state.city = btn.dataset.city;
+    state.selectedRegion = null;
+    document.querySelectorAll('.map-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById('map-info').innerHTML = `
+      <div class="region-name">Click a neighborhood to see its breakdown.</div>
+      <div class="region-stats placeholder-note">Provisional values — final data will use INSEE for Paris and INEGI for Mexico City.</div>
+    `;
+    renderLegend();
+    renderMap();
+  });
+});
+
+// =========================================================
+//  INIT
+// =========================================================
+document.getElementById('lastmod').textContent =
+  new Date().toLocaleDateString('en-US', { year:'numeric', month:'long', day:'numeric' });
+
+renderComponents();
+renderFormula();
+renderLegend();
+renderMap();
+</script>
+</body>
+</html>
