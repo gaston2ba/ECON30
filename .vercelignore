@@ -1,0 +1,6 @@
+*.py
+requirements.txt
+pyproject.toml
+code/
+data/
+course-materials/
