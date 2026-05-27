@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Visual 01 · Planning Time Machine</title>
+  <style>
+    body { font-family: Georgia, serif; background:#f1e9d6; color:#2a2218; margin:0; padding:20px; }
+    .wrap { max-width:1100px; margin:0 auto; }
+    .controls { display:flex; gap:12px; flex-wrap:wrap; align-items:center; margin-bottom:12px; }
+    button, select, input { font-family: "Courier New", monospace; }
+    .grid { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+    .card { border:1px solid #6b5d48; background:rgba(255,255,255,.28); padding:10px; }
+    svg { width:100%; height:auto; border:1px dashed #6b5d48; background:rgba(255,255,255,.2); }
+    .note { margin-top:10px; border:1px solid #6b5d48; padding:10px; background:rgba(255,255,255,.22); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h2>Visual 01 · Planning Time Machine</h2>
+    <div class="controls">
+      <label>Year <input id="year" type="range" min="1880" max="2024" value="2024" /></label>
+      <strong id="yearLabel">2024</strong>
+      <label>Layer
+        <select id="layer">
+          <option value="planning">Planning Quality</option>
+          <option value="income">Income Proxy</option>
+          <option value="displacement">Displacement Risk</option>
+        </select>
+      </label>
+    </div>
+    <div class="grid">
+      <div class="card"><strong>Paris</strong><svg id="paris" viewBox="0 0 420 320"></svg></div>
+      <div class="card"><strong>Mexico City</strong><svg id="mexico" viewBox="0 0 420 320"></svg></div>
+    </div>
+    <div class="note" id="note">Click a district to see a micro-story.</div>
+  </div>
+  <script>
+    const districts = Array.from({length:12}, (_,i)=>({
+      id:i+1, x:50+(i%4)*95, y:60+Math.floor(i/4)*78, r:28,
+      name:`District ${i+1}`
+    }));
+    const state = { year:2024, layer:"planning" };
+    const layerScales = {
+      planning:(d,y,c)=> (c==="paris" ? 45:35) + (d.id*3)%30 + (y-1880)/12,
+      income:(d,y,c)=> (c==="paris" ? 40:30) + (d.id*4)%35 + (y-1880)/11,
+      displacement:(d,y,c)=> (c==="paris" ? 25:40) + ((12-d.id)*3)%30 + (y-1900)/15
+    };
+    const color = (v,city)=>{
+      const t=Math.max(0,Math.min(1,v/100));
+      const a=city==="paris"?[122,31,43]:[45,90,61];
+      const b=[241,233,214];
+      const r=Math.round(b[0]-(b[0]-a[0])*t), g=Math.round(b[1]-(b[1]-a[1])*t), bl=Math.round(b[2]-(b[2]-a[2])*t);
+      return `rgb(${r},${g},${bl})`;
+    };
+    function draw(city){
+      const svg=document.getElementById(city); svg.innerHTML="";
+      districts.forEach(d=>{
+        const value=layerScales[state.layer](d,state.year,city);
+        const c=document.createElementNS("http://www.w3.org/2000/svg","circle");
+        c.setAttribute("cx",d.x); c.setAttribute("cy",d.y); c.setAttribute("r",d.r);
+        c.setAttribute("fill",color(value,city)); c.setAttribute("stroke","#2a2218");
+        c.style.cursor="pointer";
+        c.addEventListener("click",()=> {
+          document.getElementById("note").textContent =
+            `${city==="paris"?"Paris":"Mexico City"} · ${d.name} · ${state.year} · ${state.layer}: ${value.toFixed(1)}. ` +
+            `Story stub: replace with real event text from your timeline dataset.`;
+        });
+        svg.appendChild(c);
+        const t=document.createElementNS("http://www.w3.org/2000/svg","text");
+        t.setAttribute("x",d.x); t.setAttribute("y",d.y+4); t.setAttribute("text-anchor","middle");
+        t.setAttribute("font-size","10"); t.setAttribute("font-family","Courier New, monospace");
+        t.textContent=d.id; svg.appendChild(t);
+      });
+    }
+    function render(){ document.getElementById("yearLabel").textContent=state.year; draw("paris"); draw("mexico"); }
+    document.getElementById("year").addEventListener("input",e=>{ state.year=+e.target.value; render(); });
+    document.getElementById("layer").addEventListener("change",e=>{ state.layer=e.target.value; render(); });
+    render();
+  </script>
+</body>
+</html>

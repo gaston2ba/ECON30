@@ -691,6 +691,19 @@
     justify-content: center;
   }
 
+  .draft-ribbon {
+    text-align: center;
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink-faded);
+    margin: 0.75rem 0 0;
+    padding: 0.35rem 0.5rem;
+    border-top: 1px dashed var(--ink-faded);
+    border-bottom: 1px dashed var(--ink-faded);
+  }
+
   .toc a {
     color: var(--ink-soft);
     border-bottom: none;
@@ -789,6 +802,144 @@
     margin: 0 0 1rem;
     filter: sepia(12%) contrast(1.02);
   }
+
+  /* ============ STREET GALLERY (visual opening) ============ */
+  .street-intro {
+    font-style: italic;
+    color: var(--ink-soft);
+    max-width: 58ch;
+    margin-bottom: 1.25rem;
+    font-size: 1.05rem;
+  }
+
+  .street-gallery {
+    margin: 0 0 3.25rem;
+    border: 1px solid var(--ink-faded);
+    background: rgba(255, 252, 240, 0.5);
+    padding: 1.35rem 1.35rem 1.5rem;
+    box-shadow: 0 4px 14px rgba(42, 34, 24, 0.06);
+  }
+
+  .street-gallery-label {
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--ink-faded);
+    margin-bottom: 0.35rem;
+    display: block;
+  }
+
+  .street-gallery h3 {
+    margin: 0 0 1rem;
+    font-size: 1.45rem;
+    max-width: none;
+  }
+
+  .street-pairs {
+    display: grid;
+    gap: 1.75rem;
+  }
+
+  .street-pair-block {
+    border-top: 1px solid rgba(74, 63, 48, 0.2);
+    padding-top: 1.25rem;
+  }
+
+  .street-pair-block:first-child {
+    border-top: none;
+    padding-top: 0;
+  }
+
+  .street-pair-title {
+    font-family: var(--serif-display);
+    font-size: 1.05rem;
+    font-style: italic;
+    color: var(--ink-soft);
+    margin-bottom: 0.85rem;
+    max-width: 52ch;
+  }
+
+  .street-pair {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.85rem;
+  }
+
+  @media (max-width: 640px) {
+    .street-pair { grid-template-columns: 1fr; }
+  }
+
+  .street-frame {
+    border: 1px solid var(--ink-faded);
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 0;
+  }
+
+  .street-frame img {
+    width: 100%;
+    height: clamp(160px, 22vw, 220px);
+    object-fit: cover;
+    display: block;
+    filter: sepia(10%) contrast(1.04);
+  }
+
+  .street-meta {
+    padding: 0.7rem 0.85rem 0.85rem;
+    font-size: 0.92rem;
+    line-height: 1.45;
+    color: var(--ink-soft);
+  }
+
+  .street-meta .loc {
+    font-family: var(--mono);
+    font-size: 0.62rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 0.3rem;
+    color: var(--ink-faded);
+  }
+
+  .street-frame.paris-accent { border-top: 3px solid var(--accent-paris); }
+  .street-frame.mexico-accent { border-top: 3px solid var(--accent-mexico); }
+
+  .street-gallery-note {
+    margin: 1.25rem 0 0;
+    font-size: 0.88rem;
+    font-style: italic;
+    color: var(--ink-faded);
+    max-width: 58ch;
+  }
+
+  .caveat-box {
+    border: 1px dashed var(--ink-faded);
+    background: rgba(255, 252, 246, 0.92);
+    padding: 1.25rem 1.4rem;
+    margin: 2rem 0 2.5rem;
+    max-width: 65ch;
+  }
+
+  .caveat-box h3 {
+    margin: 0 0 0.85rem;
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--ink-faded);
+  }
+
+  .caveat-box ul {
+    margin: 0;
+    padding-left: 1.2rem;
+    font-size: 0.96rem;
+    color: var(--ink-soft);
+  }
+
+  .caveat-box li { margin-bottom: 0.55rem; }
+  .caveat-box li:last-child { margin-bottom: 0; }
 
   /* ============ DUAL TIMELINES (collapsible) ============ */
   .dual-timeline {
@@ -1146,6 +1297,79 @@
 
   details.left-out-footnote[open] > summary .asterisk { color: var(--accent-mexico); }
 
+  /* ============ TIME SERIES STORY CHART ============ */
+  .story-chart-wrap {
+    border: 1px solid var(--ink-faded);
+    background: rgba(255, 252, 240, 0.62);
+    padding: 1.25rem;
+    margin-top: 1.4rem;
+  }
+
+  .story-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem 1.2rem;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .story-toggle {
+    display: flex;
+    gap: 0.45rem;
+  }
+
+  .story-btn {
+    font-family: var(--mono);
+    font-size: 0.74rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 0.45rem 0.75rem;
+    border: 1px solid var(--ink);
+    background: transparent;
+    color: var(--ink);
+    cursor: pointer;
+  }
+
+  .story-btn.active.paris { background: var(--accent-paris); border-color: var(--accent-paris); color: var(--paper); }
+  .story-btn.active.mexico { background: var(--accent-mexico); border-color: var(--accent-mexico); color: var(--paper); }
+
+  .story-slider-wrap {
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-faded);
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+  }
+
+  .story-slider-wrap input { width: 220px; accent-color: var(--accent-gold); }
+
+  .story-metric {
+    font-family: var(--serif-display);
+    font-size: 1.15rem;
+    color: var(--rule);
+    margin-bottom: 0.8rem;
+  }
+
+  #story-chart-svg {
+    width: 100%;
+    height: auto;
+    max-height: 410px;
+    display: block;
+    border: 1px dashed rgba(74,63,48,0.35);
+    background: rgba(255,255,255,0.25);
+  }
+
+  .story-note {
+    margin-top: 0.8rem;
+    font-size: 0.9rem;
+    color: var(--ink-soft);
+  }
+
+  .story-note strong { color: var(--rule); }
+
 </style>
 </head>
 <body>
@@ -1164,15 +1388,18 @@
 
   <nav class="toc">
     <a href="#opening">Opening</a>
-    <a href="#concepts">Concepts</a>
+    <a href="#streets">Streets</a>
     <a href="#timeline">Timelines</a>
     <a href="#index">Our Index</a>
     <a href="#map">Maps</a>
     <a href="#monuments">Monuments</a>
     <a href="#findings">Findings</a>
     <a href="#debates">Debates</a>
+    <a href="figures/index.html">Figures</a>
     <a href="#sources">Sources</a>
   </nav>
+
+  <p class="draft-ribbon" role="status">Full draft · local preview · Paris &amp; Mexico data wired · May 2026</p>
 
   <div class="hero-dual" role="img" aria-label="Photographs of Paris and Mexico City">
     <div class="hero-panel paris-strip" style="background-image:url('https://images.unsplash.com/photo-1502602898536-47ad22581b52?auto=format&amp;fit=crop&amp;w=1400&amp;q=80');">
@@ -1189,59 +1416,71 @@
   <!-- ============ OPENING ============ -->
   <section class="chapter" id="opening">
     <span class="chapter-num">I · Opening</span>
-    <h2>Two cities, two grammars of progress.</h2>
-    <p class="drop-cap">Walk down the Boulevard Saint-Germain in Paris and you are walking inside a decision. The wide allée, the uniform façades, the angled intersections — all of it was drawn on a map in the 1850s by Baron Haussmann and stamped onto the city by imperial decree. Walk through Iztapalapa in Mexico City and you are walking inside a different kind of decision: the absence of one. The streets bend around hillsides. Houses rose first, sewers came later, deeds came later still. Both cities are the result of urban planning. One was planned by the state. The other was planned by everyone except the state.</p>
 
-    <p class="lead">If urban planning is one of the great engines of progress, then the two cities ask the same question in opposite voices: <em>progress for whom?</em></p>
+    <aside class="street-gallery" id="streets" aria-labelledby="streets-heading">
+      <span class="street-gallery-label">See the cities first</span>
+      <h3 id="streets-heading">Urban inequality is visible before it is measurable.</h3>
+      <p class="street-intro">You do not need to have walked these neighborhoods to read what follows — but the contrast between them is easier to see than to score. Four street-level views, two cities. All photographs are representative of the districts named; you should not have to leave this page to picture them.</p>
 
-    <p>This project asks whether we can measure the <strong>quality of urban planning</strong> at the neighborhood level, and whether that quality predicts how rich or poor a neighborhood is. We compare the 20 arrondissements of Paris with the 16 alcaldías of Mexico City — units of roughly the same scale, in cities that are, in almost every other respect, opposites.</p>
+      <div class="street-pairs">
+        <div class="street-pair-block">
+          <p class="street-pair-title">Two grammars of the street: imperial grid vs. incremental hillside.</p>
+          <div class="street-pair">
+            <figure class="street-frame paris-accent">
+              <img src="https://images.unsplash.com/photo-1431274172761-fca4d90d7fd7?auto=format&amp;fit=crop&amp;w=1000&amp;q=80" width="640" height="400" loading="eager" alt="Wide Haussmann-era boulevard with uniform stone façades, Paris" />
+              <figcaption class="street-meta">
+                <span class="loc">Paris · 6<sup>e</sup> arrondissement</span>
+                Wide allées, cut stone, sewers beneath the pavement — the city Haussmann drew and the state still maintains.
+              </figcaption>
+            </figure>
+            <figure class="street-frame mexico-accent">
+              <img src="https://images.unsplash.com/photo-1574486142472-9c3d8ee5b7c4?auto=format&amp;fit=crop&amp;w=1000&amp;q=80" width="640" height="400" loading="eager" alt="Dense hillside housing with narrow paths, Mexico City" />
+              <figcaption class="street-meta">
+                <span class="loc">Mexico City · Iztapalapa</span>
+                Houses climbed the slope first; paved streets and drainage followed years or decades later — planning from below, not from a prefect's desk.
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="street-pair-block">
+          <p class="street-pair-title">Inequality within each city: center vs. periphery, formal vs. informal.</p>
+          <div class="street-pair">
+            <figure class="street-frame paris-accent">
+              <img src="https://images.unsplash.com/photo-1568454548-9eddbf255ff2?auto=format&amp;fit=crop&amp;w=1000&amp;q=80" width="640" height="400" loading="lazy" alt="Postwar housing blocks in the Paris banlieue" />
+              <figcaption class="street-meta">
+                <span class="loc">Paris · 19<sup>e</sup> arrondissement / Seine-Saint-Denis rim</span>
+                Where Haussmann's displaced ended up: high-rises, ring roads, and decades of under-investment in the same metro region as the boulevards.
+              </figcaption>
+            </figure>
+            <figure class="street-frame mexico-accent">
+              <img src="https://images.unsplash.com/photo-1518655048521-f130bcd039f9?auto=format&amp;fit=crop&amp;w=1000&amp;q=80" width="640" height="400" loading="lazy" alt="Paseo de la Reforma with tree-lined median, Mexico City" />
+              <figcaption class="street-meta">
+                <span class="loc">Mexico City · Miguel Hidalgo (Polanco / Reforma)</span>
+                Porfirian boulevards and later zoning attracted towers and capital — wealth grew here with formal planning, not despite it.
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+      <p class="street-gallery-note">Inspired by street-level comparison projects such as <a href="https://pudding.cool/projects/streetview/" target="_blank" rel="noopener noreferrer">The Pudding's Street View work</a> — simplified here with still images so the reader stays on this page.</p>
+    </aside>
+
+    <h2>Two capitals, two ways of building a city.</h2>
+    <p class="drop-cap">In the 1850s, Baron Haussmann redrew Paris from above — twelve boulevards driven through working-class neighborhoods by imperial decree, a third of the medieval city demolished, an estimated 325,000 residents pushed to the periphery. Half a century later, Porfirio Díaz tried to do the same in Mexico City, importing the Haussmann template directly. He partly succeeded. But after WWII, rural migrants arrived faster than any government could plan for, and they built the city themselves: houses first, streets later, sewers later still. Today roughly 40% of Mexico City lives in housing that began informally.</p>
+
+    <p>These are not arbitrary cases. Paris and Mexico City are the largest cities of two former imperial systems — French and Spanish — and both were reshaped in the 19th century by elites consciously importing European planning ideals. They are roughly comparable in scale, both governed today by progressive municipalities, both wrestling with <span class="gloss-pair"><span class="term-txt">gentrification</span><button type="button" class="gloss-trigger" aria-expanded="false">?</button><span class="gloss-pop" role="tooltip">Wealthier residents and investment moving into a working-class neighborhood, often improving amenities while raising rents and displacing long-term residents.</span></span> and the politics of who their public space is for. They differ, sharply, in one variable: the capacity and willingness of the state to plan. That makes them a useful pair.</p>
+
+    <p>Neither model is the hero of this story. Haussmann's Paris is also a story of displacement and class engineering. The <em>colonias populares</em> of Mexico City are also a remarkable feat of collective self-organization — a city built by the people who had to live in it, against the indifference of the state that should have housed them. We are not asking which city did it right. We are asking what kind of <span class="gloss-pair"><span class="term-txt">inequality</span><button type="button" class="gloss-trigger" aria-expanded="false">?</button><span class="gloss-pop" role="tooltip">Here: the unequal distribution of income, housing, transit, and public space across neighborhoods in the same city — inequality you can see on a map.</span></span> each style of city-building produced, and whether the quality of <span class="gloss-pair"><span class="term-txt">urban planning</span><button type="button" class="gloss-trigger" aria-expanded="false">?</button><span class="gloss-pop" role="tooltip">The deliberate organization of land, infrastructure, and public space — from zoning and transit to parks and housing.</span></span>, measured at the neighborhood level, is <strong>associated with</strong> who is rich and who is poor — not whether planning alone <em>causes</em> wealth (see <a href="#findings">Findings</a>).</p>
+
+    <p>This project compares the 20 arrondissements of Paris with the 16 alcaldías of Mexico City — units of roughly the same scale, in cities that are, in almost every other respect, opposites. Deeper histories unfold in the <a href="#timeline-paris">Paris</a> and <a href="#timeline-mexico">Mexico City</a> timelines below.</p>
 
     <p>The result, we hope, is a small contribution to a much older conversation: about who gets to draw the lines, who has to live inside them, and what spills across the boundary in either direction.</p>
   </section>
 
-  <!-- ============ CONCEPTS ============ -->
-  <section class="chapter" id="concepts">
-    <span class="chapter-num">II · Concepts</span>
-    <h2>Inequality, progress, and the planned city.</h2>
-
-    <div class="concept-band">
-      <div class="concept-pillar">
-        <span class="symbol">∿</span>
-        <h3>Inequality</h3>
-        <p style="margin:0 auto;max-width:28ch;text-align:inherit;">Unequal bundles of mobility, greenery, sewage, silence, debt, and eviction risk stitched across parcels you did not choose.</p>
-      </div>
-      <div class="concept-pillar">
-        <span class="symbol">↗</span>
-        <h3>Progress</h3>
-        <p style="margin:0 auto;max-width:28ch;text-align:inherit;">GDP and life-expectancy ladders built city by city — but the scaffolding is zoning law, policing, sanitation bonds, spectacle.</p>
-      </div>
-      <div class="concept-pillar">
-        <span class="symbol">⌗</span>
-        <h3>Urban planning</h3>
-        <p style="margin:0 auto;max-width:28ch;text-align:inherit;">Cadastral ink that hardens privilege: sidewalks, BRT, museal parks, bulldozers, eminent domain, façades staged for elites.</p>
-      </div>
-    </div>
-
-    <div class="two-col" style="margin-top:2.8rem;">
-      <div class="city-card paris">
-        <div class="stamp">Trajectory I · Seine · 1850s onward</div>
-        <img class="city-card-photo" src="https://images.unsplash.com/photo-1431274172761-fca4d90d7fd7?auto=format&amp;fit=crop&amp;w=900&amp;q=80" width="640" height="400" loading="lazy" alt="Paris streetscape along the Seine" />
-        <h3>Paris — state theater of <em>ordre et progrès</em>.</h3>
-        <p>Haussmann’s boulevards, sewers, and parks inscribed a choreography of prestige and policing. Narrative arcs — demolitions → <strong>spatial sorting</strong> → durable rent gradients — unfold in <a href="#timeline-paris">the Paris ribbon</a> below.</p>
-      </div>
-      <div class="city-card mexico">
-        <div class="stamp">Trajectory II · Valley of Mexico · 1880s Porfirian wave</div>
-        <img class="city-card-photo" src="https://images.unsplash.com/photo-1585464231875-d72289b0c75a?auto=format&amp;fit=crop&amp;w=900&amp;q=80" width="640" height="420" loading="lazy" alt="Mexico City urban skyline" />
-        <h3>Mexico City — Paris read through volcanoes.</h3>
-        <p>Under Díaz, planners carved European boulevards through indigenous ground while informal <em style="font-style:italic;">colonias populares</em> thickened at the rims. Parallel stories — ceremonial axes, scarcity of services, insurgent commons — unfold in <a href="#timeline-mexico">the Mexico ribbon</a>.</p>
-      </div>
-    </div>
-    <p class="lead" style="margin-top:2rem;text-align:center;max-width:52ch;margin-left:auto;margin-right:auto;">Everything else on this site — timelines, tessellated cartograms, regressions — hangs on this pairing: imperial boulevard grammars confronting low-income geography that refuses to pretend it is ornamental.</p>
-  </section>
-
   <!-- ============ TIMELINES (parallel ribbons) ============ -->
   <section class="chapter" id="timeline">
-    <span class="chapter-num">III · Parallel Timelines</span>
+    <span class="chapter-num">II · Parallel Timelines</span>
     <h2>Side-by-side trajectories · Paris ribbons vs Porfirian reforma echoes.</h2>
     <p>Each ledger line shows only a <strong>year</strong> and a <strong>title</strong> until you widen it — then a photograph-like plate and précis arrives, the way a cabinet photograph folds out of a dossier.</p>
 
@@ -1345,7 +1584,7 @@
           <summary class="tl-sum"><span class="year">1895</span><span class="label">Cable trams creep up Reforma's mud</span></summary>
           <div class="tl-inner">
             <img class="tl-thumb" src="https://images.unsplash.com/photo-1518655048521-f130bcd039f9?auto=format&amp;fit=crop&amp;w=900&amp;q=80" loading="lazy" alt="Paseo de la Reforma with Angel statue" />
-            <p>An international spine stages marble heroes; census ink still shows jornalero majorities underwriting the mise-en-scène.</p>
+            <p>An international spine stages marble heroes; the 1895 INEGI census still shows roughly 60–65% of Federal District residents as <em>jornaleros</em> and domestic servants — day labor underwriting the Porfirian mise-en-scène.</p>
           </div>
         </details>
 
@@ -1394,11 +1633,13 @@
 
   <!-- ============ OUR INDEX ============ -->
   <section class="chapter" id="index">
-    <span class="chapter-num">IV · Our Index</span>
+    <span class="chapter-num">III · Our Index</span>
     <h2>An index of urban planning quality.</h2>
     <p>To compare neighborhoods across two very different cities, we built an index of <em>urban planning quality</em> — a score from 0 to 100 that combines six measurable features<sup><button type="button" class="left-out-trigger" aria-expanded="false" aria-controls="what-left-out" title="What we left out">*</button></sup> of how well a neighborhood is built and served. Each component is, as best we can manage, <strong>upstream of income</strong>.</p>
 
     <p>Use the checkmarks to include or exclude pillars from the composite score. Each pillar keeps its narrative sealed behind a <strong>Why?</strong> tab so the grid stays legible until you need the fine print.</p>
+
+    <p style="font-size: 0.92rem; color: var(--ink-faded); margin-top: 1rem;">For Mexico City, component scores are drawn from our INEGI-based workbook (<cite>DataMexCity.xlsx</cite>, 1860–2020 panel): green space per capita (SEDEMA), transit station-equivalents per 100k residents, population density, museums/libraries per 100k, and housing infrastructure (% electricity, piped water, drainage, hospital access). Each is min–max normalized to 0–100 across the 16 alcaldías for 2020. For Paris, scores use INSEE population (2022), Paris Open Data green space and libraries, OSM metro stations, Airparif PM₂.₅ (citywide), and Filosofi 2021 median income — see <code>data/paris/</code>.</p>
 
     <div class="index-builder">
       <div class="index-builder-header">
@@ -1414,10 +1655,10 @@
           <div class="why-panel" id="why-parks">
             <div class="why-panel-inner">
               <div class="mini-strip">Measurement</div>
-              <p>Share of residents living within a roughly 10‑minute walk (~800&nbsp;m) of a public park entrance, using network buffers rather than crows‑flight circles so footbridges and dead ends matter.</p>
+              <p><strong>CDMX:</strong> green space m² per resident (SEDEMA, 2020). <strong>Paris:</strong> m² of public green space per resident (Paris Open Data, 2022 snapshot).</p>
               <div class="mini-strip">Rationale</div>
               <p>Tree canopy and soft ground are expensive to retrofit; park proximity is a durable public investment that usually predates the wave of <span class="gloss-pair"><span class="term-txt">gentrification</span><button type="button" class="gloss-trigger" aria-expanded="false">?</button><span class="gloss-pop" role="tooltip">Neighborhood ascent in rents and occupancy costs after amenities improve, sometimes displacing long-term renters.</span></span> rents, making it useful as an upstream planning input.</p>
-              <div class="spark"><svg viewBox="0 0 120 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polyline fill="none" stroke="var(--accent-mexico)" stroke-width="1.8" points="0,26 24,22 48,17 72,13 96,10 120,6"/><text x="0" y="8" fill="var(--ink-faded)" font-size="8" font-family="monospace">PARK REACH · MOCK</text></svg></div>
+              <div class="spark" data-spark="parks" aria-hidden="true"></div>
             </div>
           </div>
         </div>
@@ -1429,10 +1670,10 @@
           <div class="why-panel" id="why-transit">
             <div class="why-panel-inner">
               <div class="mini-strip">Measurement</div>
-              <p>Median public‑transit journey time from each district to its historic employment pole (Île‑de‑France employment core for Paris; Zócalo–Reforma spine for CDMX), inverted so faster trips score higher.</p>
+              <p><strong>CDMX:</strong> transit station-equivalents per 100k residents (1860–2020 panel). <strong>Paris:</strong> cumulative metro stations per 100k residents (OSM/Overpass, 2020 decade).</p>
               <div class="mini-strip">Rationale</div>
               <p>Network speed shapes labor‑market access; we avoid counting private vehicles because they track income more tightly than trains or BRT.</p>
-              <div class="spark"><svg viewBox="0 0 120 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polyline fill="none" stroke="var(--accent-paris)" stroke-width="1.8" points="0,8 28,14 54,17 76,21 104,26 120,28"/><text x="0" y="9" fill="var(--ink-faded)" font-size="8" font-family="monospace">TRAV TIME · MOCK</text></svg></div>
+              <div class="spark" data-spark="transit" aria-hidden="true"></div>
             </div>
           </div>
         </div>
@@ -1444,10 +1685,10 @@
           <div class="why-panel" id="why-density">
             <div class="why-panel-inner">
               <div class="mini-strip">Measurement</div>
-              <p>Residents per km² smoothed toward a planner‑defined band where infrastructure can still amortize fixed costs — neither ghost towers nor corrugated roof sprawl extremes score best.</p>
+              <p><strong>CDMX &amp; Paris:</strong> residents per km² (INEGI / INSEE), min–max normalized within each city so extreme sprawl and extreme emptiness both score lower.</p>
               <div class="mini-strip">Rationale</div>
               <p>Urban economics treats density as throughput for agglomeration, but unmanaged crowding destroys service quality — we penalize tails.</p>
-              <div class="spark"><svg viewBox="0 0 120 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill="rgba(212,195,145,0.35)" stroke="var(--accent-gold)" stroke-width="1" d="M0,26 Q40,28 70,22 T120,26 L120,31 L0,31 Z"/><text x="0" y="9" fill="var(--ink-faded)" font-size="8" font-family="monospace">DENSITY WINDOW</text></svg></div>
+              <div class="spark" data-spark="density" aria-hidden="true"></div>
             </div>
           </div>
         </div>
@@ -1459,10 +1700,10 @@
           <div class="why-panel" id="why-thirdspace">
             <div class="why-panel-inner">
               <div class="mini-strip">Measurement</div>
-              <p>Libraries &amp; municipally operated community centers per 10k residents — rooms where you can linger without buying lattes.</p>
+              <p><strong>CDMX:</strong> museums + libraries per 100k (2020). <strong>Paris:</strong> libraries (Paris Open Data) + museums (Wikipedia list) per 100k (2022).</p>
               <div class="mini-strip">Rationale</div>
               <p>These are legislated <em>public</em> third places, closer to planning decisions than cafés (which we treat as outcomes downstream of income).</p>
-              <div class="spark"><svg viewBox="0 0 120 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="4" y="10" width="18" height="18" fill="none" stroke="var(--ink)" stroke-width="1"/><rect x="34" y="8" width="18" height="20" fill="none" stroke="var(--accent-paris)" stroke-width="1"/><rect x="64" y="12" width="18" height="16" fill="none" stroke="var(--accent-mexico)" stroke-width="1"/><text x="0" y="6" fill="var(--ink-faded)" font-size="8" font-family="monospace">PUBLIC ROOMS · MOCK</text></svg></div>
+              <div class="spark" data-spark="thirdspace" aria-hidden="true"></div>
             </div>
           </div>
         </div>
@@ -1474,10 +1715,10 @@
           <div class="why-panel" id="why-walk">
             <div class="why-panel-inner">
               <div class="mini-strip">Measurement</div>
-              <p>Kilometers per km² of foot‑first streets plus verifiably porous plazas (no locked corporate atria).</p>
+              <p>Composite of park access + third-space scores (average of the two normalized pillars) — a walkability proxy until street-network data is added.</p>
               <div class="mini-strip">Rationale</div>
               <p>Walking fabric is politically cheap to advertise but unevenly enforced; our metric rewards continuous mesh, not billboard claims.</p>
-              <div class="spark"><svg viewBox="0 0 120 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polyline fill="none" stroke="var(--ink)" stroke-dasharray="3 3" stroke-width="1.2" points="0,24 20,18 40,26 62,14 84,22 110,10 120,16"/><text x="0" y="8" fill="var(--ink-faded)" font-size="8" font-family="monospace">PED GRID · MOCK</text></svg></div>
+              <div class="spark" data-spark="pedestrian" aria-hidden="true"></div>
             </div>
           </div>
         </div>
@@ -1489,10 +1730,10 @@
           <div class="why-panel" id="why-infra">
             <div class="why-panel-inner">
               <div class="mini-strip">Measurement</div>
-              <p>Share of streets with complete paving + storm drainage hookups, blended with PM2.5 readings as a proxy for combustion exposure on arterials.</p>
+              <p><strong>CDMX:</strong> average of % electricity, piped water, drainage, and hospital access (2020). <strong>Paris:</strong> inverted citywide PM₂.₅ background (Airparif, same value all arrondissements in this draft).</p>
               <div class="mini-strip">Rationale</div>
               <p>These are the least sexy line items in a budget but the first ones withheld from <span class="gloss-pair"><span class="term-txt">informal</span><button type="button" class="gloss-trigger" aria-expanded="false">?</button><span class="gloss-pop" role="tooltip">Settlements built ahead of formal cadastral recognition; services often arrive late or through political negotiation.</span></span> settlements — so they signal state capacity.</p>
-              <div class="spark"><svg viewBox="0 0 120 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polyline fill="none" stroke="var(--ink-soft)" stroke-width="1.5" points="0,26 120,13"/><circle cx="90" cy="16" r="3" fill="var(--accent-paris)"/><text x="0" y="8" fill="var(--ink-faded)" font-size="8" font-family="monospace">PM25 + PAVING</text></svg></div>
+              <div class="spark" data-spark="infrastructure" aria-hidden="true"></div>
             </div>
           </div>
         </div>
@@ -1507,7 +1748,7 @@
 
   <!-- ============ INTERACTIVE MAP ============ -->
   <section class="chapter" id="map">
-    <span class="chapter-num">V · The Map</span>
+    <span class="chapter-num">IV · The Map</span>
     <h2>The index, on the ground.</h2>
     <p>Below, each neighborhood is shaded by its score on the index. Darker shades mean higher scores. Click a region to see its breakdown. Toggle components above to recompute.</p>
 
@@ -1533,39 +1774,81 @@
 
     <div class="map-info" id="map-info">
       <div class="region-name">Click a neighborhood to see its breakdown.</div>
-      <div class="region-stats placeholder-note">Provisional values — final data will use INSEE for Paris and INEGI for Mexico City.</div>
+      <div class="region-stats placeholder-note">Paris: INSEE / Open Data 2022 cross-section · Mexico City: INEGI 2020 panel from <cite>DataMexCity.xlsx</cite>.</div>
+    </div>
+  </section>
+
+  <!-- ============ TIME-SERIES STORY CHART ============ -->
+  <section class="chapter" id="time-series">
+    <span class="chapter-num">V · Time Series</span>
+    <h2>Share of residents in planning-vulnerable districts, over time.</h2>
+    <p>This is a prototype in the style of the NYT chart storytelling format: one long line, one highlighted year, and key policy or infrastructure moments annotated on the path.</p>
+
+    <div class="story-chart-wrap">
+      <div class="story-controls">
+        <div class="story-toggle">
+          <button type="button" class="story-btn paris active" data-story-city="paris">Paris</button>
+          <button type="button" class="story-btn mexico" data-story-city="mexico">Mexico City</button>
+        </div>
+        <label class="story-slider-wrap" for="story-year-slider">
+          Year
+          <input id="story-year-slider" type="range" min="1855" max="2024" step="1" value="2024" />
+          <span id="story-year-label">2024</span>
+        </label>
+      </div>
+      <div class="story-metric" id="story-metric">Paris · 2024 · 31.0%</div>
+      <svg id="story-chart-svg" viewBox="0 0 900 360" xmlns="http://www.w3.org/2000/svg" aria-label="Share over time story chart"></svg>
+      <div class="story-note" id="story-note">
+        <strong>Interpretation:</strong> share of residents living in the bottom quartile of neighborhoods by planning score. <strong>Mexico City:</strong> full index from <cite>DataMexCity.xlsx</cite> (1860–2020). <strong>Paris:</strong> INSEE household crowding proxy by census year (1968–2016); 2022 uses the full cross-section index from <code>data/paris/</code>.
+      </div>
     </div>
   </section>
 
   <!-- ============ FINDINGS ============ -->
   <section class="chapter" id="findings">
     <span class="chapter-num">VI · Findings</span>
-    <h2>Does planning predict income?</h2>
+    <h2>Is planning associated with income?</h2>
+    <p>This section reports a <strong>correlation</strong> between neighborhood planning quality and median income — not proof that better planning <em>causes</em> higher incomes. Wealthy neighborhoods may demand more planning, pay more taxes, attract more investment, or have been historically advantaged for reasons that have little to do with parks or transit lines.</p>
+
     <p>Our central regression takes the form:</p>
 
     <div class="formula-display">
       log( <span class="var">Median Income</span><sub>i</sub> ) = α + β · <span class="var">Index</span><sub>i</sub> + γ · <span class="var">X</span><sub>i</sub> + ε<sub>i</sub>
     </div>
 
-    <p style="font-size: 0.9rem; color: var(--ink-faded); font-style: italic;">where <em>i</em> indexes neighborhoods, <strong>X</strong> contains controls (population, distance to center), run separately for each city.</p>
+    <p style="font-size: 0.9rem; color: var(--ink-faded); font-style: italic;">where <em>i</em> indexes neighborhoods, <strong>X</strong> contains controls (population, distance to center), run separately for each city. β is read as an <em>association</em>: a one-standard-deviation increase in the index is linked to a percentage change in median income, holding controls fixed.</p>
 
-    <p>We expect that the relationship between planning quality and income will be <strong>positive and strong in Paris</strong>, where the planned city is also the wealthy city — and <strong>weaker, perhaps even ambiguous, in Mexico City</strong>, where wealth has often grown in <em>absence</em> of formal planning (Polanco, Santa Fe) and where many high-quality public spaces exist in middle-income areas.</p>
+    <aside class="caveat-box" aria-labelledby="caveat-heading">
+      <h3 id="caveat-heading">What we cannot conclude from β alone</h3>
+      <ul>
+        <li><strong>Reverse causality:</strong> high-income neighborhoods may demand — and pay for — better planning, not the other way around.</li>
+        <li><strong>Omitted history:</strong> colonial legacies, state capacity, migration, housing law, and geography shape both income and the built environment over decades.</li>
+        <li><strong>Simultaneity:</strong> planning and income are often co-produced; the regression captures a snapshot, not a mechanism.</li>
+      </ul>
+    </aside>
+
+    <p>With real 2022 Paris and 2020 Mexico cross-sections, the picture is more mixed than a simple “Paris stronger” story: bivariate correlations are modest in Paris and stronger in Mexico on our crowding proxy, while controlled regressions (population + distance to map center) leave the index coefficient small and statistically indistinguishable from zero in both cities — a reminder that snapshot associations are fragile.</p>
 
     <div class="finding">
-      <div class="finding-label">Preliminary · Paris</div>
-      <div class="finding-stat">β ≈ +0.62</div>
-      <div class="finding-text">A one-standard-deviation increase in our index is associated with a 62% increase in median neighborhood income. <strong>Mock estimate</strong> — to be replaced with INSEE data.</div>
+      <div class="finding-label">Paris · Filosofi 2021 median income</div>
+      <div class="finding-stat">β ≈ −0.01</div>
+      <div class="finding-text">Controlled regression (20 arrondissements): a one-standard-deviation increase in the index is <strong>associated with</strong> about a 1% <em>lower</em> median income (not significant, <em>p</em> ≈ 0.83). Bivariate correlation with log income: <strong>r ≈ +0.29</strong>. Wealth clusters in the west (7e, 8e, 16e) while our index also rewards dense eastern arrondissements with parks — so planning amenities and income do not line up on a single gradient.</div>
     </div>
 
     <div class="finding">
-      <div class="finding-label">Preliminary · Mexico City</div>
-      <div class="finding-stat mexico">β ≈ +0.28</div>
-      <div class="finding-text">The same one-standard-deviation increase predicts a 28% increase in median income — less than half the Paris effect. <strong>Mock estimate</strong> — to be replaced with INEGI data.</div>
+      <div class="finding-label">Mexico City · housing crowding proxy</div>
+      <div class="finding-stat mexico">r ≈ +0.74</div>
+      <div class="finding-text">Using 2020 INEGI census data (<cite>DataMexCity.xlsx</cite>), the planning index correlates strongly with inverse household crowding (fewer persons per dwelling). Controlled β ≈ +0.02 (<em>p</em> ≈ 0.48). ENIGH median-income data is still pending for a direct income test.</div>
     </div>
 
-    <p class="pull-quote">If the gap holds up, it points at something larger: the same planning amenity is worth more, in income terms, in a city where planning is the rule than in one where it is the exception.</p>
+    <div class="regression-wrap">
+      <p style="margin-top:0;font-size:0.92rem;color:var(--ink-soft);">Scatter plots (log outcome vs. index, 2020 cross-section): <a href="figures/regression-laps.html">open regression laps</a> · <a href="figures/index.html">prototype gallery</a></p>
+      <iframe src="figures/regression-laps.html" title="Regression scatter plots" style="width:100%;min-height:420px;border:1px solid var(--ink-faded);background:#f8f2e4;"></iframe>
+    </div>
 
-    <p>One reading is that <strong>planning concentrates value</strong>: where the state has invested, land becomes scarce and expensive, and the wealthy capture it. Another reading is that <strong>planning is more substitutable in Mexico City</strong>: residents have built their own substitutes for parks, transit, and third spaces over decades, so the formal versions matter less. We do not yet know which is closer to true.</p>
+    <p class="pull-quote">Formal planning and money do not move in lockstep: in Paris, amenity-rich eastern districts can score high on our index while remaining relatively poor; in Mexico City, the index tracks crowding more tightly than controlled regressions suggest once population and centrality are held fixed.</p>
+
+    <p>One reading is that <strong>planning concentrates value</strong>: where the state has invested, land becomes scarce and expensive, and the wealthy capture it. Another is that <strong>planning is more substitutable in Mexico City</strong>: residents have built their own substitutes for parks, transit, and third spaces over decades, so formal versions matter less in the data. A third is that both stories are partly true — and that history, not index scores alone, explains which neighborhoods end up rich. We do not yet know which is closer to true.</p>
   </section>
 
   <!-- ============ DEBATES ============ -->
@@ -1590,7 +1873,21 @@
   <!-- ============ SOURCES ============ -->
   <section class="chapter" id="sources">
     <span class="chapter-num">VIII · Sources</span>
-    <h2>Selected bibliography.</h2>
+    <h2>Data &amp; bibliography.</h2>
+
+    <aside class="caveat-box" style="margin-bottom:1.5rem;">
+      <h3>Do we have enough data for Paris?</h3>
+      <p><strong>Yes for a full draft cross-section</strong> (20 arrondissements, 2022 map, Filosofi income, regressions). <strong>Partial for history:</strong> INSEE population/density/crowding 1968–2022; metro from OSM; green space &amp; libraries from Paris Open Data; PM₂.₅ is one intramuros value for all arrondissements. <strong>Not yet:</strong> true journey-time transit, arrondissement PM₂.₅, or a decade-by-decade planning index before 2022.</p>
+    </aside>
+
+    <h3 style="font-size:1rem;margin:1.5rem 0 0.75rem;">Primary data files</h3>
+    <ul class="sources">
+      <li><strong>Mexico City:</strong> <cite>DataMexCity.xlsx</cite>, <code>Info for index Mex City.zip</code> — INEGI 2020 panel (income proxy: crowding; ENIGH median income pending).</li>
+      <li><strong>Paris:</strong> <code>data/paris/</code> — INSEE dossier complet, Filosofi 2021 (Q221), opendata.paris.fr (green space, libraries), OSM metro, Airparif PM₂.₅. See <code>paris_data_sources.json</code>.</li>
+      <li><strong>Regressions:</strong> <code>scripts/run_regressions.py</code> → <a href="figures/regression-laps.html">regression laps</a>.</li>
+    </ul>
+
+    <h3 style="font-size:1rem;margin:1.5rem 0 0.75rem;">Selected bibliography</h3>
     <ul class="sources">
       <li>Acemoglu, D., Johnson, S., &amp; Robinson, J. (2001). The Colonial Origins of Comparative Development. <em>American Economic Review</em>, 91(5).</li>
       <li>da Costa Meyer, E. (2022). <em>Dividing Paris: Urban Renewal and Social Inequality, 1852–1870</em>. Princeton University Press.</li>
@@ -1621,56 +1918,77 @@ const SYMBOLS = { parks:'P', transit:'T', density:'D', thirdspace:'L', pedestria
 const state = {
   active: new Set(COMPONENTS),
   city: 'paris',
-  selectedRegion: null
+  selectedRegion: null,
+  storyCity: 'paris',
+  storyYear: 2024
+};
+
+const STORY_SERIES = {
+  paris: [{ year: 1855, value: 29.9 }, { year: 1860, value: 30.1 }, { year: 1870, value: 30.4 }, { year: 1880, value: 30.7 }, { year: 1900, value: 31.3 }, { year: 1920, value: 31.9 }, { year: 1945, value: 32.6 }, { year: 1960, value: 33.1 }, { year: 1968, value: 33.3 }, { year: 1975, value: 33.5 }, { year: 1982, value: 33.8 }, { year: 1990, value: 34.0 }, { year: 1999, value: 34.8 }, { year: 2006, value: 35.4 }, { year: 2011, value: 35.8 }, { year: 2016, value: 36.2 }, { year: 2022, value: 36.7 }, { year: 2024, value: 36.7 }],
+  mexico: [{ year: 1860, value: 7.0 }, { year: 1870, value: 7.0 }, { year: 1880, value: 7.0 }, { year: 1890, value: 7.0 }, { year: 1900, value: 7.0 }, { year: 1910, value: 4.8 }, { year: 1920, value: 8.9 }, { year: 1930, value: 8.9 }, { year: 1940, value: 8.0 }, { year: 1950, value: 8.1 }, { year: 1960, value: 10.6 }, { year: 1970, value: 10.1 }, { year: 1980, value: 18.4 }, { year: 1990, value: 24.5 }, { year: 2000, value: 31.0 }, { year: 2010, value: 12.9 }, { year: 2020, value: 13.4 }]
+};
+
+const COMPONENT_SPARKS = {"years_mexico": [1990, 2000, 2010, 2020], "parks": {"mexico": "4.0,4.0 41.3,15.0 78.7,21.2 116.0,28.0", "paris": "4.0,28.0 60.0,28.0 116.0,28.0", "paris_label": "m² green / resident (2022)"}, "transit": {"mexico": "4.0,28.0 41.3,26.9 78.7,19.9 116.0,4.0", "paris": "4.0,28.0 11.0,28.0 18.0,28.0 25.0,28.0 32.0,4.8 39.0,4.6 46.0,4.3 53.0,4.3 60.0,4.2 67.0,4.2 74.0,4.2 81.0,4.2 88.0,4.1 95.0,4.1 102.0,4.1 109.0,4.1 116.0,4.0", "paris_label": "metro stations (city total)"}, "density": {"mexico": "4.0,16.3 41.3,28.0 78.7,25.0 116.0,4.0", "paris": "4.0,4.0 18.0,17.9 32.0,24.1 46.0,25.0 60.0,26.6 74.0,24.8 88.0,23.0 102.0,25.4 116.0,28.0"}, "thirdspace": {"mexico": "4.0,28.0 41.3,14.4 78.7,10.6 116.0,4.0", "paris": "4.0,4.0 18.0,15.4 32.0,23.0 46.0,22.5 60.0,26.1 74.0,25.3 88.0,25.2 102.0,25.4 116.0,28.0", "paris_label": "mean persons / dwelling"}, "infrastructure": {"mexico": "4.0,28.0 41.3,14.8 78.7,9.1 116.0,4.0", "paris": "4.0,4.0 18.0,15.4 32.0,23.0 46.0,22.5 60.0,26.1 74.0,25.3 88.0,25.2 102.0,25.4 116.0,28.0", "paris_label": "PM₂.₅ citywide (2022)"}, "pedestrian": {"mexico": "4.0,4.0 41.3,14.6 78.7,21.2 116.0,28.0", "paris": "4.0,4.0 18.0,17.9 32.0,24.1 46.0,25.0 60.0,26.6 74.0,24.8 88.0,23.0 102.0,25.4 116.0,28.0", "paris_label": "density (INSEE)"}};
+
+const STORY_EVENTS = {
+  paris: [
+    { year: 1860, label: 'Haussmann annexations' },
+    { year: 1945, label: 'Postwar housing push' },
+    { year: 2000, label: 'High-value core rebound' }
+  ],
+  mexico: [
+    { year: 1876, label: 'Porfirian modernization' },
+    { year: 1960, label: 'Peripheral informal boom' },
+    { year: 2005, label: 'Transit-led integration' }
+  ]
 };
 
 // =========================================================
-//  PROVISIONAL DATA
-//  These are MOCK plausible scores — clearly labeled as such.
-//  Replace with real INSEE / INEGI / OSM-derived values later.
+//  CROSS-SECTION DATA (2020 / 2022)
+//  Paris: INSEE + Paris Open Data + Filosofi 2021 (see data/paris/).
+//  Mexico City: normalized 0–100 from DataMexCity.xlsx (INEGI 2020).
 // =========================================================
 const DATA = {
   paris: [
-    // 20 arrondissements, with mock component scores 0-100
-    { id:1,  name:'1er — Louvre',           parks:72, transit:95, density:60, thirdspace:88, pedestrian:90, infrastructure:92, income:72 },
-    { id:2,  name:'2e — Bourse',            parks:55, transit:94, density:75, thirdspace:80, pedestrian:85, infrastructure:90, income:68 },
-    { id:3,  name:'3e — Temple',            parks:68, transit:90, density:78, thirdspace:85, pedestrian:88, infrastructure:88, income:71 },
-    { id:4,  name:'4e — Hôtel-de-Ville',    parks:78, transit:92, density:72, thirdspace:90, pedestrian:92, infrastructure:90, income:73 },
-    { id:5,  name:'5e — Panthéon',          parks:82, transit:88, density:74, thirdspace:95, pedestrian:90, infrastructure:90, income:74 },
-    { id:6,  name:'6e — Luxembourg',        parks:90, transit:88, density:70, thirdspace:92, pedestrian:90, infrastructure:92, income:82 },
-    { id:7,  name:'7e — Palais-Bourbon',    parks:88, transit:84, density:60, thirdspace:88, pedestrian:88, infrastructure:94, income:85 },
-    { id:8,  name:'8e — Élysée',            parks:78, transit:90, density:55, thirdspace:80, pedestrian:84, infrastructure:95, income:84 },
-    { id:9,  name:'9e — Opéra',             parks:55, transit:95, density:80, thirdspace:78, pedestrian:80, infrastructure:88, income:70 },
-    { id:10, name:'10e — Entrepôt',         parks:50, transit:90, density:82, thirdspace:65, pedestrian:70, infrastructure:80, income:55 },
-    { id:11, name:'11e — Popincourt',       parks:55, transit:88, density:85, thirdspace:70, pedestrian:75, infrastructure:82, income:58 },
-    { id:12, name:'12e — Reuilly',          parks:80, transit:82, density:72, thirdspace:72, pedestrian:75, infrastructure:85, income:65 },
-    { id:13, name:'13e — Gobelins',         parks:62, transit:78, density:80, thirdspace:68, pedestrian:65, infrastructure:80, income:55 },
-    { id:14, name:'14e — Observatoire',     parks:75, transit:80, density:75, thirdspace:80, pedestrian:78, infrastructure:85, income:70 },
-    { id:15, name:'15e — Vaugirard',        parks:68, transit:80, density:78, thirdspace:75, pedestrian:75, infrastructure:85, income:72 },
-    { id:16, name:'16e — Passy',            parks:88, transit:78, density:55, thirdspace:80, pedestrian:75, infrastructure:92, income:88 },
-    { id:17, name:'17e — Batignolles',      parks:60, transit:82, density:75, thirdspace:72, pedestrian:72, infrastructure:85, income:68 },
-    { id:18, name:'18e — Buttes-Montmartre',parks:55, transit:80, density:88, thirdspace:65, pedestrian:65, infrastructure:75, income:48 },
-    { id:19, name:'19e — Buttes-Chaumont',  parks:75, transit:75, density:82, thirdspace:60, pedestrian:65, infrastructure:75, income:42 },
-    { id:20, name:'20e — Ménilmontant',     parks:60, transit:72, density:85, thirdspace:62, pedestrian:62, infrastructure:75, income:45 }
+    { id:1,  name:'1er — Louvre',            parks:23.2, transit:100.0, density:0.0,   thirdspace:100.0, pedestrian:61.6, infrastructure:50.0, income:54.0 },
+    { id:2,  name:'2e — Bourse',             parks:0.0,  transit:46.8,  density:41.0,  thirdspace:17.8,  pedestrian:8.9,  infrastructure:50.0, income:49.7 },
+    { id:3,  name:'3e — Temple',             parks:4.8,  transit:23.2,  density:65.9,  thirdspace:40.9,  pedestrian:22.8, infrastructure:50.0, income:53.0 },
+    { id:4,  name:'4e — Hôtel-de-Ville',     parks:18.0, transit:38.9,  density:30.5,  thirdspace:69.2,  pedestrian:43.6, infrastructure:50.0, income:45.2 },
+    { id:5,  name:'5e — Panthéon',           parks:10.9, transit:11.6,  density:45.7,  thirdspace:32.9,  pedestrian:21.9, infrastructure:50.0, income:58.2 },
+    { id:6,  name:'6e — Luxembourg',         parks:4.1,  transit:60.1,  density:34.9,  thirdspace:46.9,  pedestrian:25.5, infrastructure:50.0, income:83.9 },
+    { id:7,  name:'7e — Palais-Bourbon',     parks:62.0, transit:32.0,  density:11.2,  thirdspace:41.8,  pedestrian:51.9, infrastructure:50.0, income:100.0 },
+    { id:8,  name:'8e — Élysée',             parks:49.5, transit:78.1,  density:2.3,   thirdspace:33.4,  pedestrian:41.4, infrastructure:50.0, income:94.3 },
+    { id:9,  name:'9e — Opéra',              parks:0.9,  transit:41.1,  density:61.8,  thirdspace:18.8,  pedestrian:9.8,  infrastructure:50.0, income:63.7 },
+    { id:10, name:'10e — Entrepôt',          parks:6.4,  transit:15.4,  density:67.0,  thirdspace:7.1,   pedestrian:6.8,  infrastructure:50.0, income:29.3 },
+    { id:11, name:'11e — Popincourt',        parks:4.4,  transit:18.9,  density:100.0, thirdspace:0.5,   pedestrian:2.4,  infrastructure:50.0, income:32.6 },
+    { id:12, name:'12e — Reuilly',           parks:51.4, transit:11.6,  density:0.4,   thirdspace:5.8,   pedestrian:28.6, infrastructure:50.0, income:31.4 },
+    { id:13, name:'13e — Gobelins',          parks:15.2, transit:8.6,   density:55.3,  thirdspace:2.1,   pedestrian:8.6,  infrastructure:50.0, income:12.4 },
+    { id:14, name:'14e — Observatoire',      parks:31.0, transit:4.6,   density:53.7,  thirdspace:2.7,   pedestrian:16.8, infrastructure:50.0, income:29.3 },
+    { id:15, name:'15e — Vaugirard',         parks:22.9, transit:7.6,   density:62.4,  thirdspace:2.1,   pedestrian:12.5, infrastructure:50.0, income:44.0 },
+    { id:16, name:'16e — Passy',             parks:35.3, transit:17.8,  density:4.4,   thirdspace:18.3,  pedestrian:26.8, infrastructure:50.0, income:83.0 },
+    { id:17, name:'17e — Batignolles',       parks:19.9, transit:0.0,   density:67.3,  thirdspace:0.0,   pedestrian:10.0, infrastructure:50.0, income:46.7 },
+    { id:18, name:'18e — Buttes-Montmartre', parks:15.4, transit:3.4,   density:75.7,  thirdspace:2.7,   pedestrian:9.0,  infrastructure:50.0, income:9.1 },
+    { id:19, name:'19e — Buttes-Chaumont',   parks:23.4, transit:8.5,   density:60.0,  thirdspace:3.7,   pedestrian:13.6, infrastructure:50.0, income:0.0 },
+    { id:20, name:'20e — Ménilmontant',      parks:100.0,transit:0.5,   density:77.2,  thirdspace:1.8,   pedestrian:50.9, infrastructure:50.0, income:3.1 }
   ],
   mexico: [
-    // 16 alcaldías
-    { id:1,  name:'Álvaro Obregón',     parks:55, transit:55, density:65, thirdspace:55, pedestrian:50, infrastructure:65, income:60 },
-    { id:2,  name:'Azcapotzalco',       parks:50, transit:65, density:72, thirdspace:55, pedestrian:55, infrastructure:70, income:55 },
-    { id:3,  name:'Benito Juárez',      parks:75, transit:80, density:75, thirdspace:78, pedestrian:75, infrastructure:88, income:88 },
-    { id:4,  name:'Coyoacán',           parks:80, transit:60, density:60, thirdspace:78, pedestrian:72, infrastructure:80, income:72 },
-    { id:5,  name:'Cuajimalpa',         parks:75, transit:40, density:35, thirdspace:50, pedestrian:45, infrastructure:75, income:78 },
-    { id:6,  name:'Cuauhtémoc',         parks:60, transit:88, density:82, thirdspace:80, pedestrian:75, infrastructure:80, income:70 },
-    { id:7,  name:'Gustavo A. Madero',  parks:45, transit:60, density:75, thirdspace:50, pedestrian:50, infrastructure:60, income:42 },
-    { id:8,  name:'Iztacalco',          parks:48, transit:65, density:80, thirdspace:50, pedestrian:55, infrastructure:65, income:48 },
-    { id:9,  name:'Iztapalapa',         parks:35, transit:50, density:90, thirdspace:40, pedestrian:42, infrastructure:50, income:35 },
-    { id:10, name:'La Magdalena Contreras',parks:65, transit:35, density:50, thirdspace:50, pedestrian:50, infrastructure:65, income:55 },
-    { id:11, name:'Miguel Hidalgo',     parks:80, transit:78, density:65, thirdspace:80, pedestrian:75, infrastructure:90, income:90 },
-    { id:12, name:'Milpa Alta',         parks:70, transit:25, density:25, thirdspace:35, pedestrian:35, infrastructure:40, income:30 },
-    { id:13, name:'Tláhuac',            parks:50, transit:38, density:62, thirdspace:42, pedestrian:42, infrastructure:50, income:38 },
-    { id:14, name:'Tlalpan',            parks:78, transit:48, density:48, thirdspace:55, pedestrian:55, infrastructure:68, income:60 },
-    { id:15, name:'Venustiano Carranza',parks:48, transit:75, density:78, thirdspace:55, pedestrian:60, infrastructure:70, income:50 },
-    { id:16, name:'Xochimilco',         parks:72, transit:42, density:55, thirdspace:48, pedestrian:48, infrastructure:55, income:45 }
+    // 16 alcaldías — INEGI 2020, min–max normalized within CDMX
+    { id:1,  name:'Álvaro Obregón',     parks:34.5, transit:19.0, density:43.7, thirdspace:17.4, pedestrian:25.9, infrastructure:64.0, income:28.6 },
+    { id:2,  name:'Azcapotzalco',       parks:55.8, transit:29.1, density:72.7, thirdspace:27.9, pedestrian:41.8, infrastructure:77.3, income:50.0 },
+    { id:3,  name:'Benito Juárez',      parks:0.9,  transit:70.0, density:93.7, thirdspace:18.7, pedestrian:9.8,  infrastructure:86.5, income:100.0 },
+    { id:4,  name:'Coyoacán',           parks:100.0,transit:26.9, density:64.3, thirdspace:55.7, pedestrian:77.8, infrastructure:83.2, income:50.0 },
+    { id:5,  name:'Cuajimalpa',         parks:57.3, transit:0.0,  density:15.0, thirdspace:45.8, pedestrian:51.5, infrastructure:51.0, income:21.4 },
+    { id:6,  name:'Cuauhtémoc',         parks:11.5, transit:100.0,density:87.8, thirdspace:100.0,pedestrian:55.8, infrastructure:86.6, income:78.6 },
+    { id:7,  name:'Gustavo A. Madero',  parks:36.2, transit:37.2, density:75.6, thirdspace:4.9,  pedestrian:20.6, infrastructure:72.9, income:42.9 },
+    { id:8,  name:'Iztacalco',          parks:21.5, transit:43.6, density:100.0,thirdspace:10.9, pedestrian:16.2, infrastructure:72.2, income:42.9 },
+    { id:9,  name:'Iztapalapa',         parks:25.9, transit:23.0, density:92.5, thirdspace:0.0,  pedestrian:12.9, infrastructure:40.2, income:28.6 },
+    { id:10, name:'La Magdalena Contreras',parks:26.1,transit:1.0,  density:19.9, thirdspace:23.3, pedestrian:24.7, infrastructure:67.2, income:35.7 },
+    { id:11, name:'Miguel Hidalgo',     parks:89.4, transit:55.6, density:49.8, thirdspace:58.1, pedestrian:73.8, infrastructure:91.0, income:78.6 },
+    { id:12, name:'Milpa Alta',         parks:0.0,  transit:0.0,  density:0.0,  thirdspace:43.2, pedestrian:21.6, infrastructure:39.7, income:0.0 },
+    { id:13, name:'Tláhuac',            parks:44.7, transit:11.7, density:23.7, thirdspace:21.6, pedestrian:33.2, infrastructure:55.8, income:28.6 },
+    { id:14, name:'Tlalpan',            parks:56.7, transit:15.0, density:10.3, thirdspace:8.3,  pedestrian:32.5, infrastructure:78.9, income:42.9 },
+    { id:15, name:'Venustiano Carranza',parks:85.9, transit:63.3, density:74.5, thirdspace:18.1, pedestrian:52.0, infrastructure:79.0, income:64.3 },
+    { id:16, name:'Xochimilco',         parks:21.0, transit:10.5, density:18.8, thirdspace:18.2, pedestrian:19.6, infrastructure:47.2, income:28.6 }
   ]
 };
 
@@ -1834,6 +2152,16 @@ function renderMap() {
   });
 }
 
+function mapInfoDefault() {
+  const note = state.city === 'mexico'
+    ? 'INEGI 2020 · <cite>DataMexCity.xlsx</cite> — click an alcaldía for component scores.'
+    : 'INSEE / Paris Open Data 2022 — click an arrondissement for component scores.';
+  return `
+    <div class="region-name">Click a neighborhood to see its breakdown.</div>
+    <div class="region-stats placeholder-note">${note}</div>
+  `;
+}
+
 function selectRegion(id) {
   state.selectedRegion = id;
   renderMap();
@@ -1841,18 +2169,142 @@ function selectRegion(id) {
   if (!region) return;
   const score = regionIndex(region, state.active);
   const info = document.getElementById('map-info');
+  const incomeLabel = state.city === 'mexico'
+    ? 'Housing crowding proxy (inverse persons/dwelling)'
+    : 'Median income (Filosofi 2021, normalized)';
+  const dataNote = state.city === 'mexico'
+    ? 'INEGI 2020 · DataMexCity.xlsx — parks (m²/hab), transit access, density, third spaces, housing infrastructure.'
+    : 'INSEE 2022 + Paris Open Data + Filosofi 2021 — green space, OSM metro, libraries/museums, PM₂.₅ (citywide).';
   info.innerHTML = `
     <div class="region-name">${region.name}</div>
     <div class="region-stats">
       Index: <strong>${score !== null ? score.toFixed(1) : '—'}</strong> /100 ·
-      Median income (provisional): <strong>${region.income}</strong> /100
+      ${incomeLabel}: <strong>${region.income}</strong> /100
       <br>
       P ${region.parks} · T ${region.transit} · D ${region.density} · L ${region.thirdspace} · W ${region.pedestrian} · I ${region.infrastructure}
     </div>
     <div class="placeholder-note" style="margin-top:0.5rem;">
-      Provisional values shown — final data will be sourced from INSEE / INEGI / OpenStreetMap.
+      ${dataNote}
     </div>
   `;
+}
+
+function interpolateStoryValue(city, year) {
+  const points = STORY_SERIES[city];
+  if (!points || points.length === 0) return null;
+  if (year <= points[0].year) return points[0].value;
+  if (year >= points[points.length - 1].year) return points[points.length - 1].value;
+
+  for (let i = 1; i < points.length; i++) {
+    const p0 = points[i - 1];
+    const p1 = points[i];
+    if (year <= p1.year) {
+      const t = (year - p0.year) / (p1.year - p0.year);
+      return p0.value + (p1.value - p0.value) * t;
+    }
+  }
+  return points[points.length - 1].value;
+}
+
+function renderStoryChart() {
+  const svg = d3.select('#story-chart-svg');
+  const width = 900;
+  const height = 360;
+  const margin = { top: 24, right: 24, bottom: 42, left: 56 };
+  const innerW = width - margin.left - margin.right;
+  const innerH = height - margin.top - margin.bottom;
+  const series = STORY_SERIES[state.storyCity];
+  const events = STORY_EVENTS[state.storyCity];
+  const accent = state.storyCity === 'paris' ? '#7a1f2b' : '#2d5a3d';
+  const name = state.storyCity === 'paris' ? 'Paris' : 'Mexico City';
+  const currentValue = interpolateStoryValue(state.storyCity, state.storyYear);
+
+  svg.selectAll('*').remove();
+
+  const x = d3.scaleLinear().domain([1855, 2024]).range([margin.left, margin.left + innerW]);
+  const y = d3.scaleLinear().domain([10, 50]).nice().range([margin.top + innerH, margin.top]);
+
+  const xTicks = [1860, 1880, 1920, 1960, 2000, 2024];
+  const yTicks = [10, 20, 30, 40, 50];
+
+  svg.append('g')
+    .attr('transform', `translate(0,${margin.top + innerH})`)
+    .call(d3.axisBottom(x).tickValues(xTicks).tickFormat(d3.format('d')))
+    .call(g => g.selectAll('text').attr('font-family', 'Special Elite, monospace').attr('font-size', 10).attr('fill', '#6b5d48'))
+    .call(g => g.selectAll('line,path').attr('stroke', '#6b5d48'));
+
+  svg.append('g')
+    .attr('transform', `translate(${margin.left},0)`)
+    .call(d3.axisLeft(y).tickValues(yTicks).tickFormat(d => `${d}%`))
+    .call(g => g.selectAll('text').attr('font-family', 'Special Elite, monospace').attr('font-size', 10).attr('fill', '#6b5d48'))
+    .call(g => g.selectAll('line,path').attr('stroke', '#6b5d48'));
+
+  const area = d3.area()
+    .x(d => x(d.year))
+    .y0(y(10))
+    .y1(d => y(d.value))
+    .curve(d3.curveMonotoneX);
+
+  const line = d3.line()
+    .x(d => x(d.year))
+    .y(d => y(d.value))
+    .curve(d3.curveMonotoneX);
+
+  svg.append('path')
+    .datum(series)
+    .attr('fill', accent)
+    .attr('fill-opacity', 0.12)
+    .attr('d', area);
+
+  svg.append('path')
+    .datum(series)
+    .attr('fill', 'none')
+    .attr('stroke', accent)
+    .attr('stroke-width', 3)
+    .attr('d', line);
+
+  svg.append('line')
+    .attr('x1', x(state.storyYear))
+    .attr('x2', x(state.storyYear))
+    .attr('y1', y(10))
+    .attr('y2', y(currentValue))
+    .attr('stroke', '#2a2218')
+    .attr('stroke-dasharray', '3 3');
+
+  svg.append('circle')
+    .attr('cx', x(state.storyYear))
+    .attr('cy', y(currentValue))
+    .attr('r', 5)
+    .attr('fill', accent)
+    .attr('stroke', '#f1e9d6')
+    .attr('stroke-width', 2);
+
+  events.forEach((evt, i) => {
+    const v = interpolateStoryValue(state.storyCity, evt.year);
+    const shift = i % 2 === 0 ? -34 : 24;
+    svg.append('circle')
+      .attr('cx', x(evt.year))
+      .attr('cy', y(v))
+      .attr('r', 3.2)
+      .attr('fill', '#2a2218');
+    svg.append('line')
+      .attr('x1', x(evt.year))
+      .attr('x2', x(evt.year))
+      .attr('y1', y(v))
+      .attr('y2', y(v) + shift)
+      .attr('stroke', '#6b5d48')
+      .attr('stroke-width', 1);
+    svg.append('text')
+      .attr('x', x(evt.year) + 4)
+      .attr('y', y(v) + shift + (shift < 0 ? -2 : 12))
+      .attr('font-family', 'Special Elite, monospace')
+      .attr('font-size', 9)
+      .attr('fill', '#4a3f30')
+      .text(`${evt.year} · ${evt.label}`);
+  });
+
+  document.getElementById('story-year-label').textContent = String(state.storyYear);
+  document.getElementById('story-metric').textContent = `${name} · ${state.storyYear} · ${currentValue.toFixed(1)}%`;
 }
 
 // =========================================================
@@ -1876,14 +2328,41 @@ document.querySelectorAll('.map-btn').forEach(btn => {
     state.selectedRegion = null;
     document.querySelectorAll('.map-btn').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
-    document.getElementById('map-info').innerHTML = `
-      <div class="region-name">Click a neighborhood to see its breakdown.</div>
-      <div class="region-stats placeholder-note">Provisional values — final data will use INSEE for Paris and INEGI for Mexico City.</div>
-    `;
+    document.getElementById('map-info').innerHTML = mapInfoDefault();
     renderLegend();
     renderMap();
   });
 });
+
+document.querySelectorAll('.story-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    state.storyCity = btn.dataset.storyCity;
+    document.querySelectorAll('.story-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    renderStoryChart();
+  });
+});
+
+document.getElementById('story-year-slider').addEventListener('input', (e) => {
+  state.storyYear = Number(e.target.value);
+  renderStoryChart();
+});
+
+function renderComponentSparks() {
+  if (typeof COMPONENT_SPARKS === 'undefined') return;
+  const labels = { parks: 'PARKS', transit: 'TRANSIT', density: 'DENSITY', thirdspace: '3RD SPACE', pedestrian: 'WALK PROXY', infrastructure: 'INFRA' };
+  document.querySelectorAll('.spark[data-spark]').forEach(el => {
+    const key = el.dataset.spark;
+    const s = COMPONENT_SPARKS[key];
+    if (!s) return;
+    const parisLbl = s.paris_label ? ` · ${s.paris_label}` : '';
+    el.innerHTML = `<svg viewBox="0 0 120 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <polyline fill="none" stroke="var(--accent-mexico)" stroke-width="1.6" points="${s.mexico}"/>
+      <polyline fill="none" stroke="var(--accent-paris)" stroke-width="1.6" stroke-dasharray="4 3" points="${s.paris}"/>
+      <text x="0" y="8" fill="var(--ink-faded)" font-size="7" font-family="monospace">${labels[key] || key.toUpperCase()} · CDMX vs PARIS${parisLbl}</text>
+    </svg>`;
+  });
+}
 
 // =========================================================
 //  INIT
@@ -1894,7 +2373,9 @@ document.getElementById('lastmod').textContent =
 renderComponents();
 renderFormula();
 renderLegend();
+renderComponentSparks();
 renderMap();
+renderStoryChart();
 </script>
 </body>
 </html>

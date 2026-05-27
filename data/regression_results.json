@@ -1,0 +1,502 @@
+{
+  "paris": {
+    "city": "paris",
+    "n": 20,
+    "r2": 0.34,
+    "beta_index": -0.012,
+    "beta_index_se": 0.052,
+    "p_index": 0.8256,
+    "pct_change_per_sd": -1.2,
+    "correlation_r": 0.29,
+    "y_label": "median_income_eur",
+    "points": [
+      {
+        "id": 1,
+        "name": "1er \u2014 Louvre",
+        "index": 55.8,
+        "y": 35030.0,
+        "log_y": 10.463960116191533
+      },
+      {
+        "id": 2,
+        "name": "2e \u2014 Bourse",
+        "index": 27.4,
+        "y": 34050.0,
+        "log_y": 10.435585311577658
+      },
+      {
+        "id": 3,
+        "name": "3e \u2014 Temple",
+        "index": 34.6,
+        "y": 34800.0,
+        "log_y": 10.457372665762566
+      },
+      {
+        "id": 4,
+        "name": "4e \u2014 H\u00f4tel-de-Ville",
+        "index": 41.7,
+        "y": 33040.0,
+        "log_y": 10.405474227634915
+      },
+      {
+        "id": 5,
+        "name": "5e \u2014 Panth\u00e9on",
+        "index": 28.8,
+        "y": 35960.0,
+        "log_y": 10.490162488585556
+      },
+      {
+        "id": 6,
+        "name": "6e \u2014 Luxembourg",
+        "index": 36.9,
+        "y": 41750.0,
+        "log_y": 10.639454730279002
+      },
+      {
+        "id": 7,
+        "name": "7e \u2014 Palais-Bourbon",
+        "index": 41.5,
+        "y": 45380.0,
+        "log_y": 10.722826758333833
+      },
+      {
+        "id": 8,
+        "name": "8e \u2014 \u00c9lys\u00e9e",
+        "index": 42.4,
+        "y": 44100.0,
+        "log_y": 10.694215061434937
+      },
+      {
+        "id": 9,
+        "name": "9e \u2014 Op\u00e9ra",
+        "index": 30.4,
+        "y": 37220.0,
+        "log_y": 10.524601530196241
+      },
+      {
+        "id": 10,
+        "name": "10e \u2014 Entrep\u00f4t",
+        "index": 25.4,
+        "y": 29470.0,
+        "log_y": 10.29112807573174
+      },
+      {
+        "id": 11,
+        "name": "11e \u2014 Popincourt",
+        "index": 29.4,
+        "y": 30210.0,
+        "log_y": 10.315928274380717
+      },
+      {
+        "id": 12,
+        "name": "12e \u2014 Reuilly",
+        "index": 24.6,
+        "y": 29940.0,
+        "log_y": 10.30695065797362
+      },
+      {
+        "id": 13,
+        "name": "13e \u2014 Gobelins",
+        "index": 23.3,
+        "y": 25670.0,
+        "log_y": 10.153078273865185
+      },
+      {
+        "id": 14,
+        "name": "14e \u2014 Observatoire",
+        "index": 26.5,
+        "y": 29460.0,
+        "log_y": 10.29078869001662
+      },
+      {
+        "id": 15,
+        "name": "15e \u2014 Vaugirard",
+        "index": 26.2,
+        "y": 32780.0,
+        "log_y": 10.397573852297821
+      },
+      {
+        "id": 16,
+        "name": "16e \u2014 Passy",
+        "index": 25.4,
+        "y": 41550.0,
+        "log_y": 10.634652800283595
+      },
+      {
+        "id": 17,
+        "name": "17e \u2014 Batignolles",
+        "index": 24.5,
+        "y": 33390.0,
+        "log_y": 10.4160117329377
+      },
+      {
+        "id": 18,
+        "name": "18e \u2014 Buttes-Montmartre",
+        "index": 26.0,
+        "y": 24910.0,
+        "log_y": 10.123024608256227
+      },
+      {
+        "id": 19,
+        "name": "19e \u2014 Buttes-Chaumont",
+        "index": 26.5,
+        "y": 22870.0,
+        "log_y": 10.037581287016828
+      },
+      {
+        "id": 20,
+        "name": "20e \u2014 M\u00e9nilmontant",
+        "index": 46.7,
+        "y": 23570.0,
+        "log_y": 10.067729995930177
+      }
+    ]
+  },
+  "mexico": {
+    "city": "mexico",
+    "n": 16,
+    "r2": 0.686,
+    "beta_index": 0.024,
+    "beta_index_se": 0.034,
+    "p_index": 0.4816,
+    "pct_change_per_sd": 2.5,
+    "correlation_r": 0.74,
+    "y_label": "crowding_proxy",
+    "points": [
+      {
+        "id": 1,
+        "name": "\u00c1lvaro Obreg\u00f3n",
+        "index": 34.1,
+        "y": 0.2857142857142857,
+        "log_y": -1.252762968495368
+      },
+      {
+        "id": 2,
+        "name": "Azcapotzalco",
+        "index": 50.8,
+        "y": 0.3125,
+        "log_y": -1.1631508098056809
+      },
+      {
+        "id": 3,
+        "name": "Benito Ju\u00e1rez",
+        "index": 46.6,
+        "y": 0.4,
+        "log_y": -0.916290731874155
+      },
+      {
+        "id": 4,
+        "name": "Coyoac\u00e1n",
+        "index": 68.0,
+        "y": 0.3125,
+        "log_y": -1.1631508098056809
+      },
+      {
+        "id": 5,
+        "name": "Cuajimalpa",
+        "index": 36.8,
+        "y": 0.2777777777777778,
+        "log_y": -1.2809338454620642
+      },
+      {
+        "id": 6,
+        "name": "Cuauht\u00e9moc",
+        "index": 73.6,
+        "y": 0.35714285714285715,
+        "log_y": -1.0296194171811581
+      },
+      {
+        "id": 7,
+        "name": "Gustavo A. Madero",
+        "index": 41.2,
+        "y": 0.30303030303030304,
+        "log_y": -1.1939224684724346
+      },
+      {
+        "id": 8,
+        "name": "Iztacalco",
+        "index": 44.1,
+        "y": 0.30303030303030304,
+        "log_y": -1.1939224684724346
+      },
+      {
+        "id": 9,
+        "name": "Iztapalapa",
+        "index": 32.4,
+        "y": 0.2857142857142857,
+        "log_y": -1.252762968495368
+      },
+      {
+        "id": 10,
+        "name": "La Magdalena Contreras",
+        "index": 27.0,
+        "y": 0.29411764705882354,
+        "log_y": -1.2237754316221157
+      },
+      {
+        "id": 11,
+        "name": "Miguel Hidalgo",
+        "index": 69.6,
+        "y": 0.35714285714285715,
+        "log_y": -1.0296194171811581
+      },
+      {
+        "id": 12,
+        "name": "Milpa Alta",
+        "index": 17.4,
+        "y": 0.25641025641025644,
+        "log_y": -1.3609765531356006
+      },
+      {
+        "id": 13,
+        "name": "Tl\u00e1huac",
+        "index": 31.8,
+        "y": 0.2857142857142857,
+        "log_y": -1.252762968495368
+      },
+      {
+        "id": 14,
+        "name": "Tlalpan",
+        "index": 33.6,
+        "y": 0.30303030303030304,
+        "log_y": -1.1939224684724346
+      },
+      {
+        "id": 15,
+        "name": "Venustiano Carranza",
+        "index": 62.1,
+        "y": 0.3333333333333333,
+        "log_y": -1.0986122886681098
+      },
+      {
+        "id": 16,
+        "name": "Xochimilco",
+        "index": 22.6,
+        "y": 0.2857142857142857,
+        "log_y": -1.252762968495368
+      }
+    ]
+  },
+  "paris_data_rows": [
+    {
+      "id": 1,
+      "name": "1er \u2014 Louvre",
+      "parks": 23.2,
+      "transit": 100.0,
+      "density": 0.0,
+      "thirdspace": 100.0,
+      "pedestrian": 61.6,
+      "infrastructure": 50.0,
+      "income": 54.0
+    },
+    {
+      "id": 2,
+      "name": "2e \u2014 Bourse",
+      "parks": 0.0,
+      "transit": 46.8,
+      "density": 41.0,
+      "thirdspace": 17.8,
+      "pedestrian": 8.9,
+      "infrastructure": 50.0,
+      "income": 49.7
+    },
+    {
+      "id": 3,
+      "name": "3e \u2014 Temple",
+      "parks": 4.8,
+      "transit": 23.2,
+      "density": 65.9,
+      "thirdspace": 40.9,
+      "pedestrian": 22.8,
+      "infrastructure": 50.0,
+      "income": 53.0
+    },
+    {
+      "id": 4,
+      "name": "4e \u2014 H\u00f4tel-de-Ville",
+      "parks": 18.0,
+      "transit": 38.9,
+      "density": 30.5,
+      "thirdspace": 69.2,
+      "pedestrian": 43.6,
+      "infrastructure": 50.0,
+      "income": 45.2
+    },
+    {
+      "id": 5,
+      "name": "5e \u2014 Panth\u00e9on",
+      "parks": 10.9,
+      "transit": 11.6,
+      "density": 45.7,
+      "thirdspace": 32.9,
+      "pedestrian": 21.9,
+      "infrastructure": 50.0,
+      "income": 58.2
+    },
+    {
+      "id": 6,
+      "name": "6e \u2014 Luxembourg",
+      "parks": 4.1,
+      "transit": 60.1,
+      "density": 34.9,
+      "thirdspace": 46.9,
+      "pedestrian": 25.5,
+      "infrastructure": 50.0,
+      "income": 83.9
+    },
+    {
+      "id": 7,
+      "name": "7e \u2014 Palais-Bourbon",
+      "parks": 62.0,
+      "transit": 32.0,
+      "density": 11.2,
+      "thirdspace": 41.8,
+      "pedestrian": 51.9,
+      "infrastructure": 50.0,
+      "income": 100.0
+    },
+    {
+      "id": 8,
+      "name": "8e \u2014 \u00c9lys\u00e9e",
+      "parks": 49.5,
+      "transit": 78.1,
+      "density": 2.3,
+      "thirdspace": 33.4,
+      "pedestrian": 41.4,
+      "infrastructure": 50.0,
+      "income": 94.3
+    },
+    {
+      "id": 9,
+      "name": "9e \u2014 Op\u00e9ra",
+      "parks": 0.9,
+      "transit": 41.1,
+      "density": 61.8,
+      "thirdspace": 18.8,
+      "pedestrian": 9.8,
+      "infrastructure": 50.0,
+      "income": 63.7
+    },
+    {
+      "id": 10,
+      "name": "10e \u2014 Entrep\u00f4t",
+      "parks": 6.4,
+      "transit": 15.4,
+      "density": 67.0,
+      "thirdspace": 7.1,
+      "pedestrian": 6.8,
+      "infrastructure": 50.0,
+      "income": 29.3
+    },
+    {
+      "id": 11,
+      "name": "11e \u2014 Popincourt",
+      "parks": 4.4,
+      "transit": 18.9,
+      "density": 100.0,
+      "thirdspace": 0.5,
+      "pedestrian": 2.4,
+      "infrastructure": 50.0,
+      "income": 32.6
+    },
+    {
+      "id": 12,
+      "name": "12e \u2014 Reuilly",
+      "parks": 51.4,
+      "transit": 11.6,
+      "density": 0.4,
+      "thirdspace": 5.8,
+      "pedestrian": 28.6,
+      "infrastructure": 50.0,
+      "income": 31.4
+    },
+    {
+      "id": 13,
+      "name": "13e \u2014 Gobelins",
+      "parks": 15.2,
+      "transit": 8.6,
+      "density": 55.3,
+      "thirdspace": 2.1,
+      "pedestrian": 8.6,
+      "infrastructure": 50.0,
+      "income": 12.4
+    },
+    {
+      "id": 14,
+      "name": "14e \u2014 Observatoire",
+      "parks": 31.0,
+      "transit": 4.6,
+      "density": 53.7,
+      "thirdspace": 2.7,
+      "pedestrian": 16.8,
+      "infrastructure": 50.0,
+      "income": 29.3
+    },
+    {
+      "id": 15,
+      "name": "15e \u2014 Vaugirard",
+      "parks": 22.9,
+      "transit": 7.6,
+      "density": 62.4,
+      "thirdspace": 2.1,
+      "pedestrian": 12.5,
+      "infrastructure": 50.0,
+      "income": 44.0
+    },
+    {
+      "id": 16,
+      "name": "16e \u2014 Passy",
+      "parks": 35.3,
+      "transit": 17.8,
+      "density": 4.4,
+      "thirdspace": 18.3,
+      "pedestrian": 26.8,
+      "infrastructure": 50.0,
+      "income": 83.0
+    },
+    {
+      "id": 17,
+      "name": "17e \u2014 Batignolles",
+      "parks": 19.9,
+      "transit": 0.0,
+      "density": 67.3,
+      "thirdspace": 0.0,
+      "pedestrian": 10.0,
+      "infrastructure": 50.0,
+      "income": 46.7
+    },
+    {
+      "id": 18,
+      "name": "18e \u2014 Buttes-Montmartre",
+      "parks": 15.4,
+      "transit": 3.4,
+      "density": 75.7,
+      "thirdspace": 2.7,
+      "pedestrian": 9.0,
+      "infrastructure": 50.0,
+      "income": 9.1
+    },
+    {
+      "id": 19,
+      "name": "19e \u2014 Buttes-Chaumont",
+      "parks": 23.4,
+      "transit": 8.5,
+      "density": 60.0,
+      "thirdspace": 3.7,
+      "pedestrian": 13.6,
+      "infrastructure": 50.0,
+      "income": 0.0
+    },
+    {
+      "id": 20,
+      "name": "20e \u2014 M\u00e9nilmontant",
+      "parks": 100.0,
+      "transit": 0.5,
+      "density": 77.2,
+      "thirdspace": 1.8,
+      "pedestrian": 50.9,
+      "infrastructure": 50.0,
+      "income": 3.1
+    }
+  ]
+}

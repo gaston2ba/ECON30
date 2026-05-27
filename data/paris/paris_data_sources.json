@@ -1,0 +1,11 @@
+{
+  "sources": {
+    "population": "INSEE dossier complet COM-751XX (POP T1, FAM G1)",
+    "transit": "Wikidata SPARQL with OpenStreetMap Overpass fallback",
+    "green_space": "opendata.paris.fr/espaces_verts",
+    "libraries": "opendata.paris.fr/postes-publics-des-bibliotheques",
+    "museums": "Wikipedia List of museums in Paris",
+    "air_quality": "Airparif via opendata.paris.fr (intramuros urban background PM2.5)",
+    "income": "INSEE Filosofi 2021 FILO2021_DISP_COM (Q221 median)"
+  }
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Visual 05 · Street Grammar Explorer</title>
+  <style>
+    body{font-family:Georgia,serif;background:#f1e9d6;color:#2a2218;margin:0;padding:20px}
+    .wrap{max-width:980px;margin:0 auto}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .card{border:1px solid #6b5d48;background:rgba(255,255,255,.25);padding:10px}
+    .controls{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+    input{width:100%}
+    .kpi{font-family:"Courier New",monospace;font-size:1.1rem}
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <h2>Visual 05 · Street Grammar Explorer (Mini-game)</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Design Your Policy Mix</h3>
+      <div class="controls">
+        <label>Boulevard Expansion <input id="boulevard" type="range" min="0" max="100" value="50"></label>
+        <label>Neighborhood Upgrading <input id="upgrade" type="range" min="0" max="100" value="55"></label>
+        <label>Transit Corridors <input id="corridors" type="range" min="0" max="100" value="45"></label>
+        <label>Anti-displacement Policy <input id="anti" type="range" min="0" max="100" value="35"></label>
+      </div>
+      <button id="lock">Lock & Compare With City Paths</button>
+    </div>
+    <div class="card">
+      <h3>Outcomes</h3>
+      <div class="kpi" id="kpi1">Access Gain: 0</div>
+      <div class="kpi" id="kpi2">Displacement Pressure: 0</div>
+      <div class="kpi" id="kpi3">Equity Score: 0</div>
+      <p id="text"></p>
+    </div>
+  </div>
+</div>
+<script>
+const ids=["boulevard","upgrade","corridors","anti"];
+function v(id){return +document.getElementById(id).value;}
+function calc(){
+  const b=v("boulevard"),u=v("upgrade"),c=v("corridors"),a=v("anti");
+  const access = 0.4*b + 0.35*c + 0.25*u;
+  const disp = 0.45*b + 0.25*c - 0.35*a - 0.15*u + 25;
+  const equity = 0.5*u + 0.35*a + 0.15*c - 0.2*b + 20;
+  kpi1.textContent=`Access Gain: ${Math.max(0,Math.min(100,access)).toFixed(1)}`;
+  kpi2.textContent=`Displacement Pressure: ${Math.max(0,Math.min(100,disp)).toFixed(1)}`;
+  kpi3.textContent=`Equity Score: ${Math.max(0,Math.min(100,equity)).toFixed(1)}`;
+  text.textContent=`Your current grammar emphasizes ${b>u?"top-down restructuring":"incremental upgrading"} with ${a>50?"strong":"limited"} social protections.`;
+}
+ids.forEach(id=>document.getElementById(id).addEventListener("input",calc));
+document.getElementById("lock").addEventListener("click",()=>{
+  const eq=+kpi3.textContent.split(": ")[1], dp=+kpi2.textContent.split(": ")[1];
+  const parisDist = Math.abs(eq-58)+Math.abs(dp-47);
+  const mexDist = Math.abs(eq-51)+Math.abs(dp-54);
+  text.textContent += ` Comparison: your policy mix is closer to ${parisDist < mexDist ? "Paris-style" : "Mexico-City-style"} trajectory (mock baseline).`;
+});
+calc();
+</script>
+</body>
+</html>

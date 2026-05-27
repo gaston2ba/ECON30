@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Visual 02 · Counterfactual Simulator</title>
+  <style>
+    body { font-family: Georgia, serif; background:#f1e9d6; color:#2a2218; margin:0; padding:20px; }
+    .wrap { max-width:980px; margin:0 auto; }
+    .panel { border:1px solid #6b5d48; background:rgba(255,255,255,.26); padding:12px; margin:10px 0; }
+    .row { display:grid; grid-template-columns: 220px 1fr 60px; gap:10px; align-items:center; margin:8px 0; }
+    .kpi { display:grid; grid-template-columns:repeat(4,1fr); gap:10px; }
+    .box { border:1px dashed #6b5d48; padding:10px; background:rgba(255,255,255,.2); }
+    .v { font-family:"Courier New", monospace; font-size:1.3rem; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h2>Visual 02 · If Haussmann / If Informal Simulator</h2>
+    <div class="panel">
+      <div class="row"><label>State Planning Intensity</label><input id="planning" type="range" min="0" max="100" value="62" /><span id="planningV">62</span></div>
+      <div class="row"><label>Informal Self-Build Capacity</label><input id="informal" type="range" min="0" max="100" value="48" /><span id="informalV">48</span></div>
+      <div class="row"><label>Transit Investment</label><input id="transit" type="range" min="0" max="100" value="57" /><span id="transitV">57</span></div>
+      <div class="row"><label>Rent Regulation Strength</label><input id="rent" type="range" min="0" max="100" value="35" /><span id="rentV">35</span></div>
+    </div>
+    <div class="kpi">
+      <div class="box"><div>Inequality Gap</div><div class="v" id="ineq">0</div></div>
+      <div class="box"><div>Access Score</div><div class="v" id="access">0</div></div>
+      <div class="box"><div>Displacement Risk</div><div class="v" id="disp">0</div></div>
+      <div class="box"><div>Composite Welfare</div><div class="v" id="welfare">0</div></div>
+    </div>
+    <div class="panel" id="readout"></div>
+  </div>
+  <script>
+    const ids=["planning","informal","transit","rent"];
+    function val(id){ return +document.getElementById(id).value; }
+    function recalc(){
+      const p=val("planning"), i=val("informal"), t=val("transit"), r=val("rent");
+      ids.forEach(id=>document.getElementById(id+"V").textContent=val(id));
+      const ineq = Math.max(0, Math.min(100, 62 + 0.35*p - 0.25*i - 0.18*r + 0.08*t));
+      const access = Math.max(0, Math.min(100, 25 + 0.42*p + 0.37*t + 0.15*i));
+      const disp = Math.max(0, Math.min(100, 18 + 0.33*p + 0.25*t - 0.36*r - 0.14*i));
+      const welfare = Math.max(0, Math.min(100, (access*0.5) + ((100-ineq)*0.25) + ((100-disp)*0.25)));
+      document.getElementById("ineq").textContent=ineq.toFixed(1);
+      document.getElementById("access").textContent=access.toFixed(1);
+      document.getElementById("disp").textContent=disp.toFixed(1);
+      document.getElementById("welfare").textContent=welfare.toFixed(1);
+      document.getElementById("readout").textContent =
+        `Scenario interpretation: with planning ${p}, informal capacity ${i}, transit ${t}, and rent regulation ${r}, ` +
+        `the model predicts strong access gains but ${disp>50?"high":"moderate"} displacement pressure. ` +
+        `Use this as a teaching sandbox; replace formula weights with your regression-calibrated estimates.`;
+    }
+    ids.forEach(id=>document.getElementById(id).addEventListener("input", recalc));
+    recalc();
+  </script>
+</body>
+</html>

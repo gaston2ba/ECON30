@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Visual 04 · Inequality Conveyor</title>
+  <style>
+    body{font-family:Georgia,serif;background:#f1e9d6;color:#2a2218;margin:0;padding:20px}
+    .wrap{max-width:980px;margin:0 auto}
+    svg{width:100%;height:auto;border:1px dashed #6b5d48;background:rgba(255,255,255,.22)}
+    .controls{display:flex;gap:10px;align-items:center;margin-bottom:10px}
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <h2>Visual 04 · Inequality Conveyor Belt</h2>
+  <div class="controls">
+    <label>Period
+      <select id="period">
+        <option value="1900-1950">1900 → 1950</option>
+        <option value="1950-2000">1950 → 2000</option>
+        <option value="2000-2024">2000 → 2024</option>
+      </select>
+    </label>
+    <label><input type="radio" name="city" value="paris" checked> Paris</label>
+    <label><input type="radio" name="city" value="mexico"> Mexico City</label>
+  </div>
+  <svg id="flow" viewBox="0 0 940 430"></svg>
+  <p id="out"></p>
+</div>
+<script>
+const data={
+  paris:{
+    "1900-1950":[[18,30,12],[9,25,26],[4,13,20]],
+    "1950-2000":[[12,24,15],[6,20,29],[3,9,31]],
+    "2000-2024":[[9,16,17],[5,18,26],[2,10,39]]
+  },
+  mexico:{
+    "1900-1950":[[26,23,8],[18,21,10],[7,13,9]],
+    "1950-2000":[[24,18,10],[21,19,12],[12,15,11]],
+    "2000-2024":[[19,16,11],[17,18,13],[10,16,15]]
+  }
+};
+const tiers=["Low","Middle","High"];
+function draw(){
+  const city=document.querySelector("input[name=city]:checked").value;
+  const period=document.getElementById("period").value;
+  const M=data[city][period]; const svg=document.getElementById("flow"); svg.innerHTML="";
+  const leftX=170,rightX=770,top=70,height=300,total=M.flat().reduce((a,b)=>a+b,0);
+  const leftS=[0,1,2].map(i=>M[i].reduce((a,b)=>a+b,0));
+  const rightS=[0,1,2].map(j=>M[0][j]+M[1][j]+M[2][j]);
+  function seg(vals,x,colorBase,isLeft){
+    let y=top; return vals.map((v,i)=>{ const h=v/total*height; const o={x,y,h,v,t:tiers[i],c:colorBase[i]}; y+=h+8; return o;});
+  }
+  const colors=["#8a6a1f","#2d5a3d","#7a1f2b"];
+  const L=seg(leftS,leftX,colors,true), R=seg(rightS,rightX,colors,false);
+  L.forEach(s=>{ const r=document.createElementNS("http://www.w3.org/2000/svg","rect"); r.setAttribute("x",s.x-45);r.setAttribute("y",s.y);r.setAttribute("width",90);r.setAttribute("height",s.h);r.setAttribute("fill",s.c);svg.appendChild(r);});
+  R.forEach(s=>{ const r=document.createElementNS("http://www.w3.org/2000/svg","rect"); r.setAttribute("x",s.x-45);r.setAttribute("y",s.y);r.setAttribute("width",90);r.setAttribute("height",s.h);r.setAttribute("fill",s.c);svg.appendChild(r);});
+  let leftOffset=[0,0,0], rightOffset=[0,0,0];
+  for(let i=0;i<3;i++) for(let j=0;j<3;j++){
+    const v=M[i][j], h=v/total*height;
+    const y0=L[i].y+leftOffset[i], y1=R[j].y+rightOffset[j];
+    leftOffset[i]+=h; rightOffset[j]+=h;
+    const p=document.createElementNS("http://www.w3.org/2000/svg","path");
+    const d=`M ${leftX+45} ${y0} C 360 ${y0}, 580 ${y1}, ${rightX-45} ${y1} L ${rightX-45} ${y1+h} C 580 ${y1+h}, 360 ${y0+h}, ${leftX+45} ${y0+h} Z`;
+    p.setAttribute("d",d); p.setAttribute("fill",colors[i]); p.setAttribute("opacity",".35"); p.style.cursor="pointer";
+    p.addEventListener("mouseenter",()=> out.textContent=`${city} ${period}: ${v}% moved from ${tiers[i]} to ${tiers[j]} tier.`);
+    svg.appendChild(p);
+  }
+  [["Start",leftX],["End",rightX]].forEach(([t,x])=>{const tx=document.createElementNS("http://www.w3.org/2000/svg","text");tx.setAttribute("x",x);tx.setAttribute("y",40);tx.setAttribute("text-anchor","middle");tx.textContent=t;svg.appendChild(tx);});
+  out.textContent=`Hover a band to inspect mobility between tiers.`;
+}
+document.getElementById("period").addEventListener("change",draw);
+document.querySelectorAll("input[name=city]").forEach(x=>x.addEventListener("change",draw));
+draw();
+</script>
+</body>
+</html>

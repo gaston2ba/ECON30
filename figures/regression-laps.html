@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>ECON 30 · Regression laps</title>
+  <style>
+    body { margin:0; padding:2rem; background:#f1e9d6; color:#2a2218; font-family:Georgia,serif; }
+    .grid { display:grid; grid-template-columns:1fr 1fr; gap:1.5rem; max-width:1100px; margin:0 auto; }
+    @media (max-width:800px) { .grid { grid-template-columns:1fr; } }
+    .card { border:1px solid #6b5d48; padding:1rem; background:rgba(255,255,255,.25); }
+    .stat { font-size:1.4rem; margin:0.4rem 0; }
+    a { color:#2a2218; }
+  </style>
+</head>
+<body>
+  <h1>Regression laps · 2020 cross-section</h1>
+  <p>log(outcome) ~ standardized index + population + distance to map center. <a href="../index.html#findings">Back to main story</a></p>
+  <div class="grid">
+    <div class="card">
+      <h2>Paris (Filosofi 2021 median income)</h2>
+      <p class="stat">β = -0.012 · ≈ -1.2% per 1 SD index · R² = 0.34</p>
+      <svg viewBox="0 0 520 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Paris regression scatter">
+  <rect width="100%" height="100%" fill="#f8f2e4"/>
+  <text x="48" y="24" font-family="Georgia, serif" font-size="14" fill="#2a2218">Paris: log outcome vs planning index</text>
+  <line x1="48" y1="312" x2="472" y2="312" stroke="#6b5d48"/>
+  <line x1="48" y1="48" x2="48" y2="312" stroke="#6b5d48"/>
+  <text x="260" y="348" text-anchor="middle" font-size="11" fill="#4a3f30">Planning index (0–100)</text>
+  <text transform="translate(16 180) rotate(-90)" font-size="11" fill="#4a3f30">log(median income / proxy)</text>
+  <circle cx="422.1" cy="155.0" r="5" fill="#7a1f2b" opacity="0.85"><title>1er — Louvre</title></circle>
+<circle cx="138.8" cy="163.5" r="5" fill="#7a1f2b" opacity="0.85"><title>2e — Bourse</title></circle>
+<circle cx="210.6" cy="157.0" r="5" fill="#7a1f2b" opacity="0.85"><title>3e — Temple</title></circle>
+<circle cx="281.4" cy="172.5" r="5" fill="#7a1f2b" opacity="0.85"><title>4e — Hôtel-de-Ville</title></circle>
+<circle cx="152.8" cy="147.2" r="5" fill="#7a1f2b" opacity="0.85"><title>5e — Panthéon</title></circle>
+<circle cx="233.6" cy="102.7" r="5" fill="#7a1f2b" opacity="0.85"><title>6e — Luxembourg</title></circle>
+<circle cx="279.5" cy="77.8" r="5" fill="#7a1f2b" opacity="0.85"><title>7e — Palais-Bourbon</title></circle>
+<circle cx="288.4" cy="86.4" r="5" fill="#7a1f2b" opacity="0.85"><title>8e — Élysée</title></circle>
+<circle cx="168.7" cy="136.9" r="5" fill="#7a1f2b" opacity="0.85"><title>9e — Opéra</title></circle>
+<circle cx="118.8" cy="206.6" r="5" fill="#7a1f2b" opacity="0.85"><title>10e — Entrepôt</title></circle>
+<circle cx="158.7" cy="199.2" r="5" fill="#7a1f2b" opacity="0.85"><title>11e — Popincourt</title></circle>
+<circle cx="110.9" cy="201.8" r="5" fill="#7a1f2b" opacity="0.85"><title>12e — Reuilly</title></circle>
+<circle cx="97.9" cy="247.7" r="5" fill="#7a1f2b" opacity="0.85"><title>13e — Gobelins</title></circle>
+<circle cx="129.8" cy="206.7" r="5" fill="#7a1f2b" opacity="0.85"><title>14e — Observatoire</title></circle>
+<circle cx="126.8" cy="174.8" r="5" fill="#7a1f2b" opacity="0.85"><title>15e — Vaugirard</title></circle>
+<circle cx="118.8" cy="104.1" r="5" fill="#7a1f2b" opacity="0.85"><title>16e — Passy</title></circle>
+<circle cx="109.9" cy="169.3" r="5" fill="#7a1f2b" opacity="0.85"><title>17e — Batignolles</title></circle>
+<circle cx="124.8" cy="256.7" r="5" fill="#7a1f2b" opacity="0.85"><title>18e — Buttes-Montmartre</title></circle>
+<circle cx="129.8" cy="282.2" r="5" fill="#7a1f2b" opacity="0.85"><title>19e — Buttes-Chaumont</title></circle>
+<circle cx="331.3" cy="273.2" r="5" fill="#7a1f2b" opacity="0.85"><title>20e — Ménilmontant</title></circle>
+</svg>
+    </div>
+    <div class="card">
+      <h2>Mexico City (inverse crowding proxy)</h2>
+      <p class="stat">β = +0.024 · ≈ +2.5% per 1 SD · r = +0.74</p>
+      <svg viewBox="0 0 520 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mexico City regression scatter">
+  <rect width="100%" height="100%" fill="#f8f2e4"/>
+  <text x="48" y="24" font-family="Georgia, serif" font-size="14" fill="#2a2218">Mexico City: log outcome vs planning index</text>
+  <line x1="48" y1="312" x2="472" y2="312" stroke="#6b5d48"/>
+  <line x1="48" y1="48" x2="48" y2="312" stroke="#6b5d48"/>
+  <text x="260" y="348" text-anchor="middle" font-size="11" fill="#4a3f30">Planning index (0–100)</text>
+  <text transform="translate(16 180) rotate(-90)" font-size="11" fill="#4a3f30">log(median income / proxy)</text>
+  <circle cx="187.0" cy="226.7" r="5" fill="#2d5a3d" opacity="0.85"><title>Álvaro Obregón</title></circle>
+<circle cx="293.9" cy="190.0" r="5" fill="#2d5a3d" opacity="0.85"><title>Azcapotzalco</title></circle>
+<circle cx="267.0" cy="89.0" r="5" fill="#2d5a3d" opacity="0.85"><title>Benito Juárez</title></circle>
+<circle cx="404.1" cy="190.0" r="5" fill="#2d5a3d" opacity="0.85"><title>Coyoacán</title></circle>
+<circle cx="204.3" cy="238.3" r="5" fill="#2d5a3d" opacity="0.85"><title>Cuajimalpa</title></circle>
+<circle cx="440.0" cy="135.4" r="5" fill="#2d5a3d" opacity="0.85"><title>Cuauhtémoc</title></circle>
+<circle cx="232.5" cy="202.6" r="5" fill="#2d5a3d" opacity="0.85"><title>Gustavo A. Madero</title></circle>
+<circle cx="251.0" cy="202.6" r="5" fill="#2d5a3d" opacity="0.85"><title>Iztacalco</title></circle>
+<circle cx="176.1" cy="226.7" r="5" fill="#2d5a3d" opacity="0.85"><title>Iztapalapa</title></circle>
+<circle cx="141.5" cy="214.9" r="5" fill="#2d5a3d" opacity="0.85"><title>La Magdalena Contreras</title></circle>
+<circle cx="414.4" cy="135.4" r="5" fill="#2d5a3d" opacity="0.85"><title>Miguel Hidalgo</title></circle>
+<circle cx="80.0" cy="271.0" r="5" fill="#2d5a3d" opacity="0.85"><title>Milpa Alta</title></circle>
+<circle cx="172.3" cy="226.7" r="5" fill="#2d5a3d" opacity="0.85"><title>Tláhuac</title></circle>
+<circle cx="183.8" cy="202.6" r="5" fill="#2d5a3d" opacity="0.85"><title>Tlalpan</title></circle>
+<circle cx="366.3" cy="163.6" r="5" fill="#2d5a3d" opacity="0.85"><title>Venustiano Carranza</title></circle>
+<circle cx="113.3" cy="226.7" r="5" fill="#2d5a3d" opacity="0.85"><title>Xochimilco</title></circle>
+</svg>
+    </div>
+  </div>
+</body>
+</html>

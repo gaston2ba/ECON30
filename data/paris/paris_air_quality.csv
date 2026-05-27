@@ -1,0 +1,21 @@
+arrondissement_num,insee_code,arrondissement,year,pm25_annual_mean,source
+1,75101,1er — Louvre,2024,9.0,airparif_via_opendata_paris_fond_urbain_intramuros
+2,75102,2e — Bourse,2024,9.0,airparif_via_opendata_paris_fond_urbain_intramuros
+3,75103,3e — Temple,2024,9.0,airparif_via_opendata_paris_fond_urbain_intramuros
+4,75104,4e — Hôtel-de-Ville,2024,9.0,airparif_via_opendata_paris_fond_urbain_intramuros
+5,75105,5e — Panthéon,2024,9.0,airparif_via_opendata_paris_fond_urbain_intramuros
+6,75106,6e — Luxembourg,2024,9.0,airparif_via_opendata_paris_fond_urbain_intramuros
+7,75107,7e — Palais-Bourbon,2024,9.0,airparif_via_opendata_paris_fond_urbain_intramuros
+8,75108,8e — Élysée,2024,9.0,airparif_via_opendata_paris_fond_urbain_intramuros
+9,75109,9e — Opéra,2024,9.0,airparif_via_opendata_paris_fond_urbain_intramuros
+10,75110,10e — Entrepôt,2024,9.0,airparif_via_opendata_paris_fond_urbain_intramuros
+11,75111,11e — Popincourt,2024,9.0,airparif_via_opendata_paris_fond_urbain_intramuros
+12,75112,12e — Reuilly,2024,9.0,airparif_via_opendata_paris_fond_urbain_intramuros
+13,75113,13e — Gobelins,2024,9.0,airparif_via_opendata_paris_fond_urbain_intramuros
+14,75114,14e — Observatoire,2024,9.0,airparif_via_opendata_paris_fond_urbain_intramuros
+15,75115,15e — Vaugirard,2024,9.0,airparif_via_opendata_paris_fond_urbain_intramuros
+16,75116,16e — Passy,2024,9.0,airparif_via_opendata_paris_fond_urbain_intramuros
+17,75117,17e — Batignolles,2024,9.0,airparif_via_opendata_paris_fond_urbain_intramuros
+18,75118,18e — Buttes-Montmartre,2024,9.0,airparif_via_opendata_paris_fond_urbain_intramuros
+19,75119,19e — Buttes-Chaumont,2024,9.0,airparif_via_opendata_paris_fond_urbain_intramuros
+20,75120,20e — Ménilmontant,2024,9.0,airparif_via_opendata_paris_fond_urbain_intramuros

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Visual 03 · Trade-off Ternary</title>
+  <style>
+    body { font-family: Georgia, serif; background:#f1e9d6; color:#2a2218; margin:0; padding:20px; }
+    .wrap { max-width:900px; margin:0 auto; }
+    svg { width:100%; height:auto; border:1px dashed #6b5d48; background:rgba(255,255,255,.25); }
+    .controls { display:flex; gap:14px; flex-wrap:wrap; margin:10px 0; }
+    .legend { font-family:"Courier New", monospace; font-size:.85rem; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h2>Visual 03 · Equity vs Efficiency vs Heritage</h2>
+    <div class="controls">
+      <label>Equity weight <input id="wE" type="range" min="0" max="100" value="33"></label>
+      <label>Efficiency weight <input id="wF" type="range" min="0" max="100" value="33"></label>
+      <label>Heritage weight <input id="wH" type="range" min="0" max="100" value="34"></label>
+    </div>
+    <svg id="plot" viewBox="0 0 780 620"></svg>
+    <p class="legend" id="legend">Click a point for ranking info.</p>
+  </div>
+  <script>
+    const districts = Array.from({length:18}, (_,i)=>({
+      name:`Zone ${i+1}`,
+      equity: 20 + (i*7)%70,
+      efficiency: 15 + (i*11)%75,
+      heritage: 10 + (i*13)%80
+    }));
+    const svg=document.getElementById("plot");
+    const A={x:390,y:70}, B={x:120,y:540}, C={x:660,y:540};
+    function baryToXY(e,f,h){
+      const s=e+f+h; const ne=e/s,nf=f/s,nh=h/s;
+      return {x:ne*A.x+nf*B.x+nh*C.x, y:ne*A.y+nf*B.y+nh*C.y};
+    }
+    function weights(){
+      let e=+wE.value,f=+wF.value,h=+wH.value; const s=e+f+h||1;
+      return {e:e/s,f:f/s,h:h/s};
+    }
+    function draw(){
+      const w=weights(); svg.innerHTML="";
+      const poly=document.createElementNS("http://www.w3.org/2000/svg","polygon");
+      poly.setAttribute("points",`${A.x},${A.y} ${B.x},${B.y} ${C.x},${C.y}`);
+      poly.setAttribute("fill","rgba(255,255,255,.15)"); poly.setAttribute("stroke","#2a2218"); svg.appendChild(poly);
+      [["Equity",A],["Efficiency",B],["Heritage",C]].forEach(([t,p])=>{
+        const tx=document.createElementNS("http://www.w3.org/2000/svg","text");
+        tx.setAttribute("x",p.x); tx.setAttribute("y",p.y-10); tx.setAttribute("text-anchor","middle"); tx.textContent=t; svg.appendChild(tx);
+      });
+      const ranked=districts.map(d=>({...d,score:d.equity*w.e + d.efficiency*w.f + d.heritage*w.h}))
+        .sort((a,b)=>b.score-a.score);
+      ranked.forEach((d,idx)=>{
+        const p=baryToXY(d.equity,d.efficiency,d.heritage);
+        const c=document.createElementNS("http://www.w3.org/2000/svg","circle");
+        c.setAttribute("cx",p.x); c.setAttribute("cy",p.y); c.setAttribute("r",idx<5?8:5);
+        c.setAttribute("fill", idx<5 ? "#7a1f2b" : "#2d5a3d"); c.style.cursor="pointer";
+        c.addEventListener("click",()=> legend.textContent=`${d.name}: rank #${idx+1}, score ${d.score.toFixed(1)} (E ${d.equity}, F ${d.efficiency}, H ${d.heritage}).`);
+        svg.appendChild(c);
+      });
+      legend.textContent=`Top under current weights: ${ranked.slice(0,3).map(d=>d.name).join(", ")}.`;
+    }
+    ["wE","wF","wH"].forEach(id=>document.getElementById(id).addEventListener("input",draw));
+    draw();
+  </script>
+</body>
+</html>

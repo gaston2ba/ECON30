@@ -1,0 +1,246 @@
+name,year_opened,lat,lon,source,index_right,arrondissement_num,insee_code,arrondissement
+Franklin D. Roosevelt,1900,48.8690339,2.3099266,overpass,8,8,75108,8e — Élysée
+Tuileries,1900,48.8645194,2.3296312,overpass,18,1,75101,1er — Louvre
+Châtelet,1900,48.8587782,2.3474106,overpass,18,1,75101,1er — Louvre
+Saint-Paul,1900,48.8553844,2.3604068,overpass,5,4,75104,4e — Hôtel-de-Ville
+La Motte-Picquet - Grenelle,1900,48.8491009,2.2981675,overpass,11,15,75115,15e — Vaugirard
+Cambronne,1900,48.8475232,2.3029457,overpass,11,15,75115,15e — Vaugirard
+Dupleix,1900,48.8504095,2.2936611,overpass,11,15,75115,15e — Vaugirard
+Convention,1900,48.8372872,2.2966539,overpass,11,15,75115,15e — Vaugirard
+Porte d'Orléans,1900,48.8236307,2.3256075,overpass,4,14,75114,14e — Observatoire
+Alésia,1900,48.8280318,2.3270406,overpass,4,14,75114,14e — Observatoire
+Mouton-Duvernet,1900,48.8312786,2.3298657,overpass,4,14,75114,14e — Observatoire
+Saint-Jacques,1900,48.8329806,2.3368199,overpass,4,14,75114,14e — Observatoire
+Glacière,1900,48.8311451,2.3434916,overpass,16,13,75113,13e — Gobelins
+Place d'Italie,1900,48.8309446,2.3558932,overpass,16,13,75113,13e — Gobelins
+Nationale,1900,48.8331995,2.3628272,overpass,16,13,75113,13e — Gobelins
+Chevaleret,1900,48.83495,2.3681023,overpass,16,13,75113,13e — Gobelins
+Quai de la Gare,1900,48.8370444,2.3728619,overpass,16,13,75113,13e — Gobelins
+Stalingrad,1900,48.8842416,2.3670741,overpass,15,19,75119,19e — Buttes-Chaumont
+Nation,1900,48.8476792,2.3955176,overpass,13,12,75112,12e — Reuilly
+Buttes Chaumont,1900,48.8783961,2.3812008,overpass,15,19,75119,19e — Buttes-Chaumont
+Bolivar,1900,48.8809263,2.3739077,overpass,15,19,75119,19e — Buttes-Chaumont
+Buzenval,1900,48.8518248,2.4013274,overpass,9,20,75120,20e — Ménilmontant
+Père Lachaise,1900,48.8629238,2.3874128,overpass,3,11,75111,11e — Popincourt
+Alexandre Dumas,1900,48.85634,2.3944352,overpass,3,11,75111,11e — Popincourt
+Belleville,1900,48.872035,2.3768798,overpass,0,10,75110,10e — Entrepôt
+Blanche,1900,48.8835274,2.3335853,overpass,1,18,75118,18e — Buttes-Montmartre
+Place de Clichy,1900,48.8834776,2.3272899,overpass,2,9,75109,9e — Opéra
+Rome,1900,48.8823012,2.3213298,overpass,12,17,75117,17e — Batignolles
+Villiers,1900,48.8811181,2.3149118,overpass,8,8,75108,8e — Élysée
+Monceau,1900,48.8803157,2.3086415,overpass,8,8,75108,8e — Élysée
+Porte Dauphine,1900,48.8715463,2.2774569,overpass,14,16,75116,16e — Passy
+Rue Saint-Maur,1900,48.864335,2.3794817,overpass,3,11,75111,11e — Popincourt
+Parmentier,1900,48.8653571,2.3739035,overpass,3,11,75111,11e — Popincourt
+Arts et Métiers,1900,48.8654718,2.3561116,overpass,19,3,75103,3e — Temple
+Bourse,1900,48.8686539,2.3414383,overpass,7,2,75102,2e — Bourse
+Quatre Septembre,1900,48.8695929,2.3358665,overpass,7,2,75102,2e — Bourse
+Opéra,1900,48.8706446,2.33233,overpass,7,2,75102,2e — Bourse
+Havre - Caumartin,1900,48.8737533,2.3274302,overpass,2,9,75109,9e — Opéra
+Malesherbes,1900,48.8829752,2.3089995,overpass,12,17,75117,17e — Batignolles
+Wagram,1900,48.8840526,2.3037389,overpass,12,17,75117,17e — Batignolles
+Pereire,1900,48.8847906,2.2983109,overpass,12,17,75117,17e — Batignolles
+Vaugirard,1900,48.839587,2.3012795,overpass,11,15,75115,15e — Vaugirard
+Volontaires,1900,48.8415334,2.3080102,overpass,11,15,75115,15e — Vaugirard
+Falguière,1900,48.8444916,2.317965,overpass,11,15,75115,15e — Vaugirard
+Duroc,1900,48.8468433,2.3166286,overpass,10,6,75106,6e — Luxembourg
+Bel-Air,1900,48.8413382,2.4009129,overpass,13,12,75112,12e — Reuilly
+Marx Dormoy,1900,48.8905061,2.3599967,overpass,1,18,75118,18e — Buttes-Montmartre
+Jacques Bonsergent,1900,48.8711191,2.3607546,overpass,0,10,75110,10e — Entrepôt
+Maraîchers,1900,48.8527267,2.4061303,overpass,9,20,75120,20e — Ménilmontant
+Rue des Boulets,1900,48.8525808,2.3887914,overpass,3,11,75111,11e — Popincourt
+Charonne,1900,48.8547411,2.3853043,overpass,3,11,75111,11e — Popincourt
+Voltaire,1900,48.8581794,2.3798223,overpass,3,11,75111,11e — Popincourt
+Saint-Ambroise,1900,48.8610434,2.3747264,overpass,3,11,75111,11e — Popincourt
+Oberkampf,1900,48.8641124,2.3694232,overpass,3,11,75111,11e — Popincourt
+Bonne Nouvelle,1900,48.8705324,2.3487457,overpass,0,10,75110,10e — Entrepôt
+Grands Boulevards,1900,48.8714412,2.3434953,overpass,2,9,75109,9e — Opéra
+Saint-Augustin,1900,48.874471,2.3217921,overpass,8,8,75108,8e — Élysée
+Cardinal Lemoine,1900,48.8465303,2.3518356,overpass,6,5,75105,5e — Panthéon
+Maubert - Mutualité,1900,48.8500649,2.3484301,overpass,6,5,75105,5e — Panthéon
+Cluny-La Sorbonne,1900,48.8510938,2.3441587,overpass,6,5,75105,5e — Panthéon
+Mabillon,1900,48.8528857,2.3349394,overpass,10,6,75106,6e — Luxembourg
+Balard,1900,48.8363968,2.278379,overpass,11,15,75115,15e — Vaugirard
+Lourmel,1900,48.8387364,2.2821481,overpass,11,15,75115,15e — Vaugirard
+Boucicaut,1900,48.8410837,2.2879218,overpass,11,15,75115,15e — Vaugirard
+Félix Faure,1900,48.8426775,2.2917792,overpass,11,15,75115,15e — Vaugirard
+Dugommier,1900,48.8390379,2.3897217,overpass,13,12,75112,12e — Reuilly
+Bercy,1900,48.8401405,2.3799259,overpass,13,12,75112,12e — Reuilly
+Montparnasse-Bienvenüe,1900,48.8421022,2.3202714,overpass,11,15,75115,15e — Vaugirard
+Pasteur,1900,48.8429336,2.3125906,overpass,11,15,75115,15e — Vaugirard
+Kléber,1900,48.8716801,2.2935185,overpass,14,16,75116,16e — Passy
+Passy,1900,48.8575009,2.285778,overpass,14,16,75116,16e — Passy
+Iéna,1900,48.8646131,2.2937335,overpass,14,16,75116,16e — Passy
+Rue de la Pompe,1900,48.8640672,2.278149,overpass,14,16,75116,16e — Passy
+La Muette,1900,48.8579754,2.274062,overpass,14,16,75116,16e — Passy
+Ranelagh,1900,48.8555764,2.2702166,overpass,14,16,75116,16e — Passy
+Jasmin,1900,48.8525598,2.2681802,overpass,14,16,75116,16e — Passy
+Michel-Ange - Molitor,1900,48.8450092,2.26111,overpass,14,16,75116,16e — Passy
+Exelmans,1900,48.8430044,2.2600472,overpass,14,16,75116,16e — Passy
+Porte de Saint-Cloud,1900,48.8377937,2.256558,overpass,14,16,75116,16e — Passy
+Alma-Marceau,1900,48.8648683,2.300292,overpass,14,16,75116,16e — Passy
+Saint-Philippe du Roule,1900,48.8722352,2.3100505,overpass,8,8,75108,8e — Élysée
+Miromesnil,1900,48.873719,2.3145029,overpass,8,8,75108,8e — Élysée
+Sèvres-Babylone,1900,48.8512518,2.326992,overpass,10,6,75106,6e — Luxembourg
+Brochant,1912,48.8905757,2.3202004,overpass,12,17,75117,17e — Batignolles
+La Fourche,1900,48.886971,2.3258228,overpass,12,17,75117,17e — Batignolles
+Ségur,1900,48.8469753,2.3074451,overpass,11,15,75115,15e — Vaugirard
+Avenue Émile Zola,1900,48.8469751,2.2953222,overpass,11,15,75115,15e — Vaugirard
+Assemblée Nationale,1900,48.860576,2.3211714,overpass,17,7,75107,7e — Palais-Bourbon
+Solférino,1900,48.8586551,2.3229865,overpass,17,7,75107,7e — Palais-Bourbon
+Rennes,1900,48.848198,2.3277771,overpass,10,6,75106,6e — Luxembourg
+Notre-Dame des Champs,1900,48.8446836,2.3288039,overpass,10,6,75106,6e — Luxembourg
+Commerce,1900,48.8447112,2.2938643,overpass,11,15,75115,15e — Vaugirard
+École Militaire,1900,48.8546647,2.3060728,overpass,17,7,75107,7e — Palais-Bourbon
+La Tour Maubourg,1900,48.8575602,2.3103234,overpass,17,7,75107,7e — Palais-Bourbon
+Filles du Calvaire,1900,48.8633194,2.3666323,overpass,3,11,75111,11e — Popincourt
+Saint-Sébastien - Froissart,1900,48.8611816,2.367234,overpass,3,11,75111,11e — Popincourt
+Chemin Vert,1900,48.8574434,2.3681408,overpass,3,11,75111,11e — Popincourt
+Ledru-Rollin,1900,48.8512945,2.3760274,overpass,13,12,75112,12e — Reuilly
+Faidherbe — Chaligny,1900,48.8501609,2.3842222,overpass,3,11,75111,11e — Popincourt
+Montgallet,1900,48.844304,2.3901962,overpass,13,12,75112,12e — Reuilly
+Michel Bizot,1900,48.8370694,2.4024586,overpass,13,12,75112,12e — Reuilly
+Porte Dorée,1900,48.8352765,2.4061775,overpass,13,12,75112,12e — Reuilly
+Picpus,1900,48.8451759,2.4005236,overpass,13,12,75112,12e — Reuilly
+Porte de Charenton,1900,48.8330612,2.4011868,overpass,13,12,75112,12e — Reuilly
+Trinité d'Estienne d'Orves,1900,48.8763067,2.3326426,overpass,2,9,75109,9e — Opéra
+Notre-Dame de Lorette,1900,48.8760405,2.3374234,overpass,2,9,75109,9e — Opéra
+Saint-Georges,1900,48.8784466,2.3374748,overpass,2,9,75109,9e — Opéra
+Abbesses,1900,48.8848041,2.3386421,overpass,1,18,75118,18e — Buttes-Montmartre
+Lamarck - Caulaincourt,1900,48.8897556,2.3387677,overpass,1,18,75118,18e — Buttes-Montmartre
+Jules Joffrin,1900,48.8925349,2.3446536,overpass,1,18,75118,18e — Buttes-Montmartre
+Porte de la Chapelle,1900,48.897694,2.359259,overpass,1,18,75118,18e — Buttes-Montmartre
+Simplon,1900,48.8938481,2.3478412,overpass,1,18,75118,18e — Buttes-Montmartre
+Gare de l'Est,1900,48.8762027,2.3579127,overpass,0,10,75110,10e — Entrepôt
+Cité,1900,48.8553245,2.347542,overpass,5,4,75104,4e — Hôtel-de-Ville
+Saint-Michel,1900,48.8532864,2.3435081,overpass,10,6,75106,6e — Luxembourg
+Saint-Germain-des-Prés,1900,48.8536304,2.334471,overpass,10,6,75106,6e — Luxembourg
+Saint-Placide,1900,48.847098,2.3270206,overpass,10,6,75106,6e — Luxembourg
+Vavin,1900,48.8422164,2.3290114,overpass,10,6,75106,6e — Luxembourg
+Charles Michels,1913,48.84647,2.2858803,overpass,11,15,75115,15e — Vaugirard
+Javel - André Citroën,1913,48.8461781,2.2782825,overpass,11,15,75115,15e — Vaugirard
+Église d'Auteuil,1900,48.8473124,2.2686366,overpass,14,16,75116,16e — Passy
+Porte d'Auteuil,1900,48.8480881,2.2587539,overpass,14,16,75116,16e — Passy
+Chardon-Lagache,1900,48.8454285,2.2671305,overpass,14,16,75116,16e — Passy
+Mirabeau,1900,48.8468116,2.2716976,overpass,14,16,75116,16e — Passy
+Goncourt,1900,48.8699854,2.3710671,overpass,3,11,75111,11e — Popincourt
+Pyrénées,1900,48.8738565,2.3852638,overpass,9,20,75120,20e — Ménilmontant
+Jourdain,1900,48.8750944,2.38933,overpass,9,20,75120,20e — Ménilmontant
+Riquet,1900,48.8884812,2.3742226,overpass,15,19,75119,19e — Buttes-Chaumont
+Crimée,1900,48.8908513,2.3773681,overpass,15,19,75119,19e — Buttes-Chaumont
+Corentin Cariou,1900,48.8947282,2.3823046,overpass,15,19,75119,19e — Buttes-Chaumont
+Porte de la Villette,1900,48.8974039,2.385591,overpass,15,19,75119,19e — Buttes-Chaumont
+Sully - Morland,1900,48.8513954,2.3618174,overpass,5,4,75104,4e — Hôtel-de-Ville
+Pont Marie,1900,48.8537872,2.3565905,overpass,5,4,75104,4e — Hôtel-de-Ville
+Place Monge,1900,48.8429053,2.3522772,overpass,6,5,75105,5e — Panthéon
+Censier - Daubenton,1900,48.8406473,2.3519334,overpass,6,5,75105,5e — Panthéon
+Les Gobelins,1900,48.8356304,2.3526735,overpass,16,13,75113,13e — Gobelins
+Danube,1900,48.8818204,2.3942224,overpass,15,19,75119,19e — Buttes-Chaumont
+Saint-Fargeau,1900,48.8715218,2.4043104,overpass,9,20,75120,20e — Ménilmontant
+Pelleport,1900,48.8680997,2.4013152,overpass,9,20,75120,20e — Ménilmontant
+Guy Môquet,1900,48.8927389,2.3273435,overpass,1,18,75118,18e — Buttes-Montmartre
+Porte de Saint-Ouen,1900,48.8971558,2.3288425,overpass,1,18,75118,18e — Buttes-Montmartre
+Tolbiac,1900,48.8260904,2.3573505,overpass,16,13,75113,13e — Gobelins
+Maison Blanche,1900,48.8214836,2.3588859,overpass,16,13,75113,13e — Gobelins
+Champs-Élysées - Clemenceau,1900,48.8674912,2.3140701,overpass,8,8,75108,8e — Élysée
+Saint-Sulpice,1900,48.8511009,2.3307034,overpass,10,6,75106,6e — Luxembourg
+Château Landon,1900,48.8789087,2.3624266,overpass,0,10,75110,10e — Entrepôt
+Bir-Hakeim,1900,48.8538898,2.2893811,overpass,11,15,75115,15e — Vaugirard
+Porte de Choisy,1900,48.8201241,2.3647858,overpass,16,13,75113,13e — Gobelins
+Vaneau,1900,48.8491519,2.3218529,overpass,17,7,75107,7e — Palais-Bourbon
+Ternes,1900,48.8783132,2.2990737,overpass,12,17,75117,17e — Batignolles
+Avron,1900,48.851501,2.3982195,overpass,3,11,75111,11e — Popincourt
+Marcadet - Poissonniers,1900,48.8914837,2.3497296,overpass,1,18,75118,18e — Buttes-Montmartre
+Sèvres-Lecourbe,1900,48.8456163,2.3095848,overpass,11,15,75115,15e — Vaugirard
+Porte de Clignancourt,1900,48.8973976,2.3448521,overpass,1,18,75118,18e — Buttes-Montmartre
+Europe,1900,48.8787706,2.3222823,overpass,8,8,75108,8e — Élysée
+Botzaris,1900,48.879514,2.3885871,overpass,15,19,75119,19e — Buttes-Chaumont
+Jaurès,1900,48.8825949,2.3703263,overpass,15,19,75119,19e — Buttes-Chaumont
+Porte de Vanves,1900,48.827676,2.3054796,overpass,4,14,75114,14e — Observatoire
+Place des Fêtes,1900,48.8768713,2.3932057,overpass,15,19,75119,19e — Buttes-Chaumont
+Stalingrad,1900,48.8851627,2.3702373,overpass,15,19,75119,19e — Buttes-Chaumont
+Porte de Montreuil,1900,48.8535352,2.4106565,overpass,9,20,75120,20e — Ménilmontant
+Porte Maillot,1900,48.8777372,2.2827016,overpass,12,17,75117,17e — Batignolles
+République,1900,48.8676215,2.3637014,overpass,0,10,75110,10e — Entrepôt
+Anvers,1900,48.8828803,2.3442565,overpass,2,9,75109,9e — Opéra
+La Chapelle,1900,48.8844068,2.3603057,overpass,0,10,75110,10e — Entrepôt
+Quai de la Rapée,1900,48.8464813,2.3659024,overpass,13,12,75112,12e — Reuilly
+Sentier,1900,48.8677209,2.3457562,overpass,7,2,75102,2e — Bourse
+Gare d'Austerlitz,1900,48.8424013,2.3649897,overpass,16,13,75113,13e — Gobelins
+Saint-Lazare,1903,48.8754153,2.3253531,overpass,8,8,75108,8e — Élysée
+Victor Hugo,1931,48.8699395,2.2860712,overpass,14,16,75116,16e — Passy
+Concorde,1900,48.8662052,2.3223767,overpass,8,8,75108,8e — Élysée
+Invalides,1900,48.8601723,2.314497,overpass,17,7,75107,7e — Palais-Bourbon
+Trocadéro,1900,48.863045,2.2871938,overpass,14,16,75116,16e — Passy
+Pigalle,1900,48.8822982,2.3380899,overpass,1,18,75118,18e — Buttes-Montmartre
+Château Rouge,1900,48.8872884,2.3495532,overpass,1,18,75118,18e — Buttes-Montmartre
+Jussieu,1900,48.8459626,2.354801,overpass,6,5,75105,5e — Panthéon
+Charles de Gaulle — Étoile,1900,48.8744088,2.295508,overpass,8,8,75108,8e — Élysée
+Denfert-Rochereau,1900,48.8342649,2.3326427,overpass,4,14,75114,14e — Observatoire
+Palais Royal - Musée du Louvre,1900,48.8624906,2.3360431,overpass,18,1,75101,1er — Louvre
+Montparnasse-Bienvenüe,1900,48.8439336,2.3241027,overpass,10,6,75106,6e — Luxembourg
+Bastille,1900,48.852987,2.3688579,overpass,5,4,75104,4e — Hôtel-de-Ville
+Hôtel de Ville,1900,48.8575406,2.3515397,overpass,5,4,75104,4e — Hôtel-de-Ville
+Strasbourg - Saint-Denis,1900,48.8693002,2.3542855,overpass,19,3,75103,3e — Temple
+Barbès - Rochechouart,1900,48.8837466,2.3496958,overpass,1,18,75118,18e — Buttes-Montmartre
+Porte des Lilas,1900,48.8769658,2.4064184,overpass,9,20,75120,20e — Ménilmontant
+Louis Blanc,1900,48.8813308,2.3653555,overpass,0,10,75110,10e — Entrepôt
+Bibliothèque François Mitterrand,1900,48.8300059,2.3768474,overpass,16,13,75113,13e — Gobelins
+Gare de Lyon,1900,48.8451709,2.3725553,overpass,13,12,75112,12e — Reuilly
+Gare du Nord (Métro),1907,48.8795666,2.3572124,overpass,0,10,75110,10e — Entrepôt
+Pont Neuf,1900,48.8585776,2.3422202,overpass,18,1,75101,1er — Louvre
+Les Halles,1977,48.8624547,2.3460596,overpass,18,1,75101,1er — Louvre
+Réaumur - Sébastopol,1900,48.8662481,2.3526084,overpass,19,3,75103,3e — Temple
+Étienne Marcel,1900,48.8638718,2.3490301,overpass,7,2,75102,2e — Bourse
+Château d'Eau,1900,48.8728888,2.3563528,overpass,0,10,75110,10e — Entrepôt
+Chaussée d'Antin - La Fayette,1900,48.8730441,2.3332127,overpass,2,9,75109,9e — Opéra
+Le Peletier,1900,48.8748996,2.3402328,overpass,2,9,75109,9e — Opéra
+Cadet,1900,48.8760078,2.3444767,overpass,2,9,75109,9e — Opéra
+Poissonnière,1900,48.8771197,2.3487446,overpass,2,9,75109,9e — Opéra
+Pyramides,1900,48.8657452,2.3344687,overpass,18,1,75101,1er — Louvre
+Porte d'Ivry,1900,48.8216035,2.3693411,overpass,16,13,75113,13e — Gobelins
+Gambetta,1900,48.8649327,2.3980541,overpass,9,20,75120,20e — Ménilmontant
+Argentine,1900,48.8753357,2.2901322,overpass,14,16,75116,16e — Passy
+Courcelles,1900,48.8794066,2.3043565,overpass,8,8,75108,8e — Élysée
+Porte de Bagnolet,1900,48.8646027,2.407183,overpass,9,20,75120,20e — Ménilmontant
+Edgar Quinet,1900,48.84111,2.3250699,overpass,4,14,75114,14e — Observatoire
+Olympiades,1900,48.8270448,2.3664175,overpass,16,13,75113,13e — Gobelins
+Porte de Pantin,1900,48.8886574,2.3926771,overpass,15,19,75119,19e — Buttes-Chaumont
+Laumière,1900,48.8851647,2.3794369,overpass,15,19,75119,19e — Buttes-Chaumont
+Ourcq,1900,48.8870772,2.38664,overpass,15,19,75119,19e — Buttes-Chaumont
+Porte de Versailles,1900,48.8324338,2.2879537,overpass,11,15,75115,15e — Vaugirard
+Rue du Bac,1900,48.8551812,2.3257736,overpass,17,7,75107,7e — Palais-Bourbon
+Porte de Clichy,1900,48.8944737,2.3134274,overpass,12,17,75117,17e — Batignolles
+Pont Cardinet,2020,48.8895133,2.3153423,overpass,12,17,75117,17e — Batignolles
+Richelieu - Drouot,1900,48.8719671,2.3392504,overpass,2,9,75109,9e — Opéra
+Boissière,1900,48.8670421,2.2900911,overpass,14,16,75116,16e — Passy
+Raspail,1900,48.8389219,2.3307369,overpass,4,14,75114,14e — Observatoire
+Daumesnil,1900,48.8395922,2.3962319,overpass,13,12,75112,12e — Reuilly
+Corvisart,1900,48.8298024,2.3504805,overpass,16,13,75113,13e — Gobelins
+Saint-François-Xavier,1900,48.8514517,2.3144205,overpass,17,7,75107,7e — Palais-Bourbon
+Varenne,1900,48.856226,2.314965,overpass,17,7,75107,7e — Palais-Bourbon
+Porte de Clichy,2021,48.8948169,2.3132665,overpass,12,17,75117,17e — Batignolles
+Pré Saint-Gervais,1900,48.8802778,2.3988805,overpass,15,19,75119,19e — Buttes-Chaumont
+Reuilly — Diderot,1900,48.8473574,2.3867982,overpass,13,12,75112,12e — Reuilly
+Porte de Vincennes,1900,48.8473449,2.4080897,overpass,9,20,75120,20e — Ménilmontant
+Michel-Ange - Auteuil,1900,48.8480025,2.2641679,overpass,14,16,75116,16e — Passy
+Odéon,1900,48.8523043,2.3393706,overpass,10,6,75106,6e — Luxembourg
+Liège,1900,48.8796039,2.3270446,overpass,2,9,75109,9e — Opéra
+Campo-Formio,1900,48.8351162,2.3582026,overpass,16,13,75113,13e — Gobelins
+Rambuteau,1900,48.8617648,2.3537854,overpass,19,3,75103,3e — Temple
+Pernety,1900,48.8339998,2.3181806,overpass,4,14,75114,14e — Observatoire
+Plaisance,1900,48.8317665,2.3140421,overpass,4,14,75114,14e — Observatoire
+Gaîté,1900,48.8386383,2.3225137,overpass,4,14,75114,14e — Observatoire
+Télégraphe,1900,48.8754961,2.3989653,overpass,15,19,75119,19e — Buttes-Chaumont
+Temple,1900,48.8664946,2.3607078,overpass,19,3,75103,3e — Temple
+Cour Saint-Émilion,1900,48.8335432,2.3859654,overpass,13,12,75112,12e — Reuilly
+George V,1900,48.872076,2.3004214,overpass,8,8,75108,8e — Élysée
+Louvre - Rivoli,1900,48.860809,2.3411316,overpass,18,1,75101,1er — Louvre
+Porte d'Italie,1900,48.819054,2.3594056,overpass,16,13,75113,13e — Gobelins
+Saint-Marcel,1900,48.8382809,2.3608339,overpass,16,13,75113,13e — Gobelins
+Richard Lenoir,1900,48.860218,2.3720497,overpass,3,11,75111,11e — Popincourt
+Bréguet-Sabin,1900,48.8566358,2.3704159,overpass,3,11,75111,11e — Popincourt
+Ménilmontant,1900,48.8667039,2.3833464,overpass,9,20,75120,20e — Ménilmontant
+Couronnes,1900,48.8690533,2.3804541,overpass,3,11,75111,11e — Popincourt
+Colonel Fabien,1900,48.8774137,2.3710017,overpass,15,19,75119,19e — Buttes-Chaumont
+Philippe Auguste,1900,48.8582443,2.3901626,overpass,3,11,75111,11e — Popincourt

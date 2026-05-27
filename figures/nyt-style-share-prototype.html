@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ECON 30 · Share Over Time Prototype</title>
+  <script defer src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+  <style>
+    :root {
+      --paper: #f1e9d6;
+      --ink: #2a2218;
+      --ink-soft: #4a3f30;
+      --ink-faded: #6b5d48;
+      --paris: #7a1f2b;
+      --mexico: #2d5a3d;
+      --mono: "Courier New", monospace;
+      --serif: Georgia, serif;
+    }
+
+    body {
+      margin: 0;
+      padding: 2rem;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--serif);
+    }
+
+    .wrap {
+      max-width: 980px;
+      margin: 0 auto;
+      border: 1px solid var(--ink-faded);
+      background: rgba(255, 255, 255, 0.25);
+      padding: 1.25rem;
+    }
+
+    h1 {
+      margin: 0 0 0.5rem;
+      font-size: 2rem;
+      line-height: 1.15;
+    }
+
+    p {
+      margin: 0.3rem 0 1rem;
+      color: var(--ink-soft);
+      max-width: 75ch;
+    }
+
+    .controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem 1.1rem;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+
+    .btn {
+      border: 1px solid var(--ink);
+      background: transparent;
+      color: var(--ink);
+      font-family: var(--mono);
+      font-size: 0.75rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.45rem 0.7rem;
+      cursor: pointer;
+    }
+
+    .btn.active.paris {
+      background: var(--paris);
+      border-color: var(--paris);
+      color: var(--paper);
+    }
+
+    .btn.active.mexico {
+      background: var(--mexico);
+      border-color: var(--mexico);
+      color: var(--paper);
+    }
+
+    .slider-wrap {
+      font-family: var(--mono);
+      font-size: 0.75rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--ink-faded);
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .slider-wrap input {
+      width: 240px;
+    }
+
+    #metric {
+      font-size: 1.1rem;
+      margin-bottom: 0.6rem;
+    }
+
+    #chart {
+      width: 100%;
+      height: auto;
+      display: block;
+      border: 1px dashed rgba(74, 63, 48, 0.4);
+      background: rgba(255, 255, 255, 0.25);
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Share of Residents in Planning-Vulnerable Districts</h1>
+    <p>Standalone preview inspired by NYT-style timeline storytelling. Mock data for design only.</p>
+
+    <div class="controls">
+      <div>
+        <button class="btn paris active" data-city="paris" type="button">Paris</button>
+        <button class="btn mexico" data-city="mexico" type="button">Mexico City</button>
+      </div>
+      <label class="slider-wrap" for="year">
+        Year
+        <input id="year" type="range" min="1855" max="2024" step="1" value="2024" />
+        <span id="yearLabel">2024</span>
+      </label>
+    </div>
+
+    <div id="metric">Paris · 2024 · 31.0%</div>
+    <svg id="chart" viewBox="0 0 980 420" xmlns="http://www.w3.org/2000/svg"></svg>
+  </div>
+
+  <script>
+    const state = { city: "paris", year: 2024 };
+    const SERIES = {
+      paris: [
+        { year: 1855, value: 18.2 }, { year: 1860, value: 20.4 }, { year: 1870, value: 23.0 }, { year: 1880, value: 21.5 },
+        { year: 1900, value: 19.7 }, { year: 1920, value: 22.2 }, { year: 1945, value: 26.4 }, { year: 1960, value: 29.8 },
+        { year: 1980, value: 30.9 }, { year: 2000, value: 32.4 }, { year: 2010, value: 31.8 }, { year: 2024, value: 31.0 }
+      ],
+      mexico: [
+        { year: 1855, value: 14.0 }, { year: 1876, value: 16.2 }, { year: 1900, value: 22.6 }, { year: 1920, value: 24.1 },
+        { year: 1940, value: 31.9 }, { year: 1960, value: 39.5 }, { year: 1980, value: 46.1 }, { year: 1995, value: 44.6 },
+        { year: 2005, value: 41.9 }, { year: 2015, value: 39.7 }, { year: 2024, value: 38.2 }
+      ]
+    };
+    const EVENTS = {
+      paris: [
+        { year: 1860, label: "Haussmann annexations" },
+        { year: 1945, label: "Postwar housing push" },
+        { year: 2000, label: "Core-value rebound" }
+      ],
+      mexico: [
+        { year: 1876, label: "Porfirian modernization" },
+        { year: 1960, label: "Peripheral informal boom" },
+        { year: 2005, label: "Transit integration phase" }
+      ]
+    };
+
+    function interpolate(city, year) {
+      const pts = SERIES[city];
+      if (year <= pts[0].year) return pts[0].value;
+      if (year >= pts[pts.length - 1].year) return pts[pts.length - 1].value;
+      for (let i = 1; i < pts.length; i++) {
+        const a = pts[i - 1], b = pts[i];
+        if (year <= b.year) {
+          const t = (year - a.year) / (b.year - a.year);
+          return a.value + (b.value - a.value) * t;
+        }
+      }
+      return pts[pts.length - 1].value;
+    }
+
+    function render() {
+      const svg = d3.select("#chart");
+      svg.selectAll("*").remove();
+
+      const width = 980, height = 420;
+      const margin = { top: 22, right: 20, bottom: 46, left: 58 };
+      const iw = width - margin.left - margin.right;
+      const ih = height - margin.top - margin.bottom;
+      const accent = state.city === "paris" ? "#7a1f2b" : "#2d5a3d";
+      const name = state.city === "paris" ? "Paris" : "Mexico City";
+      const series = SERIES[state.city];
+      const events = EVENTS[state.city];
+      const value = interpolate(state.city, state.year);
+
+      const x = d3.scaleLinear().domain([1855, 2024]).range([margin.left, margin.left + iw]);
+      const y = d3.scaleLinear().domain([10, 50]).nice().range([margin.top + ih, margin.top]);
+
+      svg.append("g")
+        .attr("transform", `translate(0,${margin.top + ih})`)
+        .call(d3.axisBottom(x).tickValues([1860, 1880, 1920, 1960, 2000, 2024]).tickFormat(d3.format("d")))
+        .call(g => g.selectAll("text").attr("font-family", "Courier New, monospace").attr("font-size", 11).attr("fill", "#6b5d48"))
+        .call(g => g.selectAll("line,path").attr("stroke", "#6b5d48"));
+
+      svg.append("g")
+        .attr("transform", `translate(${margin.left},0)`)
+        .call(d3.axisLeft(y).tickValues([10, 20, 30, 40, 50]).tickFormat(d => `${d}%`))
+        .call(g => g.selectAll("text").attr("font-family", "Courier New, monospace").attr("font-size", 11).attr("fill", "#6b5d48"))
+        .call(g => g.selectAll("line,path").attr("stroke", "#6b5d48"));
+
+      const area = d3.area().x(d => x(d.year)).y0(y(10)).y1(d => y(d.value)).curve(d3.curveMonotoneX);
+      const line = d3.line().x(d => x(d.year)).y(d => y(d.value)).curve(d3.curveMonotoneX);
+
+      svg.append("path").datum(series).attr("fill", accent).attr("fill-opacity", 0.14).attr("d", area);
+      svg.append("path").datum(series).attr("fill", "none").attr("stroke", accent).attr("stroke-width", 3).attr("d", line);
+
+      svg.append("line")
+        .attr("x1", x(state.year)).attr("x2", x(state.year))
+        .attr("y1", y(10)).attr("y2", y(value))
+        .attr("stroke", "#2a2218").attr("stroke-dasharray", "3 3");
+
+      svg.append("circle")
+        .attr("cx", x(state.year)).attr("cy", y(value)).attr("r", 5.2)
+        .attr("fill", accent).attr("stroke", "#f1e9d6").attr("stroke-width", 2);
+
+      events.forEach((e, i) => {
+        const v = interpolate(state.city, e.year);
+        const shift = i % 2 ? 26 : -34;
+        svg.append("circle").attr("cx", x(e.year)).attr("cy", y(v)).attr("r", 3.1).attr("fill", "#2a2218");
+        svg.append("line")
+          .attr("x1", x(e.year)).attr("x2", x(e.year))
+          .attr("y1", y(v)).attr("y2", y(v) + shift)
+          .attr("stroke", "#6b5d48");
+        svg.append("text")
+          .attr("x", x(e.year) + 5).attr("y", y(v) + shift + (shift < 0 ? -1 : 12))
+          .attr("font-family", "Courier New, monospace").attr("font-size", 10).attr("fill", "#4a3f30")
+          .text(`${e.year} · ${e.label}`);
+      });
+
+      document.getElementById("yearLabel").textContent = String(state.year);
+      document.getElementById("metric").textContent = `${name} · ${state.year} · ${value.toFixed(1)}%`;
+    }
+
+    document.querySelectorAll(".btn").forEach(btn => {
+      btn.addEventListener("click", () => {
+        state.city = btn.dataset.city;
+        document.querySelectorAll(".btn").forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+        render();
+      });
+    });
+
+    document.getElementById("year").addEventListener("input", (e) => {
+      state.year = Number(e.target.value);
+      render();
+    });
+
+    render();
+  </script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ECON 30 · Visual Prototype Gallery</title>
+  <style>
+    :root {
+      --paper: #f1e9d6;
+      --ink: #2a2218;
+      --ink-soft: #4a3f30;
+      --ink-faded: #6b5d48;
+      --accent-paris: #7a1f2b;
+      --accent-mexico: #2d5a3d;
+    }
+    body {
+      margin: 0;
+      padding: 2rem;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: Georgia, serif;
+    }
+    .wrap {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    h1 {
+      margin: 0 0 0.5rem;
+      font-size: 2rem;
+    }
+    p.lead {
+      margin: 0 0 1.2rem;
+      color: var(--ink-soft);
+      max-width: 70ch;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.9rem;
+    }
+    @media (max-width: 760px) {
+      .grid { grid-template-columns: 1fr; }
+    }
+    .card {
+      border: 1px solid var(--ink-faded);
+      background: rgba(255,255,255,0.24);
+      padding: 0.95rem 1rem;
+    }
+    .card h2 {
+      margin: 0 0 0.4rem;
+      font-size: 1.15rem;
+    }
+    .card p {
+      margin: 0 0 0.8rem;
+      color: var(--ink-soft);
+      font-size: 0.96rem;
+      line-height: 1.45;
+    }
+    .card a {
+      display: inline-block;
+      text-decoration: none;
+      border: 1px solid var(--ink);
+      color: var(--ink);
+      padding: 0.35rem 0.65rem;
+      font-family: "Courier New", monospace;
+      font-size: 0.76rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-right: 0.5rem;
+      margin-bottom: 0.45rem;
+      background: transparent;
+    }
+    .card a:hover {
+      background: var(--ink);
+      color: var(--paper);
+    }
+    .stamp {
+      display: inline-block;
+      font-family: "Courier New", monospace;
+      font-size: 0.7rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--ink-faded);
+      margin-bottom: 0.5rem;
+    }
+    .paris { border-top: 4px solid var(--accent-paris); }
+    .mexico { border-top: 4px solid var(--accent-mexico); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>ECON 30 · Prototype Gallery</h1>
+    <p class="lead">Open any interactive concept directly from this page. These are standalone mockups for design exploration before final data integration.</p>
+
+    <div class="grid">
+      <article class="card paris">
+        <span class="stamp">Prototype 00</span>
+        <h2>NYT-style Share Timeline</h2>
+        <p>Single-series story chart with city toggle, year slider, and annotations.</p>
+        <a href="./nyt-style-share-prototype.html" target="_blank" rel="noopener noreferrer">Open Visual</a>
+      </article>
+
+      <article class="card mexico">
+        <span class="stamp">Prototype 01</span>
+        <h2>Planning Time Machine</h2>
+        <p>Dual-city synchronized map with year slider and thematic layer toggle.</p>
+        <a href="./visual-01-planning-time-machine.html" target="_blank" rel="noopener noreferrer">Open Visual</a>
+      </article>
+
+      <article class="card paris">
+        <span class="stamp">Prototype 02</span>
+        <h2>Counterfactual Simulator</h2>
+        <p>Policy levers update inequality, access, displacement, and welfare outcomes.</p>
+        <a href="./visual-02-counterfactual-simulator.html" target="_blank" rel="noopener noreferrer">Open Visual</a>
+      </article>
+
+      <article class="card mexico">
+        <span class="stamp">Prototype 03</span>
+        <h2>Trade-off Ternary</h2>
+        <p>District ranking under changing Equity / Efficiency / Heritage priorities.</p>
+        <a href="./visual-03-tradeoff-ternary.html" target="_blank" rel="noopener noreferrer">Open Visual</a>
+      </article>
+
+      <article class="card paris">
+        <span class="stamp">Prototype 04</span>
+        <h2>Inequality Conveyor Belt</h2>
+        <p>Flow view of district mobility across low/middle/high tiers over time.</p>
+        <a href="./visual-04-inequality-conveyor.html" target="_blank" rel="noopener noreferrer">Open Visual</a>
+      </article>
+
+      <article class="card mexico">
+        <span class="stamp">Prototype 05</span>
+        <h2>Street Grammar Explorer</h2>
+        <p>Mini-game where policy mixes generate access, displacement, and equity trade-offs.</p>
+        <a href="./visual-05-street-grammar-explorer.html" target="_blank" rel="noopener noreferrer">Open Visual</a>
+      </article>
+
+      <article class="card paris">
+        <span class="stamp">Analysis</span>
+        <h2>Regression laps</h2>
+        <p>2020 cross-section scatter plots: log(income or crowding proxy) vs. planning index for Paris and CDMX.</p>
+        <a href="./regression-laps.html" target="_blank" rel="noopener noreferrer">Open Visual</a>
+      </article>
+    </div>
+  </div>
+</body>
+</html>
