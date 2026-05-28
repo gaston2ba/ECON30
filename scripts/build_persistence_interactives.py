@@ -52,19 +52,40 @@ def read_mexico_ppd() -> pd.DataFrame:
     return pd.DataFrame(rows)
 
 
+def norm_name(s: str) -> str:
+    import unicodedata
+    t = unicodedata.normalize("NFD", str(s).strip().lower())
+    return "".join(ch for ch in t if unicodedata.category(ch) != "Mn")
+
+
+def match_name(name: str, id_map: dict[str, int]) -> tuple[str, int] | tuple[None, None]:
+    n = norm_name(name)
+    for k, v in id_map.items():
+        kn = norm_name(k)
+        if n == kn:
+            return k, v
+    for k, v in id_map.items():
+        kn = norm_name(k)
+        if n in kn or kn in n:
+            return k, v
+    return None, None
+
+
 def rank_payload(df: pd.DataFrame, name_col: str, years: list[int], id_map: dict[str, int], city: str) -> dict:
     data_by_year: dict[str, list[dict]] = {}
     for y in years:
         tmp = df[[name_col, y]].dropna().copy()
         tmp = tmp.sort_values(y, ascending=True).reset_index(drop=True)
         tmp["rank"] = tmp.index + 1
-        tmp["id"] = tmp[name_col].map(id_map)
+        mapped = tmp[name_col].apply(lambda s: match_name(s, id_map))
+        tmp["mapped_name"] = mapped.apply(lambda x: x[0])
+        tmp["id"] = mapped.apply(lambda x: x[1])
         tmp = tmp.dropna(subset=["id"])
         tmp["id"] = tmp["id"].astype(int)
         data_by_year[str(y)] = [
             {
                 "id": int(r["id"]),
-                "name": str(r[name_col]),
+                "name": str(r["mapped_name"]),
                 "value": float(r[y]),
                 "rank": int(r["rank"]),
             }

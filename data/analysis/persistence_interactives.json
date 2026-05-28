@@ -74,6 +74,12 @@
           "rank": 9
         },
         {
+          "id": 5,
+          "name": "Cuajimalpa",
+          "value": 5.6,
+          "rank": 10
+        },
+        {
           "id": 10,
           "name": "La Magdalena Contreras",
           "value": 5.6,
@@ -164,6 +170,12 @@
           "name": "Gustavo A. Madero",
           "value": 5.5,
           "rank": 9
+        },
+        {
+          "id": 5,
+          "name": "Cuajimalpa",
+          "value": 5.5,
+          "rank": 10
         },
         {
           "id": 10,
@@ -258,6 +270,12 @@
           "rank": 9
         },
         {
+          "id": 5,
+          "name": "Cuajimalpa",
+          "value": 5.4,
+          "rank": 10
+        },
+        {
           "id": 14,
           "name": "Tlalpan",
           "value": 5.4,
@@ -348,6 +366,12 @@
           "name": "Gustavo A. Madero",
           "value": 5.3,
           "rank": 9
+        },
+        {
+          "id": 5,
+          "name": "Cuajimalpa",
+          "value": 5.3,
+          "rank": 10
         },
         {
           "id": 14,
@@ -442,6 +466,12 @@
           "rank": 9
         },
         {
+          "id": 5,
+          "name": "Cuajimalpa",
+          "value": 5.1,
+          "rank": 10
+        },
+        {
           "id": 14,
           "name": "Tlalpan",
           "value": 5.1,
@@ -534,6 +564,12 @@
           "rank": 9
         },
         {
+          "id": 5,
+          "name": "Cuajimalpa",
+          "value": 5.5,
+          "rank": 10
+        },
+        {
           "id": 14,
           "name": "Tlalpan",
           "value": 5.5,
@@ -624,6 +660,12 @@
           "name": "Gustavo A. Madero",
           "value": 5.6,
           "rank": 9
+        },
+        {
+          "id": 5,
+          "name": "Cuajimalpa",
+          "value": 5.7,
+          "rank": 10
         },
         {
           "id": 14,
@@ -724,6 +766,12 @@
           "rank": 10
         },
         {
+          "id": 5,
+          "name": "Cuajimalpa",
+          "value": 5.7,
+          "rank": 11
+        },
+        {
           "id": 10,
           "name": "La Magdalena Contreras",
           "value": 5.7,
@@ -822,6 +870,12 @@
           "rank": 11
         },
         {
+          "id": 5,
+          "name": "Cuajimalpa",
+          "value": 5.4,
+          "rank": 12
+        },
+        {
           "id": 13,
           "name": "Tláhuac",
           "value": 5.4,
@@ -912,6 +966,12 @@
           "name": "La Magdalena Contreras",
           "value": 4.8,
           "rank": 11
+        },
+        {
+          "id": 5,
+          "name": "Cuajimalpa",
+          "value": 4.9,
+          "rank": 12
         },
         {
           "id": 13,
@@ -1024,6 +1084,12 @@
           "rank": 14
         },
         {
+          "id": 5,
+          "name": "Cuajimalpa",
+          "value": 4.4,
+          "rank": 15
+        },
+        {
           "id": 12,
           "name": "Milpa Alta",
           "value": 4.7,
@@ -1114,6 +1180,12 @@
           "name": "Iztapalapa",
           "value": 3.8,
           "rank": 14
+        },
+        {
+          "id": 5,
+          "name": "Cuajimalpa",
+          "value": 3.9,
+          "rank": 15
         },
         {
           "id": 12,
@@ -1208,6 +1280,12 @@
           "rank": 14
         },
         {
+          "id": 5,
+          "name": "Cuajimalpa",
+          "value": 3.6,
+          "rank": 15
+        },
+        {
           "id": 12,
           "name": "Milpa Alta",
           "value": 3.9,
@@ -1218,67 +1296,67 @@
     "shift_counter_vs_latest": {
       "1900": {
         "year": 1900,
-        "n_total": 15,
+        "n_total": 16,
         "changed_gt5": 0
       },
       "1910": {
         "year": 1910,
-        "n_total": 15,
+        "n_total": 16,
         "changed_gt5": 0
       },
       "1920": {
         "year": 1920,
-        "n_total": 15,
+        "n_total": 16,
         "changed_gt5": 0
       },
       "1930": {
         "year": 1930,
-        "n_total": 15,
+        "n_total": 16,
         "changed_gt5": 0
       },
       "1940": {
         "year": 1940,
-        "n_total": 15,
+        "n_total": 16,
         "changed_gt5": 0
       },
       "1950": {
         "year": 1950,
-        "n_total": 15,
+        "n_total": 16,
         "changed_gt5": 0
       },
       "1960": {
         "year": 1960,
-        "n_total": 15,
+        "n_total": 16,
         "changed_gt5": 0
       },
       "1970": {
         "year": 1970,
-        "n_total": 15,
+        "n_total": 16,
         "changed_gt5": 0
       },
       "1980": {
         "year": 1980,
-        "n_total": 15,
+        "n_total": 16,
         "changed_gt5": 0
       },
       "1990": {
         "year": 1990,
-        "n_total": 15,
+        "n_total": 16,
         "changed_gt5": 0
       },
       "2000": {
         "year": 2000,
-        "n_total": 15,
+        "n_total": 16,
         "changed_gt5": 0
       },
       "2010": {
         "year": 2010,
-        "n_total": 15,
+        "n_total": 16,
         "changed_gt5": 0
       },
       "2020": {
         "year": 2020,
-        "n_total": 15,
+        "n_total": 16,
         "changed_gt5": 0
       }
     },
@@ -1919,6 +1997,77 @@
             "year": 2020,
             "rank": 7,
             "value": 3.3
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Cuajimalpa",
+        "series": [
+          {
+            "year": 1900,
+            "rank": 10,
+            "value": 5.6
+          },
+          {
+            "year": 1910,
+            "rank": 10,
+            "value": 5.5
+          },
+          {
+            "year": 1920,
+            "rank": 10,
+            "value": 5.4
+          },
+          {
+            "year": 1930,
+            "rank": 10,
+            "value": 5.3
+          },
+          {
+            "year": 1940,
+            "rank": 10,
+            "value": 5.1
+          },
+          {
+            "year": 1950,
+            "rank": 10,
+            "value": 5.5
+          },
+          {
+            "year": 1960,
+            "rank": 10,
+            "value": 5.7
+          },
+          {
+            "year": 1970,
+            "rank": 11,
+            "value": 5.7
+          },
+          {
+            "year": 1980,
+            "rank": 12,
+            "value": 5.4
+          },
+          {
+            "year": 1990,
+            "rank": 12,
+            "value": 4.9
+          },
+          {
+            "year": 2000,
+            "rank": 15,
+            "value": 4.4
+          },
+          {
+            "year": 2010,
+            "rank": 15,
+            "value": 3.9
+          },
+          {
+            "year": 2020,
+            "rank": 15,
+            "value": 3.6
           }
         ]
       },
