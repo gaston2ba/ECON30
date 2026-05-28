@@ -1,0 +1,22 @@
+.predict-box {
+  border: 1px solid var(--ink-faded);
+  background: rgba(255,252,240,0.55);
+  padding: 1rem 1.1rem;
+  margin: 1rem 0 1.35rem;
+}
+.predict-box h4 { margin: 0 0 0.45rem; font-size: 1.05rem; }
+.predict-box p { margin: 0.4rem 0; color: var(--ink-soft); }
+#predict-svg { width: 100%; height: 330px; display:block; background:#fbf8f1; border:1px solid var(--ink-faded); }
+.predict-actions { margin-top: 0.6rem; display:flex; gap:0.6rem; align-items:center; flex-wrap:wrap; }
+.predict-btn {
+  border: 1px solid var(--ink);
+  background: transparent;
+  color: var(--ink);
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.35rem 0.6rem;
+  cursor: pointer;
+}
+.predict-btn:hover { background: var(--ink); color: var(--paper); }
