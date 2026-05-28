@@ -1,81 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>ECON 30 · Regression laps</title>
-  <style>
-    body { margin:0; padding:2rem; background:#f1e9d6; color:#2a2218; font-family:Georgia,serif; }
-    .grid { display:grid; grid-template-columns:1fr 1fr; gap:1.5rem; max-width:1100px; margin:0 auto; }
-    @media (max-width:800px) { .grid { grid-template-columns:1fr; } }
-    .card { border:1px solid #6b5d48; padding:1rem; background:rgba(255,255,255,.25); }
-    .stat { font-size:1.4rem; margin:0.4rem 0; }
-    a { color:#2a2218; }
-  </style>
-</head>
-<body>
-  <h1>Regression laps · 2020 cross-section</h1>
-  <p>log(outcome) ~ standardized index + population + distance to map center. <a href="../index.html#findings">Back to main story</a></p>
-  <div class="grid">
-    <div class="card">
-      <h2>Paris (Filosofi 2021 median income)</h2>
-      <p class="stat">β = -0.012 · ≈ -1.2% per 1 SD index · R² = 0.34</p>
-      <svg viewBox="0 0 520 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Paris regression scatter">
-  <rect width="100%" height="100%" fill="#f8f2e4"/>
-  <text x="48" y="24" font-family="Georgia, serif" font-size="14" fill="#2a2218">Paris: log outcome vs planning index</text>
-  <line x1="48" y1="312" x2="472" y2="312" stroke="#6b5d48"/>
-  <line x1="48" y1="48" x2="48" y2="312" stroke="#6b5d48"/>
-  <text x="260" y="348" text-anchor="middle" font-size="11" fill="#4a3f30">Planning index (0–100)</text>
-  <text transform="translate(16 180) rotate(-90)" font-size="11" fill="#4a3f30">log(median income / proxy)</text>
-  <circle cx="422.1" cy="155.0" r="5" fill="#7a1f2b" opacity="0.85"><title>1er — Louvre</title></circle>
-<circle cx="138.8" cy="163.5" r="5" fill="#7a1f2b" opacity="0.85"><title>2e — Bourse</title></circle>
-<circle cx="210.6" cy="157.0" r="5" fill="#7a1f2b" opacity="0.85"><title>3e — Temple</title></circle>
-<circle cx="281.4" cy="172.5" r="5" fill="#7a1f2b" opacity="0.85"><title>4e — Hôtel-de-Ville</title></circle>
-<circle cx="152.8" cy="147.2" r="5" fill="#7a1f2b" opacity="0.85"><title>5e — Panthéon</title></circle>
-<circle cx="233.6" cy="102.7" r="5" fill="#7a1f2b" opacity="0.85"><title>6e — Luxembourg</title></circle>
-<circle cx="279.5" cy="77.8" r="5" fill="#7a1f2b" opacity="0.85"><title>7e — Palais-Bourbon</title></circle>
-<circle cx="288.4" cy="86.4" r="5" fill="#7a1f2b" opacity="0.85"><title>8e — Élysée</title></circle>
-<circle cx="168.7" cy="136.9" r="5" fill="#7a1f2b" opacity="0.85"><title>9e — Opéra</title></circle>
-<circle cx="118.8" cy="206.6" r="5" fill="#7a1f2b" opacity="0.85"><title>10e — Entrepôt</title></circle>
-<circle cx="158.7" cy="199.2" r="5" fill="#7a1f2b" opacity="0.85"><title>11e — Popincourt</title></circle>
-<circle cx="110.9" cy="201.8" r="5" fill="#7a1f2b" opacity="0.85"><title>12e — Reuilly</title></circle>
-<circle cx="97.9" cy="247.7" r="5" fill="#7a1f2b" opacity="0.85"><title>13e — Gobelins</title></circle>
-<circle cx="129.8" cy="206.7" r="5" fill="#7a1f2b" opacity="0.85"><title>14e — Observatoire</title></circle>
-<circle cx="126.8" cy="174.8" r="5" fill="#7a1f2b" opacity="0.85"><title>15e — Vaugirard</title></circle>
-<circle cx="118.8" cy="104.1" r="5" fill="#7a1f2b" opacity="0.85"><title>16e — Passy</title></circle>
-<circle cx="109.9" cy="169.3" r="5" fill="#7a1f2b" opacity="0.85"><title>17e — Batignolles</title></circle>
-<circle cx="124.8" cy="256.7" r="5" fill="#7a1f2b" opacity="0.85"><title>18e — Buttes-Montmartre</title></circle>
-<circle cx="129.8" cy="282.2" r="5" fill="#7a1f2b" opacity="0.85"><title>19e — Buttes-Chaumont</title></circle>
-<circle cx="331.3" cy="273.2" r="5" fill="#7a1f2b" opacity="0.85"><title>20e — Ménilmontant</title></circle>
-</svg>
-    </div>
-    <div class="card">
-      <h2>Mexico City (inverse crowding proxy)</h2>
-      <p class="stat">β = +0.024 · ≈ +2.5% per 1 SD · r = +0.74</p>
-      <svg viewBox="0 0 520 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mexico City regression scatter">
-  <rect width="100%" height="100%" fill="#f8f2e4"/>
-  <text x="48" y="24" font-family="Georgia, serif" font-size="14" fill="#2a2218">Mexico City: log outcome vs planning index</text>
-  <line x1="48" y1="312" x2="472" y2="312" stroke="#6b5d48"/>
-  <line x1="48" y1="48" x2="48" y2="312" stroke="#6b5d48"/>
-  <text x="260" y="348" text-anchor="middle" font-size="11" fill="#4a3f30">Planning index (0–100)</text>
-  <text transform="translate(16 180) rotate(-90)" font-size="11" fill="#4a3f30">log(median income / proxy)</text>
-  <circle cx="187.0" cy="226.7" r="5" fill="#2d5a3d" opacity="0.85"><title>Álvaro Obregón</title></circle>
-<circle cx="293.9" cy="190.0" r="5" fill="#2d5a3d" opacity="0.85"><title>Azcapotzalco</title></circle>
-<circle cx="267.0" cy="89.0" r="5" fill="#2d5a3d" opacity="0.85"><title>Benito Juárez</title></circle>
-<circle cx="404.1" cy="190.0" r="5" fill="#2d5a3d" opacity="0.85"><title>Coyoacán</title></circle>
-<circle cx="204.3" cy="238.3" r="5" fill="#2d5a3d" opacity="0.85"><title>Cuajimalpa</title></circle>
-<circle cx="440.0" cy="135.4" r="5" fill="#2d5a3d" opacity="0.85"><title>Cuauhtémoc</title></circle>
-<circle cx="232.5" cy="202.6" r="5" fill="#2d5a3d" opacity="0.85"><title>Gustavo A. Madero</title></circle>
-<circle cx="251.0" cy="202.6" r="5" fill="#2d5a3d" opacity="0.85"><title>Iztacalco</title></circle>
-<circle cx="176.1" cy="226.7" r="5" fill="#2d5a3d" opacity="0.85"><title>Iztapalapa</title></circle>
-<circle cx="141.5" cy="214.9" r="5" fill="#2d5a3d" opacity="0.85"><title>La Magdalena Contreras</title></circle>
-<circle cx="414.4" cy="135.4" r="5" fill="#2d5a3d" opacity="0.85"><title>Miguel Hidalgo</title></circle>
-<circle cx="80.0" cy="271.0" r="5" fill="#2d5a3d" opacity="0.85"><title>Milpa Alta</title></circle>
-<circle cx="172.3" cy="226.7" r="5" fill="#2d5a3d" opacity="0.85"><title>Tláhuac</title></circle>
-<circle cx="183.8" cy="202.6" r="5" fill="#2d5a3d" opacity="0.85"><title>Tlalpan</title></circle>
-<circle cx="366.3" cy="163.6" r="5" fill="#2d5a3d" opacity="0.85"><title>Venustiano Carranza</title></circle>
-<circle cx="113.3" cy="226.7" r="5" fill="#2d5a3d" opacity="0.85"><title>Xochimilco</title></circle>
-</svg>
-    </div>
-  </div>
-</body>
-</html>
+<!doctype html>
+<html><head><meta charset="utf-8"><title>UQI regression laps</title>
+<script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+<style>body{font-family:Georgia,serif;background:#f1e9d6;color:#2a2218;margin:0;padding:1.2rem}.grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}@media (max-width:820px){.grid{grid-template-columns:1fr}}.card{border:1px solid #6b5d48;background:#fbf7eb;padding:0.8rem}</style></head>
+<body><h2>UQI vs log(outcome)</h2><div class="grid"><div class="card"><div id="p"></div></div><div class="card"><div id="m"></div></div></div>
+<script>
+const paris=[{"id": 1, "name": "1er — Louvre", "uqi": 55.8, "log_outcome": 10.463960116191533}, {"id": 2, "name": "2e — Bourse", "uqi": 26.4, "log_outcome": 10.435585311577658}, {"id": 3, "name": "3e — Temple", "uqi": 33.7, "log_outcome": 10.457372665762566}, {"id": 4, "name": "4e — Hôtel-de-Ville", "uqi": 39.150000000000006, "log_outcome": 10.405474227634915}, {"id": 5, "name": "5e — Panthéon", "uqi": 25.275, "log_outcome": 10.490162488585556}, {"id": 6, "name": "6e — Luxembourg", "uqi": 36.5, "log_outcome": 10.639454730279002}, {"id": 7, "name": "7e — Palais-Bourbon", "uqi": 36.75, "log_outcome": 10.722826758333833}, {"id": 8, "name": "8e — Élysée", "uqi": 40.825, "log_outcome": 10.694215061434937}, {"id": 9, "name": "9e — Opéra", "uqi": 30.65, "log_outcome": 10.524601530196241}, {"id": 10, "name": "10e — Entrepôt", "uqi": 23.975, "log_outcome": 10.29112807573174}, {"id": 11, "name": "11e — Popincourt", "uqi": 30.95, "log_outcome": 10.315928274380717}, {"id": 12, "name": "12e — Reuilly", "uqi": 17.3, "log_outcome": 10.30695065797362}, {"id": 13, "name": "13e — Gobelins", "uqi": 20.3, "log_outcome": 10.153078273865185}, {"id": 14, "name": "14e — Observatoire", "uqi": 23.000000000000004, "log_outcome": 10.29078869001662}, {"id": 15, "name": "15e — Vaugirard", "uqi": 23.75, "log_outcome": 10.397573852297821}, {"id": 16, "name": "16e — Passy", "uqi": 18.95, "log_outcome": 10.634652800283595}, {"id": 17, "name": "17e — Batignolles", "uqi": 21.8, "log_outcome": 10.4160117329377}, {"id": 18, "name": "18e — Buttes-Montmartre", "uqi": 24.3, "log_outcome": 10.123024608256227}, {"id": 19, "name": "19e — Buttes-Chaumont", "uqi": 23.9, "log_outcome": 10.037581287016828}, {"id": 20, "name": "20e — Ménilmontant", "uqi": 44.875, "log_outcome": 10.067729995930177}], mexico=[{"id": 1, "name": "Álvaro Obregón", "uqi": 35.72, "log_outcome": -1.252762968495368}, {"id": 2, "name": "Azcapotzalco", "uqi": 52.56, "log_outcome": -1.1631508098056809}, {"id": 3, "name": "Benito Juárez", "uqi": 53.96, "log_outcome": -0.916290731874155}, {"id": 4, "name": "Coyoacán", "uqi": 66.02, "log_outcome": -1.1631508098056809}, {"id": 5, "name": "Cuajimalpa", "uqi": 33.82, "log_outcome": -1.2809338454620642}, {"id": 6, "name": "Cuauhtémoc", "uqi": 77.17999999999999, "log_outcome": -1.0296194171811581}, {"id": 7, "name": "Gustavo A. Madero", "uqi": 45.36, "log_outcome": -1.1939224684724346}, {"id": 8, "name": "Iztacalco", "uqi": 49.64, "log_outcome": -1.1939224684724346}, {"id": 9, "name": "Iztapalapa", "uqi": 36.32000000000001, "log_outcome": -1.252762968495368}, {"id": 10, "name": "La Magdalena Contreras", "uqi": 27.5, "log_outcome": -1.2237754316221157}, {"id": 11, "name": "Miguel Hidalgo", "uqi": 68.78, "log_outcome": -1.0296194171811581}, {"id": 12, "name": "Milpa Alta", "uqi": 16.580000000000002, "log_outcome": -1.3609765531356006}, {"id": 13, "name": "Tláhuac", "uqi": 31.5, "log_outcome": -1.252762968495368}, {"id": 14, "name": "Tlalpan", "uqi": 33.84, "log_outcome": -1.1939224684724346}, {"id": 15, "name": "Venustiano Carranza", "uqi": 64.16, "log_outcome": -1.0986122886681098}, {"id": 16, "name": "Xochimilco", "uqi": 23.14, "log_outcome": -1.252762968495368}];
+function panel(el, pts, title, color){
+ const x=pts.map(d=>d.uqi), y=pts.map(d=>d.log_outcome), t=pts.map(d=>d.name);
+ const n=x.length, mx=x.reduce((a,b)=>a+b,0)/n, my=y.reduce((a,b)=>a+b,0)/n;
+ let num=0, den=0; for(let i=0;i<n;i++){ num+=(x[i]-mx)*(y[i]-my); den+=(x[i]-mx)*(x[i]-mx); }
+ const b=num/den, a=my-b*mx;
+ const xline=[Math.min(...x), Math.max(...x)], yline=xline.map(v=>a+b*v);
+ Plotly.newPlot(el,[{x,y,text:t,mode:'markers',type:'scatter',marker:{color,size:8}},{x:xline,y:yline,mode:'lines',line:{color:'#2a2218'}}],{title,xaxis:{title:'UQI'},yaxis:{title:'log(outcome)'},paper_bgcolor:'#fbf7eb',plot_bgcolor:'#fbf7eb',margin:{t:50,l:50,r:20,b:50}},{displayModeBar:false});
+}
+panel('p',paris,'Paris','#7a1f2b'); panel('m',mexico,'Mexico City','#2d5a3d');
+</script></body></html>

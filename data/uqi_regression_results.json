@@ -1,0 +1,264 @@
+{
+  "paris": {
+    "city": "paris",
+    "city_label": "Paris",
+    "outcome": "median_income_eur",
+    "uqi_components_used": "parks,transit,density,thirdspace",
+    "n": 20,
+    "controlled": {
+      "term": "std_uqi",
+      "beta": -0.03160309791466166,
+      "se": 0.046360335340313585,
+      "p": 0.505187342249122,
+      "r2": 0.353633421733924
+    },
+    "bivariate": {
+      "term": "std_uqi",
+      "beta": 0.0486929516787088,
+      "se": 0.04651874879691274,
+      "p": 0.3090735610216446,
+      "r2": 0.06290394127782861
+    },
+    "points": [
+      {
+        "id": 1,
+        "name": "1er — Louvre",
+        "uqi": 55.8,
+        "log_outcome": 10.463960116191533
+      },
+      {
+        "id": 2,
+        "name": "2e — Bourse",
+        "uqi": 26.4,
+        "log_outcome": 10.435585311577658
+      },
+      {
+        "id": 3,
+        "name": "3e — Temple",
+        "uqi": 33.7,
+        "log_outcome": 10.457372665762566
+      },
+      {
+        "id": 4,
+        "name": "4e — Hôtel-de-Ville",
+        "uqi": 39.150000000000006,
+        "log_outcome": 10.405474227634915
+      },
+      {
+        "id": 5,
+        "name": "5e — Panthéon",
+        "uqi": 25.275,
+        "log_outcome": 10.490162488585556
+      },
+      {
+        "id": 6,
+        "name": "6e — Luxembourg",
+        "uqi": 36.5,
+        "log_outcome": 10.639454730279002
+      },
+      {
+        "id": 7,
+        "name": "7e — Palais-Bourbon",
+        "uqi": 36.75,
+        "log_outcome": 10.722826758333833
+      },
+      {
+        "id": 8,
+        "name": "8e — Élysée",
+        "uqi": 40.825,
+        "log_outcome": 10.694215061434937
+      },
+      {
+        "id": 9,
+        "name": "9e — Opéra",
+        "uqi": 30.65,
+        "log_outcome": 10.524601530196241
+      },
+      {
+        "id": 10,
+        "name": "10e — Entrepôt",
+        "uqi": 23.975,
+        "log_outcome": 10.29112807573174
+      },
+      {
+        "id": 11,
+        "name": "11e — Popincourt",
+        "uqi": 30.95,
+        "log_outcome": 10.315928274380717
+      },
+      {
+        "id": 12,
+        "name": "12e — Reuilly",
+        "uqi": 17.3,
+        "log_outcome": 10.30695065797362
+      },
+      {
+        "id": 13,
+        "name": "13e — Gobelins",
+        "uqi": 20.3,
+        "log_outcome": 10.153078273865185
+      },
+      {
+        "id": 14,
+        "name": "14e — Observatoire",
+        "uqi": 23.000000000000004,
+        "log_outcome": 10.29078869001662
+      },
+      {
+        "id": 15,
+        "name": "15e — Vaugirard",
+        "uqi": 23.75,
+        "log_outcome": 10.397573852297821
+      },
+      {
+        "id": 16,
+        "name": "16e — Passy",
+        "uqi": 18.95,
+        "log_outcome": 10.634652800283595
+      },
+      {
+        "id": 17,
+        "name": "17e — Batignolles",
+        "uqi": 21.8,
+        "log_outcome": 10.4160117329377
+      },
+      {
+        "id": 18,
+        "name": "18e — Buttes-Montmartre",
+        "uqi": 24.3,
+        "log_outcome": 10.123024608256227
+      },
+      {
+        "id": 19,
+        "name": "19e — Buttes-Chaumont",
+        "uqi": 23.9,
+        "log_outcome": 10.037581287016828
+      },
+      {
+        "id": 20,
+        "name": "20e — Ménilmontant",
+        "uqi": 44.875,
+        "log_outcome": 10.067729995930177
+      }
+    ]
+  },
+  "mexico": {
+    "city": "mexico",
+    "city_label": "Mexico City",
+    "outcome": "inverse_persons_per_dwelling",
+    "uqi_components_used": "parks,transit,density,thirdspace,infrastructure",
+    "n": 16,
+    "controlled": {
+      "term": "std_uqi",
+      "beta": 0.038622605685217734,
+      "se": 0.03568139422593051,
+      "p": 0.30033320648094874,
+      "r2": 0.6985084657687023
+    },
+    "bivariate": {
+      "term": "std_uqi",
+      "beta": 0.08640282662430837,
+      "se": 0.013181147617253688,
+      "p": 1.280397983438597e-05,
+      "r2": 0.6335005654026526
+    },
+    "points": [
+      {
+        "id": 1,
+        "name": "Álvaro Obregón",
+        "uqi": 35.72,
+        "log_outcome": -1.252762968495368
+      },
+      {
+        "id": 2,
+        "name": "Azcapotzalco",
+        "uqi": 52.56,
+        "log_outcome": -1.1631508098056809
+      },
+      {
+        "id": 3,
+        "name": "Benito Juárez",
+        "uqi": 53.96,
+        "log_outcome": -0.916290731874155
+      },
+      {
+        "id": 4,
+        "name": "Coyoacán",
+        "uqi": 66.02,
+        "log_outcome": -1.1631508098056809
+      },
+      {
+        "id": 5,
+        "name": "Cuajimalpa",
+        "uqi": 33.82,
+        "log_outcome": -1.2809338454620642
+      },
+      {
+        "id": 6,
+        "name": "Cuauhtémoc",
+        "uqi": 77.17999999999999,
+        "log_outcome": -1.0296194171811581
+      },
+      {
+        "id": 7,
+        "name": "Gustavo A. Madero",
+        "uqi": 45.36,
+        "log_outcome": -1.1939224684724346
+      },
+      {
+        "id": 8,
+        "name": "Iztacalco",
+        "uqi": 49.64,
+        "log_outcome": -1.1939224684724346
+      },
+      {
+        "id": 9,
+        "name": "Iztapalapa",
+        "uqi": 36.32000000000001,
+        "log_outcome": -1.252762968495368
+      },
+      {
+        "id": 10,
+        "name": "La Magdalena Contreras",
+        "uqi": 27.5,
+        "log_outcome": -1.2237754316221157
+      },
+      {
+        "id": 11,
+        "name": "Miguel Hidalgo",
+        "uqi": 68.78,
+        "log_outcome": -1.0296194171811581
+      },
+      {
+        "id": 12,
+        "name": "Milpa Alta",
+        "uqi": 16.580000000000002,
+        "log_outcome": -1.3609765531356006
+      },
+      {
+        "id": 13,
+        "name": "Tláhuac",
+        "uqi": 31.5,
+        "log_outcome": -1.252762968495368
+      },
+      {
+        "id": 14,
+        "name": "Tlalpan",
+        "uqi": 33.84,
+        "log_outcome": -1.1939224684724346
+      },
+      {
+        "id": 15,
+        "name": "Venustiano Carranza",
+        "uqi": 64.16,
+        "log_outcome": -1.0986122886681098
+      },
+      {
+        "id": 16,
+        "name": "Xochimilco",
+        "uqi": 23.14,
+        "log_outcome": -1.252762968495368
+      }
+    ]
+  }
+}

@@ -1,0 +1,420 @@
+{
+  "mexico": {
+    "persons_per_dwelling": {
+      "city": "Mexico City",
+      "metric": "persons_per_dwelling",
+      "historical_year": 1900,
+      "current_year": 2020,
+      "n": 16,
+      "spearman_r": 0.8849342654280656,
+      "spearman_p": 5.256042695742986e-06,
+      "regression_beta": 3.4038461538461617,
+      "regression_intercept": -15.537500000000044,
+      "regression_r2": 0.8122423582484251,
+      "regression_p": 1.8852964549145299e-06,
+      "points": [
+        {
+          "name": "Álvaro Obregón",
+          "1900": 5.5,
+          "2020": 3.5,
+          "rank_hist": 7.0,
+          "rank_curr": 12.5
+        },
+        {
+          "name": "Azcapotzalco",
+          "1900": 5.5,
+          "2020": 3.2,
+          "rank_hist": 7.0,
+          "rank_curr": 5.5
+        },
+        {
+          "name": "Benito Juárez",
+          "1900": 5.4,
+          "2020": 2.5,
+          "rank_hist": 2.5,
+          "rank_curr": 1.0
+        },
+        {
+          "name": "Coyoacán",
+          "1900": 5.5,
+          "2020": 3.2,
+          "rank_hist": 7.0,
+          "rank_curr": 5.5
+        },
+        {
+          "name": "Cuajimalpa de Morelos",
+          "1900": 5.6,
+          "2020": 3.6,
+          "rank_hist": 12.5,
+          "rank_curr": 15.0
+        },
+        {
+          "name": "Cuauhtémoc",
+          "1900": 5.4,
+          "2020": 2.8,
+          "rank_hist": 2.5,
+          "rank_curr": 2.5
+        },
+        {
+          "name": "Gustavo A. Madero",
+          "1900": 5.5,
+          "2020": 3.3,
+          "rank_hist": 7.0,
+          "rank_curr": 8.0
+        },
+        {
+          "name": "Iztacalco",
+          "1900": 5.5,
+          "2020": 3.3,
+          "rank_hist": 7.0,
+          "rank_curr": 8.0
+        },
+        {
+          "name": "Iztapalapa",
+          "1900": 5.6,
+          "2020": 3.5,
+          "rank_hist": 12.5,
+          "rank_curr": 12.5
+        },
+        {
+          "name": "La Magdalena Contreras",
+          "1900": 5.6,
+          "2020": 3.4,
+          "rank_hist": 12.5,
+          "rank_curr": 10.0
+        },
+        {
+          "name": "Miguel Hidalgo",
+          "1900": 5.4,
+          "2020": 2.8,
+          "rank_hist": 2.5,
+          "rank_curr": 2.5
+        },
+        {
+          "name": "Milpa Alta",
+          "1900": 5.7,
+          "2020": 3.9,
+          "rank_hist": 16.0,
+          "rank_curr": 16.0
+        },
+        {
+          "name": "Tláhuac",
+          "1900": 5.6,
+          "2020": 3.5,
+          "rank_hist": 12.5,
+          "rank_curr": 12.5
+        },
+        {
+          "name": "Tlalpan",
+          "1900": 5.6,
+          "2020": 3.3,
+          "rank_hist": 12.5,
+          "rank_curr": 8.0
+        },
+        {
+          "name": "Venustiano Carranza",
+          "1900": 5.4,
+          "2020": 3.0,
+          "rank_hist": 2.5,
+          "rank_curr": 4.0
+        },
+        {
+          "name": "Xochimilco",
+          "1900": 5.6,
+          "2020": 3.5,
+          "rank_hist": 12.5,
+          "rank_curr": 12.5
+        }
+      ],
+      "population_context": {
+        "historical_year": 1900,
+        "current_year": 2020,
+        "rows": 16,
+        "mean_hist": 33844.75,
+        "mean_curr": 575621.5
+      }
+    },
+    "drainage": {
+      "city": "Mexico City",
+      "metric": "percent_drainage",
+      "historical_year": 1900,
+      "current_year": 2020,
+      "n": 16,
+      "spearman_r": 0.8796938295126677,
+      "spearman_p": 7.075916867651395e-06,
+      "regression_beta": 0.020267867725494867,
+      "regression_intercept": 0.9943068626288967,
+      "regression_r2": 0.28785758978900505,
+      "regression_p": 0.03214293337255598,
+      "points": [
+        {
+          "name": "Álvaro Obregón",
+          "1900": 0.1,
+          "2020": 0.997,
+          "rank_hist": 10.5,
+          "rank_curr": 7.0
+        },
+        {
+          "name": "Azcapotzalco",
+          "1900": 0.12,
+          "2020": 0.999,
+          "rank_hist": 12.0,
+          "rank_curr": 12.5
+        },
+        {
+          "name": "Benito Juárez",
+          "1900": 0.25,
+          "2020": 0.999,
+          "rank_hist": 14.0,
+          "rank_curr": 12.5
+        },
+        {
+          "name": "Coyoacán",
+          "1900": 0.08,
+          "2020": 0.999,
+          "rank_hist": 8.5,
+          "rank_curr": 12.5
+        },
+        {
+          "name": "Cuajimalpa de Morelos",
+          "1900": 0.03,
+          "2020": 0.99,
+          "rank_hist": 3.0,
+          "rank_curr": 2.0
+        },
+        {
+          "name": "Cuauhtémoc",
+          "1900": 0.35,
+          "2020": 0.999,
+          "rank_hist": 16.0,
+          "rank_curr": 12.5
+        },
+        {
+          "name": "Gustavo A. Madero",
+          "1900": 0.1,
+          "2020": 0.999,
+          "rank_hist": 10.5,
+          "rank_curr": 12.5
+        },
+        {
+          "name": "Iztacalco",
+          "1900": 0.08,
+          "2020": 0.999,
+          "rank_hist": 8.5,
+          "rank_curr": 12.5
+        },
+        {
+          "name": "Iztapalapa",
+          "1900": 0.05,
+          "2020": 0.997,
+          "rank_hist": 6.0,
+          "rank_curr": 7.0
+        },
+        {
+          "name": "La Magdalena Contreras",
+          "1900": 0.03,
+          "2020": 0.996,
+          "rank_hist": 3.0,
+          "rank_curr": 4.0
+        },
+        {
+          "name": "Miguel Hidalgo",
+          "1900": 0.25,
+          "2020": 0.999,
+          "rank_hist": 14.0,
+          "rank_curr": 12.5
+        },
+        {
+          "name": "Milpa Alta",
+          "1900": 0.01,
+          "2020": 0.985,
+          "rank_hist": 1.0,
+          "rank_curr": 1.0
+        },
+        {
+          "name": "Tláhuac",
+          "1900": 0.03,
+          "2020": 0.996,
+          "rank_hist": 3.0,
+          "rank_curr": 4.0
+        },
+        {
+          "name": "Tlalpan",
+          "1900": 0.05,
+          "2020": 0.997,
+          "rank_hist": 6.0,
+          "rank_curr": 7.0
+        },
+        {
+          "name": "Venustiano Carranza",
+          "1900": 0.25,
+          "2020": 0.999,
+          "rank_hist": 14.0,
+          "rank_curr": 12.5
+        },
+        {
+          "name": "Xochimilco",
+          "1900": 0.05,
+          "2020": 0.996,
+          "rank_hist": 6.0,
+          "rank_curr": 4.0
+        }
+      ]
+    }
+  },
+  "paris": {
+    "city": "Paris",
+    "metric": "persons_per_dwelling",
+    "historical_year": 1968,
+    "current_year": 2022,
+    "n": 20,
+    "spearman_r": 0.8413724702960176,
+    "spearman_p": 3.3449503662567097e-06,
+    "regression_beta": 0.8165864011101133,
+    "regression_intercept": 0.024391886376622818,
+    "regression_r2": 0.6812718169214884,
+    "regression_p": 7.459760270210906e-06,
+    "points": [
+      {
+        "name": "10e — Entrepôt",
+        "1968": 2.15,
+        "2022": 1.82,
+        "rank_hist": 9.0,
+        "rank_curr": 11.5
+      },
+      {
+        "name": "11e — Popincourt",
+        "1968": 2.1,
+        "2022": 1.68,
+        "rank_hist": 6.0,
+        "rank_curr": 4.0
+      },
+      {
+        "name": "12e — Reuilly",
+        "1968": 2.22,
+        "2022": 1.84,
+        "rank_hist": 14.0,
+        "rank_curr": 13.5
+      },
+      {
+        "name": "13e — Gobelins",
+        "1968": 2.32,
+        "2022": 1.88,
+        "rank_hist": 17.0,
+        "rank_curr": 15.5
+      },
+      {
+        "name": "14e — Observatoire",
+        "1968": 2.17,
+        "2022": 1.84,
+        "rank_hist": 12.0,
+        "rank_curr": 13.5
+      },
+      {
+        "name": "15e — Vaugirard",
+        "1968": 2.14,
+        "2022": 1.81,
+        "rank_hist": 8.0,
+        "rank_curr": 10.0
+      },
+      {
+        "name": "16e — Passy",
+        "1968": 2.41,
+        "2022": 1.95,
+        "rank_hist": 20.0,
+        "rank_curr": 18.0
+      },
+      {
+        "name": "17e — Batignolles",
+        "1968": 2.18,
+        "2022": 1.88,
+        "rank_hist": 13.0,
+        "rank_curr": 15.5
+      },
+      {
+        "name": "18e — Buttes-Montmartre",
+        "1968": 2.08,
+        "2022": 1.8,
+        "rank_hist": 4.0,
+        "rank_curr": 8.5
+      },
+      {
+        "name": "19e — Buttes-Chaumont",
+        "1968": 2.34,
+        "2022": 2.03,
+        "rank_hist": 19.0,
+        "rank_curr": 20.0
+      },
+      {
+        "name": "1er — Louvre",
+        "1968": 2.05,
+        "2022": 1.63,
+        "rank_hist": 2.0,
+        "rank_curr": 1.0
+      },
+      {
+        "name": "20e — Ménilmontant",
+        "1968": 2.3,
+        "2022": 1.9,
+        "rank_hist": 16.0,
+        "rank_curr": 17.0
+      },
+      {
+        "name": "2e — Bourse",
+        "1968": 2.0,
+        "2022": 1.67,
+        "rank_hist": 1.0,
+        "rank_curr": 3.0
+      },
+      {
+        "name": "3e — Temple",
+        "1968": 2.11,
+        "2022": 1.66,
+        "rank_hist": 7.0,
+        "rank_curr": 2.0
+      },
+      {
+        "name": "4e — Hôtel-de-Ville",
+        "1968": 2.16,
+        "2022": 1.72,
+        "rank_hist": 10.5,
+        "rank_curr": 7.0
+      },
+      {
+        "name": "5e — Panthéon",
+        "1968": 2.06,
+        "2022": 1.71,
+        "rank_hist": 3.0,
+        "rank_curr": 5.5
+      },
+      {
+        "name": "6e — Luxembourg",
+        "1968": 2.16,
+        "2022": 1.71,
+        "rank_hist": 10.5,
+        "rank_curr": 5.5
+      },
+      {
+        "name": "7e — Palais-Bourbon",
+        "1968": 2.29,
+        "2022": 1.8,
+        "rank_hist": 15.0,
+        "rank_curr": 8.5
+      },
+      {
+        "name": "8e — Élysée",
+        "1968": 2.33,
+        "2022": 1.99,
+        "rank_hist": 18.0,
+        "rank_curr": 19.0
+      },
+      {
+        "name": "9e — Opéra",
+        "1968": 2.09,
+        "2022": 1.82,
+        "rank_hist": 5.0,
+        "rank_curr": 11.5
+      }
+    ]
+  }
+}
