@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Neighborhood Trajectory Explorer</title>
+  <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+  <style>
+    :root { --paper:#f8f5ed; --ink:#2a2218; --rule:#c9bda2; }
+    body { margin:0; padding:1rem; font-family: Georgia, "Times New Roman", serif; background:var(--paper); color:var(--ink);}
+    .controls { display:grid; grid-template-columns:1fr 1fr; gap:.7rem; margin-bottom:.6rem; }
+    select { width:100%; padding:.45rem; border:1px solid var(--rule); background:#fbf8f1; font-family:Georgia,serif; }
+    #plot { width:100%; height:420px; border:1px solid var(--rule); background:#fbf8f1; }
+    #loading { color:#4a3f30; }
+    .caption { margin-top:.45rem; color:#4a3f30; font-size:.93rem; }
+    @media (max-width:700px){ .controls{grid-template-columns:1fr;} #plot{height:340px;} }
+  </style>
+</head>
+<body>
+  <div id="loading">Loading trajectory explorer…</div>
+  <div id="app" style="display:none;">
+    <div class="controls">
+      <label>Paris arrondissement
+        <select id="sel-paris"></select>
+      </label>
+      <label>Mexico City alcaldía
+        <select id="sel-mexico"></select>
+      </label>
+    </div>
+    <div id="plot"></div>
+    <div class="caption">Rank 1 is least crowded within each city. Most neighborhoods change slowly over time.</div>
+  </div>
+
+  <script>
+  async function main(){
+    const payload = await fetch('../data/analysis/persistence_interactives.json').then(r=>r.json());
+    const par = payload.paris.trajectories.sort((a,b)=>a.id-b.id);
+    const mex = payload.mexico.trajectories.sort((a,b)=>a.id-b.id);
+    const sp = document.getElementById('sel-paris');
+    const sm = document.getElementById('sel-mexico');
+    par.forEach(d=>{ const o=document.createElement('option'); o.value=d.id; o.textContent=d.name; sp.appendChild(o); });
+    mex.forEach(d=>{ const o=document.createElement('option'); o.value=d.id; o.textContent=d.name; sm.appendChild(o); });
+    sp.value = String(par.find(d=>d.name.includes('16e'))?.id || par[0].id);
+    sm.value = String(mex.find(d=>d.name.includes('Miguel Hidalgo'))?.id || mex[0].id);
+
+    function render(){
+      const p = par.find(d=>String(d.id)===sp.value);
+      const m = mex.find(d=>String(d.id)===sm.value);
+      const t1 = {
+        x: p.series.map(s=>s.year), y:p.series.map(s=>s.rank), mode:'lines+markers+text',
+        text:[p.series[0].rank,'',...Array(Math.max(0,p.series.length-2)).fill(''),p.series[p.series.length-1].rank],
+        textposition:'top center',
+        name:`Paris: ${p.name}`, line:{color:'#7a1f2b',width:3}
+      };
+      const t2 = {
+        x: m.series.map(s=>s.year), y:m.series.map(s=>s.rank), mode:'lines+markers+text',
+        text:[m.series[0].rank,'',...Array(Math.max(0,m.series.length-2)).fill(''),m.series[m.series.length-1].rank],
+        textposition:'bottom center',
+        name:`CDMX: ${m.name}`, line:{color:'#2d5a3d',width:3,dash:'dash'}
+      };
+      Plotly.react('plot',[t1,t2],{
+        paper_bgcolor:'#fbf8f1', plot_bgcolor:'#fbf8f1',
+        margin:{l:58,r:20,t:24,b:50},
+        yaxis:{title:'Rank within city (1 = least crowded)', autorange:'reversed'},
+        xaxis:{title:'Year'},
+        showlegend:true,
+        font:{family:'Georgia, serif',color:'#2a2218'}
+      },{displayModeBar:false});
+    }
+    sp.addEventListener('change',render); sm.addEventListener('change',render);
+    render();
+    document.getElementById('loading').style.display='none';
+    document.getElementById('app').style.display='block';
+  }
+  main();
+  </script>
+</body>
+</html>
