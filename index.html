@@ -477,6 +477,31 @@
   .map-btn.paris.active { background: var(--accent-paris); border-color: var(--accent-paris); color: var(--paper); }
   .map-btn.mexico.active { background: var(--accent-mexico); border-color: var(--accent-mexico); color: var(--paper); }
 
+  .map-layer-toggle {
+    display: flex;
+    gap: 0.5rem;
+    margin: 0.75rem 0 1rem;
+    flex-wrap: wrap;
+  }
+
+  .map-layer-btn {
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 0.4rem 0.75rem;
+    border: 1px solid var(--ink-faded);
+    background: transparent;
+    color: var(--ink-soft);
+    cursor: pointer;
+  }
+
+  .map-layer-btn.active {
+    background: var(--ink);
+    color: var(--paper);
+    border-color: var(--ink);
+  }
+
   .map-stage {
     background: rgba(255, 252, 240, 0.55);
     border: 1px solid var(--ink-faded);
@@ -490,9 +515,39 @@
   .map-stage svg {
     width: 100%;
     height: auto;
-    max-height: 520px;
+    min-height: 420px;
+    max-height: 62vh;
     display: block;
   }
+
+  .map-region-geo { transition: fill 0.25s ease, opacity 0.25s ease; }
+
+  #monument-detail {
+    margin-top: 1.5rem;
+    border: 1px solid var(--ink-faded);
+    background: rgba(255, 252, 240, 0.55);
+    padding: 1.25rem 1.35rem;
+  }
+
+  .monument-placeholder { color: var(--ink-soft); font-style: italic; margin: 0; }
+  .monument-detail-head h3 { margin: 0 0 0.35rem; font-size: 1.35rem; }
+  .monument-meta { margin: 0 0 1rem; font-family: var(--mono); font-size: 0.78rem; color: var(--ink-faded); }
+  .monument-then-now { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem; }
+  @media (max-width: 720px) { .monument-then-now { grid-template-columns: 1fr; } }
+  .monument-then-now figure { margin: 0; }
+  .monument-then-now img { width: 100%; height: 200px; object-fit: cover; border: 1px solid var(--ink-faded); filter: sepia(8%); }
+  .monument-then-now figcaption { font-size: 0.88rem; line-height: 1.45; color: var(--ink-soft); margin-top: 0.5rem; }
+  .monument-then-now .tag { display: inline-block; font-family: var(--mono); font-size: 0.68rem; letter-spacing: 0.12em; text-transform: uppercase; background: var(--accent-paris); color: var(--paper); padding: 0.1rem 0.35rem; margin-right: 0.35rem; }
+  .monument-then-now .tag.now { background: var(--accent-mexico); }
+  .monument-prose p { margin: 0 0 0.75rem; line-height: 1.55; color: var(--ink-soft); }
+  .monument-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1rem; margin-top: 1.25rem; }
+  .monument-card { border: 1px solid var(--ink-faded); padding: 0.85rem 1rem; background: rgba(255, 255, 255, 0.2); cursor: pointer; text-align: left; width: 100%; font: inherit; color: inherit; }
+  .monument-card:hover { border-color: var(--ink); }
+  .monument-card h4 { margin: 0 0 0.35rem; font-size: 1rem; }
+  .monument-card p { margin: 0; font-size: 0.85rem; color: var(--ink-faded); }
+  .regression-table { width: 100%; border-collapse: collapse; font-size: 0.88rem; margin: 1rem 0; }
+  .regression-table th, .regression-table td { border: 1px solid var(--ink-faded); padding: 0.45rem 0.6rem; text-align: left; }
+  .regression-table th { font-family: var(--mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; background: rgba(42, 34, 24, 0.06); }
 
   .map-region {
     cursor: pointer;
@@ -1750,16 +1805,20 @@
   <section class="chapter" id="map">
     <span class="chapter-num">IV · The Map</span>
     <h2>The index, on the ground.</h2>
-    <p>Below, each neighborhood is shaded by its score on the index. Darker shades mean higher scores. Click a region to see its breakdown. Toggle components above to recompute.</p>
+    <p>Real administrative boundaries (Paris arrondissements, CDMX alcaldías) — not schematic bubbles. Shading follows your index component toggles. Switch to <strong>Monuments</strong> to explore planning landmarks with historical and current photographs.</p>
 
     <div class="map-controls">
       <button class="map-btn paris active" data-city="paris">Paris · 20 arrondissements</button>
       <button class="map-btn mexico" data-city="mexico">Ciudad de México · 16 alcaldías</button>
     </div>
 
+    <div class="map-layer-toggle" role="group" aria-label="Map layer">
+      <button type="button" class="map-layer-btn active" data-map-layer="index">Index choropleth</button>
+      <button type="button" class="map-layer-btn" data-map-layer="monuments">Monuments · then &amp; now</button>
+    </div>
+
     <div class="map-stage">
-      <svg id="map-svg" viewBox="0 0 600 500" xmlns="http://www.w3.org/2000/svg" aria-label="Interactive map of neighborhood-level urban planning index">
-        <!-- regions injected by JS -->
+      <svg id="map-svg" viewBox="0 0 720 560" xmlns="http://www.w3.org/2000/svg" aria-label="Choropleth map of planning index and monuments">
         <g id="map-regions"></g>
         <g id="map-labels"></g>
       </svg>
@@ -1776,6 +1835,18 @@
       <div class="region-name">Click a neighborhood to see its breakdown.</div>
       <div class="region-stats placeholder-note">Paris: INSEE / Open Data 2022 cross-section · Mexico City: INEGI 2020 panel from <cite>data/mexico/workbook/DataMexCity.xlsx</cite>.</div>
     </div>
+
+    <div id="monument-detail" aria-live="polite">
+      <p class="monument-placeholder">Select a pin on the map (Monuments layer) to compare the monument <strong>then</strong> and <strong>now</strong>.</p>
+    </div>
+  </section>
+
+  <!-- ============ MONUMENTS ============ -->
+  <section class="chapter" id="monuments">
+    <span class="chapter-num">IVb · Monuments</span>
+    <h2>What the city chose to build in stone.</h2>
+    <p>Each pin is a deliberate planning decision — imperial axis, republican square, modernist campus, decolonial swap. Click a card to jump to the map, or use the list below as a reading companion.</p>
+    <div class="monument-grid" id="monument-grid"></div>
   </section>
 
   <!-- ============ TIME-SERIES STORY CHART ============ -->
@@ -1842,8 +1913,9 @@
     </div>
 
     <div class="regression-wrap">
-      <p style="margin-top:0;font-size:0.92rem;color:var(--ink-soft);">Scatter plots (log outcome vs. index, 2020 cross-section): <a href="figures/regression-laps.html">open regression laps</a> · <a href="figures/index.html">prototype gallery</a></p>
-      <iframe src="figures/regression-laps.html" title="Regression scatter plots" style="width:100%;min-height:420px;border:1px solid var(--ink-faded);background:#f8f2e4;"></iframe>
+      <p style="margin-top:0;font-size:0.92rem;color:var(--ink-soft);">Model: log(outcome) on standardized planning index, log population, and distance to map center (HC1 robust SEs). <a href="figures/regression-laps.html">Scatter laps</a></p>
+      <div id="regression-table-host"></div>
+      <iframe src="figures/regression-laps.html" title="Regression scatter plots" style="width:100%;min-height:420px;border:1px solid var(--ink-faded);background:#f8f2e4;margin-top:1rem;"></iframe>
     </div>
 
     <p class="pull-quote">Formal planning and money do not move in lockstep: in Paris, amenity-rich eastern districts can score high on our index while remaining relatively poor; in Mexico City, the index tracks crowding more tightly than controlled regressions suggest once population and centrality are held fixed.</p>
@@ -1909,6 +1981,7 @@
   Gaston de Baudry d'Asson &amp; Andrés Palacios
 </footer>
 
+<script src="js/geo-maps.js"></script>
 <script>
 // =========================================================
 //  STATE
@@ -2376,6 +2449,60 @@ renderLegend();
 renderComponentSparks();
 renderMap();
 renderStoryChart();
+loadRegressionTable();
+GeoMap.init();
+buildMonumentGrid();
+
+async function loadRegressionTable() {
+  const host = document.getElementById('regression-table-host');
+  if (!host) return;
+  try {
+    const res = await fetch('data/analysis/regression_results.json');
+    const data = await res.json();
+    const rows = [];
+    for (const city of ['paris', 'mexico']) {
+      const m = data[city];
+      const label = city === 'paris' ? 'Paris (Filosofi income)' : 'Mexico (crowding proxy)';
+      rows.push(`<tr><td>${label}</td><td>Index (1 SD)</td><td>${m.beta_index >= 0 ? '+' : ''}${m.beta_index.toFixed(3)}</td><td>${m.beta_index_se.toFixed(3)}</td><td>${m.p_index < 0.001 ? '&lt;0.001' : m.p_index.toFixed(3)}</td><td>${m.pct_change_per_sd >= 0 ? '+' : ''}${m.pct_change_per_sd}%</td><td>${m.correlation_r.toFixed(2)}</td><td>${m.r2.toFixed(2)}</td></tr>`);
+    }
+    host.innerHTML = `<table class="regression-table"><thead><tr><th>City</th><th>Term</th><th>β</th><th>SE</th><th>p</th><th>% Δ / 1 SD</th><th>r</th><th>R²</th></tr></thead><tbody>${rows.join('')}</tbody></table>`;
+  } catch (e) {
+    host.innerHTML = '';
+  }
+}
+
+function buildMonumentGrid() {
+  const grid = document.getElementById('monument-grid');
+  if (!grid) return;
+  const renderCards = () => {
+    if (!GeoMap.ready) return;
+    const city = state.city;
+    grid.innerHTML = GeoMap.monuments[city].map((m) => `
+      <button type="button" class="monument-card" data-monument-id="${m.id}">
+        <h4>${m.name}</h4>
+        <p>${m.year} · ${m.planningRole}</p>
+      </button>
+    `).join('');
+    grid.querySelectorAll('.monument-card').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const mon = GeoMap.monuments[state.city].find((x) => x.id === btn.dataset.monumentId);
+        if (!mon) return;
+        GeoMap.layer = 'monuments';
+        document.querySelectorAll('.map-layer-btn').forEach((b) => {
+          b.classList.toggle('active', b.dataset.mapLayer === 'monuments');
+        });
+        GeoMap.selectedMonument = mon.id;
+        GeoMap.render();
+        GeoMap.renderMonumentDetail(mon);
+        document.getElementById('map').scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  };
+  document.querySelectorAll('.map-btn').forEach((btn) => {
+    btn.addEventListener('click', () => setTimeout(renderCards, 150));
+  });
+  if (GeoMap.ready) renderCards();
+}
 </script>
 </body>
 </html>

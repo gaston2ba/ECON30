@@ -2,5 +2,9 @@
 requirements.txt
 pyproject.toml
 code/
-data/
 course-materials/
+Knowledge Base/
+data/paris/raw/
+data/mexico/sources/
+data/mexico/workbook/
+scripts/
