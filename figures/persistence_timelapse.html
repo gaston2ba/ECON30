@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Persistence Timelapse</title>
+  <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+  <style>
+    :root { --paper:#f8f5ed; --ink:#2a2218; --muted:#6b5d48; --rule:#c9bda2; }
+    body { margin:0; padding:1rem; font-family: Georgia, "Times New Roman", serif; color:var(--ink); background:var(--paper); }
+    h2 { margin:0 0 .4rem; font-size:1.2rem; }
+    p { margin:.35rem 0; line-height:1.45; color:#4a3f30; }
+    .grid { display:grid; grid-template-columns:1fr 1fr; gap:.75rem; }
+    .card { border:1px solid var(--rule); background:#fbf8f1; padding:.4rem; }
+    .plot { width:100%; height:380px; }
+    .controls { margin:.7rem 0 .3rem; border:1px solid var(--rule); padding:.6rem .75rem; background:#fbf8f1; }
+    .year-row { display:flex; gap:.7rem; align-items:center; }
+    input[type=range] { width:100%; accent-color:#2a2218; }
+    .counter { margin-top:.4rem; font-size:.93rem; color:#3f3528; }
+    .legend { margin-top:.35rem; font-size:.8rem; color:var(--muted); }
+    .mobile-note { display:none; border:1px dashed var(--rule); padding:.8rem; margin-top:.5rem; }
+    @media (max-width: 800px) {
+      .grid { grid-template-columns:1fr; }
+      .plot { height:330px; }
+    }
+    @media (max-width: 420px) {
+      .grid,.controls { display:none; }
+      .mobile-note { display:block; }
+    }
+  </style>
+</head>
+<body>
+  <h2>Drag the slider. Watch what doesn't change.</h2>
+  <p>Each map ranks neighborhoods by household crowding in the selected year (darker = more crowded).</p>
+  <div id="loading">Loading persistence maps…</div>
+  <div class="grid" id="grid" style="display:none;">
+    <div class="card"><div id="map-mexico" class="plot"></div></div>
+    <div class="card"><div id="map-paris" class="plot"></div></div>
+  </div>
+  <div class="controls" id="controls" style="display:none;">
+    <div class="year-row">
+      <strong>Year</strong>
+      <input id="year-slider" type="range" min="0" max="0" step="1" value="0" />
+      <strong id="year-label">—</strong>
+    </div>
+    <div class="legend">less crowded &rarr; more crowded</div>
+    <div class="counter" id="counter"></div>
+  </div>
+  <div class="mobile-note">
+    <strong>Interactive map is desktop-first.</strong>
+    For best experience, open this figure on a larger screen.
+  </div>
+
+  <script>
+  const paper = '#fbf8f1';
+  const colorscale = [[0,'#f6edd8'],[0.2,'#e8d9bc'],[0.4,'#d6c3a0'],[0.6,'#b99b78'],[0.8,'#8a6c4d'],[1,'#2a2218']];
+
+  function mapTraces(geojson, points, nMax, title){
+    return [{
+      type:'choropleth',
+      geojson,
+      featureidkey:'properties.id',
+      locations: points.map(d=>d.id),
+      z: points.map(d=>d.rank),
+      text: points.map(d=>`${d.name}<br>Value: ${d.value.toFixed(2)}<br>Rank: ${d.rank}`),
+      hovertemplate:'%{text}<extra></extra>',
+      zmin:1, zmax:nMax,
+      colorscale,
+      marker:{line:{color:'#2a2218',width:0.6}},
+      showscale:false
+    }];
+  }
+
+  function mapLayout(title){
+    return {
+      title:{text:title,font:{family:'Georgia, serif',size:15,color:'#2a2218'},x:0.04},
+      geo:{fitbounds:'locations',visible:false,bgcolor:paper},
+      paper_bgcolor:paper, plot_bgcolor:paper,
+      margin:{l:0,r:0,t:34,b:0}
+    };
+  }
+
+  async function main(){
+    const [payload, gMex, gPar] = await Promise.all([
+      fetch('../data/analysis/persistence_interactives.json').then(r=>r.json()),
+      fetch('../data/maps/mexico_alcaldias.geojson').then(r=>r.json()),
+      fetch('../data/maps/paris_arrondissements.geojson').then(r=>r.json())
+    ]);
+    const years = payload.mexico.years;
+    const latestMex = payload.mexico.latest_year;
+    const latestPar = payload.paris.latest_year;
+    const slider = document.getElementById('year-slider');
+    slider.max = years.length - 1;
+    slider.value = years.length - 1;
+
+    function nearestParisYear(y){
+      const ys = payload.paris.years;
+      let best = ys[0], bestd = Math.abs(ys[0]-y);
+      for(const t of ys){ const d=Math.abs(t-y); if(d<bestd){best=t;bestd=d;} }
+      return best;
+    }
+
+    function render(year){
+      const yPar = nearestParisYear(year);
+      const mexPoints = payload.mexico.data_by_year[String(year)];
+      const parPoints = payload.paris.data_by_year[String(yPar)];
+      Plotly.react('map-mexico', mapTraces(gMex,mexPoints,16,`Mexico City — persons per dwelling rank, ${year}`), mapLayout(''));
+      Plotly.react('map-paris', mapTraces(gPar,parPoints,20,`Paris — household size rank, ${yPar}`), mapLayout(''));
+      document.getElementById('year-label').textContent = String(year);
+      const cMex = payload.mexico.shift_counter_vs_latest[String(year)];
+      const cPar = payload.paris.shift_counter_vs_latest[String(yPar)];
+      document.getElementById('counter').innerHTML =
+        `Compared to <strong>${year}</strong>, <strong>${cMex.changed_gt5} of ${cMex.n_total}</strong> alcaldías changed rank by more than 5 positions by ${latestMex}. ` +
+        `For Paris (closest year ${yPar}), <strong>${cPar.changed_gt5} of ${cPar.n_total}</strong> arrondissements changed by more than 5 by ${latestPar}.`;
+    }
+
+    slider.addEventListener('input', e => render(years[Number(e.target.value)]));
+    render(years[years.length-1]);
+    document.getElementById('loading').style.display='none';
+    document.getElementById('grid').style.display='grid';
+    document.getElementById('controls').style.display='block';
+  }
+  main().catch(err=>{
+    document.getElementById('loading').textContent = 'Failed to load persistence maps.';
+    console.error(err);
+  });
+  </script>
+</body>
+</html>

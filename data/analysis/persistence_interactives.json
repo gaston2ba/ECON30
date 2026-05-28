@@ -1,0 +1,4537 @@
+{
+  "mexico": {
+    "city": "Mexico City",
+    "years": [
+      1900,
+      1910,
+      1920,
+      1930,
+      1940,
+      1950,
+      1960,
+      1970,
+      1980,
+      1990,
+      2000,
+      2010,
+      2020
+    ],
+    "latest_year": 2020,
+    "data_by_year": {
+      "1900": [
+        {
+          "id": 3,
+          "name": "Benito Juárez",
+          "value": 5.4,
+          "rank": 1
+        },
+        {
+          "id": 6,
+          "name": "Cuauhtémoc",
+          "value": 5.4,
+          "rank": 2
+        },
+        {
+          "id": 15,
+          "name": "Venustiano Carranza",
+          "value": 5.4,
+          "rank": 3
+        },
+        {
+          "id": 11,
+          "name": "Miguel Hidalgo",
+          "value": 5.4,
+          "rank": 4
+        },
+        {
+          "id": 4,
+          "name": "Coyoacán",
+          "value": 5.5,
+          "rank": 5
+        },
+        {
+          "id": 7,
+          "name": "Gustavo A. Madero",
+          "value": 5.5,
+          "rank": 6
+        },
+        {
+          "id": 2,
+          "name": "Azcapotzalco",
+          "value": 5.5,
+          "rank": 7
+        },
+        {
+          "id": 1,
+          "name": "Álvaro Obregón",
+          "value": 5.5,
+          "rank": 8
+        },
+        {
+          "id": 8,
+          "name": "Iztacalco",
+          "value": 5.5,
+          "rank": 9
+        },
+        {
+          "id": 10,
+          "name": "La Magdalena Contreras",
+          "value": 5.6,
+          "rank": 11
+        },
+        {
+          "id": 9,
+          "name": "Iztapalapa",
+          "value": 5.6,
+          "rank": 12
+        },
+        {
+          "id": 14,
+          "name": "Tlalpan",
+          "value": 5.6,
+          "rank": 13
+        },
+        {
+          "id": 13,
+          "name": "Tláhuac",
+          "value": 5.6,
+          "rank": 14
+        },
+        {
+          "id": 16,
+          "name": "Xochimilco",
+          "value": 5.6,
+          "rank": 15
+        },
+        {
+          "id": 12,
+          "name": "Milpa Alta",
+          "value": 5.7,
+          "rank": 16
+        }
+      ],
+      "1910": [
+        {
+          "id": 3,
+          "name": "Benito Juárez",
+          "value": 5.3,
+          "rank": 1
+        },
+        {
+          "id": 6,
+          "name": "Cuauhtémoc",
+          "value": 5.3,
+          "rank": 2
+        },
+        {
+          "id": 15,
+          "name": "Venustiano Carranza",
+          "value": 5.3,
+          "rank": 3
+        },
+        {
+          "id": 11,
+          "name": "Miguel Hidalgo",
+          "value": 5.3,
+          "rank": 4
+        },
+        {
+          "id": 4,
+          "name": "Coyoacán",
+          "value": 5.4,
+          "rank": 5
+        },
+        {
+          "id": 8,
+          "name": "Iztacalco",
+          "value": 5.4,
+          "rank": 6
+        },
+        {
+          "id": 2,
+          "name": "Azcapotzalco",
+          "value": 5.4,
+          "rank": 7
+        },
+        {
+          "id": 1,
+          "name": "Álvaro Obregón",
+          "value": 5.4,
+          "rank": 8
+        },
+        {
+          "id": 7,
+          "name": "Gustavo A. Madero",
+          "value": 5.5,
+          "rank": 9
+        },
+        {
+          "id": 10,
+          "name": "La Magdalena Contreras",
+          "value": 5.5,
+          "rank": 11
+        },
+        {
+          "id": 9,
+          "name": "Iztapalapa",
+          "value": 5.5,
+          "rank": 12
+        },
+        {
+          "id": 14,
+          "name": "Tlalpan",
+          "value": 5.5,
+          "rank": 13
+        },
+        {
+          "id": 13,
+          "name": "Tláhuac",
+          "value": 5.5,
+          "rank": 14
+        },
+        {
+          "id": 16,
+          "name": "Xochimilco",
+          "value": 5.5,
+          "rank": 15
+        },
+        {
+          "id": 12,
+          "name": "Milpa Alta",
+          "value": 5.7,
+          "rank": 16
+        }
+      ],
+      "1920": [
+        {
+          "id": 3,
+          "name": "Benito Juárez",
+          "value": 5.2,
+          "rank": 1
+        },
+        {
+          "id": 6,
+          "name": "Cuauhtémoc",
+          "value": 5.2,
+          "rank": 2
+        },
+        {
+          "id": 15,
+          "name": "Venustiano Carranza",
+          "value": 5.2,
+          "rank": 3
+        },
+        {
+          "id": 11,
+          "name": "Miguel Hidalgo",
+          "value": 5.2,
+          "rank": 4
+        },
+        {
+          "id": 4,
+          "name": "Coyoacán",
+          "value": 5.3,
+          "rank": 5
+        },
+        {
+          "id": 8,
+          "name": "Iztacalco",
+          "value": 5.3,
+          "rank": 6
+        },
+        {
+          "id": 2,
+          "name": "Azcapotzalco",
+          "value": 5.3,
+          "rank": 7
+        },
+        {
+          "id": 1,
+          "name": "Álvaro Obregón",
+          "value": 5.3,
+          "rank": 8
+        },
+        {
+          "id": 7,
+          "name": "Gustavo A. Madero",
+          "value": 5.4,
+          "rank": 9
+        },
+        {
+          "id": 14,
+          "name": "Tlalpan",
+          "value": 5.4,
+          "rank": 11
+        },
+        {
+          "id": 10,
+          "name": "La Magdalena Contreras",
+          "value": 5.4,
+          "rank": 12
+        },
+        {
+          "id": 13,
+          "name": "Tláhuac",
+          "value": 5.5,
+          "rank": 13
+        },
+        {
+          "id": 9,
+          "name": "Iztapalapa",
+          "value": 5.5,
+          "rank": 14
+        },
+        {
+          "id": 16,
+          "name": "Xochimilco",
+          "value": 5.5,
+          "rank": 15
+        },
+        {
+          "id": 12,
+          "name": "Milpa Alta",
+          "value": 5.6,
+          "rank": 16
+        }
+      ],
+      "1930": [
+        {
+          "id": 3,
+          "name": "Benito Juárez",
+          "value": 5.1,
+          "rank": 1
+        },
+        {
+          "id": 6,
+          "name": "Cuauhtémoc",
+          "value": 5.1,
+          "rank": 2
+        },
+        {
+          "id": 15,
+          "name": "Venustiano Carranza",
+          "value": 5.1,
+          "rank": 3
+        },
+        {
+          "id": 11,
+          "name": "Miguel Hidalgo",
+          "value": 5.1,
+          "rank": 4
+        },
+        {
+          "id": 4,
+          "name": "Coyoacán",
+          "value": 5.2,
+          "rank": 5
+        },
+        {
+          "id": 8,
+          "name": "Iztacalco",
+          "value": 5.2,
+          "rank": 6
+        },
+        {
+          "id": 2,
+          "name": "Azcapotzalco",
+          "value": 5.2,
+          "rank": 7
+        },
+        {
+          "id": 1,
+          "name": "Álvaro Obregón",
+          "value": 5.2,
+          "rank": 8
+        },
+        {
+          "id": 7,
+          "name": "Gustavo A. Madero",
+          "value": 5.3,
+          "rank": 9
+        },
+        {
+          "id": 14,
+          "name": "Tlalpan",
+          "value": 5.3,
+          "rank": 11
+        },
+        {
+          "id": 10,
+          "name": "La Magdalena Contreras",
+          "value": 5.3,
+          "rank": 12
+        },
+        {
+          "id": 13,
+          "name": "Tláhuac",
+          "value": 5.4,
+          "rank": 13
+        },
+        {
+          "id": 9,
+          "name": "Iztapalapa",
+          "value": 5.4,
+          "rank": 14
+        },
+        {
+          "id": 16,
+          "name": "Xochimilco",
+          "value": 5.4,
+          "rank": 15
+        },
+        {
+          "id": 12,
+          "name": "Milpa Alta",
+          "value": 5.5,
+          "rank": 16
+        }
+      ],
+      "1940": [
+        {
+          "id": 3,
+          "name": "Benito Juárez",
+          "value": 4.9,
+          "rank": 1
+        },
+        {
+          "id": 6,
+          "name": "Cuauhtémoc",
+          "value": 4.9,
+          "rank": 2
+        },
+        {
+          "id": 15,
+          "name": "Venustiano Carranza",
+          "value": 4.9,
+          "rank": 3
+        },
+        {
+          "id": 11,
+          "name": "Miguel Hidalgo",
+          "value": 4.9,
+          "rank": 4
+        },
+        {
+          "id": 4,
+          "name": "Coyoacán",
+          "value": 5.0,
+          "rank": 5
+        },
+        {
+          "id": 8,
+          "name": "Iztacalco",
+          "value": 5.0,
+          "rank": 6
+        },
+        {
+          "id": 2,
+          "name": "Azcapotzalco",
+          "value": 5.0,
+          "rank": 7
+        },
+        {
+          "id": 1,
+          "name": "Álvaro Obregón",
+          "value": 5.0,
+          "rank": 8
+        },
+        {
+          "id": 7,
+          "name": "Gustavo A. Madero",
+          "value": 5.1,
+          "rank": 9
+        },
+        {
+          "id": 14,
+          "name": "Tlalpan",
+          "value": 5.1,
+          "rank": 11
+        },
+        {
+          "id": 10,
+          "name": "La Magdalena Contreras",
+          "value": 5.1,
+          "rank": 12
+        },
+        {
+          "id": 13,
+          "name": "Tláhuac",
+          "value": 5.2,
+          "rank": 13
+        },
+        {
+          "id": 9,
+          "name": "Iztapalapa",
+          "value": 5.2,
+          "rank": 14
+        },
+        {
+          "id": 16,
+          "name": "Xochimilco",
+          "value": 5.2,
+          "rank": 15
+        },
+        {
+          "id": 12,
+          "name": "Milpa Alta",
+          "value": 5.3,
+          "rank": 16
+        }
+      ],
+      "1950": [
+        {
+          "id": 3,
+          "name": "Benito Juárez",
+          "value": 5.2,
+          "rank": 1
+        },
+        {
+          "id": 6,
+          "name": "Cuauhtémoc",
+          "value": 5.2,
+          "rank": 2
+        },
+        {
+          "id": 15,
+          "name": "Venustiano Carranza",
+          "value": 5.2,
+          "rank": 3
+        },
+        {
+          "id": 11,
+          "name": "Miguel Hidalgo",
+          "value": 5.2,
+          "rank": 4
+        },
+        {
+          "id": 4,
+          "name": "Coyoacán",
+          "value": 5.4,
+          "rank": 5
+        },
+        {
+          "id": 8,
+          "name": "Iztacalco",
+          "value": 5.4,
+          "rank": 6
+        },
+        {
+          "id": 2,
+          "name": "Azcapotzalco",
+          "value": 5.4,
+          "rank": 7
+        },
+        {
+          "id": 1,
+          "name": "Álvaro Obregón",
+          "value": 5.4,
+          "rank": 8
+        },
+        {
+          "id": 7,
+          "name": "Gustavo A. Madero",
+          "value": 5.5,
+          "rank": 9
+        },
+        {
+          "id": 14,
+          "name": "Tlalpan",
+          "value": 5.5,
+          "rank": 11
+        },
+        {
+          "id": 10,
+          "name": "La Magdalena Contreras",
+          "value": 5.5,
+          "rank": 12
+        },
+        {
+          "id": 13,
+          "name": "Tláhuac",
+          "value": 5.6,
+          "rank": 13
+        },
+        {
+          "id": 9,
+          "name": "Iztapalapa",
+          "value": 5.6,
+          "rank": 14
+        },
+        {
+          "id": 16,
+          "name": "Xochimilco",
+          "value": 5.6,
+          "rank": 15
+        },
+        {
+          "id": 12,
+          "name": "Milpa Alta",
+          "value": 5.7,
+          "rank": 16
+        }
+      ],
+      "1960": [
+        {
+          "id": 3,
+          "name": "Benito Juárez",
+          "value": 5.2,
+          "rank": 1
+        },
+        {
+          "id": 6,
+          "name": "Cuauhtémoc",
+          "value": 5.3,
+          "rank": 2
+        },
+        {
+          "id": 15,
+          "name": "Venustiano Carranza",
+          "value": 5.3,
+          "rank": 3
+        },
+        {
+          "id": 11,
+          "name": "Miguel Hidalgo",
+          "value": 5.3,
+          "rank": 4
+        },
+        {
+          "id": 8,
+          "name": "Iztacalco",
+          "value": 5.5,
+          "rank": 5
+        },
+        {
+          "id": 2,
+          "name": "Azcapotzalco",
+          "value": 5.5,
+          "rank": 6
+        },
+        {
+          "id": 4,
+          "name": "Coyoacán",
+          "value": 5.5,
+          "rank": 7
+        },
+        {
+          "id": 1,
+          "name": "Álvaro Obregón",
+          "value": 5.6,
+          "rank": 8
+        },
+        {
+          "id": 7,
+          "name": "Gustavo A. Madero",
+          "value": 5.6,
+          "rank": 9
+        },
+        {
+          "id": 14,
+          "name": "Tlalpan",
+          "value": 5.7,
+          "rank": 11
+        },
+        {
+          "id": 10,
+          "name": "La Magdalena Contreras",
+          "value": 5.7,
+          "rank": 12
+        },
+        {
+          "id": 13,
+          "name": "Tláhuac",
+          "value": 5.8,
+          "rank": 13
+        },
+        {
+          "id": 9,
+          "name": "Iztapalapa",
+          "value": 5.8,
+          "rank": 14
+        },
+        {
+          "id": 16,
+          "name": "Xochimilco",
+          "value": 5.8,
+          "rank": 15
+        },
+        {
+          "id": 12,
+          "name": "Milpa Alta",
+          "value": 6.0,
+          "rank": 16
+        }
+      ],
+      "1970": [
+        {
+          "id": 3,
+          "name": "Benito Juárez",
+          "value": 5.0,
+          "rank": 1
+        },
+        {
+          "id": 6,
+          "name": "Cuauhtémoc",
+          "value": 5.1,
+          "rank": 2
+        },
+        {
+          "id": 11,
+          "name": "Miguel Hidalgo",
+          "value": 5.1,
+          "rank": 3
+        },
+        {
+          "id": 15,
+          "name": "Venustiano Carranza",
+          "value": 5.2,
+          "rank": 4
+        },
+        {
+          "id": 8,
+          "name": "Iztacalco",
+          "value": 5.4,
+          "rank": 5
+        },
+        {
+          "id": 2,
+          "name": "Azcapotzalco",
+          "value": 5.4,
+          "rank": 6
+        },
+        {
+          "id": 4,
+          "name": "Coyoacán",
+          "value": 5.4,
+          "rank": 7
+        },
+        {
+          "id": 1,
+          "name": "Álvaro Obregón",
+          "value": 5.5,
+          "rank": 8
+        },
+        {
+          "id": 7,
+          "name": "Gustavo A. Madero",
+          "value": 5.5,
+          "rank": 9
+        },
+        {
+          "id": 14,
+          "name": "Tlalpan",
+          "value": 5.6,
+          "rank": 10
+        },
+        {
+          "id": 10,
+          "name": "La Magdalena Contreras",
+          "value": 5.7,
+          "rank": 12
+        },
+        {
+          "id": 13,
+          "name": "Tláhuac",
+          "value": 5.8,
+          "rank": 13
+        },
+        {
+          "id": 9,
+          "name": "Iztapalapa",
+          "value": 5.8,
+          "rank": 14
+        },
+        {
+          "id": 16,
+          "name": "Xochimilco",
+          "value": 5.8,
+          "rank": 15
+        },
+        {
+          "id": 12,
+          "name": "Milpa Alta",
+          "value": 6.0,
+          "rank": 16
+        }
+      ],
+      "1980": [
+        {
+          "id": 3,
+          "name": "Benito Juárez",
+          "value": 4.4,
+          "rank": 1
+        },
+        {
+          "id": 6,
+          "name": "Cuauhtémoc",
+          "value": 4.6,
+          "rank": 2
+        },
+        {
+          "id": 11,
+          "name": "Miguel Hidalgo",
+          "value": 4.6,
+          "rank": 3
+        },
+        {
+          "id": 15,
+          "name": "Venustiano Carranza",
+          "value": 4.8,
+          "rank": 4
+        },
+        {
+          "id": 8,
+          "name": "Iztacalco",
+          "value": 5.0,
+          "rank": 5
+        },
+        {
+          "id": 2,
+          "name": "Azcapotzalco",
+          "value": 5.0,
+          "rank": 6
+        },
+        {
+          "id": 4,
+          "name": "Coyoacán",
+          "value": 5.0,
+          "rank": 7
+        },
+        {
+          "id": 7,
+          "name": "Gustavo A. Madero",
+          "value": 5.1,
+          "rank": 8
+        },
+        {
+          "id": 14,
+          "name": "Tlalpan",
+          "value": 5.2,
+          "rank": 9
+        },
+        {
+          "id": 1,
+          "name": "Álvaro Obregón",
+          "value": 5.2,
+          "rank": 10
+        },
+        {
+          "id": 10,
+          "name": "La Magdalena Contreras",
+          "value": 5.3,
+          "rank": 11
+        },
+        {
+          "id": 13,
+          "name": "Tláhuac",
+          "value": 5.4,
+          "rank": 13
+        },
+        {
+          "id": 9,
+          "name": "Iztapalapa",
+          "value": 5.4,
+          "rank": 14
+        },
+        {
+          "id": 16,
+          "name": "Xochimilco",
+          "value": 5.4,
+          "rank": 15
+        },
+        {
+          "id": 12,
+          "name": "Milpa Alta",
+          "value": 5.7,
+          "rank": 16
+        }
+      ],
+      "1990": [
+        {
+          "id": 3,
+          "name": "Benito Juárez",
+          "value": 3.6,
+          "rank": 1
+        },
+        {
+          "id": 6,
+          "name": "Cuauhtémoc",
+          "value": 3.9,
+          "rank": 2
+        },
+        {
+          "id": 11,
+          "name": "Miguel Hidalgo",
+          "value": 4.0,
+          "rank": 3
+        },
+        {
+          "id": 15,
+          "name": "Venustiano Carranza",
+          "value": 4.2,
+          "rank": 4
+        },
+        {
+          "id": 4,
+          "name": "Coyoacán",
+          "value": 4.4,
+          "rank": 5
+        },
+        {
+          "id": 2,
+          "name": "Azcapotzalco",
+          "value": 4.4,
+          "rank": 6
+        },
+        {
+          "id": 8,
+          "name": "Iztacalco",
+          "value": 4.5,
+          "rank": 7
+        },
+        {
+          "id": 7,
+          "name": "Gustavo A. Madero",
+          "value": 4.5,
+          "rank": 8
+        },
+        {
+          "id": 14,
+          "name": "Tlalpan",
+          "value": 4.7,
+          "rank": 9
+        },
+        {
+          "id": 1,
+          "name": "Álvaro Obregón",
+          "value": 4.7,
+          "rank": 10
+        },
+        {
+          "id": 10,
+          "name": "La Magdalena Contreras",
+          "value": 4.8,
+          "rank": 11
+        },
+        {
+          "id": 13,
+          "name": "Tláhuac",
+          "value": 4.9,
+          "rank": 13
+        },
+        {
+          "id": 9,
+          "name": "Iztapalapa",
+          "value": 4.9,
+          "rank": 14
+        },
+        {
+          "id": 16,
+          "name": "Xochimilco",
+          "value": 4.9,
+          "rank": 15
+        },
+        {
+          "id": 12,
+          "name": "Milpa Alta",
+          "value": 5.2,
+          "rank": 16
+        }
+      ],
+      "2000": [
+        {
+          "id": 3,
+          "name": "Benito Juárez",
+          "value": 3.1,
+          "rank": 1
+        },
+        {
+          "id": 6,
+          "name": "Cuauhtémoc",
+          "value": 3.4,
+          "rank": 2
+        },
+        {
+          "id": 11,
+          "name": "Miguel Hidalgo",
+          "value": 3.4,
+          "rank": 3
+        },
+        {
+          "id": 15,
+          "name": "Venustiano Carranza",
+          "value": 3.6,
+          "rank": 4
+        },
+        {
+          "id": 4,
+          "name": "Coyoacán",
+          "value": 3.8,
+          "rank": 5
+        },
+        {
+          "id": 2,
+          "name": "Azcapotzalco",
+          "value": 3.9,
+          "rank": 6
+        },
+        {
+          "id": 8,
+          "name": "Iztacalco",
+          "value": 3.9,
+          "rank": 7
+        },
+        {
+          "id": 7,
+          "name": "Gustavo A. Madero",
+          "value": 4.0,
+          "rank": 8
+        },
+        {
+          "id": 14,
+          "name": "Tlalpan",
+          "value": 4.1,
+          "rank": 9
+        },
+        {
+          "id": 1,
+          "name": "Álvaro Obregón",
+          "value": 4.1,
+          "rank": 10
+        },
+        {
+          "id": 10,
+          "name": "La Magdalena Contreras",
+          "value": 4.2,
+          "rank": 11
+        },
+        {
+          "id": 13,
+          "name": "Tláhuac",
+          "value": 4.3,
+          "rank": 12
+        },
+        {
+          "id": 16,
+          "name": "Xochimilco",
+          "value": 4.3,
+          "rank": 13
+        },
+        {
+          "id": 9,
+          "name": "Iztapalapa",
+          "value": 4.3,
+          "rank": 14
+        },
+        {
+          "id": 12,
+          "name": "Milpa Alta",
+          "value": 4.7,
+          "rank": 16
+        }
+      ],
+      "2010": [
+        {
+          "id": 3,
+          "name": "Benito Juárez",
+          "value": 2.7,
+          "rank": 1
+        },
+        {
+          "id": 6,
+          "name": "Cuauhtémoc",
+          "value": 3.0,
+          "rank": 2
+        },
+        {
+          "id": 11,
+          "name": "Miguel Hidalgo",
+          "value": 3.0,
+          "rank": 3
+        },
+        {
+          "id": 15,
+          "name": "Venustiano Carranza",
+          "value": 3.2,
+          "rank": 4
+        },
+        {
+          "id": 4,
+          "name": "Coyoacán",
+          "value": 3.4,
+          "rank": 5
+        },
+        {
+          "id": 2,
+          "name": "Azcapotzalco",
+          "value": 3.5,
+          "rank": 6
+        },
+        {
+          "id": 8,
+          "name": "Iztacalco",
+          "value": 3.5,
+          "rank": 7
+        },
+        {
+          "id": 7,
+          "name": "Gustavo A. Madero",
+          "value": 3.6,
+          "rank": 8
+        },
+        {
+          "id": 14,
+          "name": "Tlalpan",
+          "value": 3.6,
+          "rank": 9
+        },
+        {
+          "id": 1,
+          "name": "Álvaro Obregón",
+          "value": 3.7,
+          "rank": 10
+        },
+        {
+          "id": 10,
+          "name": "La Magdalena Contreras",
+          "value": 3.7,
+          "rank": 11
+        },
+        {
+          "id": 13,
+          "name": "Tláhuac",
+          "value": 3.8,
+          "rank": 12
+        },
+        {
+          "id": 16,
+          "name": "Xochimilco",
+          "value": 3.8,
+          "rank": 13
+        },
+        {
+          "id": 9,
+          "name": "Iztapalapa",
+          "value": 3.8,
+          "rank": 14
+        },
+        {
+          "id": 12,
+          "name": "Milpa Alta",
+          "value": 4.2,
+          "rank": 16
+        }
+      ],
+      "2020": [
+        {
+          "id": 3,
+          "name": "Benito Juárez",
+          "value": 2.5,
+          "rank": 1
+        },
+        {
+          "id": 6,
+          "name": "Cuauhtémoc",
+          "value": 2.8,
+          "rank": 2
+        },
+        {
+          "id": 11,
+          "name": "Miguel Hidalgo",
+          "value": 2.8,
+          "rank": 3
+        },
+        {
+          "id": 15,
+          "name": "Venustiano Carranza",
+          "value": 3.0,
+          "rank": 4
+        },
+        {
+          "id": 4,
+          "name": "Coyoacán",
+          "value": 3.2,
+          "rank": 5
+        },
+        {
+          "id": 2,
+          "name": "Azcapotzalco",
+          "value": 3.2,
+          "rank": 6
+        },
+        {
+          "id": 8,
+          "name": "Iztacalco",
+          "value": 3.3,
+          "rank": 7
+        },
+        {
+          "id": 7,
+          "name": "Gustavo A. Madero",
+          "value": 3.3,
+          "rank": 8
+        },
+        {
+          "id": 14,
+          "name": "Tlalpan",
+          "value": 3.3,
+          "rank": 9
+        },
+        {
+          "id": 10,
+          "name": "La Magdalena Contreras",
+          "value": 3.4,
+          "rank": 10
+        },
+        {
+          "id": 13,
+          "name": "Tláhuac",
+          "value": 3.5,
+          "rank": 11
+        },
+        {
+          "id": 1,
+          "name": "Álvaro Obregón",
+          "value": 3.5,
+          "rank": 12
+        },
+        {
+          "id": 16,
+          "name": "Xochimilco",
+          "value": 3.5,
+          "rank": 13
+        },
+        {
+          "id": 9,
+          "name": "Iztapalapa",
+          "value": 3.5,
+          "rank": 14
+        },
+        {
+          "id": 12,
+          "name": "Milpa Alta",
+          "value": 3.9,
+          "rank": 16
+        }
+      ]
+    },
+    "shift_counter_vs_latest": {
+      "1900": {
+        "year": 1900,
+        "n_total": 15,
+        "changed_gt5": 0
+      },
+      "1910": {
+        "year": 1910,
+        "n_total": 15,
+        "changed_gt5": 0
+      },
+      "1920": {
+        "year": 1920,
+        "n_total": 15,
+        "changed_gt5": 0
+      },
+      "1930": {
+        "year": 1930,
+        "n_total": 15,
+        "changed_gt5": 0
+      },
+      "1940": {
+        "year": 1940,
+        "n_total": 15,
+        "changed_gt5": 0
+      },
+      "1950": {
+        "year": 1950,
+        "n_total": 15,
+        "changed_gt5": 0
+      },
+      "1960": {
+        "year": 1960,
+        "n_total": 15,
+        "changed_gt5": 0
+      },
+      "1970": {
+        "year": 1970,
+        "n_total": 15,
+        "changed_gt5": 0
+      },
+      "1980": {
+        "year": 1980,
+        "n_total": 15,
+        "changed_gt5": 0
+      },
+      "1990": {
+        "year": 1990,
+        "n_total": 15,
+        "changed_gt5": 0
+      },
+      "2000": {
+        "year": 2000,
+        "n_total": 15,
+        "changed_gt5": 0
+      },
+      "2010": {
+        "year": 2010,
+        "n_total": 15,
+        "changed_gt5": 0
+      },
+      "2020": {
+        "year": 2020,
+        "n_total": 15,
+        "changed_gt5": 0
+      }
+    },
+    "trajectories": [
+      {
+        "id": 3,
+        "name": "Benito Juárez",
+        "series": [
+          {
+            "year": 1900,
+            "rank": 1,
+            "value": 5.4
+          },
+          {
+            "year": 1910,
+            "rank": 1,
+            "value": 5.3
+          },
+          {
+            "year": 1920,
+            "rank": 1,
+            "value": 5.2
+          },
+          {
+            "year": 1930,
+            "rank": 1,
+            "value": 5.1
+          },
+          {
+            "year": 1940,
+            "rank": 1,
+            "value": 4.9
+          },
+          {
+            "year": 1950,
+            "rank": 1,
+            "value": 5.2
+          },
+          {
+            "year": 1960,
+            "rank": 1,
+            "value": 5.2
+          },
+          {
+            "year": 1970,
+            "rank": 1,
+            "value": 5.0
+          },
+          {
+            "year": 1980,
+            "rank": 1,
+            "value": 4.4
+          },
+          {
+            "year": 1990,
+            "rank": 1,
+            "value": 3.6
+          },
+          {
+            "year": 2000,
+            "rank": 1,
+            "value": 3.1
+          },
+          {
+            "year": 2010,
+            "rank": 1,
+            "value": 2.7
+          },
+          {
+            "year": 2020,
+            "rank": 1,
+            "value": 2.5
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Cuauhtémoc",
+        "series": [
+          {
+            "year": 1900,
+            "rank": 2,
+            "value": 5.4
+          },
+          {
+            "year": 1910,
+            "rank": 2,
+            "value": 5.3
+          },
+          {
+            "year": 1920,
+            "rank": 2,
+            "value": 5.2
+          },
+          {
+            "year": 1930,
+            "rank": 2,
+            "value": 5.1
+          },
+          {
+            "year": 1940,
+            "rank": 2,
+            "value": 4.9
+          },
+          {
+            "year": 1950,
+            "rank": 2,
+            "value": 5.2
+          },
+          {
+            "year": 1960,
+            "rank": 2,
+            "value": 5.3
+          },
+          {
+            "year": 1970,
+            "rank": 2,
+            "value": 5.1
+          },
+          {
+            "year": 1980,
+            "rank": 2,
+            "value": 4.6
+          },
+          {
+            "year": 1990,
+            "rank": 2,
+            "value": 3.9
+          },
+          {
+            "year": 2000,
+            "rank": 2,
+            "value": 3.4
+          },
+          {
+            "year": 2010,
+            "rank": 2,
+            "value": 3.0
+          },
+          {
+            "year": 2020,
+            "rank": 2,
+            "value": 2.8
+          }
+        ]
+      },
+      {
+        "id": 15,
+        "name": "Venustiano Carranza",
+        "series": [
+          {
+            "year": 1900,
+            "rank": 3,
+            "value": 5.4
+          },
+          {
+            "year": 1910,
+            "rank": 3,
+            "value": 5.3
+          },
+          {
+            "year": 1920,
+            "rank": 3,
+            "value": 5.2
+          },
+          {
+            "year": 1930,
+            "rank": 3,
+            "value": 5.1
+          },
+          {
+            "year": 1940,
+            "rank": 3,
+            "value": 4.9
+          },
+          {
+            "year": 1950,
+            "rank": 3,
+            "value": 5.2
+          },
+          {
+            "year": 1960,
+            "rank": 3,
+            "value": 5.3
+          },
+          {
+            "year": 1970,
+            "rank": 4,
+            "value": 5.2
+          },
+          {
+            "year": 1980,
+            "rank": 4,
+            "value": 4.8
+          },
+          {
+            "year": 1990,
+            "rank": 4,
+            "value": 4.2
+          },
+          {
+            "year": 2000,
+            "rank": 4,
+            "value": 3.6
+          },
+          {
+            "year": 2010,
+            "rank": 4,
+            "value": 3.2
+          },
+          {
+            "year": 2020,
+            "rank": 4,
+            "value": 3.0
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "name": "Miguel Hidalgo",
+        "series": [
+          {
+            "year": 1900,
+            "rank": 4,
+            "value": 5.4
+          },
+          {
+            "year": 1910,
+            "rank": 4,
+            "value": 5.3
+          },
+          {
+            "year": 1920,
+            "rank": 4,
+            "value": 5.2
+          },
+          {
+            "year": 1930,
+            "rank": 4,
+            "value": 5.1
+          },
+          {
+            "year": 1940,
+            "rank": 4,
+            "value": 4.9
+          },
+          {
+            "year": 1950,
+            "rank": 4,
+            "value": 5.2
+          },
+          {
+            "year": 1960,
+            "rank": 4,
+            "value": 5.3
+          },
+          {
+            "year": 1970,
+            "rank": 3,
+            "value": 5.1
+          },
+          {
+            "year": 1980,
+            "rank": 3,
+            "value": 4.6
+          },
+          {
+            "year": 1990,
+            "rank": 3,
+            "value": 4.0
+          },
+          {
+            "year": 2000,
+            "rank": 3,
+            "value": 3.4
+          },
+          {
+            "year": 2010,
+            "rank": 3,
+            "value": 3.0
+          },
+          {
+            "year": 2020,
+            "rank": 3,
+            "value": 2.8
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Coyoacán",
+        "series": [
+          {
+            "year": 1900,
+            "rank": 5,
+            "value": 5.5
+          },
+          {
+            "year": 1910,
+            "rank": 5,
+            "value": 5.4
+          },
+          {
+            "year": 1920,
+            "rank": 5,
+            "value": 5.3
+          },
+          {
+            "year": 1930,
+            "rank": 5,
+            "value": 5.2
+          },
+          {
+            "year": 1940,
+            "rank": 5,
+            "value": 5.0
+          },
+          {
+            "year": 1950,
+            "rank": 5,
+            "value": 5.4
+          },
+          {
+            "year": 1960,
+            "rank": 7,
+            "value": 5.5
+          },
+          {
+            "year": 1970,
+            "rank": 7,
+            "value": 5.4
+          },
+          {
+            "year": 1980,
+            "rank": 7,
+            "value": 5.0
+          },
+          {
+            "year": 1990,
+            "rank": 5,
+            "value": 4.4
+          },
+          {
+            "year": 2000,
+            "rank": 5,
+            "value": 3.8
+          },
+          {
+            "year": 2010,
+            "rank": 5,
+            "value": 3.4
+          },
+          {
+            "year": 2020,
+            "rank": 5,
+            "value": 3.2
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "name": "Gustavo A. Madero",
+        "series": [
+          {
+            "year": 1900,
+            "rank": 6,
+            "value": 5.5
+          },
+          {
+            "year": 1910,
+            "rank": 9,
+            "value": 5.5
+          },
+          {
+            "year": 1920,
+            "rank": 9,
+            "value": 5.4
+          },
+          {
+            "year": 1930,
+            "rank": 9,
+            "value": 5.3
+          },
+          {
+            "year": 1940,
+            "rank": 9,
+            "value": 5.1
+          },
+          {
+            "year": 1950,
+            "rank": 9,
+            "value": 5.5
+          },
+          {
+            "year": 1960,
+            "rank": 9,
+            "value": 5.6
+          },
+          {
+            "year": 1970,
+            "rank": 9,
+            "value": 5.5
+          },
+          {
+            "year": 1980,
+            "rank": 8,
+            "value": 5.1
+          },
+          {
+            "year": 1990,
+            "rank": 8,
+            "value": 4.5
+          },
+          {
+            "year": 2000,
+            "rank": 8,
+            "value": 4.0
+          },
+          {
+            "year": 2010,
+            "rank": 8,
+            "value": 3.6
+          },
+          {
+            "year": 2020,
+            "rank": 8,
+            "value": 3.3
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Azcapotzalco",
+        "series": [
+          {
+            "year": 1900,
+            "rank": 7,
+            "value": 5.5
+          },
+          {
+            "year": 1910,
+            "rank": 7,
+            "value": 5.4
+          },
+          {
+            "year": 1920,
+            "rank": 7,
+            "value": 5.3
+          },
+          {
+            "year": 1930,
+            "rank": 7,
+            "value": 5.2
+          },
+          {
+            "year": 1940,
+            "rank": 7,
+            "value": 5.0
+          },
+          {
+            "year": 1950,
+            "rank": 7,
+            "value": 5.4
+          },
+          {
+            "year": 1960,
+            "rank": 6,
+            "value": 5.5
+          },
+          {
+            "year": 1970,
+            "rank": 6,
+            "value": 5.4
+          },
+          {
+            "year": 1980,
+            "rank": 6,
+            "value": 5.0
+          },
+          {
+            "year": 1990,
+            "rank": 6,
+            "value": 4.4
+          },
+          {
+            "year": 2000,
+            "rank": 6,
+            "value": 3.9
+          },
+          {
+            "year": 2010,
+            "rank": 6,
+            "value": 3.5
+          },
+          {
+            "year": 2020,
+            "rank": 6,
+            "value": 3.2
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "name": "Álvaro Obregón",
+        "series": [
+          {
+            "year": 1900,
+            "rank": 8,
+            "value": 5.5
+          },
+          {
+            "year": 1910,
+            "rank": 8,
+            "value": 5.4
+          },
+          {
+            "year": 1920,
+            "rank": 8,
+            "value": 5.3
+          },
+          {
+            "year": 1930,
+            "rank": 8,
+            "value": 5.2
+          },
+          {
+            "year": 1940,
+            "rank": 8,
+            "value": 5.0
+          },
+          {
+            "year": 1950,
+            "rank": 8,
+            "value": 5.4
+          },
+          {
+            "year": 1960,
+            "rank": 8,
+            "value": 5.6
+          },
+          {
+            "year": 1970,
+            "rank": 8,
+            "value": 5.5
+          },
+          {
+            "year": 1980,
+            "rank": 10,
+            "value": 5.2
+          },
+          {
+            "year": 1990,
+            "rank": 10,
+            "value": 4.7
+          },
+          {
+            "year": 2000,
+            "rank": 10,
+            "value": 4.1
+          },
+          {
+            "year": 2010,
+            "rank": 10,
+            "value": 3.7
+          },
+          {
+            "year": 2020,
+            "rank": 12,
+            "value": 3.5
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "name": "Iztacalco",
+        "series": [
+          {
+            "year": 1900,
+            "rank": 9,
+            "value": 5.5
+          },
+          {
+            "year": 1910,
+            "rank": 6,
+            "value": 5.4
+          },
+          {
+            "year": 1920,
+            "rank": 6,
+            "value": 5.3
+          },
+          {
+            "year": 1930,
+            "rank": 6,
+            "value": 5.2
+          },
+          {
+            "year": 1940,
+            "rank": 6,
+            "value": 5.0
+          },
+          {
+            "year": 1950,
+            "rank": 6,
+            "value": 5.4
+          },
+          {
+            "year": 1960,
+            "rank": 5,
+            "value": 5.5
+          },
+          {
+            "year": 1970,
+            "rank": 5,
+            "value": 5.4
+          },
+          {
+            "year": 1980,
+            "rank": 5,
+            "value": 5.0
+          },
+          {
+            "year": 1990,
+            "rank": 7,
+            "value": 4.5
+          },
+          {
+            "year": 2000,
+            "rank": 7,
+            "value": 3.9
+          },
+          {
+            "year": 2010,
+            "rank": 7,
+            "value": 3.5
+          },
+          {
+            "year": 2020,
+            "rank": 7,
+            "value": 3.3
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "name": "La Magdalena Contreras",
+        "series": [
+          {
+            "year": 1900,
+            "rank": 11,
+            "value": 5.6
+          },
+          {
+            "year": 1910,
+            "rank": 11,
+            "value": 5.5
+          },
+          {
+            "year": 1920,
+            "rank": 12,
+            "value": 5.4
+          },
+          {
+            "year": 1930,
+            "rank": 12,
+            "value": 5.3
+          },
+          {
+            "year": 1940,
+            "rank": 12,
+            "value": 5.1
+          },
+          {
+            "year": 1950,
+            "rank": 12,
+            "value": 5.5
+          },
+          {
+            "year": 1960,
+            "rank": 12,
+            "value": 5.7
+          },
+          {
+            "year": 1970,
+            "rank": 12,
+            "value": 5.7
+          },
+          {
+            "year": 1980,
+            "rank": 11,
+            "value": 5.3
+          },
+          {
+            "year": 1990,
+            "rank": 11,
+            "value": 4.8
+          },
+          {
+            "year": 2000,
+            "rank": 11,
+            "value": 4.2
+          },
+          {
+            "year": 2010,
+            "rank": 11,
+            "value": 3.7
+          },
+          {
+            "year": 2020,
+            "rank": 10,
+            "value": 3.4
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "name": "Iztapalapa",
+        "series": [
+          {
+            "year": 1900,
+            "rank": 12,
+            "value": 5.6
+          },
+          {
+            "year": 1910,
+            "rank": 12,
+            "value": 5.5
+          },
+          {
+            "year": 1920,
+            "rank": 14,
+            "value": 5.5
+          },
+          {
+            "year": 1930,
+            "rank": 14,
+            "value": 5.4
+          },
+          {
+            "year": 1940,
+            "rank": 14,
+            "value": 5.2
+          },
+          {
+            "year": 1950,
+            "rank": 14,
+            "value": 5.6
+          },
+          {
+            "year": 1960,
+            "rank": 14,
+            "value": 5.8
+          },
+          {
+            "year": 1970,
+            "rank": 14,
+            "value": 5.8
+          },
+          {
+            "year": 1980,
+            "rank": 14,
+            "value": 5.4
+          },
+          {
+            "year": 1990,
+            "rank": 14,
+            "value": 4.9
+          },
+          {
+            "year": 2000,
+            "rank": 14,
+            "value": 4.3
+          },
+          {
+            "year": 2010,
+            "rank": 14,
+            "value": 3.8
+          },
+          {
+            "year": 2020,
+            "rank": 14,
+            "value": 3.5
+          }
+        ]
+      },
+      {
+        "id": 14,
+        "name": "Tlalpan",
+        "series": [
+          {
+            "year": 1900,
+            "rank": 13,
+            "value": 5.6
+          },
+          {
+            "year": 1910,
+            "rank": 13,
+            "value": 5.5
+          },
+          {
+            "year": 1920,
+            "rank": 11,
+            "value": 5.4
+          },
+          {
+            "year": 1930,
+            "rank": 11,
+            "value": 5.3
+          },
+          {
+            "year": 1940,
+            "rank": 11,
+            "value": 5.1
+          },
+          {
+            "year": 1950,
+            "rank": 11,
+            "value": 5.5
+          },
+          {
+            "year": 1960,
+            "rank": 11,
+            "value": 5.7
+          },
+          {
+            "year": 1970,
+            "rank": 10,
+            "value": 5.6
+          },
+          {
+            "year": 1980,
+            "rank": 9,
+            "value": 5.2
+          },
+          {
+            "year": 1990,
+            "rank": 9,
+            "value": 4.7
+          },
+          {
+            "year": 2000,
+            "rank": 9,
+            "value": 4.1
+          },
+          {
+            "year": 2010,
+            "rank": 9,
+            "value": 3.6
+          },
+          {
+            "year": 2020,
+            "rank": 9,
+            "value": 3.3
+          }
+        ]
+      },
+      {
+        "id": 13,
+        "name": "Tláhuac",
+        "series": [
+          {
+            "year": 1900,
+            "rank": 14,
+            "value": 5.6
+          },
+          {
+            "year": 1910,
+            "rank": 14,
+            "value": 5.5
+          },
+          {
+            "year": 1920,
+            "rank": 13,
+            "value": 5.5
+          },
+          {
+            "year": 1930,
+            "rank": 13,
+            "value": 5.4
+          },
+          {
+            "year": 1940,
+            "rank": 13,
+            "value": 5.2
+          },
+          {
+            "year": 1950,
+            "rank": 13,
+            "value": 5.6
+          },
+          {
+            "year": 1960,
+            "rank": 13,
+            "value": 5.8
+          },
+          {
+            "year": 1970,
+            "rank": 13,
+            "value": 5.8
+          },
+          {
+            "year": 1980,
+            "rank": 13,
+            "value": 5.4
+          },
+          {
+            "year": 1990,
+            "rank": 13,
+            "value": 4.9
+          },
+          {
+            "year": 2000,
+            "rank": 12,
+            "value": 4.3
+          },
+          {
+            "year": 2010,
+            "rank": 12,
+            "value": 3.8
+          },
+          {
+            "year": 2020,
+            "rank": 11,
+            "value": 3.5
+          }
+        ]
+      },
+      {
+        "id": 16,
+        "name": "Xochimilco",
+        "series": [
+          {
+            "year": 1900,
+            "rank": 15,
+            "value": 5.6
+          },
+          {
+            "year": 1910,
+            "rank": 15,
+            "value": 5.5
+          },
+          {
+            "year": 1920,
+            "rank": 15,
+            "value": 5.5
+          },
+          {
+            "year": 1930,
+            "rank": 15,
+            "value": 5.4
+          },
+          {
+            "year": 1940,
+            "rank": 15,
+            "value": 5.2
+          },
+          {
+            "year": 1950,
+            "rank": 15,
+            "value": 5.6
+          },
+          {
+            "year": 1960,
+            "rank": 15,
+            "value": 5.8
+          },
+          {
+            "year": 1970,
+            "rank": 15,
+            "value": 5.8
+          },
+          {
+            "year": 1980,
+            "rank": 15,
+            "value": 5.4
+          },
+          {
+            "year": 1990,
+            "rank": 15,
+            "value": 4.9
+          },
+          {
+            "year": 2000,
+            "rank": 13,
+            "value": 4.3
+          },
+          {
+            "year": 2010,
+            "rank": 13,
+            "value": 3.8
+          },
+          {
+            "year": 2020,
+            "rank": 13,
+            "value": 3.5
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "name": "Milpa Alta",
+        "series": [
+          {
+            "year": 1900,
+            "rank": 16,
+            "value": 5.7
+          },
+          {
+            "year": 1910,
+            "rank": 16,
+            "value": 5.7
+          },
+          {
+            "year": 1920,
+            "rank": 16,
+            "value": 5.6
+          },
+          {
+            "year": 1930,
+            "rank": 16,
+            "value": 5.5
+          },
+          {
+            "year": 1940,
+            "rank": 16,
+            "value": 5.3
+          },
+          {
+            "year": 1950,
+            "rank": 16,
+            "value": 5.7
+          },
+          {
+            "year": 1960,
+            "rank": 16,
+            "value": 6.0
+          },
+          {
+            "year": 1970,
+            "rank": 16,
+            "value": 6.0
+          },
+          {
+            "year": 1980,
+            "rank": 16,
+            "value": 5.7
+          },
+          {
+            "year": 1990,
+            "rank": 16,
+            "value": 5.2
+          },
+          {
+            "year": 2000,
+            "rank": 16,
+            "value": 4.7
+          },
+          {
+            "year": 2010,
+            "rank": 16,
+            "value": 4.2
+          },
+          {
+            "year": 2020,
+            "rank": 16,
+            "value": 3.9
+          }
+        ]
+      }
+    ]
+  },
+  "paris": {
+    "city": "Paris",
+    "years": [
+      1968,
+      1975,
+      1982,
+      1990,
+      1999,
+      2006,
+      2011,
+      2016,
+      2022
+    ],
+    "latest_year": 2022,
+    "data_by_year": {
+      "1968": [
+        {
+          "id": 2,
+          "name": "2e — Bourse",
+          "value": 2.0,
+          "rank": 1
+        },
+        {
+          "id": 1,
+          "name": "1er — Louvre",
+          "value": 2.05,
+          "rank": 2
+        },
+        {
+          "id": 5,
+          "name": "5e — Panthéon",
+          "value": 2.06,
+          "rank": 3
+        },
+        {
+          "id": 18,
+          "name": "18e — Buttes-Montmartre",
+          "value": 2.08,
+          "rank": 4
+        },
+        {
+          "id": 9,
+          "name": "9e — Opéra",
+          "value": 2.09,
+          "rank": 5
+        },
+        {
+          "id": 11,
+          "name": "11e — Popincourt",
+          "value": 2.1,
+          "rank": 6
+        },
+        {
+          "id": 3,
+          "name": "3e — Temple",
+          "value": 2.11,
+          "rank": 7
+        },
+        {
+          "id": 15,
+          "name": "15e — Vaugirard",
+          "value": 2.14,
+          "rank": 8
+        },
+        {
+          "id": 10,
+          "name": "10e — Entrepôt",
+          "value": 2.15,
+          "rank": 9
+        },
+        {
+          "id": 4,
+          "name": "4e — Hôtel-de-Ville",
+          "value": 2.16,
+          "rank": 10
+        },
+        {
+          "id": 6,
+          "name": "6e — Luxembourg",
+          "value": 2.16,
+          "rank": 11
+        },
+        {
+          "id": 14,
+          "name": "14e — Observatoire",
+          "value": 2.17,
+          "rank": 12
+        },
+        {
+          "id": 17,
+          "name": "17e — Batignolles",
+          "value": 2.18,
+          "rank": 13
+        },
+        {
+          "id": 12,
+          "name": "12e — Reuilly",
+          "value": 2.22,
+          "rank": 14
+        },
+        {
+          "id": 7,
+          "name": "7e — Palais-Bourbon",
+          "value": 2.29,
+          "rank": 15
+        },
+        {
+          "id": 20,
+          "name": "20e — Ménilmontant",
+          "value": 2.3,
+          "rank": 16
+        },
+        {
+          "id": 13,
+          "name": "13e — Gobelins",
+          "value": 2.32,
+          "rank": 17
+        },
+        {
+          "id": 8,
+          "name": "8e — Élysée",
+          "value": 2.33,
+          "rank": 18
+        },
+        {
+          "id": 19,
+          "name": "19e — Buttes-Chaumont",
+          "value": 2.34,
+          "rank": 19
+        },
+        {
+          "id": 16,
+          "name": "16e — Passy",
+          "value": 2.41,
+          "rank": 20
+        }
+      ],
+      "1975": [
+        {
+          "id": 2,
+          "name": "2e — Bourse",
+          "value": 1.87,
+          "rank": 1
+        },
+        {
+          "id": 5,
+          "name": "5e — Panthéon",
+          "value": 1.89,
+          "rank": 2
+        },
+        {
+          "id": 3,
+          "name": "3e — Temple",
+          "value": 1.91,
+          "rank": 3
+        },
+        {
+          "id": 1,
+          "name": "1er — Louvre",
+          "value": 1.91,
+          "rank": 4
+        },
+        {
+          "id": 4,
+          "name": "4e — Hôtel-de-Ville",
+          "value": 1.93,
+          "rank": 5
+        },
+        {
+          "id": 9,
+          "name": "9e — Opéra",
+          "value": 1.93,
+          "rank": 6
+        },
+        {
+          "id": 18,
+          "name": "18e — Buttes-Montmartre",
+          "value": 1.95,
+          "rank": 7
+        },
+        {
+          "id": 11,
+          "name": "11e — Popincourt",
+          "value": 1.97,
+          "rank": 8
+        },
+        {
+          "id": 15,
+          "name": "15e — Vaugirard",
+          "value": 1.98,
+          "rank": 9
+        },
+        {
+          "id": 14,
+          "name": "14e — Observatoire",
+          "value": 1.98,
+          "rank": 10
+        },
+        {
+          "id": 6,
+          "name": "6e — Luxembourg",
+          "value": 1.98,
+          "rank": 11
+        },
+        {
+          "id": 10,
+          "name": "10e — Entrepôt",
+          "value": 1.99,
+          "rank": 12
+        },
+        {
+          "id": 17,
+          "name": "17e — Batignolles",
+          "value": 1.99,
+          "rank": 13
+        },
+        {
+          "id": 12,
+          "name": "12e — Reuilly",
+          "value": 2.04,
+          "rank": 14
+        },
+        {
+          "id": 7,
+          "name": "7e — Palais-Bourbon",
+          "value": 2.09,
+          "rank": 15
+        },
+        {
+          "id": 20,
+          "name": "20e — Ménilmontant",
+          "value": 2.1,
+          "rank": 16
+        },
+        {
+          "id": 8,
+          "name": "8e — Élysée",
+          "value": 2.11,
+          "rank": 17
+        },
+        {
+          "id": 13,
+          "name": "13e — Gobelins",
+          "value": 2.14,
+          "rank": 18
+        },
+        {
+          "id": 16,
+          "name": "16e — Passy",
+          "value": 2.14,
+          "rank": 19
+        },
+        {
+          "id": 19,
+          "name": "19e — Buttes-Chaumont",
+          "value": 2.18,
+          "rank": 20
+        }
+      ],
+      "1982": [
+        {
+          "id": 2,
+          "name": "2e — Bourse",
+          "value": 1.72,
+          "rank": 1
+        },
+        {
+          "id": 5,
+          "name": "5e — Panthéon",
+          "value": 1.76,
+          "rank": 2
+        },
+        {
+          "id": 1,
+          "name": "1er — Louvre",
+          "value": 1.78,
+          "rank": 3
+        },
+        {
+          "id": 4,
+          "name": "4e — Hôtel-de-Ville",
+          "value": 1.79,
+          "rank": 4
+        },
+        {
+          "id": 11,
+          "name": "11e — Popincourt",
+          "value": 1.81,
+          "rank": 5
+        },
+        {
+          "id": 3,
+          "name": "3e — Temple",
+          "value": 1.81,
+          "rank": 6
+        },
+        {
+          "id": 18,
+          "name": "18e — Buttes-Montmartre",
+          "value": 1.82,
+          "rank": 7
+        },
+        {
+          "id": 9,
+          "name": "9e — Opéra",
+          "value": 1.83,
+          "rank": 8
+        },
+        {
+          "id": 14,
+          "name": "14e — Observatoire",
+          "value": 1.85,
+          "rank": 9
+        },
+        {
+          "id": 6,
+          "name": "6e — Luxembourg",
+          "value": 1.86,
+          "rank": 10
+        },
+        {
+          "id": 15,
+          "name": "15e — Vaugirard",
+          "value": 1.87,
+          "rank": 11
+        },
+        {
+          "id": 12,
+          "name": "12e — Reuilly",
+          "value": 1.88,
+          "rank": 12
+        },
+        {
+          "id": 17,
+          "name": "17e — Batignolles",
+          "value": 1.88,
+          "rank": 13
+        },
+        {
+          "id": 10,
+          "name": "10e — Entrepôt",
+          "value": 1.9,
+          "rank": 14
+        },
+        {
+          "id": 7,
+          "name": "7e — Palais-Bourbon",
+          "value": 1.94,
+          "rank": 15
+        },
+        {
+          "id": 16,
+          "name": "16e — Passy",
+          "value": 2.01,
+          "rank": 16
+        },
+        {
+          "id": 13,
+          "name": "13e — Gobelins",
+          "value": 2.01,
+          "rank": 17
+        },
+        {
+          "id": 8,
+          "name": "8e — Élysée",
+          "value": 2.02,
+          "rank": 18
+        },
+        {
+          "id": 20,
+          "name": "20e — Ménilmontant",
+          "value": 2.03,
+          "rank": 19
+        },
+        {
+          "id": 19,
+          "name": "19e — Buttes-Chaumont",
+          "value": 2.13,
+          "rank": 20
+        }
+      ],
+      "1990": [
+        {
+          "id": 2,
+          "name": "2e — Bourse",
+          "value": 1.76,
+          "rank": 1
+        },
+        {
+          "id": 5,
+          "name": "5e — Panthéon",
+          "value": 1.76,
+          "rank": 2
+        },
+        {
+          "id": 1,
+          "name": "1er — Louvre",
+          "value": 1.77,
+          "rank": 3
+        },
+        {
+          "id": 3,
+          "name": "3e — Temple",
+          "value": 1.78,
+          "rank": 4
+        },
+        {
+          "id": 4,
+          "name": "4e — Hôtel-de-Ville",
+          "value": 1.79,
+          "rank": 5
+        },
+        {
+          "id": 6,
+          "name": "6e — Luxembourg",
+          "value": 1.82,
+          "rank": 6
+        },
+        {
+          "id": 15,
+          "name": "15e — Vaugirard",
+          "value": 1.83,
+          "rank": 7
+        },
+        {
+          "id": 11,
+          "name": "11e — Popincourt",
+          "value": 1.84,
+          "rank": 8
+        },
+        {
+          "id": 12,
+          "name": "12e — Reuilly",
+          "value": 1.87,
+          "rank": 9
+        },
+        {
+          "id": 14,
+          "name": "14e — Observatoire",
+          "value": 1.87,
+          "rank": 10
+        },
+        {
+          "id": 9,
+          "name": "9e — Opéra",
+          "value": 1.88,
+          "rank": 11
+        },
+        {
+          "id": 18,
+          "name": "18e — Buttes-Montmartre",
+          "value": 1.88,
+          "rank": 12
+        },
+        {
+          "id": 17,
+          "name": "17e — Batignolles",
+          "value": 1.9,
+          "rank": 13
+        },
+        {
+          "id": 7,
+          "name": "7e — Palais-Bourbon",
+          "value": 1.92,
+          "rank": 14
+        },
+        {
+          "id": 10,
+          "name": "10e — Entrepôt",
+          "value": 1.95,
+          "rank": 15
+        },
+        {
+          "id": 16,
+          "name": "16e — Passy",
+          "value": 1.98,
+          "rank": 16
+        },
+        {
+          "id": 13,
+          "name": "13e — Gobelins",
+          "value": 2.02,
+          "rank": 17
+        },
+        {
+          "id": 8,
+          "name": "8e — Élysée",
+          "value": 2.03,
+          "rank": 18
+        },
+        {
+          "id": 20,
+          "name": "20e — Ménilmontant",
+          "value": 2.04,
+          "rank": 19
+        },
+        {
+          "id": 19,
+          "name": "19e — Buttes-Chaumont",
+          "value": 2.17,
+          "rank": 20
+        }
+      ],
+      "1999": [
+        {
+          "id": 4,
+          "name": "4e — Hôtel-de-Ville",
+          "value": 1.66,
+          "rank": 1
+        },
+        {
+          "id": 1,
+          "name": "1er — Louvre",
+          "value": 1.7,
+          "rank": 2
+        },
+        {
+          "id": 2,
+          "name": "2e — Bourse",
+          "value": 1.7,
+          "rank": 3
+        },
+        {
+          "id": 5,
+          "name": "5e — Panthéon",
+          "value": 1.71,
+          "rank": 4
+        },
+        {
+          "id": 3,
+          "name": "3e — Temple",
+          "value": 1.75,
+          "rank": 5
+        },
+        {
+          "id": 6,
+          "name": "6e — Luxembourg",
+          "value": 1.75,
+          "rank": 6
+        },
+        {
+          "id": 11,
+          "name": "11e — Popincourt",
+          "value": 1.78,
+          "rank": 7
+        },
+        {
+          "id": 15,
+          "name": "15e — Vaugirard",
+          "value": 1.8,
+          "rank": 8
+        },
+        {
+          "id": 14,
+          "name": "14e — Observatoire",
+          "value": 1.81,
+          "rank": 9
+        },
+        {
+          "id": 9,
+          "name": "9e — Opéra",
+          "value": 1.82,
+          "rank": 10
+        },
+        {
+          "id": 18,
+          "name": "18e — Buttes-Montmartre",
+          "value": 1.83,
+          "rank": 11
+        },
+        {
+          "id": 12,
+          "name": "12e — Reuilly",
+          "value": 1.84,
+          "rank": 12
+        },
+        {
+          "id": 7,
+          "name": "7e — Palais-Bourbon",
+          "value": 1.84,
+          "rank": 13
+        },
+        {
+          "id": 17,
+          "name": "17e — Batignolles",
+          "value": 1.85,
+          "rank": 14
+        },
+        {
+          "id": 10,
+          "name": "10e — Entrepôt",
+          "value": 1.9,
+          "rank": 15
+        },
+        {
+          "id": 16,
+          "name": "16e — Passy",
+          "value": 1.94,
+          "rank": 16
+        },
+        {
+          "id": 13,
+          "name": "13e — Gobelins",
+          "value": 1.94,
+          "rank": 17
+        },
+        {
+          "id": 20,
+          "name": "20e — Ménilmontant",
+          "value": 1.98,
+          "rank": 18
+        },
+        {
+          "id": 8,
+          "name": "8e — Élysée",
+          "value": 1.99,
+          "rank": 19
+        },
+        {
+          "id": 19,
+          "name": "19e — Buttes-Chaumont",
+          "value": 2.15,
+          "rank": 20
+        }
+      ],
+      "2006": [
+        {
+          "id": 2,
+          "name": "2e — Bourse",
+          "value": 1.7,
+          "rank": 1
+        },
+        {
+          "id": 1,
+          "name": "1er — Louvre",
+          "value": 1.72,
+          "rank": 2
+        },
+        {
+          "id": 4,
+          "name": "4e — Hôtel-de-Ville",
+          "value": 1.72,
+          "rank": 3
+        },
+        {
+          "id": 3,
+          "name": "3e — Temple",
+          "value": 1.74,
+          "rank": 4
+        },
+        {
+          "id": 6,
+          "name": "6e — Luxembourg",
+          "value": 1.74,
+          "rank": 5
+        },
+        {
+          "id": 11,
+          "name": "11e — Popincourt",
+          "value": 1.75,
+          "rank": 6
+        },
+        {
+          "id": 5,
+          "name": "5e — Panthéon",
+          "value": 1.75,
+          "rank": 7
+        },
+        {
+          "id": 15,
+          "name": "15e — Vaugirard",
+          "value": 1.81,
+          "rank": 8
+        },
+        {
+          "id": 7,
+          "name": "7e — Palais-Bourbon",
+          "value": 1.82,
+          "rank": 9
+        },
+        {
+          "id": 14,
+          "name": "14e — Observatoire",
+          "value": 1.82,
+          "rank": 10
+        },
+        {
+          "id": 12,
+          "name": "12e — Reuilly",
+          "value": 1.83,
+          "rank": 11
+        },
+        {
+          "id": 18,
+          "name": "18e — Buttes-Montmartre",
+          "value": 1.85,
+          "rank": 12
+        },
+        {
+          "id": 9,
+          "name": "9e — Opéra",
+          "value": 1.86,
+          "rank": 13
+        },
+        {
+          "id": 17,
+          "name": "17e — Batignolles",
+          "value": 1.88,
+          "rank": 14
+        },
+        {
+          "id": 10,
+          "name": "10e — Entrepôt",
+          "value": 1.89,
+          "rank": 15
+        },
+        {
+          "id": 13,
+          "name": "13e — Gobelins",
+          "value": 1.93,
+          "rank": 16
+        },
+        {
+          "id": 16,
+          "name": "16e — Passy",
+          "value": 1.97,
+          "rank": 17
+        },
+        {
+          "id": 20,
+          "name": "20e — Ménilmontant",
+          "value": 1.99,
+          "rank": 18
+        },
+        {
+          "id": 8,
+          "name": "8e — Élysée",
+          "value": 2.03,
+          "rank": 19
+        },
+        {
+          "id": 19,
+          "name": "19e — Buttes-Chaumont",
+          "value": 2.2,
+          "rank": 20
+        }
+      ],
+      "2011": [
+        {
+          "id": 4,
+          "name": "4e — Hôtel-de-Ville",
+          "value": 1.69,
+          "rank": 1
+        },
+        {
+          "id": 1,
+          "name": "1er — Louvre",
+          "value": 1.7,
+          "rank": 2
+        },
+        {
+          "id": 2,
+          "name": "2e — Bourse",
+          "value": 1.7,
+          "rank": 3
+        },
+        {
+          "id": 3,
+          "name": "3e — Temple",
+          "value": 1.71,
+          "rank": 4
+        },
+        {
+          "id": 5,
+          "name": "5e — Panthéon",
+          "value": 1.72,
+          "rank": 5
+        },
+        {
+          "id": 11,
+          "name": "11e — Popincourt",
+          "value": 1.75,
+          "rank": 6
+        },
+        {
+          "id": 6,
+          "name": "6e — Luxembourg",
+          "value": 1.76,
+          "rank": 7
+        },
+        {
+          "id": 14,
+          "name": "14e — Observatoire",
+          "value": 1.81,
+          "rank": 8
+        },
+        {
+          "id": 7,
+          "name": "7e — Palais-Bourbon",
+          "value": 1.83,
+          "rank": 9
+        },
+        {
+          "id": 15,
+          "name": "15e — Vaugirard",
+          "value": 1.84,
+          "rank": 10
+        },
+        {
+          "id": 12,
+          "name": "12e — Reuilly",
+          "value": 1.85,
+          "rank": 11
+        },
+        {
+          "id": 18,
+          "name": "18e — Buttes-Montmartre",
+          "value": 1.87,
+          "rank": 12
+        },
+        {
+          "id": 9,
+          "name": "9e — Opéra",
+          "value": 1.87,
+          "rank": 13
+        },
+        {
+          "id": 17,
+          "name": "17e — Batignolles",
+          "value": 1.88,
+          "rank": 14
+        },
+        {
+          "id": 10,
+          "name": "10e — Entrepôt",
+          "value": 1.9,
+          "rank": 15
+        },
+        {
+          "id": 13,
+          "name": "13e — Gobelins",
+          "value": 1.95,
+          "rank": 16
+        },
+        {
+          "id": 16,
+          "name": "16e — Passy",
+          "value": 1.96,
+          "rank": 17
+        },
+        {
+          "id": 20,
+          "name": "20e — Ménilmontant",
+          "value": 2.01,
+          "rank": 18
+        },
+        {
+          "id": 8,
+          "name": "8e — Élysée",
+          "value": 2.06,
+          "rank": 19
+        },
+        {
+          "id": 19,
+          "name": "19e — Buttes-Chaumont",
+          "value": 2.17,
+          "rank": 20
+        }
+      ],
+      "2016": [
+        {
+          "id": 2,
+          "name": "2e — Bourse",
+          "value": 1.72,
+          "rank": 1
+        },
+        {
+          "id": 3,
+          "name": "3e — Temple",
+          "value": 1.72,
+          "rank": 2
+        },
+        {
+          "id": 6,
+          "name": "6e — Luxembourg",
+          "value": 1.72,
+          "rank": 3
+        },
+        {
+          "id": 4,
+          "name": "4e — Hôtel-de-Ville",
+          "value": 1.73,
+          "rank": 4
+        },
+        {
+          "id": 1,
+          "name": "1er — Louvre",
+          "value": 1.73,
+          "rank": 5
+        },
+        {
+          "id": 11,
+          "name": "11e — Popincourt",
+          "value": 1.74,
+          "rank": 6
+        },
+        {
+          "id": 5,
+          "name": "5e — Panthéon",
+          "value": 1.74,
+          "rank": 7
+        },
+        {
+          "id": 7,
+          "name": "7e — Palais-Bourbon",
+          "value": 1.82,
+          "rank": 8
+        },
+        {
+          "id": 15,
+          "name": "15e — Vaugirard",
+          "value": 1.84,
+          "rank": 9
+        },
+        {
+          "id": 14,
+          "name": "14e — Observatoire",
+          "value": 1.84,
+          "rank": 10
+        },
+        {
+          "id": 18,
+          "name": "18e — Buttes-Montmartre",
+          "value": 1.85,
+          "rank": 11
+        },
+        {
+          "id": 12,
+          "name": "12e — Reuilly",
+          "value": 1.86,
+          "rank": 12
+        },
+        {
+          "id": 9,
+          "name": "9e — Opéra",
+          "value": 1.86,
+          "rank": 13
+        },
+        {
+          "id": 17,
+          "name": "17e — Batignolles",
+          "value": 1.87,
+          "rank": 14
+        },
+        {
+          "id": 10,
+          "name": "10e — Entrepôt",
+          "value": 1.89,
+          "rank": 15
+        },
+        {
+          "id": 13,
+          "name": "13e — Gobelins",
+          "value": 1.95,
+          "rank": 16
+        },
+        {
+          "id": 16,
+          "name": "16e — Passy",
+          "value": 1.97,
+          "rank": 17
+        },
+        {
+          "id": 20,
+          "name": "20e — Ménilmontant",
+          "value": 1.97,
+          "rank": 18
+        },
+        {
+          "id": 8,
+          "name": "8e — Élysée",
+          "value": 2.02,
+          "rank": 19
+        },
+        {
+          "id": 19,
+          "name": "19e — Buttes-Chaumont",
+          "value": 2.13,
+          "rank": 20
+        }
+      ],
+      "2022": [
+        {
+          "id": 1,
+          "name": "1er — Louvre",
+          "value": 1.63,
+          "rank": 1
+        },
+        {
+          "id": 3,
+          "name": "3e — Temple",
+          "value": 1.66,
+          "rank": 2
+        },
+        {
+          "id": 2,
+          "name": "2e — Bourse",
+          "value": 1.67,
+          "rank": 3
+        },
+        {
+          "id": 11,
+          "name": "11e — Popincourt",
+          "value": 1.68,
+          "rank": 4
+        },
+        {
+          "id": 5,
+          "name": "5e — Panthéon",
+          "value": 1.71,
+          "rank": 5
+        },
+        {
+          "id": 6,
+          "name": "6e — Luxembourg",
+          "value": 1.71,
+          "rank": 6
+        },
+        {
+          "id": 4,
+          "name": "4e — Hôtel-de-Ville",
+          "value": 1.72,
+          "rank": 7
+        },
+        {
+          "id": 18,
+          "name": "18e — Buttes-Montmartre",
+          "value": 1.8,
+          "rank": 8
+        },
+        {
+          "id": 7,
+          "name": "7e — Palais-Bourbon",
+          "value": 1.8,
+          "rank": 9
+        },
+        {
+          "id": 15,
+          "name": "15e — Vaugirard",
+          "value": 1.81,
+          "rank": 10
+        },
+        {
+          "id": 10,
+          "name": "10e — Entrepôt",
+          "value": 1.82,
+          "rank": 11
+        },
+        {
+          "id": 9,
+          "name": "9e — Opéra",
+          "value": 1.82,
+          "rank": 12
+        },
+        {
+          "id": 14,
+          "name": "14e — Observatoire",
+          "value": 1.84,
+          "rank": 13
+        },
+        {
+          "id": 12,
+          "name": "12e — Reuilly",
+          "value": 1.84,
+          "rank": 14
+        },
+        {
+          "id": 17,
+          "name": "17e — Batignolles",
+          "value": 1.88,
+          "rank": 15
+        },
+        {
+          "id": 13,
+          "name": "13e — Gobelins",
+          "value": 1.88,
+          "rank": 16
+        },
+        {
+          "id": 20,
+          "name": "20e — Ménilmontant",
+          "value": 1.9,
+          "rank": 17
+        },
+        {
+          "id": 16,
+          "name": "16e — Passy",
+          "value": 1.95,
+          "rank": 18
+        },
+        {
+          "id": 8,
+          "name": "8e — Élysée",
+          "value": 1.99,
+          "rank": 19
+        },
+        {
+          "id": 19,
+          "name": "19e — Buttes-Chaumont",
+          "value": 2.03,
+          "rank": 20
+        }
+      ]
+    },
+    "shift_counter_vs_latest": {
+      "1968": {
+        "year": 1968,
+        "n_total": 20,
+        "changed_gt5": 2
+      },
+      "1975": {
+        "year": 1975,
+        "n_total": 20,
+        "changed_gt5": 2
+      },
+      "1982": {
+        "year": 1982,
+        "n_total": 20,
+        "changed_gt5": 1
+      },
+      "1990": {
+        "year": 1990,
+        "n_total": 20,
+        "changed_gt5": 0
+      },
+      "1999": {
+        "year": 1999,
+        "n_total": 20,
+        "changed_gt5": 1
+      },
+      "2006": {
+        "year": 2006,
+        "n_total": 20,
+        "changed_gt5": 0
+      },
+      "2011": {
+        "year": 2011,
+        "n_total": 20,
+        "changed_gt5": 1
+      },
+      "2016": {
+        "year": 2016,
+        "n_total": 20,
+        "changed_gt5": 0
+      },
+      "2022": {
+        "year": 2022,
+        "n_total": 20,
+        "changed_gt5": 0
+      }
+    },
+    "trajectories": [
+      {
+        "id": 2,
+        "name": "2e — Bourse",
+        "series": [
+          {
+            "year": 1968,
+            "rank": 1,
+            "value": 2.0
+          },
+          {
+            "year": 1975,
+            "rank": 1,
+            "value": 1.87
+          },
+          {
+            "year": 1982,
+            "rank": 1,
+            "value": 1.72
+          },
+          {
+            "year": 1990,
+            "rank": 1,
+            "value": 1.76
+          },
+          {
+            "year": 1999,
+            "rank": 3,
+            "value": 1.7
+          },
+          {
+            "year": 2006,
+            "rank": 1,
+            "value": 1.7
+          },
+          {
+            "year": 2011,
+            "rank": 3,
+            "value": 1.7
+          },
+          {
+            "year": 2016,
+            "rank": 1,
+            "value": 1.72
+          },
+          {
+            "year": 2022,
+            "rank": 3,
+            "value": 1.67
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "name": "1er — Louvre",
+        "series": [
+          {
+            "year": 1968,
+            "rank": 2,
+            "value": 2.05
+          },
+          {
+            "year": 1975,
+            "rank": 4,
+            "value": 1.91
+          },
+          {
+            "year": 1982,
+            "rank": 3,
+            "value": 1.78
+          },
+          {
+            "year": 1990,
+            "rank": 3,
+            "value": 1.77
+          },
+          {
+            "year": 1999,
+            "rank": 2,
+            "value": 1.7
+          },
+          {
+            "year": 2006,
+            "rank": 2,
+            "value": 1.72
+          },
+          {
+            "year": 2011,
+            "rank": 2,
+            "value": 1.7
+          },
+          {
+            "year": 2016,
+            "rank": 5,
+            "value": 1.73
+          },
+          {
+            "year": 2022,
+            "rank": 1,
+            "value": 1.63
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "name": "5e — Panthéon",
+        "series": [
+          {
+            "year": 1968,
+            "rank": 3,
+            "value": 2.06
+          },
+          {
+            "year": 1975,
+            "rank": 2,
+            "value": 1.89
+          },
+          {
+            "year": 1982,
+            "rank": 2,
+            "value": 1.76
+          },
+          {
+            "year": 1990,
+            "rank": 2,
+            "value": 1.76
+          },
+          {
+            "year": 1999,
+            "rank": 4,
+            "value": 1.71
+          },
+          {
+            "year": 2006,
+            "rank": 7,
+            "value": 1.75
+          },
+          {
+            "year": 2011,
+            "rank": 5,
+            "value": 1.72
+          },
+          {
+            "year": 2016,
+            "rank": 7,
+            "value": 1.74
+          },
+          {
+            "year": 2022,
+            "rank": 5,
+            "value": 1.71
+          }
+        ]
+      },
+      {
+        "id": 18,
+        "name": "18e — Buttes-Montmartre",
+        "series": [
+          {
+            "year": 1968,
+            "rank": 4,
+            "value": 2.08
+          },
+          {
+            "year": 1975,
+            "rank": 7,
+            "value": 1.95
+          },
+          {
+            "year": 1982,
+            "rank": 7,
+            "value": 1.82
+          },
+          {
+            "year": 1990,
+            "rank": 12,
+            "value": 1.88
+          },
+          {
+            "year": 1999,
+            "rank": 11,
+            "value": 1.83
+          },
+          {
+            "year": 2006,
+            "rank": 12,
+            "value": 1.85
+          },
+          {
+            "year": 2011,
+            "rank": 12,
+            "value": 1.87
+          },
+          {
+            "year": 2016,
+            "rank": 11,
+            "value": 1.85
+          },
+          {
+            "year": 2022,
+            "rank": 8,
+            "value": 1.8
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "name": "9e — Opéra",
+        "series": [
+          {
+            "year": 1968,
+            "rank": 5,
+            "value": 2.09
+          },
+          {
+            "year": 1975,
+            "rank": 6,
+            "value": 1.93
+          },
+          {
+            "year": 1982,
+            "rank": 8,
+            "value": 1.83
+          },
+          {
+            "year": 1990,
+            "rank": 11,
+            "value": 1.88
+          },
+          {
+            "year": 1999,
+            "rank": 10,
+            "value": 1.82
+          },
+          {
+            "year": 2006,
+            "rank": 13,
+            "value": 1.86
+          },
+          {
+            "year": 2011,
+            "rank": 13,
+            "value": 1.87
+          },
+          {
+            "year": 2016,
+            "rank": 13,
+            "value": 1.86
+          },
+          {
+            "year": 2022,
+            "rank": 12,
+            "value": 1.82
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "name": "11e — Popincourt",
+        "series": [
+          {
+            "year": 1968,
+            "rank": 6,
+            "value": 2.1
+          },
+          {
+            "year": 1975,
+            "rank": 8,
+            "value": 1.97
+          },
+          {
+            "year": 1982,
+            "rank": 5,
+            "value": 1.81
+          },
+          {
+            "year": 1990,
+            "rank": 8,
+            "value": 1.84
+          },
+          {
+            "year": 1999,
+            "rank": 7,
+            "value": 1.78
+          },
+          {
+            "year": 2006,
+            "rank": 6,
+            "value": 1.75
+          },
+          {
+            "year": 2011,
+            "rank": 6,
+            "value": 1.75
+          },
+          {
+            "year": 2016,
+            "rank": 6,
+            "value": 1.74
+          },
+          {
+            "year": 2022,
+            "rank": 4,
+            "value": 1.68
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "3e — Temple",
+        "series": [
+          {
+            "year": 1968,
+            "rank": 7,
+            "value": 2.11
+          },
+          {
+            "year": 1975,
+            "rank": 3,
+            "value": 1.91
+          },
+          {
+            "year": 1982,
+            "rank": 6,
+            "value": 1.81
+          },
+          {
+            "year": 1990,
+            "rank": 4,
+            "value": 1.78
+          },
+          {
+            "year": 1999,
+            "rank": 5,
+            "value": 1.75
+          },
+          {
+            "year": 2006,
+            "rank": 4,
+            "value": 1.74
+          },
+          {
+            "year": 2011,
+            "rank": 4,
+            "value": 1.71
+          },
+          {
+            "year": 2016,
+            "rank": 2,
+            "value": 1.72
+          },
+          {
+            "year": 2022,
+            "rank": 2,
+            "value": 1.66
+          }
+        ]
+      },
+      {
+        "id": 15,
+        "name": "15e — Vaugirard",
+        "series": [
+          {
+            "year": 1968,
+            "rank": 8,
+            "value": 2.14
+          },
+          {
+            "year": 1975,
+            "rank": 9,
+            "value": 1.98
+          },
+          {
+            "year": 1982,
+            "rank": 11,
+            "value": 1.87
+          },
+          {
+            "year": 1990,
+            "rank": 7,
+            "value": 1.83
+          },
+          {
+            "year": 1999,
+            "rank": 8,
+            "value": 1.8
+          },
+          {
+            "year": 2006,
+            "rank": 8,
+            "value": 1.81
+          },
+          {
+            "year": 2011,
+            "rank": 10,
+            "value": 1.84
+          },
+          {
+            "year": 2016,
+            "rank": 9,
+            "value": 1.84
+          },
+          {
+            "year": 2022,
+            "rank": 10,
+            "value": 1.81
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "name": "10e — Entrepôt",
+        "series": [
+          {
+            "year": 1968,
+            "rank": 9,
+            "value": 2.15
+          },
+          {
+            "year": 1975,
+            "rank": 12,
+            "value": 1.99
+          },
+          {
+            "year": 1982,
+            "rank": 14,
+            "value": 1.9
+          },
+          {
+            "year": 1990,
+            "rank": 15,
+            "value": 1.95
+          },
+          {
+            "year": 1999,
+            "rank": 15,
+            "value": 1.9
+          },
+          {
+            "year": 2006,
+            "rank": 15,
+            "value": 1.89
+          },
+          {
+            "year": 2011,
+            "rank": 15,
+            "value": 1.9
+          },
+          {
+            "year": 2016,
+            "rank": 15,
+            "value": 1.89
+          },
+          {
+            "year": 2022,
+            "rank": 11,
+            "value": 1.82
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "4e — Hôtel-de-Ville",
+        "series": [
+          {
+            "year": 1968,
+            "rank": 10,
+            "value": 2.16
+          },
+          {
+            "year": 1975,
+            "rank": 5,
+            "value": 1.93
+          },
+          {
+            "year": 1982,
+            "rank": 4,
+            "value": 1.79
+          },
+          {
+            "year": 1990,
+            "rank": 5,
+            "value": 1.79
+          },
+          {
+            "year": 1999,
+            "rank": 1,
+            "value": 1.66
+          },
+          {
+            "year": 2006,
+            "rank": 3,
+            "value": 1.72
+          },
+          {
+            "year": 2011,
+            "rank": 1,
+            "value": 1.69
+          },
+          {
+            "year": 2016,
+            "rank": 4,
+            "value": 1.73
+          },
+          {
+            "year": 2022,
+            "rank": 7,
+            "value": 1.72
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "name": "6e — Luxembourg",
+        "series": [
+          {
+            "year": 1968,
+            "rank": 11,
+            "value": 2.16
+          },
+          {
+            "year": 1975,
+            "rank": 11,
+            "value": 1.98
+          },
+          {
+            "year": 1982,
+            "rank": 10,
+            "value": 1.86
+          },
+          {
+            "year": 1990,
+            "rank": 6,
+            "value": 1.82
+          },
+          {
+            "year": 1999,
+            "rank": 6,
+            "value": 1.75
+          },
+          {
+            "year": 2006,
+            "rank": 5,
+            "value": 1.74
+          },
+          {
+            "year": 2011,
+            "rank": 7,
+            "value": 1.76
+          },
+          {
+            "year": 2016,
+            "rank": 3,
+            "value": 1.72
+          },
+          {
+            "year": 2022,
+            "rank": 6,
+            "value": 1.71
+          }
+        ]
+      },
+      {
+        "id": 14,
+        "name": "14e — Observatoire",
+        "series": [
+          {
+            "year": 1968,
+            "rank": 12,
+            "value": 2.17
+          },
+          {
+            "year": 1975,
+            "rank": 10,
+            "value": 1.98
+          },
+          {
+            "year": 1982,
+            "rank": 9,
+            "value": 1.85
+          },
+          {
+            "year": 1990,
+            "rank": 10,
+            "value": 1.87
+          },
+          {
+            "year": 1999,
+            "rank": 9,
+            "value": 1.81
+          },
+          {
+            "year": 2006,
+            "rank": 10,
+            "value": 1.82
+          },
+          {
+            "year": 2011,
+            "rank": 8,
+            "value": 1.81
+          },
+          {
+            "year": 2016,
+            "rank": 10,
+            "value": 1.84
+          },
+          {
+            "year": 2022,
+            "rank": 13,
+            "value": 1.84
+          }
+        ]
+      },
+      {
+        "id": 17,
+        "name": "17e — Batignolles",
+        "series": [
+          {
+            "year": 1968,
+            "rank": 13,
+            "value": 2.18
+          },
+          {
+            "year": 1975,
+            "rank": 13,
+            "value": 1.99
+          },
+          {
+            "year": 1982,
+            "rank": 13,
+            "value": 1.88
+          },
+          {
+            "year": 1990,
+            "rank": 13,
+            "value": 1.9
+          },
+          {
+            "year": 1999,
+            "rank": 14,
+            "value": 1.85
+          },
+          {
+            "year": 2006,
+            "rank": 14,
+            "value": 1.88
+          },
+          {
+            "year": 2011,
+            "rank": 14,
+            "value": 1.88
+          },
+          {
+            "year": 2016,
+            "rank": 14,
+            "value": 1.87
+          },
+          {
+            "year": 2022,
+            "rank": 15,
+            "value": 1.88
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "name": "12e — Reuilly",
+        "series": [
+          {
+            "year": 1968,
+            "rank": 14,
+            "value": 2.22
+          },
+          {
+            "year": 1975,
+            "rank": 14,
+            "value": 2.04
+          },
+          {
+            "year": 1982,
+            "rank": 12,
+            "value": 1.88
+          },
+          {
+            "year": 1990,
+            "rank": 9,
+            "value": 1.87
+          },
+          {
+            "year": 1999,
+            "rank": 12,
+            "value": 1.84
+          },
+          {
+            "year": 2006,
+            "rank": 11,
+            "value": 1.83
+          },
+          {
+            "year": 2011,
+            "rank": 11,
+            "value": 1.85
+          },
+          {
+            "year": 2016,
+            "rank": 12,
+            "value": 1.86
+          },
+          {
+            "year": 2022,
+            "rank": 14,
+            "value": 1.84
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "name": "7e — Palais-Bourbon",
+        "series": [
+          {
+            "year": 1968,
+            "rank": 15,
+            "value": 2.29
+          },
+          {
+            "year": 1975,
+            "rank": 15,
+            "value": 2.09
+          },
+          {
+            "year": 1982,
+            "rank": 15,
+            "value": 1.94
+          },
+          {
+            "year": 1990,
+            "rank": 14,
+            "value": 1.92
+          },
+          {
+            "year": 1999,
+            "rank": 13,
+            "value": 1.84
+          },
+          {
+            "year": 2006,
+            "rank": 9,
+            "value": 1.82
+          },
+          {
+            "year": 2011,
+            "rank": 9,
+            "value": 1.83
+          },
+          {
+            "year": 2016,
+            "rank": 8,
+            "value": 1.82
+          },
+          {
+            "year": 2022,
+            "rank": 9,
+            "value": 1.8
+          }
+        ]
+      },
+      {
+        "id": 20,
+        "name": "20e — Ménilmontant",
+        "series": [
+          {
+            "year": 1968,
+            "rank": 16,
+            "value": 2.3
+          },
+          {
+            "year": 1975,
+            "rank": 16,
+            "value": 2.1
+          },
+          {
+            "year": 1982,
+            "rank": 19,
+            "value": 2.03
+          },
+          {
+            "year": 1990,
+            "rank": 19,
+            "value": 2.04
+          },
+          {
+            "year": 1999,
+            "rank": 18,
+            "value": 1.98
+          },
+          {
+            "year": 2006,
+            "rank": 18,
+            "value": 1.99
+          },
+          {
+            "year": 2011,
+            "rank": 18,
+            "value": 2.01
+          },
+          {
+            "year": 2016,
+            "rank": 18,
+            "value": 1.97
+          },
+          {
+            "year": 2022,
+            "rank": 17,
+            "value": 1.9
+          }
+        ]
+      },
+      {
+        "id": 13,
+        "name": "13e — Gobelins",
+        "series": [
+          {
+            "year": 1968,
+            "rank": 17,
+            "value": 2.32
+          },
+          {
+            "year": 1975,
+            "rank": 18,
+            "value": 2.14
+          },
+          {
+            "year": 1982,
+            "rank": 17,
+            "value": 2.01
+          },
+          {
+            "year": 1990,
+            "rank": 17,
+            "value": 2.02
+          },
+          {
+            "year": 1999,
+            "rank": 17,
+            "value": 1.94
+          },
+          {
+            "year": 2006,
+            "rank": 16,
+            "value": 1.93
+          },
+          {
+            "year": 2011,
+            "rank": 16,
+            "value": 1.95
+          },
+          {
+            "year": 2016,
+            "rank": 16,
+            "value": 1.95
+          },
+          {
+            "year": 2022,
+            "rank": 16,
+            "value": 1.88
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "name": "8e — Élysée",
+        "series": [
+          {
+            "year": 1968,
+            "rank": 18,
+            "value": 2.33
+          },
+          {
+            "year": 1975,
+            "rank": 17,
+            "value": 2.11
+          },
+          {
+            "year": 1982,
+            "rank": 18,
+            "value": 2.02
+          },
+          {
+            "year": 1990,
+            "rank": 18,
+            "value": 2.03
+          },
+          {
+            "year": 1999,
+            "rank": 19,
+            "value": 1.99
+          },
+          {
+            "year": 2006,
+            "rank": 19,
+            "value": 2.03
+          },
+          {
+            "year": 2011,
+            "rank": 19,
+            "value": 2.06
+          },
+          {
+            "year": 2016,
+            "rank": 19,
+            "value": 2.02
+          },
+          {
+            "year": 2022,
+            "rank": 19,
+            "value": 1.99
+          }
+        ]
+      },
+      {
+        "id": 19,
+        "name": "19e — Buttes-Chaumont",
+        "series": [
+          {
+            "year": 1968,
+            "rank": 19,
+            "value": 2.34
+          },
+          {
+            "year": 1975,
+            "rank": 20,
+            "value": 2.18
+          },
+          {
+            "year": 1982,
+            "rank": 20,
+            "value": 2.13
+          },
+          {
+            "year": 1990,
+            "rank": 20,
+            "value": 2.17
+          },
+          {
+            "year": 1999,
+            "rank": 20,
+            "value": 2.15
+          },
+          {
+            "year": 2006,
+            "rank": 20,
+            "value": 2.2
+          },
+          {
+            "year": 2011,
+            "rank": 20,
+            "value": 2.17
+          },
+          {
+            "year": 2016,
+            "rank": 20,
+            "value": 2.13
+          },
+          {
+            "year": 2022,
+            "rank": 20,
+            "value": 2.03
+          }
+        ]
+      },
+      {
+        "id": 16,
+        "name": "16e — Passy",
+        "series": [
+          {
+            "year": 1968,
+            "rank": 20,
+            "value": 2.41
+          },
+          {
+            "year": 1975,
+            "rank": 19,
+            "value": 2.14
+          },
+          {
+            "year": 1982,
+            "rank": 16,
+            "value": 2.01
+          },
+          {
+            "year": 1990,
+            "rank": 16,
+            "value": 1.98
+          },
+          {
+            "year": 1999,
+            "rank": 16,
+            "value": 1.94
+          },
+          {
+            "year": 2006,
+            "rank": 17,
+            "value": 1.97
+          },
+          {
+            "year": 2011,
+            "rank": 17,
+            "value": 1.96
+          },
+          {
+            "year": 2016,
+            "rank": 17,
+            "value": 1.97
+          },
+          {
+            "year": 2022,
+            "rank": 18,
+            "value": 1.95
+          }
+        ]
+      }
+    ]
+  }
+}
