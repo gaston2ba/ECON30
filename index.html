@@ -1639,7 +1639,7 @@
 
     <p>Use the checkmarks to include or exclude pillars from the composite score. Each pillar keeps its narrative sealed behind a <strong>Why?</strong> tab so the grid stays legible until you need the fine print.</p>
 
-    <p style="font-size: 0.92rem; color: var(--ink-faded); margin-top: 1rem;">For Mexico City, component scores are drawn from our INEGI-based workbook (<cite>DataMexCity.xlsx</cite>, 1860–2020 panel): green space per capita (SEDEMA), transit station-equivalents per 100k residents, population density, museums/libraries per 100k, and housing infrastructure (% electricity, piped water, drainage, hospital access). Each is min–max normalized to 0–100 across the 16 alcaldías for 2020. For Paris, scores use INSEE population (2022), Paris Open Data green space and libraries, OSM metro stations, Airparif PM₂.₅ (citywide), and Filosofi 2021 median income — see <code>data/paris/</code>.</p>
+    <p style="font-size: 0.92rem; color: var(--ink-faded); margin-top: 1rem;">For Mexico City, component scores are drawn from our INEGI-based workbook (<cite>data/mexico/workbook/DataMexCity.xlsx</cite>, 1860–2020 panel): green space per capita (SEDEMA), transit station-equivalents per 100k residents, population density, museums/libraries per 100k, and housing infrastructure (% electricity, piped water, drainage, hospital access). Each is min–max normalized to 0–100 across the 16 alcaldías for 2020. For Paris, scores use INSEE population (2022), Paris Open Data green space and libraries, OSM metro stations, Airparif PM₂.₅ (citywide), and Filosofi 2021 median income — see <code>data/paris/</code>.</p>
 
     <div class="index-builder">
       <div class="index-builder-header">
@@ -1774,7 +1774,7 @@
 
     <div class="map-info" id="map-info">
       <div class="region-name">Click a neighborhood to see its breakdown.</div>
-      <div class="region-stats placeholder-note">Paris: INSEE / Open Data 2022 cross-section · Mexico City: INEGI 2020 panel from <cite>DataMexCity.xlsx</cite>.</div>
+      <div class="region-stats placeholder-note">Paris: INSEE / Open Data 2022 cross-section · Mexico City: INEGI 2020 panel from <cite>data/mexico/workbook/DataMexCity.xlsx</cite>.</div>
     </div>
   </section>
 
@@ -1799,7 +1799,7 @@
       <div class="story-metric" id="story-metric">Paris · 2024 · 31.0%</div>
       <svg id="story-chart-svg" viewBox="0 0 900 360" xmlns="http://www.w3.org/2000/svg" aria-label="Share over time story chart"></svg>
       <div class="story-note" id="story-note">
-        <strong>Interpretation:</strong> share of residents living in the bottom quartile of neighborhoods by planning score. <strong>Mexico City:</strong> full index from <cite>DataMexCity.xlsx</cite> (1860–2020). <strong>Paris:</strong> INSEE household crowding proxy by census year (1968–2016); 2022 uses the full cross-section index from <code>data/paris/</code>.
+        <strong>Interpretation:</strong> share of residents living in the bottom quartile of neighborhoods by planning score. <strong>Mexico City:</strong> full index from <cite>data/mexico/workbook/DataMexCity.xlsx</cite> (1860–2020). <strong>Paris:</strong> INSEE household crowding proxy by census year (1968–2016); 2022 uses the full cross-section index from <code>data/paris/</code>.
       </div>
     </div>
   </section>
@@ -1838,7 +1838,7 @@
     <div class="finding">
       <div class="finding-label">Mexico City · housing crowding proxy</div>
       <div class="finding-stat mexico">r ≈ +0.74</div>
-      <div class="finding-text">Using 2020 INEGI census data (<cite>DataMexCity.xlsx</cite>), the planning index correlates strongly with inverse household crowding (fewer persons per dwelling). Controlled β ≈ +0.02 (<em>p</em> ≈ 0.48). ENIGH median-income data is still pending for a direct income test.</div>
+      <div class="finding-text">Using 2020 INEGI census data (<cite>data/mexico/workbook/DataMexCity.xlsx</cite>), the planning index correlates strongly with inverse household crowding (fewer persons per dwelling). Controlled β ≈ +0.02 (<em>p</em> ≈ 0.48). ENIGH median-income data is still pending for a direct income test.</div>
     </div>
 
     <div class="regression-wrap">
@@ -1882,7 +1882,7 @@
 
     <h3 style="font-size:1rem;margin:1.5rem 0 0.75rem;">Primary data files</h3>
     <ul class="sources">
-      <li><strong>Mexico City:</strong> <cite>DataMexCity.xlsx</cite>, <code>Info for index Mex City.zip</code> — INEGI 2020 panel (income proxy: crowding; ENIGH median income pending).</li>
+      <li><strong>Mexico City:</strong> <code>data/mexico/</code> — workbook, <code>sources/index-mex-city.zip</code>, exports (INEGI 2020 panel; income proxy: crowding; ENIGH pending).</li>
       <li><strong>Paris:</strong> <code>data/paris/</code> — INSEE dossier complet, Filosofi 2021 (Q221), opendata.paris.fr (green space, libraries), OSM metro, Airparif PM₂.₅. See <code>paris_data_sources.json</code>.</li>
       <li><strong>Regressions:</strong> <code>scripts/run_regressions.py</code> → <a href="figures/regression-laps.html">regression laps</a>.</li>
     </ul>
@@ -1946,7 +1946,7 @@ const STORY_EVENTS = {
 // =========================================================
 //  CROSS-SECTION DATA (2020 / 2022)
 //  Paris: INSEE + Paris Open Data + Filosofi 2021 (see data/paris/).
-//  Mexico City: normalized 0–100 from DataMexCity.xlsx (INEGI 2020).
+//  Mexico City: normalized 0–100 from data/mexico/workbook/DataMexCity.xlsx (INEGI 2020).
 // =========================================================
 const DATA = {
   paris: [
@@ -2154,7 +2154,7 @@ function renderMap() {
 
 function mapInfoDefault() {
   const note = state.city === 'mexico'
-    ? 'INEGI 2020 · <cite>DataMexCity.xlsx</cite> — click an alcaldía for component scores.'
+    ? 'INEGI 2020 · <cite>data/mexico/workbook/DataMexCity.xlsx</cite> — click an alcaldía for component scores.'
     : 'INSEE / Paris Open Data 2022 — click an arrondissement for component scores.';
   return `
     <div class="region-name">Click a neighborhood to see its breakdown.</div>
@@ -2173,7 +2173,7 @@ function selectRegion(id) {
     ? 'Housing crowding proxy (inverse persons/dwelling)'
     : 'Median income (Filosofi 2021, normalized)';
   const dataNote = state.city === 'mexico'
-    ? 'INEGI 2020 · DataMexCity.xlsx — parks (m²/hab), transit access, density, third spaces, housing infrastructure.'
+    ? 'INEGI 2020 · data/mexico/workbook/DataMexCity.xlsx — parks (m²/hab), transit access, density, third spaces, housing infrastructure.'
     : 'INSEE 2022 + Paris Open Data + Filosofi 2021 — green space, OSM metro, libraries/museums, PM₂.₅ (citywide).';
   info.innerHTML = `
     <div class="region-name">${region.name}</div>

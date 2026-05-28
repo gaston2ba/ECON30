@@ -13,7 +13,7 @@ import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[1]
 PARIS = ROOT / "data" / "paris"
-OUT_JSON = ROOT / "data" / "regression_results.json"
+OUT_JSON = ROOT / "data" / "analysis" / "regression_results.json"
 OUT_HTML = ROOT / "figures" / "regression-laps.html"
 OUT_PARIS_JS = ROOT / "data" / "paris" / "paris_index_2022.json"
 

@@ -16,7 +16,7 @@ from export_mexico_data import ALCADIAS, WORKBOOK, build_rows, read_alc_sheet
 
 PARIS_POP = ROOT / "data" / "paris" / "paris_population.csv"
 PARIS_PANEL = ROOT / "data" / "paris" / "paris_uqi_panel.csv"
-OUT = ROOT / "data" / "web_embeds.json"
+OUT = ROOT / "data" / "analysis" / "web_embeds.json"
 
 
 def minmax_dict(vals: dict[str, float], invert: bool = False) -> dict[str, float]:

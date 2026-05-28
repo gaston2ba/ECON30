@@ -1,7 +1,7 @@
 """
 Figure 1 — Paired class structure: Paris 1865 vs. Mexico City c. 1895.
 
-Reads the transcribed CSVs in ../data/class-structure/ and writes a two-panel
+Reads the transcribed CSVs in data/paris/historical/ and data/mexico/historical/ and writes a two-panel
 horizontal bar chart to ../figures/. The Mexico City panel is intentionally
 sparse where data is still missing; the script renders the gap explicitly so
 downstream readers can see what still needs to be transcribed from the INEGI
@@ -11,7 +11,7 @@ Run:
     python code/figure_01_class_structure.py
 from the project root.
 
-Data provenance: see data/class-structure/README.md.
+Data provenance: see data/mexico/historical/ and data/paris/historical/.
 """
 
 from __future__ import annotations
@@ -22,14 +22,15 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
-DATA_DIR = PROJECT_ROOT / "data" / "class-structure"
+PARIS_HIST = PROJECT_ROOT / "data" / "paris" / "historical"
+MEXICO_HIST = PROJECT_ROOT / "data" / "mexico" / "historical"
 FIGURES_DIR = PROJECT_ROOT / "figures"
 OUTPUT_PATH = (
     FIGURES_DIR / "figure-01-paris-1865-mexico-city-1895-class-structure.png"
 )
 
-PARIS_CSV = DATA_DIR / "paris-1865.csv"
-MEXICO_CSV = DATA_DIR / "mexico-city-c1895.csv"
+PARIS_CSV = PARIS_HIST / "paris-1865.csv"
+MEXICO_CSV = MEXICO_HIST / "mexico-city-c1895.csv"
 
 PARIS_COLOR = "#3b6ea5"
 MEXICO_COLOR = "#a04545"
@@ -147,7 +148,7 @@ def main() -> None:
         (
             "Sources: City of Paris municipal census, 1865 (via Knowledge Base/raw/Paris/catalog.md, dataset 2);\n"
             "INEGI 1895 census, Federal District (via Knowledge Base/raw/MexicoCity/catalog.md, dataset 2). "
-            "See data/class-structure/README.md for caveats."
+            "See data/paris/historical/ and data/mexico/historical/ for caveats."
         ),
         ha="center",
         fontsize=8,

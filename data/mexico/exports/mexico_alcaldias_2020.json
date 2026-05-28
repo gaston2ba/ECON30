@@ -1,0 +1,178 @@
+[
+  {
+    "id": 1,
+    "name": "Álvaro Obregón",
+    "parks": 34.5,
+    "transit": 19.0,
+    "density": 43.7,
+    "thirdspace": 17.4,
+    "pedestrian": 25.9,
+    "infrastructure": 64.0,
+    "income": 28.6
+  },
+  {
+    "id": 2,
+    "name": "Azcapotzalco",
+    "parks": 55.8,
+    "transit": 29.1,
+    "density": 72.7,
+    "thirdspace": 27.9,
+    "pedestrian": 41.8,
+    "infrastructure": 77.3,
+    "income": 50.0
+  },
+  {
+    "id": 3,
+    "name": "Benito Juárez",
+    "parks": 0.9,
+    "transit": 70.0,
+    "density": 93.7,
+    "thirdspace": 18.7,
+    "pedestrian": 9.8,
+    "infrastructure": 86.5,
+    "income": 100.0
+  },
+  {
+    "id": 4,
+    "name": "Coyoacán",
+    "parks": 100.0,
+    "transit": 26.9,
+    "density": 64.3,
+    "thirdspace": 55.7,
+    "pedestrian": 77.8,
+    "infrastructure": 83.2,
+    "income": 50.0
+  },
+  {
+    "id": 5,
+    "name": "Cuajimalpa",
+    "parks": 57.3,
+    "transit": 0.0,
+    "density": 15.0,
+    "thirdspace": 45.8,
+    "pedestrian": 51.5,
+    "infrastructure": 51.0,
+    "income": 21.4
+  },
+  {
+    "id": 6,
+    "name": "Cuauhtémoc",
+    "parks": 11.5,
+    "transit": 100.0,
+    "density": 87.8,
+    "thirdspace": 100.0,
+    "pedestrian": 55.8,
+    "infrastructure": 86.6,
+    "income": 78.6
+  },
+  {
+    "id": 7,
+    "name": "Gustavo A. Madero",
+    "parks": 36.2,
+    "transit": 37.2,
+    "density": 75.6,
+    "thirdspace": 4.9,
+    "pedestrian": 20.6,
+    "infrastructure": 72.9,
+    "income": 42.9
+  },
+  {
+    "id": 8,
+    "name": "Iztacalco",
+    "parks": 21.5,
+    "transit": 43.6,
+    "density": 100.0,
+    "thirdspace": 10.9,
+    "pedestrian": 16.2,
+    "infrastructure": 72.2,
+    "income": 42.9
+  },
+  {
+    "id": 9,
+    "name": "Iztapalapa",
+    "parks": 25.9,
+    "transit": 23.0,
+    "density": 92.5,
+    "thirdspace": 0.0,
+    "pedestrian": 12.9,
+    "infrastructure": 40.2,
+    "income": 28.6
+  },
+  {
+    "id": 10,
+    "name": "La Magdalena Contreras",
+    "parks": 26.1,
+    "transit": 1.0,
+    "density": 19.9,
+    "thirdspace": 23.3,
+    "pedestrian": 24.7,
+    "infrastructure": 67.2,
+    "income": 35.7
+  },
+  {
+    "id": 11,
+    "name": "Miguel Hidalgo",
+    "parks": 89.4,
+    "transit": 55.6,
+    "density": 49.8,
+    "thirdspace": 58.1,
+    "pedestrian": 73.8,
+    "infrastructure": 91.0,
+    "income": 78.6
+  },
+  {
+    "id": 12,
+    "name": "Milpa Alta",
+    "parks": 0.0,
+    "transit": 0.0,
+    "density": 0.0,
+    "thirdspace": 43.2,
+    "pedestrian": 21.6,
+    "infrastructure": 39.7,
+    "income": 0.0
+  },
+  {
+    "id": 13,
+    "name": "Tláhuac",
+    "parks": 44.7,
+    "transit": 11.7,
+    "density": 23.7,
+    "thirdspace": 21.6,
+    "pedestrian": 33.2,
+    "infrastructure": 55.8,
+    "income": 28.6
+  },
+  {
+    "id": 14,
+    "name": "Tlalpan",
+    "parks": 56.7,
+    "transit": 15.0,
+    "density": 10.3,
+    "thirdspace": 8.3,
+    "pedestrian": 32.5,
+    "infrastructure": 78.9,
+    "income": 42.9
+  },
+  {
+    "id": 15,
+    "name": "Venustiano Carranza",
+    "parks": 85.9,
+    "transit": 63.3,
+    "density": 74.5,
+    "thirdspace": 18.1,
+    "pedestrian": 52.0,
+    "infrastructure": 79.0,
+    "income": 64.3
+  },
+  {
+    "id": 16,
+    "name": "Xochimilco",
+    "parks": 21.0,
+    "transit": 10.5,
+    "density": 18.8,
+    "thirdspace": 18.2,
+    "pedestrian": 19.6,
+    "infrastructure": 47.2,
+    "income": 28.6
+  }
+]

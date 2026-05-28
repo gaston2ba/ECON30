@@ -7,7 +7,9 @@ from pathlib import Path
 import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[1]
-WORKBOOK = ROOT / "DataMexCity.xlsx"
+MEXICO = ROOT / "data" / "mexico"
+WORKBOOK = MEXICO / "workbook" / "DataMexCity.xlsx"
+EXPORT_DIR = MEXICO / "exports"
 
 ALCADIAS = [
     ("Álvaro Obregón", ["alvaro obregon"]),
@@ -202,9 +204,18 @@ def main() -> None:
         total = sum(pop[alc][year] for alc in alcs)
         series.append({"year": year, "value": round(low / total * 100, 1)})
 
+    EXPORT_DIR.mkdir(parents=True, exist_ok=True)
+    (EXPORT_DIR / "mexico_alcaldias_2020.json").write_text(
+        json.dumps(rows2020, ensure_ascii=False, indent=2), encoding="utf-8"
+    )
+    (EXPORT_DIR / "mexico_story_series.json").write_text(
+        json.dumps(series, indent=2), encoding="utf-8"
+    )
+
     print("correlation", round(corr(rows2020), 2))
     print("story_series", json.dumps(series))
     print("data_rows", json.dumps(rows2020, ensure_ascii=False))
+    print("wrote", EXPORT_DIR)
 
 
 if __name__ == "__main__":

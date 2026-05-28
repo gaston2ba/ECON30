@@ -1,0 +1,6 @@
+class,share_pct,population_estimate,defining_criterion,notes
+Indigent,42,780000,"Too poor to be taxed","Untaxed population per the City of Paris 1865 census"
+Lower-middle,17,,"Rents under 250 francs/year",
+Upper-middle,32,,"Rents 250–1,500 francs/year",
+Wealthy,3,50000,"Rents over 1,500 francs/year",
+Unattributed,6,,"Residual: catalog shares sum to 94%","Likely covers populations the 1865 municipal census could not classify (institutionalized, transients, household members not reported under the rent-bracket scheme); confirm against primary source before publication"

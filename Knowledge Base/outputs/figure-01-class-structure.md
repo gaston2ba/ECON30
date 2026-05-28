@@ -44,7 +44,7 @@ This figure is the visual anchor for the baseline-class-structure row of the dat
 ## What the figure does *not* support
 
 - No claim about the Mexican artisan, middle-class, or elite shares. These are blank.
-- No claim about absolute population sizes — the catalog's two Paris population estimates (~780,000 indigent at 42% → 1.86M total; ~50,000 wealthy at 3% → 1.67M total) are inconsistent with each other and both are reproduced as-given in `data/class-structure/paris-1865.csv`. A publication-quality caption should reconcile them against the 1866 INSEE census.
+- No claim about absolute population sizes — the catalog's two Paris population estimates (~780,000 indigent at 42% → 1.86M total; ~50,000 wealthy at 3% → 1.67M total) are inconsistent with each other and both are reproduced as-given in `data/paris/historical/paris-1865.csv`. A publication-quality caption should reconcile them against the 1866 INSEE census.
 - No claim about change over time — this is a single snapshot per city, not a time series.
 
 ## Regeneration
@@ -53,12 +53,12 @@ This figure is the visual anchor for the baseline-class-structure row of the dat
 python code/figure_01_class_structure.py
 ```
 
-This reads `data/class-structure/paris-1865.csv` and `data/class-structure/mexico-city-c1895.csv` and writes `figures/figure-01-paris-1865-mexico-city-1895-class-structure.png`. Dependencies: `pandas>=2.0`, `matplotlib>=3.7` (see `requirements.txt` at the project root).
+This reads `data/paris/historical/paris-1865.csv` and `data/mexico/historical/mexico-city-c1895.csv` and writes `figures/figure-01-paris-1865-mexico-city-1895-class-structure.png`. Dependencies: `pandas>=2.0`, `matplotlib>=3.7` (see `requirements.txt` at the project root).
 
 ## Related files
 
-- Data: `data/class-structure/paris-1865.csv`, `data/class-structure/mexico-city-c1895.csv`
-- Data provenance: `data/class-structure/README.md`
+- Data: `data/paris/historical/paris-1865.csv`, `data/mexico/historical/mexico-city-c1895.csv`
+- Data provenance: `data/paris/historical/README.md`, `data/mexico/historical/README.md`
 - Code: `code/figure_01_class_structure.py`
 - Output: `figures/figure-01-paris-1865-mexico-city-1895-class-structure.png`
 - Concept articles: [[paris-class-structure-1865]], [[mexico-city-class-structure-1900]]

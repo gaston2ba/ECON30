@@ -5,10 +5,15 @@
 | Path | Purpose |
 |------|---------|
 | `course-materials/` | Syllabus, handouts, assignment prompts, and other course documents |
-| `data/` | Raw and processed datasets, imports, spreadsheets |
-| `code/` | Scripts, notebooks, and analysis code |
-| `figures/` | Charts, plots, and exported graphics |
-| `output/` | Tables, reports, and other generated results |
+| `data/` | All project datasets — see `data/README.md` |
+| `data/mexico/` | CDMX workbook, sources zip, historical CSVs, exports |
+| `data/paris/` | Arrondissement CSVs, `raw/` caches, historical CSVs |
+| `data/analysis/` | Regression results, web embed JSON |
+| `scripts/` | Data pipelines (`build_paris_data`, `export_mexico_data`, …) |
+| `code/` | Figure scripts and analysis code |
+| `figures/` | Charts, plots, interactive prototypes, and the live `index.html` site assets |
+| `index.html` | Main capstone webpage (deployed via Vercel) |
+| `Knowledge Base/` | Research notes and literature (Obsidian) |
 
 ## Current course-materials setup
 
