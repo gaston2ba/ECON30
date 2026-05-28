@@ -28,4 +28,18 @@
 - Current public draft (Vercel): `https://econ30url.vercel.app/`
 - Use this URL as the shareable "latest build" for feedback and class submissions.
 
+## Deploy on Vercel
+
+This is a **static site** (HTML/JS/CSS at the repo root), not a Python app.
+
+| Setting | Value |
+|---------|--------|
+| Root Directory | `.` (repo root) |
+| Framework Preset | **Other** |
+| Build Command | `npm run build` |
+| Output Directory | `.` |
+| Install Command | `npm install` |
+
+Python data scripts live in `scripts/` — install locally with `pip install -r scripts/requirements.txt`.
+
 Update this readme as the project grows.

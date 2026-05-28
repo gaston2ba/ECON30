@@ -1,0 +1,8 @@
+{
+  "name": "econ30-capstone-site",
+  "private": true,
+  "description": "Static capstone website — Paris & Mexico City urban planning index",
+  "scripts": {
+    "build": "node -e \"console.log('Static site: no build step')\""
+  }
+}
