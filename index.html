@@ -1,87 +1,154 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Las dos gramáticas — Mexico City and Paris compared</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Las dos gramáticas · Paris &amp; Mexico City | ECON 30</title>
+  <meta name="description" content="Has urban planning produced equal cities? A parallel comparison of Paris and Mexico City, 1850s–today." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=EB+Garamond:wght@400;500&family=Special+Elite&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/capstone.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
 </head>
 <body>
-  <div class="compare-shell">
-    <header class="compare-masthead">
-      <p class="eyebrow">ECON 30 · Comparative urbanism</p>
-      <h1>Las dos gramáticas — Mexico City and Paris compared</h1>
-      <p class="lede"><strong>Has urban planning produced equal cities, or does spatial inequality of planning translate into inequality of life?</strong></p>
-      <p class="lede">Two cities, the same instrument: decade slider, variable toggles, UQI choropleth, HDI layer, and UQI×HDI scatter. Move the slider once; both cities update together.</p>
-    </header>
+  <header class="masthead wrap">
+    <p class="byline">Stanford ECON 30 · Spring 2026 · Draft</p>
+    <h1>Las dos gramáticas</h1>
+    <p class="subtitle">Has urban planning produced equal cities, or does spatial inequality of planning translate into inequality of life?</p>
+    <p class="byline">Mexico City and Paris, compared in parallel</p>
+    <nav class="toc" aria-label="Contents">
+      <a href="#opening">Opening</a> ·
+      <a href="#timelines">Timelines</a> ·
+      <a href="#uqi">UQI maps</a> ·
+      <a href="#hdi">HDI maps</a> ·
+      <a href="#scatter">UQI × HDI</a> ·
+      <a href="#lines">Over time</a> ·
+      <a href="#closing">Closing</a>
+    </nav>
+    <div class="hero-strip">
+      <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=800&q=80" alt="Paris skyline along the Seine" />
+      <img src="https://images.unsplash.com/photo-1518653029420-6a343005662c?w=800&q=80" alt="Mexico City urban landscape" />
+    </div>
+  </header>
 
-    <section class="compare-toolbar" aria-label="Shared controls">
-      <div class="control-row">
-        <label for="decadeSlider">Decade <strong id="decadeLabel">2020</strong></label>
-        <button id="playButton" type="button">Play</button>
+  <main>
+    <section id="opening" class="cap wrap">
+      <h2>Opening</h2>
+      <div class="dual">
+        <div class="col paris">
+          <p class="city-label">Paris</p>
+          <p>Paris was reshaped from above after 1853, when Georges-Eugène Haussmann cut boulevards through medieval blocks and extended sewers, parks, and rail. The <span class="gloss-pair"><span class="term-txt">arrondissement</span><button type="button" class="gloss-trigger" aria-expanded="false">?</button><span class="gloss-pop" role="tooltip">An administrative district of Paris; the city has twenty arrondissements numbered in a spiral from the center.</span></span> map we use today dates from the 1860 annexation. Planning here meant a single grammar imposed on stone and circulation.</p>
+        </div>
+        <div class="col mexico">
+          <p class="city-label">Mexico City</p>
+          <p>Mexico City’s modern plan arrived with the <span class="gloss-pair"><span class="term-txt">Porfiriato</span><button type="button" class="gloss-trigger" aria-expanded="false">?</button><span class="gloss-pop" role="tooltip">The long presidency of Porfirio Díaz (1876–1911), when elite planners imported European boulevards and drainage works.</span></span> after 1876, but most twentieth-century growth happened in <span class="gloss-pair"><span class="term-txt">colonias populares</span><button type="button" class="gloss-trigger" aria-expanded="false">?</button><span class="gloss-pop" role="tooltip">Self-built neighborhoods on the urban edge, often ahead of formal services and cadastral recognition.</span></span> built by residents, not by a central blueprint. Each <span class="gloss-pair"><span class="term-txt">alcaldía</span><button type="button" class="gloss-trigger" aria-expanded="false">?</button><span class="gloss-pop" role="tooltip">Mexico City’s municipal borough; sixteen alcaldías make up the city today.</span></span> now holds a different chapter of that layered history.</p>
+        </div>
       </div>
-      <input id="decadeSlider" type="range" min="0" max="15" value="15" step="1">
-      <div id="decadeTicks" class="ticks"></div>
-      <div class="control-heading" style="margin-top:14px">Variables Included</div>
-      <div id="variableControls" class="variable-grid"></div>
+      <p class="lede" style="margin:2rem auto 0;text-align:center">Has urban planning produced equal cities, or does spatial inequality of planning translate into inequality of life? Below, the same question is asked of both cities at every step: where planning quality clusters, and whether human development follows.</p>
+      <p class="lede" style="margin:1rem auto 0;text-align:center;font-family:var(--mono);font-size:0.85rem">Read top to bottom. Both cities are shown at every step. The comparison is yours to make.</p>
     </section>
 
-    <section class="compare-row">
-      <div class="compare-cell paris">
-        <p class="eyebrow">Paris</p>
-        <h2>UQI · <span id="parisUqiStatus">2020</span></h2>
-        <div id="parisUqiMap" class="svg-frame"></div>
-      </div>
-      <div class="compare-cell mexico">
-        <p class="eyebrow">Mexico City</p>
-        <h2>UQI · <span id="cdmxUqiStatus">2020</span></h2>
-        <div id="cdmxUqiMap" class="svg-frame"></div>
-      </div>
-    </section>
-
-    <section class="compare-row">
-      <div class="compare-cell paris">
-        <h2>HDI · Paris</h2>
-        <div id="parisHdiMap" class="svg-frame"></div>
-      </div>
-      <div class="compare-cell mexico">
-        <h2>HDI · Mexico City</h2>
-        <div id="cdmxHdiMap" class="svg-frame"></div>
-      </div>
-    </section>
-
-    <section class="compare-row">
-      <div class="compare-cell paris">
-        <h2>UQI × HDI · Paris</h2>
-        <div id="parisScatter" class="svg-frame chart-frame"></div>
-      </div>
-      <div class="compare-cell mexico">
-        <h2>UQI × HDI · Mexico City</h2>
-        <div id="cdmxScatter" class="svg-frame chart-frame"></div>
-      </div>
-    </section>
-
-    <section class="compare-row">
-      <div class="compare-cell paris">
-        <h2>UQI trajectories · Paris</h2>
-        <div id="parisLines" class="svg-frame chart-frame"></div>
-      </div>
-      <div class="compare-cell mexico">
-        <h2>UQI trajectories · Mexico City</h2>
-        <div id="cdmxLines" class="svg-frame chart-frame"></div>
+    <section id="timelines" class="cap wrap">
+      <h2>Timelines</h2>
+      <p class="caption">Ten dated entries per city, 1850s–2020s. Scroll each column in parallel.</p>
+      <div class="dual">
+        <div class="col paris">
+          <p class="city-label">Paris</p>
+          <div class="timeline-ribbon" id="tl-paris">
+            <article class="tl-entry"><p class="tl-year">1853–1870</p><h3>Haussmann redraws Paris</h3><p>Wide boulevards, uniform façades, and networked sewers displace working-class blocks in the center. The state claims modernization; residents lose cheap housing.</p><img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=600&q=70" alt="" /></article>
+            <article class="tl-entry"><p class="tl-year">1860</p><h3>Annexation of the ring</h3><p>Eleven communes join Paris; arrondissements XX are fixed. The map still used for census and planning is born.</p></article>
+            <article class="tl-entry"><p class="tl-year">1889</p><h3>World’s Fair and Eiffel Tower</h3><p>Industrial spectacle on the Champ de Mars. Iron and gas light signal a city confident in display.</p></article>
+            <article class="tl-entry"><p class="tl-year">1900</p><h3>Métro opens</h3><p>Line 1 links Porte de Vincennes to Porte Maillot. Transit becomes the armature of daily movement.</p></article>
+            <article class="tl-entry"><p class="tl-year">1925</p><h3>Plan Voisin proposed</h3><p>Le Corbusier’s tabula rasa for the Marais is rejected, but the dream of clearance persists in later estates.</p></article>
+            <article class="tl-entry"><p class="tl-year">1945–1973</p><h3>Trente Glorieuses estates</h3><p>Mass housing at the <span class="gloss-pair"><span class="term-txt">banlieue</span><button type="button" class="gloss-trigger">?</button><span class="gloss-pop" role="tooltip">The suburbs outside the Paris municipality, where much postwar public housing was built.</span></span> edge. Center density falls; periphery towers rise.</p></article>
+            <article class="tl-entry"><p class="tl-year">1973</p><h3>Périphérique completed</h3><p>The ring road locks car traffic into a moat around the historic core.</p></article>
+            <article class="tl-entry"><p class="tl-year">2001</p><h3>Bike and pedestrian turn</h3><p>Successive mayors expand Vélib’, bus lanes, and school streets. The center softens slightly.</p></article>
+            <article class="tl-entry"><p class="tl-year">2014</p><h3>Climate Paris</h3><p>Anne Hidalgo targets diesel, parking, and heat islands. Green space becomes explicit policy.</p></article>
+            <article class="tl-entry"><p class="tl-year">2024</p><h3>Olympic city, short-term edge</h3><p>Games infrastructure and rental pressure test who benefits from global attention.</p></article>
+          </div>
+          <p class="scroll-hint">↓ scroll for more</p>
+        </div>
+        <div class="col mexico">
+          <p class="city-label">Mexico City</p>
+          <div class="timeline-ribbon" id="tl-mexico">
+            <article class="tl-entry"><p class="tl-year">1876</p><h3>Díaz and the imported blueprint</h3><p>Porfirian elites hire foreign engineers for boulevards and drainage. The center is Europeanized; the periphery is ignored.</p><img src="https://images.unsplash.com/photo-1518653029420-6a343005662c?w=600&q=70" alt="" /></article>
+            <article class="tl-entry"><p class="tl-year">1885</p><h3>Paseo de la Reforma</h3><p>A ceremonial spine links the historic core to Chapultepec. Symbolic order precedes service equity.</p></article>
+            <article class="tl-entry"><p class="tl-year">1900</p><h3>Drainage and Chapultepec</h3><p>Tunnels begin to dry the basin; parks serve the west. Flooding risk shifts but does not vanish.</p></article>
+            <article class="tl-entry"><p class="tl-year">1910–1917</p><h3>Revolution interrupts</h3><p>Elite modernization pauses; migration and land politics reshape the valley.</p></article>
+            <article class="tl-entry"><p class="tl-year">1929–1950</p><h3>Plano Regulador vs colonias</h3><p>Official plans meet self-built peripheries. The formal city grows slower than need.</p></article>
+            <article class="tl-entry"><p class="tl-year">1950s</p><h3>Industrial migration</h3><p>Factories and barrios expand east and north. Services lag behind roofs.</p></article>
+            <article class="tl-entry"><p class="tl-year">1968</p><h3>Metro and Tlatelolco</h3><p>Line 1 opens as political violence scars the center. Transit promises modernity under tension.</p></article>
+            <article class="tl-entry"><p class="tl-year">1985</p><h3>Earthquake exposes uneven safety</h3><p>Building quality and rescue capacity vary sharply by neighborhood.</p></article>
+            <article class="tl-entry"><p class="tl-year">1990s–2010s</p><h3>Centro redevelopment</h3><p><span class="gloss-pair"><span class="term-txt">Gentrification</span><button type="button" class="gloss-trigger">?</button><span class="gloss-pop" role="tooltip">Rising rents and new amenities in working-class areas, often displacing long-term residents.</span></span> and cultural investment return to the core while peripheries still wait for water.</p></article>
+            <article class="tl-entry"><p class="tl-year">2016–2024</p><h3>Cablebús and UTOPIAs</h3><p>Peripheral integration projects attempt to close decades of service gaps.</p></article>
+          </div>
+          <p class="scroll-hint">↓ scroll for more</p>
+        </div>
       </div>
     </section>
 
-    <section class="compare-masthead">
-      <p>Both cities show spatial concentration of planning quality. Where UQI and HDI align, inequality of life follows the map. Mexico City shows wider spread in infrastructure-linked variables; Paris shows a flatter infrastructure floor with persistent income and health gradients.</p>
-      <p>Paris compresses variation through century-old universal networks; Mexico City still encodes Porfirian and post-revolutionary unevenness in water, drainage, and transit access. The comparison is not a contest of scores but a test of whether planning grammar matches lived equality.</p>
+    <section id="uqi" class="cap wrap">
+      <h2>Urban Quality Index maps</h2>
+      <p class="caption">Five components — parks, transit, density (middle best), third spaces, infrastructure — averaged into a 0–100 <span class="gloss-pair"><span class="term-txt">UQI</span><button type="button" class="gloss-trigger">?</button><span class="gloss-pop" role="tooltip">Urban Quality Index: equal-weight composite of planning-relevant neighborhood indicators in this project.</span></span>. Same cream-to-ink scale in both cities.</p>
+      <div class="comp-toggles" role="radiogroup" aria-label="UQI component">
+        <button type="button" class="comp-btn active" data-component="all">All five</button>
+        <button type="button" class="comp-btn" data-component="parks">Parks</button>
+        <button type="button" class="comp-btn" data-component="transit">Transit</button>
+        <button type="button" class="comp-btn" data-component="density">Density</button>
+        <button type="button" class="comp-btn" data-component="thirdspace">Third spaces</button>
+        <button type="button" class="comp-btn" data-component="infrastructure">Infrastructure</button>
+      </div>
+      <div class="dual">
+        <div class="col paris"><p class="city-label">Paris · 2022</p><div class="map-panel" id="map-paris-uqi"></div></div>
+        <div class="col mexico"><p class="city-label">Mexico City · 2020</p><div class="map-panel" id="map-mexico-uqi"></div></div>
+      </div>
+      <p class="caption">Darker ink means higher score on the active measure. Hover any neighborhood to highlight it on all maps below.</p>
     </section>
 
-    <footer class="compare-footer">
-      <p><a href="paris/">Paris single-city view</a> · <a href="cdmx/">Mexico City single-city view</a> · Data: <code>data/paris/</code>, <code>data/cdmx/</code></p>
-    </footer>
-  </div>
-  <div id="tooltip" role="status" aria-live="polite"></div>
-  <script src="script.js"></script>
+    <section id="hdi" class="cap wrap">
+      <h2>Human Development Index maps</h2>
+      <p class="caption"><span class="gloss-pair"><span class="term-txt">HDI</span><button type="button" class="gloss-trigger">?</button><span class="gloss-pop" role="tooltip">Human Development Index: composite of health, education, and income using UN goalposts; Paris values computed for this project.</span></span> — Mexico from <span class="gloss-pair"><span class="term-txt">PNUD</span><button type="button" class="gloss-trigger">?</button><span class="gloss-pop" role="tooltip">United Nations Development Programme; publishes municipal HDI for Mexico.</span></span> municipal data (2020); Paris computed via UN HDR 2022 methodology (2022 census year).</p>
+      <div class="dual">
+        <div class="col paris"><p class="city-label">Paris</p><div class="map-panel" id="map-paris-hdi"></div></div>
+        <div class="col mexico"><p class="city-label">Mexico City</p><div class="map-panel" id="map-mexico-hdi"></div></div>
+      </div>
+      <p class="caption">Where UQI and HDI darken the same neighborhoods, planning inequality and inequality of life align in space.</p>
+    </section>
+
+    <section id="scatter" class="cap wrap">
+      <h2>UQI × HDI alignment</h2>
+      <p class="caption">Each point is one neighborhood. Click a point to highlight it on the maps above.</p>
+      <div class="dual">
+        <div class="col paris"><div class="scatter-panel" id="scatter-paris"></div></div>
+        <div class="col mexico"><div class="scatter-panel" id="scatter-mexico"></div></div>
+      </div>
+    </section>
+
+    <section id="lines" class="cap wrap">
+      <h2>UQI over time</h2>
+      <p class="caption">Mexico City: 1860–2020. Paris: 1968–2022 (density varies by decade; other components held at 2022 levels where needed). Bold lines = mean of top five, middle six, and bottom five neighborhoods in the latest year.</p>
+      <div class="dual">
+        <div class="col paris"><div class="lines-panel" id="lines-paris"></div></div>
+        <div class="col mexico"><div class="lines-panel" id="lines-mexico"></div></div>
+      </div>
+    </section>
+
+    <section id="closing" class="cap wrap closing">
+      <h2>Closing</h2>
+      <p>Both cities concentrate planning quality in some districts and not others. On these maps, that <span class="gloss-pair"><span class="term-txt">spatial inequality</span><button type="button" class="gloss-trigger">?</button><span class="gloss-pop" role="tooltip">Unequal distribution of public goods and environmental burdens across neighborhoods in the same city.</span></span> aligns with human development: where the UQI is low, HDI tends to be low as well.</p>
+      <p>They arrive there by different routes. Paris built universal networks early; inequality now shows up more in health and income than in piped water. Mexico City still encodes Porfirian and post-revolutionary gaps in infrastructure, with a wider spread in both UQI and HDI. This is not inequality of pavement alone. It is inequality of life.</p>
+    </section>
+  </main>
+
+  <div id="hover-panel" role="status" aria-live="polite"></div>
+
+  <footer class="site-foot wrap">
+    <p>Data: INEGI / DataMexCity.xlsx · INSEE / opendata.paris.fr · PNUD municipal HDI · <a href="cdmx/">CDMX explorer</a> · <a href="paris/">Paris explorer</a></p>
+    <p>Images: placeholder Unsplash (see image_credits.md). Methodology: methodology_mexico.md, data/analysis/hdi_paris_methodology.md</p>
+  </footer>
+
+  <script src="js/map-utils.js"></script>
+  <script src="js/capstone.js"></script>
 </body>
 </html>

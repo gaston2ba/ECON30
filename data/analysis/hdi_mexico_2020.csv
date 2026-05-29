@@ -1,0 +1,17 @@
+alcaldia_id,alcaldia_name,hdi,life_exp_index,education_index,income_index,year,source
+1,Álvaro Obregón,0.884,,,,2020,PNUD México municipal HDI (transcribed to hdi_mexico_pnud.csv); 2020 column
+2,Azcapotzalco,0.872,,,,2020,PNUD México municipal HDI (transcribed to hdi_mexico_pnud.csv); 2020 column
+3,Benito Juárez,0.912,,,,2020,PNUD México municipal HDI (transcribed to hdi_mexico_pnud.csv); 2020 column
+4,Coyoacán,0.906,,,,2020,PNUD México municipal HDI (transcribed to hdi_mexico_pnud.csv); 2020 column
+5,Cuajimalpa de Morelos,0.898,,,,2020,PNUD México municipal HDI (transcribed to hdi_mexico_pnud.csv); 2020 column
+6,Cuauhtémoc,0.893,,,,2020,PNUD México municipal HDI (transcribed to hdi_mexico_pnud.csv); 2020 column
+7,Gustavo A. Madero,0.842,,,,2020,PNUD México municipal HDI (transcribed to hdi_mexico_pnud.csv); 2020 column
+8,Iztacalco,0.87,,,,2020,PNUD México municipal HDI (transcribed to hdi_mexico_pnud.csv); 2020 column
+9,Iztapalapa,0.81,,,,2020,PNUD México municipal HDI (transcribed to hdi_mexico_pnud.csv); 2020 column
+10,La Magdalena Contreras,0.863,,,,2020,PNUD México municipal HDI (transcribed to hdi_mexico_pnud.csv); 2020 column
+11,Miguel Hidalgo,0.908,,,,2020,PNUD México municipal HDI (transcribed to hdi_mexico_pnud.csv); 2020 column
+12,Milpa Alta,0.802,,,,2020,PNUD México municipal HDI (transcribed to hdi_mexico_pnud.csv); 2020 column
+13,Tláhuac,0.826,,,,2020,PNUD México municipal HDI (transcribed to hdi_mexico_pnud.csv); 2020 column
+14,Tlalpan,0.88,,,,2020,PNUD México municipal HDI (transcribed to hdi_mexico_pnud.csv); 2020 column
+15,Venustiano Carranza,0.853,,,,2020,PNUD México municipal HDI (transcribed to hdi_mexico_pnud.csv); 2020 column
+16,Xochimilco,0.836,,,,2020,PNUD México municipal HDI (transcribed to hdi_mexico_pnud.csv); 2020 column

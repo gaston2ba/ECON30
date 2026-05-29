@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Las dos gramáticas — Mexico City and Paris compared</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="compare-shell">
+    <header class="compare-masthead">
+      <p class="eyebrow">ECON 30 · Comparative urbanism</p>
+      <h1>Las dos gramáticas — Mexico City and Paris compared</h1>
+      <p class="lede"><strong>Has urban planning produced equal cities, or does spatial inequality of planning translate into inequality of life?</strong></p>
+      <p class="lede">Two cities, the same instrument: decade slider, variable toggles, UQI choropleth, HDI layer, and UQI×HDI scatter. Move the slider once; both cities update together.</p>
+    </header>
+
+    <section class="compare-toolbar" aria-label="Shared controls">
+      <div class="control-row">
+        <label for="decadeSlider">Decade <strong id="decadeLabel">2020</strong></label>
+        <button id="playButton" type="button">Play</button>
+      </div>
+      <input id="decadeSlider" type="range" min="0" max="15" value="15" step="1">
+      <div id="decadeTicks" class="ticks"></div>
+      <div class="control-heading" style="margin-top:14px">Variables Included</div>
+      <div id="variableControls" class="variable-grid"></div>
+    </section>
+
+    <section class="compare-row">
+      <div class="compare-cell paris">
+        <p class="eyebrow">Paris</p>
+        <h2>UQI · <span id="parisUqiStatus">2020</span></h2>
+        <div id="parisUqiMap" class="svg-frame"></div>
+      </div>
+      <div class="compare-cell mexico">
+        <p class="eyebrow">Mexico City</p>
+        <h2>UQI · <span id="cdmxUqiStatus">2020</span></h2>
+        <div id="cdmxUqiMap" class="svg-frame"></div>
+      </div>
+    </section>
+
+    <section class="compare-row">
+      <div class="compare-cell paris">
+        <h2>HDI · Paris</h2>
+        <div id="parisHdiMap" class="svg-frame"></div>
+      </div>
+      <div class="compare-cell mexico">
+        <h2>HDI · Mexico City</h2>
+        <div id="cdmxHdiMap" class="svg-frame"></div>
+      </div>
+    </section>
+
+    <section class="compare-row">
+      <div class="compare-cell paris">
+        <h2>UQI × HDI · Paris</h2>
+        <div id="parisScatter" class="svg-frame chart-frame"></div>
+      </div>
+      <div class="compare-cell mexico">
+        <h2>UQI × HDI · Mexico City</h2>
+        <div id="cdmxScatter" class="svg-frame chart-frame"></div>
+      </div>
+    </section>
+
+    <section class="compare-row">
+      <div class="compare-cell paris">
+        <h2>UQI trajectories · Paris</h2>
+        <div id="parisLines" class="svg-frame chart-frame"></div>
+      </div>
+      <div class="compare-cell mexico">
+        <h2>UQI trajectories · Mexico City</h2>
+        <div id="cdmxLines" class="svg-frame chart-frame"></div>
+      </div>
+    </section>
+
+    <section class="compare-masthead">
+      <p>Both cities show spatial concentration of planning quality. Where UQI and HDI align, inequality of life follows the map. Mexico City shows wider spread in infrastructure-linked variables; Paris shows a flatter infrastructure floor with persistent income and health gradients.</p>
+      <p>Paris compresses variation through century-old universal networks; Mexico City still encodes Porfirian and post-revolutionary unevenness in water, drainage, and transit access. The comparison is not a contest of scores but a test of whether planning grammar matches lived equality.</p>
+    </section>
+
+    <footer class="compare-footer">
+      <p><a href="paris/">Paris single-city view</a> · <a href="cdmx/">Mexico City single-city view</a> · Data: <code>data/paris/</code>, <code>data/cdmx/</code></p>
+    </footer>
+  </div>
+  <div id="tooltip" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
