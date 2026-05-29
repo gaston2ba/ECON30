@@ -19,6 +19,25 @@ MEXICO_URLS = [
     "https://raw.githubusercontent.com/JuanPinedaSoto/alcaldias_CDMX/master/Alcaldias_CDMX.geojson",
 ]
 
+ALC_DISPLAY = {
+    1: "Álvaro Obregón",
+    2: "Azcapotzalco",
+    3: "Benito Juárez",
+    4: "Coyoacán",
+    5: "Cuajimalpa de Morelos",
+    6: "Cuauhtémoc",
+    7: "Gustavo A. Madero",
+    8: "Iztacalco",
+    9: "Iztapalapa",
+    10: "La Magdalena Contreras",
+    11: "Miguel Hidalgo",
+    12: "Milpa Alta",
+    13: "Tláhuac",
+    14: "Tlalpan",
+    15: "Venustiano Carranza",
+    16: "Xochimilco",
+}
+
 ALC_NAME_TO_ID = {
     "alvaro obregon": 1,
     "azcapotzalco": 2,
@@ -117,7 +136,7 @@ def prepare_mexico() -> None:
         out_features.append(
             {
                 "type": "Feature",
-                "properties": {"id": aid, "name": name},
+                "properties": {"id": aid, "name": ALC_DISPLAY.get(aid, name or f"Alcaldía {aid}")},
                 "geometry": feat["geometry"],
             }
         )

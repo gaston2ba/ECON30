@@ -1,6 +1,5 @@
 /**
  * GeoJSON choropleth maps + monument then/now explorer.
- * Expects global: DATA, state, COMPONENTS, regionIndex, colorFor, selectRegion
  */
 const GeoMap = {
   geo: { paris: null, mexico: null },
@@ -10,8 +9,6 @@ const GeoMap = {
   selectedMonument: null,
   projection: null,
   path: null,
-  width: 720,
-  height: 560,
 
   async init() {
     try {
@@ -27,6 +24,7 @@ const GeoMap = {
       this.monuments.mexico = mexicoMon;
       this.ready = true;
       this.bindLayerControls();
+      window.addEventListener('resize', () => this.render());
       this.render();
       if (typeof buildMonumentGrid === 'function') buildMonumentGrid();
     } catch (err) {
@@ -59,90 +57,69 @@ const GeoMap = {
     return regionIndex(region, state.active);
   },
 
+  mapDimensions() {
+    const stage = document.querySelector('.map-stage');
+    const maxW = stage ? Math.min(760, stage.clientWidth - 24) : 720;
+    const width = Math.max(320, maxW);
+    const height = state.city === 'paris' ? Math.round(width * 0.82) : Math.round(width * 0.72);
+    return { width, height };
+  },
+
   render() {
-    if (!this.ready || typeof d3 === 'undefined') return;
+    if (!this.ready || typeof d3 === 'undefined' || typeof CityMapUtils === 'undefined') return;
 
     const city = state.city;
     const geojson = this.geo[city];
+    const { width, height } = this.mapDimensions();
     const svg = d3.select('#map-svg');
-    svg.selectAll('*').remove();
-    svg.attr('viewBox', `0 0 ${this.width} ${this.height}`);
 
-    const pad = 28;
-    this.projection = d3.geoMercator().fitExtent(
-      [[pad, pad], [this.width - pad, this.height - pad]],
-      geojson
-    );
-    this.path = d3.geoPath().projection(this.projection);
-
-    const gBase = svg.append('g').attr('class', 'geo-base');
-    const gRegions = svg.append('g').attr('class', 'geo-regions');
-    const gLabels = svg.append('g').attr('class', 'geo-labels');
-    const gMon = svg.append('g').attr('class', 'geo-monuments');
-
-    gBase.append('path')
-      .datum({ type: 'Sphere' })
-      .attr('d', d3.geoPath().projection(this.projection))
-      .attr('fill', 'rgba(212,195,145,0.15)')
-      .attr('stroke', 'none');
-
-    const features = geojson.features;
-    gRegions.selectAll('path')
-      .data(features)
-      .join('path')
-      .attr('d', this.path)
-      .attr('fill', (d) => {
+    const { projection, path } = CityMapUtils.renderChoropleth({
+      svg: '#map-svg',
+      geojson,
+      width,
+      height,
+      opacity: this.layer === 'monuments' ? 0.5 : 1,
+      getFill: (d) => {
         const id = this.featureId(d.properties);
         const score = this.scoreForId(id);
-        return score === null ? '#cbbfa2' : colorFor(score, city);
-      })
-      .attr('stroke', '#2a2218')
-      .attr('stroke-width', (d) => (state.selectedRegion === this.featureId(d.properties) ? 2.5 : 0.9))
-      .attr('opacity', () => (this.layer === 'monuments' ? 0.55 : 1))
-      .attr('class', 'map-region-geo')
-      .style('cursor', this.layer === 'index' ? 'pointer' : 'default')
-      .on('click', (event, d) => {
-        if (this.layer !== 'index') return;
+        if (score === null) return '#cbbfa2';
+        return CityMapUtils.colorForScore(score, city);
+      },
+      strokeWidth: (d) => (state.selectedRegion === this.featureId(d.properties) ? 2.2 : 0.85),
+      onClick: this.layer === 'index'
+        ? (d) => {
+            const id = this.featureId(d.properties);
+            state.selectedRegion = id;
+            selectRegion(id);
+            this.render();
+          }
+        : null,
+      labels: this.layer === 'index',
+      labelText: (d) => {
         const id = this.featureId(d.properties);
-        state.selectedRegion = id;
-        selectRegion(id);
-        this.render();
-      });
+        return city === 'paris' ? String(id) : String(id);
+      },
+      labelFill: (d) => {
+        const score = this.scoreForId(this.featureId(d.properties));
+        return score !== null && score > 55 ? '#f1e9d6' : '#2a2218';
+      },
+    });
 
-    if (this.layer === 'index') {
-      gLabels.selectAll('text')
-        .data(features)
-        .join('text')
-        .attr('transform', (d) => {
-          const c = this.path.centroid(d);
-          return `translate(${c[0]},${c[1]})`;
-        })
-        .attr('text-anchor', 'middle')
-        .attr('dy', '0.35em')
-        .attr('font-family', 'Special Elite, monospace')
-        .attr('font-size', city === 'paris' ? 10 : 8)
-        .attr('fill', (d) => {
-          const score = this.scoreForId(this.featureId(d.properties));
-          return score !== null && score > 55 ? '#f1e9d6' : '#2a2218';
-        })
-        .attr('pointer-events', 'none')
-        .text((d) => {
-          const id = this.featureId(d.properties);
-          return city === 'paris' ? id : id;
-        });
-    }
+    this.projection = projection;
+    this.path = path;
 
+    const gMon = svg.append('g').attr('class', 'geo-monuments');
     const mons = this.monuments[city];
     gMon.selectAll('circle')
       .data(mons)
       .join('circle')
-      .attr('cx', (d) => this.projection([d.lon, d.lat])[0])
-      .attr('cy', (d) => this.projection([d.lon, d.lat])[1])
-      .attr('r', (d) => (this.selectedMonument === d.id ? 9 : 6))
+      .attr('cx', (d) => projection([d.lon, d.lat])[0])
+      .attr('cy', (d) => projection([d.lon, d.lat])[1])
+      .attr('r', (d) => (this.selectedMonument === d.id ? 8 : 5.5))
       .attr('fill', city === 'paris' ? '#7a1f2b' : '#2d5a3d')
       .attr('stroke', '#f1e9d6')
-      .attr('stroke-width', 2)
-      .attr('opacity', this.layer === 'monuments' ? 1 : 0.35)
+      .attr('stroke-width', 1.8)
+      .attr('opacity', this.layer === 'monuments' ? 1 : 0.4)
       .style('cursor', 'pointer')
       .on('click', (event, d) => {
         event.stopPropagation();
