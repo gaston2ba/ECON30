@@ -1,0 +1,2064 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Publishing DTD v1.3 20210610//EN" "JATS-journalpublishing1-3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="1.3" xml:lang="en">
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="publisher-id">land</journal-id>
+      <journal-title-group>
+        <journal-title>Land</journal-title>
+        <abbrev-journal-title abbrev-type="publisher">Land</abbrev-journal-title>
+        <abbrev-journal-title abbrev-type="pubmed">Land</abbrev-journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">2073-445X</issn>
+      <publisher>
+        <publisher-name>MDPI</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="doi">10.3390/land14091773</article-id>
+      <article-id pub-id-type="publisher-id">land-14-01773</article-id>
+      <article-categories>
+        <subj-group>
+          <subject>Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Spatial Equity in Access to Urban Parks via Public Transit: A Centrality-Driven Assessment of Mexico City</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <contrib-id contrib-id-type="orcid" authenticated="true">https://orcid.org/0009-0000-4749-961X</contrib-id>
+          <name>
+            <surname>Dur&#xE1;n-P&#xE9;rez</surname>
+            <given-names>Ana Mar&#xED;a</given-names>
+          </name>
+          <role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Conceptualization" vocab-term-identifier="https://credit.niso.org/contributor-roles/conceptualization/">Conceptualization</role>
+          <role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Software" vocab-term-identifier="https://credit.niso.org/contributor-roles/software/">Software</role>
+          <role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Validation" vocab-term-identifier="https://credit.niso.org/contributor-roles/validation/">Validation</role>
+          <role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Formal analysis" vocab-term-identifier="https://credit.niso.org/contributor-roles/formal-analysis/">Formal analysis</role>
+          <role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Investigation" vocab-term-identifier="https://credit.niso.org/contributor-roles/investigation/">Investigation</role>
+          <role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Data curation" vocab-term-identifier="https://credit.niso.org/contributor-roles/data-curation/">Data curation</role>
+          <role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Writing &#x2013; original draft" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-original-draft/">Writing &#x2013; original draft</role>
+          <role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Writing &#x2013; review &amp; editing" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-review-editing/">Writing &#x2013; review &amp; editing</role>
+          <role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Visualization" vocab-term-identifier="https://credit.niso.org/contributor-roles/visualization/">Visualization</role>
+          <xref rid="af1-land-14-01773" ref-type="aff">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <contrib-id contrib-id-type="orcid" authenticated="true">https://orcid.org/0000-0002-9835-0599</contrib-id>
+          <name>
+            <surname>N&#xFA;&#xF1;ez</surname>
+            <given-names>Juan Manuel</given-names>
+          </name>
+          <role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Conceptualization" vocab-term-identifier="https://credit.niso.org/contributor-roles/conceptualization/">Conceptualization</role>
+          <role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Validation" vocab-term-identifier="https://credit.niso.org/contributor-roles/validation/">Validation</role>
+          <role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Resources" vocab-term-identifier="https://credit.niso.org/contributor-roles/resources/">Resources</role>
+          <role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Writing &#x2013; original draft" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-original-draft/">Writing &#x2013; original draft</role>
+          <role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Writing &#x2013; review &amp; editing" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-review-editing/">Writing &#x2013; review &amp; editing</role>
+          <role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Visualization" vocab-term-identifier="https://credit.niso.org/contributor-roles/visualization/">Visualization</role>
+          <role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Supervision" vocab-term-identifier="https://credit.niso.org/contributor-roles/supervision/">Supervision</role>
+          <role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Project administration" vocab-term-identifier="https://credit.niso.org/contributor-roles/project-administration/">Project administration</role>
+          <role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Funding acquisition" vocab-term-identifier="https://credit.niso.org/contributor-roles/funding-acquisition/">Funding acquisition</role>
+          <xref rid="af2-land-14-01773" ref-type="aff">2</xref>
+          <xref rid="c1-land-14-01773" ref-type="corresp">*</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>G&#xF3;mez G&#xE1;mez</surname>
+            <given-names>C&#xE9;lida</given-names>
+          </name>
+          <xref rid="af3-land-14-01773" ref-type="aff">3</xref>
+        </contrib>
+      </contrib-group>
+      <contrib-group>
+        <contrib contrib-type="editor">
+          <name>
+            <surname>Garc&#xED;a</surname>
+            <given-names>Ester Higueras</given-names>
+          </name>
+          <role>Academic Editor</role>
+        </contrib>
+        <contrib contrib-type="editor">
+          <name>
+            <surname>Alonso</surname>
+            <given-names>Andrea</given-names>
+          </name>
+          <role>Academic Editor</role>
+        </contrib>
+        <contrib contrib-type="editor">
+          <name>
+            <surname>Baquero Larriva</surname>
+            <given-names>Mar&#xED;a Teresa</given-names>
+          </name>
+          <role>Academic Editor</role>
+        </contrib>
+      </contrib-group>
+      <aff id="af1-land-14-01773"><label>1</label>Centro de Investigaci&#xF3;n en Ciencias de Informaci&#xF3;n Geoespacial (CentroGeo), Contoy 137, Colonia Lomas de Padierna, Tlalpan, Ciudad de M&#xE9;xico 14240, Mexico; <email>al.aduran@centrogeo.edu.mx</email></aff>
+      <aff id="af2-land-14-01773"><label>2</label>Centro Transdisciplinar Universitario para la Sustentabilidad (Centrus), Universidad Iberoamericana Ciudad de M&#xE9;xico, Prolongaci&#xF3;n Paseo de la Reforma 880, Colonia Lomas de Santa Fe, &#xC1;lvaro Obreg&#xF3;n, Ciudad de M&#xE9;xico 01219, Mexico</aff>
+      <aff id="af3-land-14-01773"><label>3</label>Departamento de Arquitectura, Urbanismo e Ingenier&#xED;a Civil, Universidad Iberoamericana Ciudad de M&#xE9;xico, Prolongaci&#xF3;n Paseo de la Reforma 880, Colonia Lomas de Santa Fe, &#xC1;lvaro Obreg&#xF3;n, Ciudad de M&#xE9;xico 01219, Mexico; <email>celida.gomez@ibero.mx</email></aff>
+      <author-notes>
+        <corresp id="c1-land-14-01773"><label>*</label>Correspondence: <email>juan.nunez@ibero.mx</email>; Tel.: +52-55-5950-400 (ext. 7959)</corresp>
+      </author-notes>
+      <pub-date pub-type="epub">
+        <day>31</day>
+        <month>08</month>
+        <year>2025</year>
+      </pub-date>
+      <pub-date pub-type="collection">
+        <month>09</month>
+        <year>2025</year>
+      </pub-date>
+      <volume>14</volume>
+      <issue>9</issue>
+      <elocation-id>1773</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>25</day>
+          <month>07</month>
+          <year>2025</year>
+        </date>
+        <date date-type="rev-recd">
+          <day>21</day>
+          <month>08</month>
+          <year>2025</year>
+        </date>
+        <date date-type="accepted">
+          <day>25</day>
+          <month>08</month>
+          <year>2025</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>&#xA9; 2025 by the authors.</copyright-statement>
+        <copyright-year>2025</copyright-year>
+        <license license-type="open-access">
+          <license-p>Licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC BY) license (<ext-link ext-link-type="uri" xlink:href="https://creativecommons.org/licenses/by/4.0/">https://creativecommons.org/licenses/by/4.0/</ext-link>).</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p>Urban parks play a crucial role in promoting physical and mental health by providing green spaces for recreation, relaxation, and social interaction. However, access to these spaces is often constrained by the structure and performance of public transportation networks&#x2014;particularly in megacities marked by spatial and social inequalities. This study evaluates equitable access to urban parks in Mexico City through the public transit system, using centrality-based metrics within a Geographic Information Systems (GIS) network analysis framework. Parks are categorized by size (small: 0.3&#x2013;1 ha; medium: 1&#x2013;4.5 ha; large: &gt;4.5 ha), and three centrality measures&#x2014;reach, gravity, and closeness&#x2014;are applied to assess their accessibility via different transport modes: Metro, bus rapid transit (BRT), trolleybuses, public buses, and concessioned services. Results show that Metro stations are more connected to large parks, while BRT and trolleybus lines improve access to small and medium parks. Concessioned services, however, present fragmented and uneven coverage, reinforcing socio-spatial disparities in access to green infrastructure. The findings underscore the importance of integrated, multimodal transportation planning to enhance equitable access to parks&#x2014;an essential component of urban health and well-being. By highlighting the spatial patterns of accessibility, this study contributes to designing healthier and more inclusive public spaces in the city, supporting policy frameworks that advance health equity and urban sustainability.</p>
+      </abstract>
+      <kwd-group>
+        <kwd>spatial equity</kwd>
+        <kwd>urban accessibility</kwd>
+        <kwd>urban public spaces</kwd>
+        <kwd>inclusive public spaces</kwd>
+        <kwd>centrality measures</kwd>
+        <kwd>public transit</kwd>
+        <kwd>urban health</kwd>
+      </kwd-group>
+      <funding-group>
+        <award-group>
+          <funding-source>Universidad Iberoamericana Ciudad de M&#xE9;xico</funding-source>
+        </award-group>
+        <funding-statement>This research is based on the undergraduate thesis of Ana Mar&#xED;a Dur&#xE1;n P&#xE9;rez, completed in 2022 at the Faculty of Engineering, National Autonomous University of Mexico (UNAM), under the supervision of Juan Manuel N&#xFA;&#xF1;ez. The article processing charge (APC) was fully covered by Universidad Iberoamericana Ciudad de M&#xE9;xico through its institutional program for supporting academic dissemination.</funding-statement>
+      </funding-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="sec1-land-14-01773" sec-type="intro">
+      <title>1. Introduction</title>
+      <p>Urban parks are essential components of sustainable cities, providing environmental, social, and public health benefits for urban populations. They contribute to improving air quality, reducing heat islands, and conserving biodiversity, while fostering recreational activities, physical and mental health, and social cohesion [<xref ref-type="bibr" rid="B1-land-14-01773">1</xref>,<xref ref-type="bibr" rid="B2-land-14-01773">2</xref>,<xref ref-type="bibr" rid="B3-land-14-01773">3</xref>,<xref ref-type="bibr" rid="B4-land-14-01773">4</xref>]. These health benefits are particularly relevant in dense urban environments, where access to green spaces is associated with reduced stress, increased physical activity, and improved psychological well-being [<xref ref-type="bibr" rid="B5-land-14-01773">5</xref>,<xref ref-type="bibr" rid="B6-land-14-01773">6</xref>].</p>
+      <p>Urban parks are also a vital form of inclusive public space, where the right to the city can be exercised through equitable access to nature, recreation, and collective well-being. Ensuring access to these spaces is fundamental not only for environmental justice, but also for advancing spatial equity and public health, particularly among marginalized or underserved communities.</p>
+      <p>Globally, increasing and making urban green spaces more accessible has become a priority on the international agenda. SDG 11.7 promotes universal access to safe, inclusive, and accessible green and public spaces, and its measurement has been strengthened with geospatial methodologies applied to urban contexts [<xref ref-type="bibr" rid="B7-land-14-01773">7</xref>]. In turn, Target 12 of the Kunming&#x2013;Montreal Global Biodiversity Framework calls for significantly increasing the extent, quality, and connectivity of green and blue spaces in urban settlements, integrating biodiversity into urban planning [<xref ref-type="bibr" rid="B8-land-14-01773">8</xref>]. Although there is no official percentage of committed cities, international pacts and networks show a growing critical mass; for example, C40 is an international network of 96 cities that articulate measurable commitments to climate action and multilevel governance. Its role as a &#x201C;transnational network&#x201D; of cities and a platform for mobilizing investment and coordinating policies has been widely documented in recent studies. Mexico City has been a member of C40 since 2005 [<xref ref-type="bibr" rid="B9-land-14-01773">9</xref>,<xref ref-type="bibr" rid="B10-land-14-01773">10</xref>].</p>
+      <p>A recent study in GeoHealth evaluated 96 C40 cities using global data (ESA WorldCover and Sentinel-2 NDVI) to measure progress toward these goals. It found that 80% of cities meet the &#x2265;30% coverage target, while 47% reach the 70% access target; furthermore, less than 10% of Latin American cities meet the access target, highlighting regional gaps [<xref ref-type="bibr" rid="B11-land-14-01773">11</xref>]. Although the article does not detail a result by city in the main text, the analysis of regional patterns places Mexico City within a context where coverage is often more advanced than equitable access. The study itself translates the C40 targets into comparable NDVI thresholds with health evidence, offering Mexico City an operational baseline to identify gaps by territory and guide investments toward a more equitable distribution of green infrastructure.</p>
+      <p>In Mexico City, the regulatory framework for green areas and urban parks was restructured following the promulgation of the Political Constitution of Mexico City, published on 5 February 2017. As part of this new constitutional order, the Mexico City Environmental Law, published on 18 July 2024, replaced previous regulations, including the Environmental Law for the Protection of Soil in the Federal District (LAPTDF) and Environmental Standard NADF-006-RNAT-2016 on green areas. While the Environmental Law of 2024 has not yet been fully regulated, several institutional and programmatic advances have been made in recent years, particularly in the management and restoration of urban parks. These advances reflect a growing recognition of the social and ecological importance of green areas within the emerging legal framework.</p>
+      <p>These regulations establish the powers of the Mexico City Ministry of the Environment (SEDEMA) to manage, monitor, and preserve the various categories of green areas in the city. While urban parks are essential for environmental conservation, they also serve a social function by promoting recreation and the well-being of residents. Therefore, it is essential to incorporate a social dimension that addresses challenges such as insecurity, exclusion from public spaces, and accessibility [<xref ref-type="bibr" rid="B12-land-14-01773">12</xref>,<xref ref-type="bibr" rid="B13-land-14-01773">13</xref>].</p>
+      <p>In accordance with Mexico City&#x2019;s public space recovery strategy, the Park Systems program classifies urban parks based on urban and social criteria [<xref ref-type="bibr" rid="B14-land-14-01773">14</xref>]. Within this institutional and operational framework, recent administrations have promoted the recovery of public spaces through the creation and restoration of urban parks of various sizes. A prominent example is pocket parks, small green areas between 100 and 400 m<sup>2</sup> designed to improve users&#x2019; quality of life and urban image, while promoting road safety, community cohesion, and the enjoyment of public spaces [<xref ref-type="bibr" rid="B14-land-14-01773">14</xref>]. Similarly, the Sembrando Parques program, implemented by the Ministry of Public Works and Services (SOBSE), seeks to increase and improve the amount of green areas per inhabitant, especially in the eastern part of the city, one of the most densely populated areas with the least vegetation cover; but it does not seek a more equitable distribution of green infrastructure.</p>
+      <p>However, equitable access to these green spaces remains a challenge in rapidly growing megacities, where spatial inequalities and urban sprawl can create disparities in park availability and usability [<xref ref-type="bibr" rid="B15-land-14-01773">15</xref>,<xref ref-type="bibr" rid="B16-land-14-01773">16</xref>,<xref ref-type="bibr" rid="B17-land-14-01773">17</xref>]. Although a number of studies have analyzed the accessibility of green spaces using proximity-based metrics [<xref ref-type="bibr" rid="B18-land-14-01773">18</xref>,<xref ref-type="bibr" rid="B19-land-14-01773">19</xref>] or gravity models [<xref ref-type="bibr" rid="B20-land-14-01773">20</xref>], the role of public transportation networks in shaping access to parks has received comparatively less attention.</p>
+      <p>Public transportation plays a critical role in ensuring equitable access to urban green spaces, particularly in compact, dense cities [<xref ref-type="bibr" rid="B21-land-14-01773">21</xref>,<xref ref-type="bibr" rid="B22-land-14-01773">22</xref>,<xref ref-type="bibr" rid="B23-land-14-01773">23</xref>]. High-capacity transportation modes, such as metro systems and bus rapid transit (BRT) services, can improve park accessibility by reducing travel distances and costs for residents, particularly in areas where green spaces are unevenly distributed [<xref ref-type="bibr" rid="B24-land-14-01773">24</xref>]. Conversely, fragmented or inefficient transportation systems can exacerbate spatial disparities, limiting opportunities for vulnerable populations to interact with nature [<xref ref-type="bibr" rid="B25-land-14-01773">25</xref>,<xref ref-type="bibr" rid="B26-land-14-01773">26</xref>]. These barriers are particularly relevant in the context of inclusive urban development, where promoting access to healthy public spaces through reliable transport is essential to reducing spatial inequities.</p>
+      <p>Despite the recognized importance of transit-oriented sustainability urban planning [<xref ref-type="bibr" rid="B27-land-14-01773">27</xref>], few studies have incorporated network centrality measures to assess the effectiveness of public transportation in connecting residents to urban parks. Within urban planning, accessibility is a key concept closely related to centrality [<xref ref-type="bibr" rid="B28-land-14-01773">28</xref>]. Centrality-based network analysis provides a valuable framework for assessing accessibility beyond simple distance metrics. Centrality measures such as reach, gravity, and closeness, originally developed in social sciences and geography [<xref ref-type="bibr" rid="B29-land-14-01773">29</xref>,<xref ref-type="bibr" rid="B30-land-14-01773">30</xref>], have been widely used in urban studies to identify key transportation nodes and connectivity patterns [<xref ref-type="bibr" rid="B31-land-14-01773">31</xref>,<xref ref-type="bibr" rid="B32-land-14-01773">32</xref>,<xref ref-type="bibr" rid="B33-land-14-01773">33</xref>]. These metrics enable a nuanced understanding of how transportation modes contribute to accessibility by capturing the relative importance of transit routes and the spatial integration of public infrastructure. However, their application in analyzing park accessibility via public transportation remains relatively underexplored in the context of megacities such as Mexico City.</p>
+      <p>This study applies centrality-based urban network analysis to assess how multimodal public transport shapes equitable access to parks in Mexico City, with the goal of identifying priority areas and transit actions that can reduce spatial inequities, inform the implementation of evidence-based urban policies for more inclusive and healthy cities, and advance the implementation of internationally recognized urban sustainability targets and local planning goals. We classified parks into three categories based on size (small, medium, and large) and assessed their connectivity using public transportation modes such as subways, BRT (Metrob&#xFA;s), trolleybuses, public buses, and privately operated transportation services. By integrating urban network analysis with geographic information systems (GIS), we achieved a comprehensive assessment of how transportation modes facilitate or hinder access to green spaces, highlighting spatial inequalities and areas for improvement. This approach also contributes to the broader conversation on healthy and inclusive urban public spaces, offering a spatial diagnostic that can inform policies aimed at improving health equity and urban livability for all residents. The results provide actionable insights for urban transport planning and public health policy, emphasizing the role of multi-modal systems in reducing barriers to nature exposure and promoting health equity.</p>
+      <p>Our approach builds on GIS-based network accessibility methods that explicitly model connectivity and the relative importance of links and nodes within multimodal transport networks. Prior studies have examined transit&#x2013;park accessibility using social network analysis and optimization (e.g., for megacities and large urban areas) [<xref ref-type="bibr" rid="B25-land-14-01773">25</xref>], and other studies have applied centrality metrics to urban green space systems or systematically compared GIS-based approaches to park accessibility&#x2014;demonstrating that transport mode and distance thresholds drive results more than destination choice [<xref ref-type="bibr" rid="B34-land-14-01773">34</xref>]. However, few applications integrate multimodal public transport with multi-class centrality metrics (reach, gravity, closeness) on a city-scale network and apply them in a Latin American megacity context. This study addresses that gap by operationalizing centrality-based urban network analysis within a GIS framework to evaluate differential access to parks across modes and park sizes.</p>
+      <p>The remainder of this paper is structured as follows: <xref ref-type="sec" rid="sec2-land-14-01773">Section 2</xref> describes the study area, data sources, and methodology, detailing the use of centrality measures in network analysis. <xref ref-type="sec" rid="sec3-land-14-01773">Section 3</xref> presents the results of the accessibility assessment, including spatial patterns in the various transport modes. <xref ref-type="sec" rid="sec4-land-14-01773">Section 4</xref> discusses the implications of these findings for urban planning and policymaking. Finally, <xref ref-type="sec" rid="sec5-land-14-01773">Section 5</xref> concludes with policy recommendations to improve green space accessibility through better transport integration.</p>
+    </sec>
+    <sec id="sec2-land-14-01773">
+      <title>2. Materials and Methods</title>
+      <sec id="sec2dot1-land-14-01773">
+        <title>2.1. Study Area</title>
+        <p>Mexico City, the capital of Mexico, is a megacity with over nine million inhabitants in its administrative boundaries and more than 21 million in the metropolitan area. The urban fabric combines high-density boroughs in the central and western zones with peripheral areas characterized by rapid urban expansion and lower service coverage.</p>
+        <p>For the purposes of this study, the analysis focuses on the official boundaries of Mexico City, which comprise 16 municipalities. <xref ref-type="fig" rid="land-14-01773-f001">Figure 1</xref> presents the spatial distribution of urban parks and the public transportation system across the city. This representation illustrates the interaction between green spaces and the transit network, providing the geographical basis for the network analysis developed in subsequent sections.</p>
+      </sec>
+      <sec id="sec2dot2-land-14-01773">
+        <title>2.2. Urban Parks in Mexico City</title>
+        <p>This study uses the park classification of the Mexico City Green Space Inventory to analyze public transportation access to urban parks over 3000 m<sup>2</sup>, divided into three size categories (<xref ref-type="table" rid="land-14-01773-t001">Table 1</xref>).</p>
+        <p>This classification is considered suitable for determining how public transportation contributes to access to urban parks of varying sizes. This approach seeks to provide a comprehensive view of the interaction between green areas and the public transportation system in the context of a megacity such as Mexico City.</p>
+      </sec>
+      <sec id="sec2dot3-land-14-01773">
+        <title>2.3. The Mexico City Public Transportation System</title>
+        <p>The Mexico City public transportation system has undergone significant structural transformations, driven by legal, material, and cultural changes seeking to modernize its operations and services [<xref ref-type="bibr" rid="B36-land-14-01773">36</xref>]. One of the most important advances was the reform of the Federal District Mobility Law (LMDF) in 2014, specifically Chapter III, Articles 73 and 74. This reform introduced the concept of an Integrated Public Transportation System (SIT), defined as a gradual, organized, and integrated system encompassing the public transportation modes (mass, collective, and individual passengers) regulated by the Ministry of Mobility (SEMOVI). The SIT was proposed as a reliable, efficient, safe, and accessible model, designed to guarantee quality and coverage for the city&#x2019;s users [<xref ref-type="bibr" rid="B37-land-14-01773">37</xref>].</p>
+        <p>The Mexico City motorized public transportation system comprises multiple operating modes, including the Mass Transit System (Metro), the Electric Transport System (including the Light Rail and trolleybus), the bus rapid transit system (BRT) (Metrob&#xFA;s), the Mobility System 1 (M1), and concessioned transport services (buses, minibuses, and vans) [<xref ref-type="bibr" rid="B38-land-14-01773">38</xref>]. The characteristics of these transport modes are given in <xref ref-type="table" rid="land-14-01773-t002">Table 2</xref>.</p>
+        <p>According to [<xref ref-type="bibr" rid="B38-land-14-01773">38</xref>], approximately 75% of public transportation trips are concentrated in the central boroughs of the city, with similar origin-destination flow patterns between transportation modes. The Metro, inaugurated in 1969, is regarded as the backbone of the system. However, it faces significant challenges associated with lack of maintenance and saturation as it mobilizes 5.2 million users daily, despite having an estimated capacity of 3.5 million [<xref ref-type="bibr" rid="B39-land-14-01773">39</xref>].</p>
+        <p>The Light Rail, operated by the Electric Transport Service (STE), is a non-polluting service connecting the south of the city, specifically the municipalities of Coyoac&#xE1;n, Tlalpan, and Xochimilco. In contrast, the trolleybus, operational since 1950, has limited functionality due to the partial closure of lines, lack of maintenance, and low number of users [<xref ref-type="bibr" rid="B38-land-14-01773">38</xref>].</p>
+        <p>The BRT system, known as Metrob&#xFA;s, introduced in 2005, constitutes an innovation in the city&#x2019;s mobility due to the incorporation of technology to streamline its operations. It is currently the second most used means of transport, mobilizing 1.2 million people daily and experiencing the greatest network growth in recent years [<xref ref-type="bibr" rid="B40-land-14-01773">40</xref>].</p>
+        <p>Conversely, Mobility System 1 (M1) plays a fundamental role as a Metro feeder, serving areas the Metro does not reach and enabling strategic interconnections benefiting users in the 16 boroughs. This system transports an average of 368,000 passengers daily [<xref ref-type="bibr" rid="B41-land-14-01773">41</xref>].</p>
+        <p>Finally, concessioned transportation, including minibuses and vans, covers the entire city and is widely used, especially by sectors with lower socioeconomic status. According to the Origin-Destination Survey [<xref ref-type="bibr" rid="B42-land-14-01773">42</xref>], this service accounts for approximately 48% of daily trips, with an average travel time of 76 min. This system is particularly important in peripheral boroughs such as &#xC1;lvaro Obreg&#xF3;n, Milpa Alta, and Iztapalapa [<xref ref-type="bibr" rid="B38-land-14-01773">38</xref>].</p>
+        <p>Despite efforts to integrate and modernize the Integrated Public Transportation System (ITS), including sustainable, cutting-edge proposals, significant challenges associated with the quality, efficiency, and accessibility of the system remain. These shortcomings have resulted in low user satisfaction, especially during peak hours, when waiting times range from two to 15 min depending on the transportation mode [<xref ref-type="bibr" rid="B38-land-14-01773">38</xref>,<xref ref-type="bibr" rid="B39-land-14-01773">39</xref>].</p>
+        <p>Given this situation, it is essential for future strategies to focus on improving the accessibility, sustainability, and quality of the SIT, with the goal of effectively meeting growing urban demands. One of the most recent strategies implemented to improve the accessibility and sustainability of the SIT is the Cableb&#xFA;s, not included in this article. This urban cable car system operates in inaccessible, high-density areas of Mexico City.</p>
+      </sec>
+      <sec id="sec2dot4-land-14-01773">
+        <title>2.4. Methods</title>
+        <sec id="sec2dot4dot1-land-14-01773">
+          <title>2.4.1. Centrality Measures in Network Analysis</title>
+          <p>In spatial analysis, centrality is evaluated by considering factors such as time, distance, transportation mode, and trip costs. This analysis is based on Graph Theory, which mathematically models networks as sets of points (nodes) connected by lines (arcs), describing the topological properties, structures and dynamics of a network. This approach makes it possible to capture the relationships between the elements in the network and identify key patterns [<xref ref-type="bibr" rid="B43-land-14-01773">43</xref>,<xref ref-type="bibr" rid="B44-land-14-01773">44</xref>]. Centrality, one of the most widely studied concepts in this field, quantifies the relative importance of a node based on its position and connections within a network [<xref ref-type="bibr" rid="B45-land-14-01773">45</xref>].</p>
+          <p>The term &#x201C;centrality,&#x201D; originally used in the social sciences, has been adapted to disciplines such as biology, urban planning, and geospatial sciences [<xref ref-type="bibr" rid="B46-land-14-01773">46</xref>]. Centrality measures are divided into two main approaches: (a) walks, referring to repetitive trajectories through the network, and (b) paths, understood as single visits to a node [<xref ref-type="bibr" rid="B47-land-14-01773">47</xref>]. Common metrics include degree centrality, closeness, betweenness, and eigenvector centrality, which are closely linked to calculating the shortest paths in the network [<xref ref-type="bibr" rid="B48-land-14-01773">48</xref>].</p>
+          <p>A key aspect of these measures is that the relative importance of a node can change depending on the weighting applied to the network [<xref ref-type="bibr" rid="B25-land-14-01773">25</xref>]. In this context, the concept of accessibility is linked to centrality, as it measures the attraction exerted by a location on others within the network [<xref ref-type="bibr" rid="B49-land-14-01773">49</xref>]. Accessibility measures assess the ease of reaching locations along the network, whereas centrality measures determine the relative importance of the nodes within it [<xref ref-type="bibr" rid="B50-land-14-01773">50</xref>].</p>
+          <p>Network analysis in the field of Geographic Information Systems (GIS) allows for operations such as finding the shortest paths, analyzing connectivity, and assigning centrality to nodes based on specific criteria [<xref ref-type="bibr" rid="B51-land-14-01773">51</xref>]. In this study, the Urban Network Analysis (UNA) tool was used to evaluate accessibility to open public spaces [<xref ref-type="bibr" rid="B50-land-14-01773">50</xref>]. This tool defines the urban network using three elements: (a) arcs, meaning public transportation routes; (b) nodes, referring to the intersections between routes; and (c) buildings, which, in this case, correspond to urban green areas. Although the UNA method has been established for some time, its contribution here lies in its application to assess accessibility to urban parks through multimodal public transport in Mexico City. Specifically, the UNA toolbox&#x2019;s third network element&#x2014;buildings&#x2014;was adapted by treating urban green areas as the equivalent of buildings and the public transport network as the underlying urban network. This adaptation extends the tool&#x2019;s application, making it possible to evaluate differential access to parks by size and transport mode.</p>
+          <p>The model is developed within a Geographic Information Systems (GIS) framework, which enables the integration of spatial data and network analysis. This approach underscores the value of combining centrality-based analysis with GIS to examine equity in access to green infrastructure within a Latin American megacity. In this paper, the reach, gravity, and closeness metrics described below are used to analyze accessibility, making it possible to identify key patterns in the urban network and assess their impact on the planning and management of green areas.</p>
+          <list list-type="simple">
+            <list-item>
+              <p>
+                <bold>Reach</bold>
+              </p>
+            </list-item>
+          </list>
+          <p>Reach measures the number of destinations within a given radius, evaluating their accessibility based on the minimum distance from a central node to its adjacent nodes.</p>
+          <p>This indicator describes the capacity of a node (i) in a CGC graph to achieve other nodes within a limited radius, according to the following formula:<disp-formula id="FD1-land-14-01773"><mml:math id="mm1" display="block"><mml:semantics><mml:mrow><mml:msup><mml:mrow><mml:mi>R</mml:mi><mml:mi>e</mml:mi><mml:mi>a</mml:mi><mml:mi>c</mml:mi><mml:mi>h</mml:mi><mml:mfenced open="[" close="]" separators="|"><mml:mrow><mml:mi>i</mml:mi></mml:mrow></mml:mfenced></mml:mrow><mml:mrow><mml:mi>r</mml:mi></mml:mrow></mml:msup><mml:mo>=</mml:mo><mml:mrow><mml:msub><mml:mo stretchy="false">&#x2211;</mml:mo><mml:mrow><mml:mfenced open="{" close="}" separators="|"><mml:mrow><mml:mi>j</mml:mi><mml:mo>&#x2208;</mml:mo><mml:mi>G</mml:mi><mml:mo>&#x2212;</mml:mo><mml:mfenced open="{" close="}" separators="|"><mml:mrow><mml:mi>i</mml:mi></mml:mrow></mml:mfenced><mml:mo>:</mml:mo><mml:mi>d</mml:mi><mml:mfenced open="[" close="]" separators="|"><mml:mrow><mml:mi>i</mml:mi><mml:mo>,</mml:mo><mml:mi>j</mml:mi></mml:mrow></mml:mfenced><mml:mo>&#x2264;</mml:mo><mml:mi>r</mml:mi></mml:mrow></mml:mfenced></mml:mrow></mml:msub><mml:mrow><mml:mi>w</mml:mi><mml:mo>[</mml:mo><mml:mi>j</mml:mi><mml:mo>]</mml:mo></mml:mrow></mml:mrow></mml:mrow></mml:semantics></mml:math></disp-formula>
+          where <inline-formula><mml:math id="mm2"><mml:semantics><mml:mrow><mml:mfenced separators="|"><mml:mrow><mml:mi>i</mml:mi><mml:mo>,</mml:mo><mml:mi>j</mml:mi></mml:mrow></mml:mfenced><mml:mo>&#xA0;</mml:mo><mml:mi mathvariant="normal">a</mml:mi><mml:mi mathvariant="normal">r</mml:mi><mml:mi mathvariant="normal">e</mml:mi><mml:mo>&#xA0;</mml:mo><mml:mi mathvariant="normal">n</mml:mi><mml:mi mathvariant="normal">o</mml:mi><mml:mi mathvariant="normal">d</mml:mi><mml:mi mathvariant="normal">e</mml:mi><mml:mi mathvariant="normal">s</mml:mi><mml:mo>,</mml:mo><mml:mi>G</mml:mi><mml:mo>&#xA0;</mml:mo><mml:mi mathvariant="normal">i</mml:mi><mml:mi mathvariant="normal">s</mml:mi><mml:mo>&#xA0;</mml:mo><mml:mi mathvariant="normal">t</mml:mi><mml:mi mathvariant="normal">h</mml:mi><mml:mi mathvariant="normal">e</mml:mi><mml:mo>&#xA0;</mml:mo><mml:mi mathvariant="normal">g</mml:mi><mml:mi mathvariant="normal">r</mml:mi><mml:mi mathvariant="normal">a</mml:mi><mml:mi mathvariant="normal">p</mml:mi><mml:mi mathvariant="normal">h</mml:mi><mml:mo>,</mml:mo><mml:mi>d</mml:mi><mml:mfenced open="[" close="]" separators="|"><mml:mrow><mml:mi>i</mml:mi><mml:mo>,</mml:mo><mml:mi>j</mml:mi></mml:mrow></mml:mfenced></mml:mrow></mml:semantics></mml:math></inline-formula> is the shortest distance between two nodes, <italic>r</italic> is the limited search radius; and <inline-formula><mml:math id="mm3"><mml:semantics><mml:mrow><mml:mfenced open="|" close="|" separators="|"><mml:mrow><mml:mi>S</mml:mi></mml:mrow></mml:mfenced></mml:mrow></mml:semantics></mml:math></inline-formula> is the cardinality of the set. If weighted, this measurement will add up all the assigned weights rather than the number of destinations.</p>
+          <list list-type="simple">
+            <list-item>
+              <p>
+                <bold>Gravity</bold>
+              </p>
+            </list-item>
+          </list>
+          <p>Gravity-based accessibility is one of the most widely used metrics in urban studies and transport planning, since it can be associated with a variety of social indicators to estimate levels of access to opportunities of various social groups [<xref ref-type="bibr" rid="B52-land-14-01773">52</xref>]. These factors refer to costs, distance or traffic within a network, making them one of the main measurements in transport planning [<xref ref-type="bibr" rid="B53-land-14-01773">53</xref>]. Mathematically, it is defined as:<disp-formula id="FD2-land-14-01773"><mml:math id="mm4" display="block"><mml:semantics><mml:mrow><mml:msup><mml:mrow><mml:mi>G</mml:mi><mml:mi>r</mml:mi><mml:mi>a</mml:mi><mml:mi>v</mml:mi><mml:mi>i</mml:mi><mml:mi>t</mml:mi><mml:mi>y</mml:mi><mml:mo>[</mml:mo><mml:mi>i</mml:mi><mml:mo>]</mml:mo></mml:mrow><mml:mrow><mml:mi>r</mml:mi></mml:mrow></mml:msup><mml:mo>=</mml:mo><mml:mrow><mml:munder><mml:mo stretchy="false">&#x2211;</mml:mo><mml:mrow><mml:mi>j</mml:mi><mml:mo>&#x2208;</mml:mo><mml:mi>G</mml:mi><mml:mo>&#x2212;</mml:mo><mml:mfenced open="{" close="}" separators="|"><mml:mrow><mml:mi>i</mml:mi></mml:mrow></mml:mfenced><mml:mo>:</mml:mo><mml:mi>d</mml:mi><mml:mfenced open="[" close="]" separators="|"><mml:mrow><mml:mi>i</mml:mi><mml:mo>,</mml:mo><mml:mi>j</mml:mi></mml:mrow></mml:mfenced><mml:mo>&#x2264;</mml:mo><mml:mi>r</mml:mi></mml:mrow></mml:munder></mml:mrow><mml:mstyle scriptlevel="0" displaystyle="true"><mml:mfrac><mml:mrow><mml:mi>W</mml:mi><mml:mo>[</mml:mo><mml:mi>j</mml:mi><mml:mo>]</mml:mo></mml:mrow><mml:mrow><mml:msup><mml:mrow><mml:mi>e</mml:mi></mml:mrow><mml:mrow><mml:mi>&#x3B2;</mml:mi><mml:mi>d</mml:mi><mml:mfenced open="[" close="]" separators="|"><mml:mrow><mml:mi>i</mml:mi><mml:mo>,</mml:mo><mml:mi>j</mml:mi></mml:mrow></mml:mfenced></mml:mrow></mml:msup></mml:mrow></mml:mfrac></mml:mstyle></mml:mrow></mml:semantics></mml:math></disp-formula>
+          where <inline-formula><mml:math id="mm5"><mml:semantics><mml:mrow><mml:mi>i</mml:mi><mml:mo>,</mml:mo><mml:mi>j</mml:mi></mml:mrow></mml:semantics></mml:math></inline-formula> are the nodes; <inline-formula><mml:math id="mm6"><mml:semantics><mml:mrow><mml:mi>G</mml:mi></mml:mrow></mml:semantics></mml:math></inline-formula> is the graph; <inline-formula><mml:math id="mm7"><mml:semantics><mml:mrow><mml:mi>d</mml:mi><mml:mfenced open="[" close="]" separators="|"><mml:mrow><mml:mi>i</mml:mi><mml:mo>,</mml:mo><mml:mi>j</mml:mi></mml:mrow></mml:mfenced></mml:mrow></mml:semantics></mml:math></inline-formula> represents the shortest distance between two nodes; <inline-formula><mml:math id="mm8"><mml:semantics><mml:mrow><mml:mi>r</mml:mi></mml:mrow></mml:semantics></mml:math></inline-formula> is the limited search radius; <inline-formula><mml:math id="mm9"><mml:semantics><mml:mrow><mml:mfenced open="|" close="|" separators="|"><mml:mrow><mml:mi>S</mml:mi></mml:mrow></mml:mfenced></mml:mrow></mml:semantics></mml:math></inline-formula> is the cardinality of the set; and <inline-formula><mml:math id="mm10"><mml:semantics><mml:mrow><mml:mi>&#x3B2;</mml:mi></mml:mrow></mml:semantics></mml:math></inline-formula> describes the spatial effects existing between two nodes. It therefore expresses that the node &#x201C;i&#x201D; contained in graph G, within a set radius &#x201C;r&#x201D;; is inversely proportional to the shortest distance between each node reachable within a geodesic distance &#x201C;r&#x201D;, corresponding to the network under study. The exponent will control the existing spatial distance (if the distance between the two locations increases, the interactions between them decrease).</p>
+          <p>The gravity index is therefore based on the principle that centrality is inversely proportional to the shortest distance between each reachable node within a geodesic network [<xref ref-type="bibr" rid="B54-land-14-01773">54</xref>]. Gravity measures the strength of attraction between the supply of urban parks and the locality of origin of citizens, assuming a reduction in attraction when spatial separation is greater, either in regard to distance or time, where attraction is usually interpreted, in morphological terms and urban studies, as spheres of activity [<xref ref-type="bibr" rid="B55-land-14-01773">55</xref>].</p>
+          <list list-type="simple">
+            <list-item>
+              <p>
+                <bold>Closeness</bold>
+              </p>
+            </list-item>
+          </list>
+          <p>Closeness measures the potential flow between nodes and is inversely proportional to the sum of the shortest distances between one node and the others between a specific radius, as follows:<disp-formula id="FD3-land-14-01773"><mml:math id="mm11" display="block"><mml:semantics><mml:mrow><mml:msup><mml:mrow><mml:mi>C</mml:mi><mml:mi>l</mml:mi><mml:mi>o</mml:mi><mml:mi>s</mml:mi><mml:mi>e</mml:mi><mml:mi>n</mml:mi><mml:mi>e</mml:mi><mml:mi>s</mml:mi><mml:mi>s</mml:mi><mml:mo>[</mml:mo><mml:mi>i</mml:mi><mml:mo>]</mml:mo></mml:mrow><mml:mrow><mml:mi>r</mml:mi></mml:mrow></mml:msup><mml:mo>=</mml:mo><mml:msup><mml:mrow><mml:mfenced open="[" close="]" separators="|"><mml:mrow><mml:mrow><mml:munder><mml:mo stretchy="false">&#x2211;</mml:mo><mml:mrow><mml:mi>j</mml:mi><mml:mo>&#x2208;</mml:mo><mml:mi>G</mml:mi><mml:mo>&#x2212;</mml:mo><mml:mfenced open="{" close="}" separators="|"><mml:mrow><mml:mi>i</mml:mi></mml:mrow></mml:mfenced><mml:mo>:</mml:mo><mml:mi>d</mml:mi><mml:mfenced open="[" close="]" separators="|"><mml:mrow><mml:mi>i</mml:mi><mml:mo>,</mml:mo><mml:mi>j</mml:mi></mml:mrow></mml:mfenced><mml:mo>&#x2264;</mml:mo><mml:mi>r</mml:mi></mml:mrow></mml:munder><mml:mrow><mml:mo stretchy="false">(</mml:mo></mml:mrow></mml:mrow><mml:mi>d</mml:mi><mml:mfenced open="[" close="]" separators="|"><mml:mrow><mml:mi>i</mml:mi><mml:mo>,</mml:mo><mml:mi>j</mml:mi></mml:mrow></mml:mfenced><mml:mo>&#xB7;</mml:mo><mml:mi>W</mml:mi><mml:mo stretchy="false">[</mml:mo><mml:mi>j</mml:mi><mml:mo stretchy="false">]</mml:mo><mml:mo stretchy="false">)</mml:mo><mml:mo>&#xA0;</mml:mo></mml:mrow></mml:mfenced></mml:mrow><mml:mrow><mml:mo>&#x2212;</mml:mo><mml:mn>1</mml:mn></mml:mrow></mml:msup></mml:mrow></mml:semantics></mml:math></disp-formula></p>
+          <p>This index measures how close a node is to the others in the network, making it possible to predict patterns of pedestrian and vehicle mobility [<xref ref-type="bibr" rid="B56-land-14-01773">56</xref>].</p>
+        </sec>
+        <sec id="sec2dot4dot2-land-14-01773">
+          <title>2.4.2. Data Collection</title>
+          <p>The authors worked with vectoral data obtained from the Secretariat of Mobility [<xref ref-type="bibr" rid="B57-land-14-01773">57</xref>] and the National Institute of Statistics and Geography [<xref ref-type="bibr" rid="B58-land-14-01773">58</xref>].</p>
+          <p>This study used the Urban Network Analysis Toolbox (UNA) developed by [<xref ref-type="bibr" rid="B54-land-14-01773">54</xref>]. UNA is based on three main components: arcs, referring to public transportation routes and the pedestrian network; nodes, the intersections or connection points between arcs within the study area; and points of interest, in this case, green areas, represented as points on the network. It makes it possible to assign weights to these points of interest, such as the size of each green area, to reflect their relative importance in the analysis. It calculates five fundamental centrality metrics, of which reach, gravity, and closeness are part of the toolbox. These metrics provide a profound understanding of the accessibility and connectivity within the urban network, facilitating the analysis of the way green areas are integrated into urban infrastructure and are accessible to the population [<xref ref-type="bibr" rid="B59-land-14-01773">59</xref>].</p>
+          <p>The configuration of each parameter of the toolbox is based on the centroids of each urban green area and the network modeling of each means of transportation. This last process is significant, since it provides instructions for the ArcGIS (Network Analyst) module to configure the network, considering aspects such as topography and turn restrictions. Some parameters were omitted for network modeling, such as street elements defined by speed bumps, traffic lights, and potholes [<xref ref-type="bibr" rid="B54-land-14-01773">54</xref>,<xref ref-type="bibr" rid="B60-land-14-01773">60</xref>].</p>
+          <p>The analysis focused on three centrality indices: reach, gravity, and closeness, calculated for green areas classified by size into small (0.3&#x2013;1 ha), medium (1&#x2013;4.5 ha) and large (&gt;4.5 ha), with centroids being assigned a weight proportional to the size of each area. Impedance was based on the travel time of the means of transportation, with a weighted average speed of 11.9 km/h, according to [<xref ref-type="bibr" rid="B61-land-14-01773">61</xref>]. To standardize the results of each metric, green areas were normalized on a scale of zero to one. When travel time was used as impedance without limiting reach by a fixed radius, green areas that were more accessible in terms of public transportation time had a greater influence on results. The indices therefore reflect overall accessibility across the entire public transportation network, rather than localized accessibility within a specific range.</p>
+        </sec>
+      </sec>
+    </sec>
+    <sec id="sec3-land-14-01773" sec-type="results">
+      <title>3. Results</title>
+      <sec id="sec3dot1-land-14-01773">
+        <title>3.1. Spatial Distribution of Accessibility</title>
+        <p><xref ref-type="fig" rid="land-14-01773-f002">Figure 2</xref> shows the spatial distribution of the reach, gravity, and closeness indices of the entire Public Transportation System for each type of green area. Large green areas are generally observed to concentrate high accessibility values in strategic nodes such as Chapultepec Park, Tezoz&#xF3;moc Park, and Nativitas Park, whereas small and medium-sized areas have a more homogeneous distribution, particularly in the north and west of the city. This analysis highlights the inequalities in accessibility to green spaces based on their size, providing evidence for prioritizing improvements in public transportation connectivity and green space planning in Mexico City.</p>
+        <list list-type="simple">
+          <list-item>
+            <p>
+              <bold>Reach Index</bold>
+            </p>
+          </list-item>
+        </list>
+        <p>The reach index measures the number of green areas accessible by public transportation, weighted by surface area and penalized by travel time. For large green areas, high index values are concentrated in areas with efficient access to large urban parks, such as Chapultepec Forest, Tezoz&#xF3;moc Park, and University City, distinguished by their size and strategic location within the public transportation network. In contrast, low values are observed in the south and east of the city, where the distribution of large parks is limited and public transportation connections are less effective.</p>
+        <p>For medium-sized green areas, high accessibility values reflect high concentration, largely due to the greater number of green areas within this category, particularly in the northern and central boroughs of the city. However, in the west, values are more variable, as some areas have good accessibility, while others have geographical barriers, such as ravines, hindering road connectivity.</p>
+        <p>In the case of small green areas, high values indicate a high density of small, easily accessible areas, particularly in the north of the city, where road design and urban intervention have produced a network of green spaces interspersed between secondary roads. Conversely, the low values in the south of the city reflect the lower density of these areas, which could limit nearby recreational options for residents.</p>
+        <list list-type="simple">
+          <list-item>
+            <p>
+              <bold>Gravity Index</bold>
+            </p>
+          </list-item>
+        </list>
+        <p>The gravity index measures the attraction of green areas weighted by their surface area and penalized by travel time. Large areas are characterized by high values because of their connections to large recreational spaces, such as Chapultepec Park and Nativitas Park, which act as attraction centers due to their size and accessibility. Low values predominate in peripheral areas with less connectivity to these large parks.</p>
+        <p>For intermediate green areas, the highest values are concentrated in areas in the west and center of the city, where they are well distributed and connected, making them key points within the network. However, values vary in the west, as some areas have intermediate accessibility while others are restricted by natural barriers such as ravines.</p>
+        <p>As for small green areas, high values reflect the presence of many small areas close together in the north of the city, a positive aspect in densely built-up areas. Conversely, the lowest values are found in the center and south of the city, where the lack of small, accessible green areas could be problematic in terms of urban equity.</p>
+        <list list-type="simple">
+          <list-item>
+            <p>
+              <bold>Closeness Index</bold>
+            </p>
+          </list-item>
+        </list>
+        <p>The closeness index measures the ease of navigating the public transportation network in relation to green areas. For large green areas, high values indicate fast, efficient connections to significant parks such as Tezoz&#xF3;moc Park, crucial for large recreational centers and leisure spaces. Conversely, low values reflect long travel times to these spaces.</p>
+        <p>In the case of medium-sized green areas, high values indicate balanced accessibility to open spaces offering comprehensive services, such as University City and the San Juan de Arag&#xF3;n Forest, whereas low values reflect poorer connections or long travel times to these spaces, particularly on the urban periphery.</p>
+        <p>Finally, for small green areas, the values observed indicate areas with lower connectivity between small green areas, which could limit local leisure and recreation options.</p>
+      </sec>
+      <sec id="sec3dot2-land-14-01773">
+        <title>3.2. Diversity of Transportation Modes</title>
+        <p><xref ref-type="fig" rid="land-14-01773-f003">Figure 3</xref> disaggregates the multiple public transportation systems to achieve a more realistic, complete representation of mobility options for users. For data analysis and visualization in the boxplot, the Winsorized mean was used to address outliers [<xref ref-type="bibr" rid="B62-land-14-01773">62</xref>]. This method adjusts the extreme values at both ends by replacing them with values closer to the data set at specific percentiles, preserving the overall structure of results. For this study, 5% of both the lowest and highest values were replaced by the 5th and 95th percentile values, respectively.</p>
+        <p>Analysis of the accessibility of urban parks in Mexico City reveals significant differences between public transportation systems in terms of connectivity and efficiency. The Metro is the most accessible system across all metrics, with a broad, homogeneous reach, consistent with studies highlighting its efficiency in urban mobility due to its extensive coverage and mass transit capacity [<xref ref-type="bibr" rid="B63-land-14-01773">63</xref>]. It is the one most effectively integrated with large parks (&#x2265;4.5 ha), ensuring more equitable access. However, Metro accessibility can be affected by overcrowding at certain stations, as well as by pedestrian infrastructure and the quality of intermodal connections [<xref ref-type="bibr" rid="B64-land-14-01773">64</xref>].</p>
+        <p>The Metrob&#xFA;s offers intermediate accessibility with more stable values, although its connectivity with urban parks depends largely on the location of its corridors. This is consistent with previous research highlighting the potential of the BRT to improve urban accessibility, although its effectiveness is limited by its integration with other mobility systems [<xref ref-type="bibr" rid="B65-land-14-01773">65</xref>]. Its reach and closeness are suitable for large and medium-sized parks, although its connectivity with small parks is more variable.</p>
+        <p>The Electric Transport System (STE) shows a greater spread in its accessibility values, suggesting that its connectivity with urban parks depends heavily on the location of its routes. In terms of gravity and closeness, its access to small and medium-sized parks is more irregular than other transportation systems, indicating the need to improve its intermodality.</p>
+        <p>The Passenger Transport Network (RTP) exhibits extremely heterogeneous accessibility, with some well-connected routes and others with significantly lower values. In terms of reach and gravity, the RTP allows for connection to small and medium-sized parks in peripheral areas, all with a broad spread in their accessibility values, indicating that its effectiveness depends on the configuration of specific routes. In terms of closeness, some routes offer efficient access, while others have poor connectivity with urban parks.</p>
+        <p>Concessioned transportation is the system with the lowest accessibility across all metrics, with low values and extremely disperse coverage. The fact that its operation is based on demand, rather than urban planning, limits its ability to ensure equitable access to urban parks. Its scope and gravity reflect poor connectivity with all park sizes, particularly small parks, suggesting greater reliance on pedestrian or non-motorized mobility in these areas [<xref ref-type="bibr" rid="B66-land-14-01773">66</xref>].</p>
+        <p>Park size significantly influences accessibility. Large parks offer better connectivity to all transportation systems, especially the Metro, whereas small- and medium-sized parks display more fragmented accessibility, depending on the spatial distribution of stations and modal integration. In terms of gravity, effective accessibility progressively decreases with distance, underlining the need to consider the location of transportation hubs and their proximity to parks.</p>
+        <p>These results highlight the importance of improving modal integration and active mobility infrastructure to reduce spatial inequalities in access to urban parks in Mexico City. Optimizing connections between transportation systems would improve the accessibility of small and medium-sized parks, especially in peripheral areas where dependence on concessioned transportation limits equity in access to green spaces.</p>
+      </sec>
+    </sec>
+    <sec id="sec4-land-14-01773" sec-type="discussion">
+      <title>4. Discussion</title>
+      <p>The results of this study confirm that the accessibility of urban parks in Mexico City is heavily determined by the structure and efficiency of the public transportation network. Large parks are observed to have higher levels of accessibility due to their integration with Metro and BRT corridors, whereas small and medium parks rely more on trolleybuses, RTP, and concessioned transportation, all of which display greater variations in coverage and efficiency. These findings are consistent with previous research indicating that high-capacity transportation systems play a crucial role in shaping the accessibility of urban green spaces [<xref ref-type="bibr" rid="B21-land-14-01773">21</xref>,<xref ref-type="bibr" rid="B22-land-14-01773">22</xref>]. This aligns with broader patterns of inequity in park access observed across multiple urban contexts [<xref ref-type="bibr" rid="B15-land-14-01773">15</xref>].</p>
+      <p>Studies in other cities have found that park accessibility is directly correlated with investment in transportation infrastructure and service frequency. In Hong Kong, for example, access to the subway has significantly improved equity in access to green spaces [<xref ref-type="bibr" rid="B67-land-14-01773">67</xref>], whereas greater accessibility disparities are observed in cities with fragmented or informal transport networks, such as Dhaka in Bangladesh [<xref ref-type="bibr" rid="B18-land-14-01773">18</xref>].</p>
+      <p>Our results follow a similar trend, with high-capacity, well-integrated transport modes improving access to green spaces, and reliance on informal or inconsistent transportation networks resulting in fragmented accessibility. Transportation diversity is key to ensuring equitable access to green areas of different sizes, each of which plays a specific role in urban connectivity.</p>
+      <p>Although public transportation is essential for connecting the population to large urban parks and reserves, local and complementary transit services must be strengthened to ensure that all communities, regardless of their location or socioeconomic status, can benefit from access to green spaces and the associated ecosystem services [<xref ref-type="bibr" rid="B18-land-14-01773">18</xref>]. This recommendation not only advances spatial equity but also holds direct implications for public health: improved park access&#x2014;particularly in low-income or peripheral areas&#x2014;can translate into tangible health benefits, including increased physical activity, reduced stress, and better mental well-being. These outcomes are especially relevant for disadvantaged groups who experience higher burdens of disease and have fewer recreational opportunities.</p>
+      <p>Our findings highlight the need for integrated transportation and urban planning strategies to ensure equitable access to green spaces. Two key policy recommendations emerge from this analysis. First, it is crucial to improve last-mile connectivity with small and medium-sized parks, as they rely on trolleybuses, RTP buses, and concessioned transport, which often face challenges related to route fragmentation and service frequency. Restructuring feeder routes, improving transfer points, and developing more integrated transportation systems would contribute to a more equitable distribution of access to green spaces. Strengthening pedestrian-friendly transit centers could further improve access to neighborhood parks, particularly in areas where high-capacity transportation systems such as the Metro and BRT do not operate.</p>
+      <p>Second, integrating accessibility criteria into urban planning is essential, as current development policies often overlook the role of transportation in ensuring accessibility to green spaces. Incorporating network-based accessibility metrics into planning decisions would ensure that transportation investments align with urban sustainability goals [<xref ref-type="bibr" rid="B55-land-14-01773">55</xref>].</p>
+      <p>These strategies could be reinforced by explicitly adopting a healthy urban planning perspective&#x2014;designing mobility systems not only for efficiency but also for equity and population well-being. In this regard, promoting equitable access to parks becomes a public health intervention and an instrument of spatial justice. This highlights the need for policies that move beyond the sole objective of increasing total surface per inhabitant and instead emphasize the equitable territorial distribution of parks. The translation of C40 targets supported by health evidence [<xref ref-type="bibr" rid="B11-land-14-01773">11</xref>] provides Mexico City with an operational baseline to identify spatial gaps and guide investments toward a fairer allocation of green infrastructure.</p>
+      <p>Although this study focuses on the spatial dimensions of accessibility, several external factors also influence the use of public transportation to visit parks. Perceptions of safety and transportation reliability significantly affect mobility choices, as concerns about personal security&#x2014;especially during nighttime or in isolated areas&#x2014;can discourage park visits [<xref ref-type="bibr" rid="B39-land-14-01773">39</xref>]. Socioeconomic disparities further shape who benefits from park access: lower-income residents may have limited financial means to use multiple transit modes, thereby reinforcing existing inequalities in urban infrastructure [<xref ref-type="bibr" rid="B64-land-14-01773">64</xref>]. Policies such as free weekend public transportation fares for park-related travel could help increase greenspace use among disadvantaged communities. Additionally, urban design and walkability play a critical role, as deteriorated sidewalks, poor lighting, and unsafe pedestrian crossings can deter individuals from using transit options to reach green areas [<xref ref-type="bibr" rid="B68-land-14-01773">68</xref>]. Future research should incorporate walkability indices into accessibility assessments to better capture these micro-scale barriers.</p>
+      <p>This study offers a comprehensive evaluation of urban park accessibility via multiple public transportation systems. However, the analysis assumes constant service availability, without accounting for real-time fluctuations such as peak-hour congestion, route changes, or service disruptions. Future research could integrate dynamic transportation models to more accurately reflect temporal variations in accessibility. Moreover, while this study quantifies accessibility in spatial terms, it does not capture actual travel behavior or park visitation patterns. Incorporating trip count data would help reveal how people use transit to access parks. Another limitation is the macro-scale focus of the analysis, which overlooks micro-level barriers such as inadequate pedestrian infrastructure, physical obstacles, or the specific location of park entrances. Incorporating street-level data and pedestrian accessibility metrics would enhance future assessments. Finally, adopting an equity-based analytical approach could illuminate how park accessibility varies by income, gender, and age group, providing deeper insights into the social dimensions of transportation and access to public space.</p>
+    </sec>
+    <sec id="sec5-land-14-01773" sec-type="conclusions">
+      <title>5. Conclusions</title>
+      <p>This study demonstrates that the accessibility of urban parks in Mexico City is strongly shaped by the structure and efficiency of the public transportation network. Large parks show greater accessibility due to their integration with high-capacity modes of transport such as Metro and BRT, while small and medium parks rely more on trolleybuses, RTP, and concessioned transport, which display higher variability in coverage and service efficiency.</p>
+      <p>The results confirm that transportation diversity is essential to ensure equitable access to green areas of different sizes, each of which plays a distinct role in the urban fabric. Strengthening last-mile connectivity, improving feeder routes, and incorporating accessibility metrics into planning are crucial steps to reduce disparities in access.</p>
+      <p>Furthermore, the findings underscore the importance of urban policies and planning frameworks that go beyond the goal of increasing green surface per inhabitant, placing greater emphasis instead on the equitable territorial distribution of parks. Such approaches provide an operational baseline to identify gaps and guide investments toward a fairer allocation of green infrastructure.</p>
+      <p>By linking accessibility and spatial equity, this research underscores the public health relevance of urban parks, offering evidence to support integrated urban planning strategies in Mexico City and providing a framework applicable to other metropolitan contexts facing similar challenges.</p>
+    </sec>
+  </body>
+  <back>
+    <notes>
+      <title>Author Contributions</title>
+      <p>Conceptualization, A.M.D.-P., J.M.N., and C.G.G.; methodology, C.G.G.; software, A.M.D.-P.; validation, A.M.D.-P., J.M.N., and C.G.G.; formal analysis, A.M.D.-P.; investigation, A.M.D.-P.; resources, J.M.N.; data curation, A.M.D.-P.; writing&#x2014;original draft preparation, A.M.D.-P. and J.M.N.; writing&#x2014;review and editing, A.M.D.-P., J.M.N., and C.G.G.; visualization, A.M.D.-P. and J.M.N.; supervision, J.M.N. and C.G.G.; project administration, J.M.N.; funding acquisition, J.M.N. All authors have read and agreed to the published version of the manuscript.</p>
+    </notes>
+    <notes>
+      <title>Data Availability Statement</title>
+      <p>The data presented in this study are openly available from public sources. Transport network datasets were obtained from the Secretar&#xED;a de Movilidad de la Ciudad de M&#xE9;xico (SEMOVI): Ubicaci&#xF3;n de Rutas del Sistema de Transporte P&#xFA;blico de la Ciudad de M&#xE9;xico (<uri>https://datos.cdmx.gob.mx/dataset/ubicacion-de-rutas-del-transporte-publico-concesionado-de-ruta</uri>, accessed on 24 July 2025). Socio-demographic data were obtained from Instituto Nacional de Estad&#xED;stica y Geograf&#xED;a (INEGI): SCINCE 2020, Censo de Poblaci&#xF3;n y Vivienda 2020 (<uri>https://gaia.inegi.org.mx/scince2020/</uri>, accessed on 24 July 2025). Green areas data were obtained from Secretar&#xED;a del Medio Ambiente de la Ciudad de M&#xE9;xico (SEDEMA): Inventario de &#xC1;reas Verdes (<uri>https://sedema.cdmx.gob.mx/programas/programa/inventario-de-areas-verdes</uri>, accessed on 24 July 2025).</p>
+    </notes>
+    <ack>
+      <title>Acknowledgments</title>
+      <p>The authors gratefully acknowledge the support of Universidad Iberoamericana Ciudad de M&#xE9;xico in facilitating the preparation and publication of this manuscript.</p>
+    </ack>
+    <notes notes-type="COI-statement">
+      <title>Conflicts of Interest</title>
+      <p>The authors declare no conflicts of interest. The funders had no role in the design of the study; in the collection, analyses, or interpretation of data; in the writing of the manuscript; or in the decision to publish the results.</p>
+    </notes>
+    <notes>
+      <title>Correction Statement</title>
+      <p>This article has been republished with a minor correction to the Data Availability Statement. This change does not affect the scientific content of the article.</p>
+    </notes>
+    <glossary>
+      <title>Abbreviations</title>
+      <p>The following abbreviations are used in this manuscript:
+      <array><tbody><tr><td align="left" valign="middle">GIS</td><td align="left" valign="middle">Geographic Information Systems</td></tr><tr><td align="left" valign="middle">BRT</td><td align="left" valign="middle">Bus Rapid Transit</td></tr><tr><td align="left" valign="middle">RTP</td><td align="left" valign="middle">Red de Transporte de Pasajeros</td></tr><tr><td align="left" valign="middle">STE</td><td align="left" valign="middle">Electric Transport System</td></tr><tr><td align="left" valign="middle">SIT</td><td align="left" valign="middle">Public Transportation System</td></tr><tr><td align="left" valign="middle">UNA</td><td align="left" valign="middle">Urban Network Analysis</td></tr></tbody></array></p>
+    </glossary>
+    <ref-list>
+      <title>References</title>
+      <ref id="B1-land-14-01773">
+        <label>1.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>N&#xFA;&#xF1;ez</surname>
+              <given-names>J.M.</given-names>
+            </name>
+            <name>
+              <surname>Santamar&#xED;a</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Avila</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Perez-De La Mora</surname>
+              <given-names>D.A.</given-names>
+            </name>
+          </person-group>
+          <article-title>Using Local Entropy Mapping as an Approach to Quantify Surface Temperature Changes Induced by Urban Parks in Mexico City</article-title>
+          <source>Land</source>
+          <year>2024</year>
+          <volume>13</volume>
+          <elocation-id>1701</elocation-id>
+          <pub-id pub-id-type="doi">10.3390/land13101701</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B2-land-14-01773">
+        <label>2.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Huang</surname>
+              <given-names>W.</given-names>
+            </name>
+            <name>
+              <surname>Lin</surname>
+              <given-names>G.</given-names>
+            </name>
+          </person-group>
+          <article-title>The relationship between urban green space and social health of individuals: A scoping review</article-title>
+          <source>Urban For. Urban Green.</source>
+          <year>2023</year>
+          <volume>85</volume>
+          <fpage>127969</fpage>
+          <pub-id pub-id-type="doi">10.1016/j.ufug.2023.127969</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B3-land-14-01773">
+        <label>3.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wan</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Shen</surname>
+              <given-names>G.Q.</given-names>
+            </name>
+            <name>
+              <surname>Choi</surname>
+              <given-names>S.</given-names>
+            </name>
+          </person-group>
+          <article-title>Underlying relationships between public urban green spaces and social cohesion: A systematic literature review</article-title>
+          <source>City Cult. Soc.</source>
+          <year>2021</year>
+          <volume>24</volume>
+          <fpage>100383</fpage>
+          <pub-id pub-id-type="doi">10.1016/j.ccs.2021.100383</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B4-land-14-01773">
+        <label>4.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Jennings</surname>
+              <given-names>V.</given-names>
+            </name>
+            <name>
+              <surname>Bamkole</surname>
+              <given-names>O.</given-names>
+            </name>
+          </person-group>
+          <article-title>The relationship between social cohesion and urban green space: An avenue for health promotion</article-title>
+          <source>Int. J. Environ. Res. Public Health</source>
+          <year>2019</year>
+          <volume>16</volume>
+          <elocation-id>452</elocation-id>
+          <pub-id pub-id-type="doi">10.3390/ijerph16030452</pub-id>
+          <pub-id pub-id-type="pmid">30720732</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B5-land-14-01773">
+        <label>5.</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <collab>World Health Organization</collab>
+          </person-group>
+          <source>Urban Green Spaces and Health: A Review of Evidence</source>
+          <publisher-name>WHO Regional Office for Europe</publisher-name>
+          <publisher-loc>Copenhagen, Denmark</publisher-loc>
+          <year>2016</year>
+          <comment>Available online: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.who.int/europe/publications/i/item/WHO-EURO-2016-3352-43111-60341" ext-link-type="uri">https://www.who.int/europe/publications/i/item/WHO-EURO-2016-3352-43111-60341</ext-link></comment>
+          <date-in-citation content-type="access-date" iso-8601-date="2025-08-24">(accessed on 24 August 2025)</date-in-citation>
+        </element-citation>
+      </ref>
+      <ref id="B6-land-14-01773">
+        <label>6.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Twohig-Bennett</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Jones</surname>
+              <given-names>A.</given-names>
+            </name>
+          </person-group>
+          <article-title>The health benefits of the great outdoors: A systematic review and meta-analysis of greenspace exposure and health outcomes</article-title>
+          <source>Environ. Res.</source>
+          <year>2018</year>
+          <volume>166</volume>
+          <fpage>628</fpage>
+          <lpage>637</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.envres.2018.06.030</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B7-land-14-01773">
+        <label>7.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Chen</surname>
+              <given-names>Q.</given-names>
+            </name>
+            <name>
+              <surname>Du</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Cheng</surname>
+              <given-names>Q.</given-names>
+            </name>
+            <name>
+              <surname>Jing</surname>
+              <given-names>C.</given-names>
+            </name>
+          </person-group>
+          <article-title>Quantitative evaluation of spatial differentiation for public open spaces in urban built-up areas by assessing SDG 11.7: A case of Deqing County</article-title>
+          <source>ISPRS Int. J. Geo-Inf.</source>
+          <year>2020</year>
+          <volume>9</volume>
+          <elocation-id>575</elocation-id>
+          <pub-id pub-id-type="doi">10.3390/ijgi9100575</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B8-land-14-01773">
+        <label>8.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Stephens</surname>
+              <given-names>T.</given-names>
+            </name>
+          </person-group>
+          <article-title>The Kunming&#x2013;Montreal Global Biodiversity Framework</article-title>
+          <source>Int. Leg. Mater.</source>
+          <year>2023</year>
+          <volume>62</volume>
+          <fpage>868</fpage>
+          <lpage>887</lpage>
+          <pub-id pub-id-type="doi">10.1017/ilm.2023.16</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B9-land-14-01773">
+        <label>9.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sancino</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Stafford</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Braga</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Budd</surname>
+              <given-names>L.</given-names>
+            </name>
+          </person-group>
+          <article-title>What can city leaders do for climate change? Insights from the C40 Cities Climate Leadership Group network</article-title>
+          <source>Reg. Stud.</source>
+          <year>2022</year>
+          <volume>56</volume>
+          <fpage>1224</fpage>
+          <lpage>1233</lpage>
+          <pub-id pub-id-type="doi">10.1080/00343404.2021.2005244</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B10-land-14-01773">
+        <label>10.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Leal</surname>
+              <given-names>J.M.</given-names>
+            </name>
+            <name>
+              <surname>Paterson</surname>
+              <given-names>M.</given-names>
+            </name>
+          </person-group>
+          <article-title>Transnational city networks, global political economy, and climate governance: C40 in Mexico and Lima</article-title>
+          <source>Rev. Int. Political Econ.</source>
+          <year>2023</year>
+          <volume>31</volume>
+          <fpage>26</fpage>
+          <lpage>46</lpage>
+          <pub-id pub-id-type="doi">10.1080/09692290.2023.2167849</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B11-land-14-01773">
+        <label>11.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Martin</surname>
+              <given-names>G.K.</given-names>
+            </name>
+            <name>
+              <surname>O&#x2019;Dell</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Kinney</surname>
+              <given-names>P.L.</given-names>
+            </name>
+            <name>
+              <surname>Pescador-Jimenez</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Rojas-Rueda</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Canales</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Anenberg</surname>
+              <given-names>S.C.</given-names>
+            </name>
+          </person-group>
+          <article-title>Tracking progress toward urban nature targets using landcover and vegetation indices: A global study for the 96 C40 Cities</article-title>
+          <source>GeoHealth</source>
+          <year>2024</year>
+          <volume>8</volume>
+          <fpage>e2023GH000996</fpage>
+          <pub-id pub-id-type="doi">10.1029/2023GH000996</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B12-land-14-01773">
+        <label>12.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Flores-Xolocotzi</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Gonz&#xE1;lez-Guill&#xE9;n</surname>
+              <given-names>M.D.J.</given-names>
+            </name>
+          </person-group>
+          <article-title>Planificaci&#xF3;n de sistemas de &#xE1;reas verdes y parques p&#xFA;blicos</article-title>
+          <source>Rev. Mex. De Cienc. For.</source>
+          <year>2010</year>
+          <volume>1</volume>
+          <fpage>17</fpage>
+          <lpage>24</lpage>
+          <pub-id pub-id-type="doi">10.29298/rmcf.v1i1.649</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B13-land-14-01773">
+        <label>13.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ayala-Azcarraga</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Diaz</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Fernandez</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Cordova-Tapia</surname>
+              <given-names>F.</given-names>
+            </name>
+            <name>
+              <surname>Zambrano</surname>
+              <given-names>L.</given-names>
+            </name>
+          </person-group>
+          <article-title>Uneven distribution of urban green spaces in relation to marginalization in Mexico City</article-title>
+          <source>Sustainability</source>
+          <year>2023</year>
+          <volume>15</volume>
+          <elocation-id>12652</elocation-id>
+          <pub-id pub-id-type="doi">10.3390/su151612652</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B14-land-14-01773">
+        <label>14.</label>
+        <element-citation publication-type="gov">
+          <person-group person-group-type="author">
+            <collab>SEDUVI</collab>
+          </person-group>
+          <source>Lineamientos para el Dise&#xF1;o e Implementaci&#xF3;n de Parques P&#xFA;blicos de Bolsillo</source>
+          <publisher-name>Gobierno del Distrito Federal</publisher-name>
+          <publisher-loc>Mexico City, Mexico</publisher-loc>
+          <year>2014</year>
+          <comment>Available online: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.seduvi.cdmx.gob.mx/storage/app/uploads/public/5f1/b18/45a/5f1b1845a5dc8144508643.pdf" ext-link-type="uri">https://www.seduvi.cdmx.gob.mx/storage/app/uploads/public/5f1/b18/45a/5f1b1845a5dc8144508643.pdf</ext-link></comment>
+          <date-in-citation content-type="access-date" iso-8601-date="2025-08-24">(accessed on 24 August 2025)</date-in-citation>
+        </element-citation>
+      </ref>
+      <ref id="B15-land-14-01773">
+        <label>15.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rigolon</surname>
+              <given-names>A.</given-names>
+            </name>
+          </person-group>
+          <article-title>A complex landscape of inequity in access to urban parks: A literature review</article-title>
+          <source>Landsc. Urban Plan.</source>
+          <year>2016</year>
+          <volume>153</volume>
+          <fpage>160</fpage>
+          <lpage>169</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.landurbplan.2016.05.017</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B16-land-14-01773">
+        <label>16.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sikorska</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Macegoniuk</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>&#x141;aszkiewicz</surname>
+              <given-names>E.</given-names>
+            </name>
+            <name>
+              <surname>Sikorski</surname>
+              <given-names>P.</given-names>
+            </name>
+          </person-group>
+          <article-title>Energy crops in urban parks as a promising alternative to traditional lawns&#x2013;Perceptions and a cost-benefit analysis</article-title>
+          <source>Urban For. Urban Green.</source>
+          <year>2020</year>
+          <volume>49</volume>
+          <fpage>126579</fpage>
+          <pub-id pub-id-type="doi">10.1016/j.ufug.2019.126579</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B17-land-14-01773">
+        <label>17.</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>De Vries</surname>
+              <given-names>S.</given-names>
+            </name>
+          </person-group>
+          <article-title>Chapter 10: Nature, health and well-being: Evidence and examples</article-title>
+          <source>The Symbiotic City: Voices of Nature in Urban Transformations</source>
+          <publisher-name>Wageningen Academic Publishers</publisher-name>
+          <publisher-loc>Wageningen, The Netherlands</publisher-loc>
+          <year>2022</year>
+          <fpage>111233</fpage>
+          <pub-id pub-id-type="doi">10.3920/978-90-8686-935-0_10</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B18-land-14-01773">
+        <label>18.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rahman</surname>
+              <given-names>K.A.</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>D.</given-names>
+            </name>
+          </person-group>
+          <article-title>Analyzing the level of accessibility of public urban green spaces to different socially vulnerable groups of people</article-title>
+          <source>Sustainability</source>
+          <year>2018</year>
+          <volume>10</volume>
+          <elocation-id>3917</elocation-id>
+          <pub-id pub-id-type="doi">10.3390/su10113917</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B19-land-14-01773">
+        <label>19.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kmail</surname>
+              <given-names>A.B.</given-names>
+            </name>
+            <name>
+              <surname>Onyango</surname>
+              <given-names>V.</given-names>
+            </name>
+          </person-group>
+          <article-title>A GIS-based assessment of green space accessibility: Case study of Dundee</article-title>
+          <source>Appl. Geomat.</source>
+          <year>2020</year>
+          <volume>12</volume>
+          <fpage>491</fpage>
+          <lpage>499</lpage>
+          <pub-id pub-id-type="doi">10.1007/s12518-020-00314-7</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B20-land-14-01773">
+        <label>20.</label>
+        <element-citation publication-type="web">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Breekveldt</surname>
+              <given-names>B.E.</given-names>
+            </name>
+            <name>
+              <surname>Labib</surname>
+              <given-names>S.M.</given-names>
+            </name>
+          </person-group>
+          <article-title>Modelling Greenspace Accessibility at Multi-Spatial Contexts: A Pilot Study of Comparing the E2SFCA and Gravity Models</article-title>
+          <year>2023</year>
+          <comment>Available online: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://zenodo.org/records/7823447" ext-link-type="uri">https://zenodo.org/records/7823447</ext-link></comment>
+          <date-in-citation content-type="access-date" iso-8601-date="2025-08-24">(accessed on 24 August 2025)</date-in-citation>
+        </element-citation>
+      </ref>
+      <ref id="B21-land-14-01773">
+        <label>21.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Liang</surname>
+              <given-names>H.</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>Q.</given-names>
+            </name>
+          </person-group>
+          <article-title>Assessing the public transportation service to urban parks on the basis of spatial accessibility for citizens in the compact megacity of Shanghai, China</article-title>
+          <source>Urban Stud.</source>
+          <year>2018</year>
+          <volume>55</volume>
+          <fpage>1983</fpage>
+          <lpage>1999</lpage>
+          <pub-id pub-id-type="doi">10.1177/0042098017705846</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B22-land-14-01773">
+        <label>22.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zhang</surname>
+              <given-names>Z.</given-names>
+            </name>
+            <name>
+              <surname>Ma</surname>
+              <given-names>G.</given-names>
+            </name>
+            <name>
+              <surname>Lin</surname>
+              <given-names>X.</given-names>
+            </name>
+            <name>
+              <surname>Dai</surname>
+              <given-names>H.</given-names>
+            </name>
+          </person-group>
+          <article-title>Accessibility in a multiple transport mode urban park based on the &#x201C;DD&#x201D; model: A case study in park city, Chengdu</article-title>
+          <source>Cities</source>
+          <year>2023</year>
+          <volume>134</volume>
+          <fpage>104191</fpage>
+          <pub-id pub-id-type="doi">10.1016/j.cities.2023.104191</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B23-land-14-01773">
+        <label>23.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yoo</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Cho</surname>
+              <given-names>Y.</given-names>
+            </name>
+          </person-group>
+          <article-title>Investigating the Factors on Public transportation System for Citizen Relationship and Sustainability</article-title>
+          <source>J. Ind. Distrib. Bus.</source>
+          <year>2022</year>
+          <volume>13</volume>
+          <fpage>13</fpage>
+          <lpage>24</lpage>
+          <pub-id pub-id-type="doi">10.13106/jidb.2022.vol13.no3.13</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B24-land-14-01773">
+        <label>24.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Papageorgiou</surname>
+              <given-names>G.N.</given-names>
+            </name>
+            <name>
+              <surname>Tsappi</surname>
+              <given-names>E.</given-names>
+            </name>
+          </person-group>
+          <article-title>Development of an Active Transportation Framework Model for Sustainable Urban Development</article-title>
+          <source>Sustainability</source>
+          <year>2024</year>
+          <volume>16</volume>
+          <elocation-id>7546</elocation-id>
+          <pub-id pub-id-type="doi">10.3390/su16177546</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B25-land-14-01773">
+        <label>25.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Chen</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Chang</surname>
+              <given-names>Z.</given-names>
+            </name>
+          </person-group>
+          <article-title>Rethinking urban green space accessibility: Evaluating and optimizing public transportation system through social network analysis in megacities</article-title>
+          <source>Landsc. Urban Plan.</source>
+          <year>2015</year>
+          <volume>143</volume>
+          <fpage>150</fpage>
+          <lpage>159</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.landurbplan.2015.07.007</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B26-land-14-01773">
+        <label>26.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mougiakou</surname>
+              <given-names>E.</given-names>
+            </name>
+            <name>
+              <surname>Photis</surname>
+              <given-names>Y.N.</given-names>
+            </name>
+          </person-group>
+          <article-title>Urban green space network evaluation and planning: Optimizing accessibility based on connectivity and raster GIS analysis</article-title>
+          <source>Eur. J. Geogr.</source>
+          <year>2014</year>
+          <volume>5</volume>
+          <fpage>19</fpage>
+          <lpage>46</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B27-land-14-01773">
+        <label>27.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Fang</surname>
+              <given-names>Q.</given-names>
+            </name>
+            <name>
+              <surname>Inoue</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Liu</surname>
+              <given-names>Q.</given-names>
+            </name>
+            <name>
+              <surname>Ma</surname>
+              <given-names>J.</given-names>
+            </name>
+          </person-group>
+          <article-title>Transit-oriented development and sustainable cities: A visual analysis of the literature based on CiteSpace and VOSviewer</article-title>
+          <source>Sustainability</source>
+          <year>2023</year>
+          <volume>15</volume>
+          <elocation-id>8223</elocation-id>
+          <pub-id pub-id-type="doi">10.3390/su15108223</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B28-land-14-01773">
+        <label>28.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ozuduru</surname>
+              <given-names>B.H.</given-names>
+            </name>
+            <name>
+              <surname>Webster</surname>
+              <given-names>C.J.</given-names>
+            </name>
+            <name>
+              <surname>Chiaradia</surname>
+              <given-names>A.J.</given-names>
+            </name>
+            <name>
+              <surname>Yucesoy</surname>
+              <given-names>E.</given-names>
+            </name>
+          </person-group>
+          <article-title>Associating street-network centrality with spontaneous and planned subcentres</article-title>
+          <source>Urban Stud.</source>
+          <year>2021</year>
+          <volume>58</volume>
+          <fpage>2059</fpage>
+          <lpage>2078</lpage>
+          <pub-id pub-id-type="doi">10.1177/0042098020931302</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B29-land-14-01773">
+        <label>29.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bavelas</surname>
+              <given-names>A.</given-names>
+            </name>
+          </person-group>
+          <article-title>A mathematical model for group structures</article-title>
+          <source>Hum. Organ.</source>
+          <year>1948</year>
+          <volume>7</volume>
+          <fpage>16</fpage>
+          <lpage>30</lpage>
+          <pub-id pub-id-type="doi">10.17730/humo.7.3.f4033344851gl053</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B30-land-14-01773">
+        <label>30.</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Isard</surname>
+              <given-names>W.</given-names>
+            </name>
+          </person-group>
+          <article-title>Location theory, agglomeration and the pattern of world trade</article-title>
+          <source>The International Allocation of Economic Activity: Proceedings of a Nobel Symposium Held at Stockholm</source>
+          <publisher-name>Palgrave Macmillan</publisher-name>
+          <publisher-loc>London, UK</publisher-loc>
+          <year>1977</year>
+          <fpage>159</fpage>
+          <lpage>177</lpage>
+          <pub-id pub-id-type="doi">10.1007/978-1-349-03196-2_12</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B31-land-14-01773">
+        <label>31.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Crucitti</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Latora</surname>
+              <given-names>V.</given-names>
+            </name>
+            <name>
+              <surname>Porta</surname>
+              <given-names>S.</given-names>
+            </name>
+          </person-group>
+          <article-title>Centrality measures in spatial networks of urban streets</article-title>
+          <source>Phys. Rev. E&#x2014;Stat. Nonlinear Soft Matter Phys.</source>
+          <year>2006</year>
+          <volume>73</volume>
+          <fpage>036125</fpage>
+          <pub-id pub-id-type="doi">10.1103/PhysRevE.73.036125</pub-id>
+          <pub-id pub-id-type="pmid">16605616</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B32-land-14-01773">
+        <label>32.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Cutini</surname>
+              <given-names>V.</given-names>
+            </name>
+          </person-group>
+          <article-title>Spatial analysis of urban squares</article-title>
+          <source>TEMA&#x2014;J. Land Use Mobil. Environ.</source>
+          <year>2014</year>
+          <fpage>247</fpage>
+          <lpage>258</lpage>
+          <pub-id pub-id-type="doi">10.6092/1970-9870/2476</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B33-land-14-01773">
+        <label>33.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Stamos</surname>
+              <given-names>I.</given-names>
+            </name>
+          </person-group>
+          <article-title>Transportation networks in the face of climate change adaptation: A review of centrality measures</article-title>
+          <source>Future Transp.</source>
+          <year>2023</year>
+          <volume>3</volume>
+          <fpage>878</fpage>
+          <lpage>900</lpage>
+          <pub-id pub-id-type="doi">10.3390/futuretransp3030049</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B34-land-14-01773">
+        <label>34.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wang</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Liu</surname>
+              <given-names>Y.</given-names>
+            </name>
+          </person-group>
+          <article-title>Access to urban parks: Comparing spatial accessibility measures using three GIS-based approaches</article-title>
+          <source>Comput. Environ. Urban Syst.</source>
+          <year>2021</year>
+          <volume>90</volume>
+          <fpage>101713</fpage>
+          <pub-id pub-id-type="doi">10.1016/j.compenvurbsys.2021.101713</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B35-land-14-01773">
+        <label>35.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ayala-Azc&#xE1;rraga</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Diaz</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Zambrano</surname>
+              <given-names>L.</given-names>
+            </name>
+          </person-group>
+          <article-title>Characteristics of urban parks and their relation to user well-being</article-title>
+          <source>Landsc. Urban Plan.</source>
+          <year>2019</year>
+          <volume>189</volume>
+          <fpage>27</fpage>
+          <lpage>35</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.landurbplan.2019.04.005</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B36-land-14-01773">
+        <label>36.</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mart&#xED;nez-Trejo</surname>
+              <given-names>C.C.</given-names>
+            </name>
+          </person-group>
+          <article-title>El transporte p&#xFA;blico de la Ciudad de M&#xE9;xico: Un servicio en transici&#xF3;n y resistencia al cambio</article-title>
+          <source>Problemas Urbanos y del Territorio</source>
+          <person-group person-group-type="editor">
+            <name>
+              <surname>L&#xF3;pez &#xC1;lvarez</surname>
+              <given-names>F.M.</given-names>
+            </name>
+          </person-group>
+          <comment>Las Ciencias Sociales y la Agenda Nacional. Reflexiones y Propuestas Desde las Ciencias Sociales</comment>
+          <publisher-name>CentroGeo</publisher-name>
+          <publisher-loc>Mexico City, Mexico</publisher-loc>
+          <year>2018</year>
+          <fpage>182</fpage>
+          <lpage>203</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B37-land-14-01773">
+        <label>37.</label>
+        <element-citation publication-type="gov">
+          <person-group person-group-type="author">
+            <collab>Secretar&#xED;a de Movilidad de la Ciudad de M&#xE9;xico</collab>
+          </person-group>
+          <article-title>Estudio T&#xE9;cnico Sobre la Movilidad y Accesibilidad en el Transporte P&#xFA;blico de la Ciudad de M&#xE9;xico</article-title>
+          <year>2021</year>
+          <comment>Available online: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://semovi.cdmx.gob.mx/storage/app/media/diagnostico-tecnico-de-movilidad-pim.pdf" ext-link-type="uri">https://semovi.cdmx.gob.mx/storage/app/media/diagnostico-tecnico-de-movilidad-pim.pdf</ext-link></comment>
+          <date-in-citation content-type="access-date" iso-8601-date="2025-08-24">(accessed on 24 August 2025)</date-in-citation>
+        </element-citation>
+      </ref>
+      <ref id="B38-land-14-01773">
+        <label>38.</label>
+        <element-citation publication-type="gov">
+          <person-group person-group-type="author">
+            <collab>Secretar&#xED;a de Movilidad de la Ciudad de M&#xE9;xico</collab>
+          </person-group>
+          <source>Diagn&#xF3;stico T&#xE9;cnico de Movilidad: Programa Integral de Movilidad 2021&#x2013;2025</source>
+          <publisher-name>Gobierno de la Ciudad de M&#xE9;xico</publisher-name>
+          <publisher-loc>Mexico City, Mexico</publisher-loc>
+          <year>2020</year>
+          <comment>Available online: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.semovi.cdmx.gob.mx/storage/app/media/PIM-2019-2024_.pdf" ext-link-type="uri">https://www.semovi.cdmx.gob.mx/storage/app/media/PIM-2019-2024_.pdf</ext-link></comment>
+          <date-in-citation content-type="access-date" iso-8601-date="2025-08-24">(accessed on 24 August 2025)</date-in-citation>
+        </element-citation>
+      </ref>
+      <ref id="B39-land-14-01773">
+        <label>39.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Arriaga</surname>
+              <given-names>A.M.P.</given-names>
+            </name>
+            <name>
+              <surname>Palmer</surname>
+              <given-names>M.C.A.V.</given-names>
+            </name>
+          </person-group>
+          <article-title>Nivel de satisfacci&#xF3;n de los usuarios de transporte p&#xFA;blico colectivo en la Ciudad de M&#xE9;xico aplicando el enfoque agregado</article-title>
+          <source>Adm. Y Organ.</source>
+          <year>2018</year>
+          <volume>21</volume>
+          <fpage>119</fpage>
+          <lpage>136</lpage>
+          <comment>Available online: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://rayo.xoc.uam.mx/index.php/Rayo/article/view/21" ext-link-type="uri">https://rayo.xoc.uam.mx/index.php/Rayo/article/view/21</ext-link></comment>
+          <date-in-citation content-type="access-date" iso-8601-date="2025-08-24">(accessed on 24 August 2025)</date-in-citation>
+        </element-citation>
+      </ref>
+      <ref id="B40-land-14-01773">
+        <label>40.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Cari&#xF1;o Huerta</surname>
+              <given-names>G.</given-names>
+            </name>
+            <name>
+              <surname>Fuentes Flores</surname>
+              <given-names>C.M.</given-names>
+            </name>
+          </person-group>
+          <article-title>Movilidad inteligente en la creaci&#xF3;n de valor p&#xFA;blico para usuarios del Metrob&#xFA;s en la Ciudad de M&#xE9;xico</article-title>
+          <source>Rev. De Urban.</source>
+          <year>2022</year>
+          <volume>46</volume>
+          <fpage>40</fpage>
+          <lpage>56</lpage>
+          <pub-id pub-id-type="doi">10.5354/0717-5051.2022.64500</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B41-land-14-01773">
+        <label>41.</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Su&#xE1;rez Lastra</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Galindo P&#xE9;rez</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Reyes Garc&#xED;a</surname>
+              <given-names>V.</given-names>
+            </name>
+          </person-group>
+          <article-title>Movilidad y transporte: C&#xF3;mo nos movemos en la Ciudad de M&#xE9;xico</article-title>
+          <source>Inventario de la Ciudad de M&#xE9;xico: Presente y Futuro de su Gente: Diez Encuestas Sobre la Ciudad de M&#xE9;xico, Tomo II</source>
+          <person-group person-group-type="editor">
+            <name>
+              <surname>Flores D&#xE1;vila</surname>
+              <given-names>J.I.</given-names>
+            </name>
+          </person-group>
+          <publisher-name>Instituto de Investigaciones Jur&#xED;dicas, UNAM</publisher-name>
+          <publisher-loc>Mexico City, Mexico</publisher-loc>
+          <publisher-name>Secretar&#xED;a de Educaci&#xF3;n, Ciencia Tecnolog&#xED;a e Innovaci&#xF3;n</publisher-name>
+          <publisher-loc>Mexico City, Mexico</publisher-loc>
+          <year>2019</year>
+          <fpage>255</fpage>
+          <lpage>293</lpage>
+          <comment>Available online: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://ru.crim.unam.mx/handle/123456789/284" ext-link-type="uri">https://ru.crim.unam.mx/handle/123456789/284</ext-link></comment>
+          <date-in-citation content-type="access-date" iso-8601-date="2025-08-24">(accessed on 24 August 2025)</date-in-citation>
+        </element-citation>
+      </ref>
+      <ref id="B42-land-14-01773">
+        <label>42.</label>
+        <element-citation publication-type="web">
+          <person-group person-group-type="author">
+            <collab>Instituto Nacional de Estad&#xED;stica y Geograf&#xED;a [Inegi]</collab>
+          </person-group>
+          <article-title>Encuesta Origen Destino en Hogares de la Zona Metropolitana del Valle de M&#xE9;xico</article-title>
+          <year>2017</year>
+          <comment>Available online: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.inegi.org.mx/rnm/index.php/catalog/533" ext-link-type="uri">https://www.inegi.org.mx/rnm/index.php/catalog/533</ext-link></comment>
+          <date-in-citation content-type="access-date" iso-8601-date="2025-08-24">(accessed on 24 August 2025)</date-in-citation>
+        </element-citation>
+      </ref>
+      <ref id="B43-land-14-01773">
+        <label>43.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Dudzic-Gyurkovich</surname>
+              <given-names>K.</given-names>
+            </name>
+          </person-group>
+          <article-title>Study of centrality measures in the network of green spaces in the city of Krakow</article-title>
+          <source>Sustainability</source>
+          <year>2023</year>
+          <volume>15</volume>
+          <elocation-id>13458</elocation-id>
+          <pub-id pub-id-type="doi">10.3390/su151813458</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B44-land-14-01773">
+        <label>44.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Agryzkov</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Tortosa</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Vicent</surname>
+              <given-names>J.</given-names>
+            </name>
+          </person-group>
+          <article-title>New highlights and a new centrality measure based on the Adapted PageRank Algorithm for urban networks</article-title>
+          <source>Appl. Math. Comput.</source>
+          <year>2016</year>
+          <volume>291</volume>
+          <fpage>14</fpage>
+          <lpage>29</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.amc.2016.06.036</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B45-land-14-01773">
+        <label>45.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Merchan</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Winkenbach</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Snoeck</surname>
+              <given-names>A.</given-names>
+            </name>
+          </person-group>
+          <article-title>Quantifying the impact of urban road networks on the efficiency of local trips</article-title>
+          <source>Transp. Res. Part A Policy Pract.</source>
+          <year>2020</year>
+          <volume>135</volume>
+          <fpage>38</fpage>
+          <lpage>62</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.tra.2020.02.015</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B46-land-14-01773">
+        <label>46.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Oldham</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Fulcher</surname>
+              <given-names>B.</given-names>
+            </name>
+            <name>
+              <surname>Parkes</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Arnatkevici&#x16B;t&#x117;</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Suo</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Fornito</surname>
+              <given-names>A.</given-names>
+            </name>
+          </person-group>
+          <article-title>Consistency and differences between centrality measures across distinct classes of networks</article-title>
+          <source>PLoS ONE</source>
+          <year>2019</year>
+          <volume>14</volume>
+          <elocation-id>e0220061</elocation-id>
+          <pub-id pub-id-type="doi">10.1371/journal.pone.0220061</pub-id>
+          <pub-id pub-id-type="pmid">31348798</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B47-land-14-01773">
+        <label>47.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zhou</surname>
+              <given-names>X.</given-names>
+            </name>
+            <name>
+              <surname>Liang</surname>
+              <given-names>X.</given-names>
+            </name>
+            <name>
+              <surname>Zhao</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>S.</given-names>
+            </name>
+          </person-group>
+          <article-title>Cycle Based Network Centrality</article-title>
+          <source>Sci. Rep.</source>
+          <year>2018</year>
+          <volume>8</volume>
+          <elocation-id>11749</elocation-id>
+          <pub-id pub-id-type="doi">10.1038/s41598-018-30249-4</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B48-land-14-01773">
+        <label>48.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hellervik</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Nilsson</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Andersson</surname>
+              <given-names>C.</given-names>
+            </name>
+          </person-group>
+          <article-title>Preferential centrality&#x2013;A new measure unifying urban activity, attraction and accessibility</article-title>
+          <source>Environ. Plan. B Urban Anal. City Sci.</source>
+          <year>2019</year>
+          <volume>46</volume>
+          <fpage>1331</fpage>
+          <lpage>1346</lpage>
+          <pub-id pub-id-type="doi">10.1177/2399808318812888</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B49-land-14-01773">
+        <label>49.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sevtsuk</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Mekonnen</surname>
+              <given-names>M.</given-names>
+            </name>
+          </person-group>
+          <article-title>Urban network analysis</article-title>
+          <source>Rev. Int. De G&#xE9;omatique&#x2013;N</source>
+          <year>2012</year>
+          <volume>287</volume>
+          <fpage>305</fpage>
+        </element-citation>
+      </ref>
+      <ref id="B50-land-14-01773">
+        <label>50.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Jiang</surname>
+              <given-names>B.</given-names>
+            </name>
+            <name>
+              <surname>Claramunt</surname>
+              <given-names>C.</given-names>
+            </name>
+          </person-group>
+          <article-title>Topological analysis of urban street networks</article-title>
+          <source>Environ. Plan. B Plan. Des.</source>
+          <year>2004</year>
+          <volume>31</volume>
+          <fpage>151</fpage>
+          <lpage>162</lpage>
+          <pub-id pub-id-type="doi">10.1068/b306</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B51-land-14-01773">
+        <label>51.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Papa</surname>
+              <given-names>E.</given-names>
+            </name>
+            <name>
+              <surname>Coppola</surname>
+              <given-names>P.</given-names>
+            </name>
+          </person-group>
+          <article-title>Gravity-based accessibility measures for integrated transport-land use planning (GraBAM)</article-title>
+          <source>Access. Instrum. Plan. Pract.</source>
+          <year>2012</year>
+          <volume>117</volume>
+          <fpage>124</fpage>
+          <comment>Available online: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://hdl.handle.net/1854/LU-4414301" ext-link-type="uri">http://hdl.handle.net/1854/LU-4414301</ext-link></comment>
+          <date-in-citation content-type="access-date" iso-8601-date="2025-08-24">(accessed on 24 August 2025)</date-in-citation>
+        </element-citation>
+      </ref>
+      <ref id="B52-land-14-01773">
+        <label>52.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hansen</surname>
+              <given-names>W.</given-names>
+            </name>
+          </person-group>
+          <article-title>How accessibility shapes land use</article-title>
+          <source>J. Am. Inst. Plan.</source>
+          <year>1959</year>
+          <volume>25</volume>
+          <fpage>73</fpage>
+          <lpage>76</lpage>
+          <pub-id pub-id-type="doi">10.1080/01944365908978307</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B53-land-14-01773">
+        <label>53.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Siewwuttanagul</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Inohae</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Mishima</surname>
+              <given-names>N.</given-names>
+            </name>
+          </person-group>
+          <article-title>An investigation of urban gravity to develop a better understanding of the urbanization phenomenon using centrality analysis on GIS platform</article-title>
+          <source>Procedia Environ. Sci.</source>
+          <year>2016</year>
+          <volume>36</volume>
+          <fpage>191</fpage>
+          <lpage>198</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.proenv.2016.09.032</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B54-land-14-01773">
+        <label>54.</label>
+        <element-citation publication-type="confproc">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sevtsuk</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Mekonnen</surname>
+              <given-names>M.</given-names>
+            </name>
+          </person-group>
+          <article-title>Urban Network Analysis: A New Toolbox for Measuring City Form in ArcGIS</article-title>
+          <source>Proceedings of the 2012 Symposium on Simulation for Architecture and Urban Design</source>
+          <conf-loc>Orlando, FL, USA</conf-loc>
+          <conf-date>26&#x2013;30 March 2012</conf-date>
+        </element-citation>
+      </ref>
+      <ref id="B55-land-14-01773">
+        <label>55.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wu</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Smith</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>M.</given-names>
+            </name>
+          </person-group>
+          <article-title>Simulating the urban spatial structure with spatial interaction: A case study of urban polycentricity under different scenarios</article-title>
+          <source>Comput. Environ. Urban Syst.</source>
+          <year>2021</year>
+          <volume>89</volume>
+          <fpage>101677</fpage>
+          <pub-id pub-id-type="doi">10.1016/j.compenvurbsys.2021.101677</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B56-land-14-01773">
+        <label>56.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Boeing</surname>
+              <given-names>G.</given-names>
+            </name>
+          </person-group>
+          <article-title>Urban Street Network Analysis in a Computational Notebook</article-title>
+          <source>Reg. J. ERSA</source>
+          <year>2019</year>
+          <volume>6</volume>
+          <fpage>39</fpage>
+          <lpage>51</lpage>
+          <pub-id pub-id-type="doi">10.18335/region.v6i3.278</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B57-land-14-01773">
+        <label>57.</label>
+        <element-citation publication-type="gov">
+          <person-group person-group-type="author">
+            <collab>Secretar&#xED;a de Movilidad de la Ciudad de M&#xE9;xico (SEMOVI)</collab>
+          </person-group>
+          <article-title>Ubicaci&#xF3;n de Rutas del Sistema de Transporte P&#xFA;blico de la Ciudad de M&#xE9;xico [Conjunto de Datos Geogr&#xE1;ficos:, S.H.P.; KMZ.; XLSX] Datos Abiertos, C.D.M.X. &#xDA;ltima actualizaci&#xF3;n 15 de Febrero de 2023</article-title>
+          <year>2023</year>
+          <comment>Available online: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://datos.cdmx.gob.mx/dataset/ubicacion-de-rutas-del-transporte-publico-concesionado-de-ruta" ext-link-type="uri">https://datos.cdmx.gob.mx/dataset/ubicacion-de-rutas-del-transporte-publico-concesionado-de-ruta</ext-link></comment>
+          <date-in-citation content-type="access-date" iso-8601-date="2025-07-24">(accessed on 24 July 2025)</date-in-citation>
+        </element-citation>
+      </ref>
+      <ref id="B58-land-14-01773">
+        <label>58.</label>
+        <element-citation publication-type="web">
+          <person-group person-group-type="author">
+            <collab>Instituto Nacional de Estad&#xED;stica y Geograf&#xED;a (INEGI)</collab>
+          </person-group>
+          <article-title>SCINCE 2020: Sistema para la Consulta de Informaci&#xF3;n Censal (Censo de Poblaci&#xF3;n y Vivienda 2020) [Plataforma en L&#xED;nea]</article-title>
+          <source>Gaia.</source>
+          <year>2020</year>
+          <comment>Available online: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://gaia.inegi.org.mx/scince2020/" ext-link-type="uri">https://gaia.inegi.org.mx/scince2020/</ext-link></comment>
+          <date-in-citation content-type="access-date" iso-8601-date="2025-07-24">(accessed on 24 July 2025)</date-in-citation>
+        </element-citation>
+      </ref>
+      <ref id="B59-land-14-01773">
+        <label>59.</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sevtsuk</surname>
+              <given-names>A.</given-names>
+            </name>
+          </person-group>
+          <article-title>Analysis and Planning of Urban Networks</article-title>
+          <source>Encyclopedia of Social Network Analysis and Mining</source>
+          <edition>2nd ed.</edition>
+          <person-group person-group-type="editor">
+            <name>
+              <surname>Alhajj</surname>
+              <given-names>E.R.</given-names>
+            </name>
+            <name>
+              <surname>Rokne</surname>
+              <given-names>J.</given-names>
+            </name>
+          </person-group>
+          <publisher-name>Springer</publisher-name>
+          <publisher-loc>Berlin/Heidelberg, Germany</publisher-loc>
+          <year>2018</year>
+          <fpage>1</fpage>
+          <lpage>12</lpage>
+          <pub-id pub-id-type="doi">10.1007/978-1-4614-7163-9_43-1</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B60-land-14-01773">
+        <label>60.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sevtsuk</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Kalvo</surname>
+              <given-names>R.</given-names>
+            </name>
+          </person-group>
+          <article-title>Modeling pedestrian activity in cities with urban network analysis</article-title>
+          <source>Environ. Plan. B Urban Anal. City Sci.</source>
+          <year>2024</year>
+          <volume>51</volume>
+          <fpage>3</fpage>
+          <lpage>20</lpage>
+          <pub-id pub-id-type="doi">10.1177/23998083241261766</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B61-land-14-01773">
+        <label>61.</label>
+        <element-citation publication-type="web">
+          <person-group person-group-type="author">
+            <collab>Factum Marketing</collab>
+          </person-group>
+          <article-title>Infograf&#xED;a: Movilidad en la Ciudad de M&#xE9;xico 2017</article-title>
+          <year>2017</year>
+          <comment>Available online: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.factum-marketing.com" ext-link-type="uri">https://www.factum-marketing.com</ext-link></comment>
+          <date-in-citation content-type="access-date" iso-8601-date="2025-08-24">(accessed on 24 August 2025)</date-in-citation>
+        </element-citation>
+      </ref>
+      <ref id="B62-land-14-01773">
+        <label>62.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Poudyal</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Zhao</surname>
+              <given-names>Q.</given-names>
+            </name>
+            <name>
+              <surname>Brazauskas</surname>
+              <given-names>V.</given-names>
+            </name>
+          </person-group>
+          <article-title>Method of winsorized moments for robust fitting of truncated and censored lognormal distributions</article-title>
+          <source>North Am. Actuar. J.</source>
+          <year>2024</year>
+          <volume>28</volume>
+          <fpage>236</fpage>
+          <lpage>260</lpage>
+          <pub-id pub-id-type="doi">10.1080/10920277.2023.2183869</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B63-land-14-01773">
+        <label>63.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Qin</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Liu</surname>
+              <given-names>Y.</given-names>
+            </name>
+            <name>
+              <surname>Yi</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Sun</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>J.</given-names>
+            </name>
+          </person-group>
+          <article-title>Spatial accessibility analysis of parks with multiple entrances based on real-time travel: The case study in Beijing</article-title>
+          <source>Sustainability</source>
+          <year>2020</year>
+          <volume>12</volume>
+          <elocation-id>7618</elocation-id>
+          <pub-id pub-id-type="doi">10.3390/su12187618</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B64-land-14-01773">
+        <label>64.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Navarrete-Rodr&#xED;guez</surname>
+              <given-names>P.E.</given-names>
+            </name>
+            <name>
+              <surname>Andrade-Vallejo</surname>
+              <given-names>M.A.</given-names>
+            </name>
+          </person-group>
+          <article-title>La infraestructura del transporte p&#xFA;blico urbano en la Ciudad de M&#xE9;xico y su relaci&#xF3;n con las pol&#xED;ticas p&#xFA;blicas</article-title>
+          <source>Investig. Adm.</source>
+          <year>2010</year>
+          <volume>39</volume>
+          <fpage>41</fpage>
+          <lpage>67</lpage>
+          <comment>Available online: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.redalyc.org/articulo.oa?id=456045211003" ext-link-type="uri">https://www.redalyc.org/articulo.oa?id=456045211003</ext-link></comment>
+          <date-in-citation content-type="access-date" iso-8601-date="2025-08-24">(accessed on 24 August 2025)</date-in-citation>
+        </element-citation>
+      </ref>
+      <ref id="B65-land-14-01773">
+        <label>65.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mulley</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Ma</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Clifton</surname>
+              <given-names>G.</given-names>
+            </name>
+            <name>
+              <surname>Yen</surname>
+              <given-names>B.</given-names>
+            </name>
+            <name>
+              <surname>Burke</surname>
+              <given-names>M.</given-names>
+            </name>
+          </person-group>
+          <article-title>Residential property value impacts of proximity to transport infrastructure: An investigation of bus rapid transit and heavy rail networks in Brisbane, Australia</article-title>
+          <source>J. Transp. Geogr.</source>
+          <year>2016</year>
+          <volume>54</volume>
+          <fpage>41</fpage>
+          <lpage>52</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.jtrangeo.2016.05.010</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B66-land-14-01773">
+        <label>66.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Romero</surname>
+              <given-names>G.A.</given-names>
+            </name>
+            <name>
+              <surname>Lugo-Mor&#xED;n</surname>
+              <given-names>D.R.</given-names>
+            </name>
+          </person-group>
+          <article-title>El estado del arte de la movilidad del transporte en la vida urbana en ciudades latinoamericanas</article-title>
+          <source>Rev. Transp. Territ.</source>
+          <year>2018</year>
+          <volume>19</volume>
+          <fpage>133</fpage>
+          <lpage>157</lpage>
+          <pub-id pub-id-type="doi">10.34096/rtt.i19.5329</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B67-land-14-01773">
+        <label>67.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Chang</surname>
+              <given-names>Z.</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>W.</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>X.</given-names>
+            </name>
+          </person-group>
+          <article-title>Public transportation and the spatial inequality of urban park accessibility: New evidence from Hong Kong</article-title>
+          <source>Transp. Res. Part D Transp. Environ.</source>
+          <year>2019</year>
+          <volume>76</volume>
+          <fpage>111</fpage>
+          <lpage>122</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.trd.2019.09.012</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B68-land-14-01773">
+        <label>68.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mart&#xED;nez Salvador</surname>
+              <given-names>L.E.</given-names>
+            </name>
+            <name>
+              <surname>Alvarado Ram&#xED;rez</surname>
+              <given-names>D.F.</given-names>
+            </name>
+          </person-group>
+          <article-title>Parques de bolsillo: Un an&#xE1;lisis desde la percepci&#xF3;n de usuarios en la Ciudad de M&#xE9;xico</article-title>
+          <source>Econ. Soc. Territ.</source>
+          <year>2020</year>
+          <volume>20</volume>
+          <fpage>489</fpage>
+          <lpage>511</lpage>
+          <pub-id pub-id-type="doi">10.22136/est20201585</pub-id>
+        </element-citation>
+      </ref>
+    </ref-list>
+    <sec sec-type="display-objects">
+      <title>Figures and Tables</title>
+      <fig id="land-14-01773-f001" position="float">
+        <label>Figure 1</label>
+        <caption>
+          <p>Spatial distribution of urban parks and the public transportation system in Mexico City. Source: Prepared by the authors.</p>
+        </caption>
+        <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="land-14-01773-g001.tif"/>
+      </fig>
+      <fig id="land-14-01773-f002" position="float">
+        <label>Figure 2</label>
+        <caption>
+          <p>Spatial Distribution of Accessibility to Green Areas in Mexico City according to the Reach and Closeness Indices. Source: Prepared by the authors.</p>
+        </caption>
+        <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="land-14-01773-g002.tif"/>
+      </fig>
+      <fig id="land-14-01773-f003" position="float">
+        <label>Figure 3</label>
+        <caption>
+          <p>Distribution of accessibility of green areas in Mexico City by public transportation systems. Source: Prepared by the authors.</p>
+        </caption>
+        <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="land-14-01773-g003.tif"/>
+      </fig>
+      <table-wrap id="land-14-01773-t001" position="float">
+        <object-id pub-id-type="pii">land-14-01773-t001_Table 1</object-id>
+        <label>Table 1</label>
+        <caption>
+          <p>Mexico City park system.</p>
+        </caption>
+        <table>
+          <thead>
+            <tr>
+              <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin">Type of Park</th>
+              <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin">Area</th>
+              <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin">Description</th>
+              <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin">Number of<break/>Green Areas</th>
+              <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin">Total Area<break/>(ha)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td align="left" valign="middle">Small</td>
+              <td align="left" valign="middle">0.3 to 1 ha</td>
+              <td align="left" valign="middle">Local parks serving as recreational spaces for the residents of a neighborhood, district or indigenous town</td>
+              <td align="left" valign="middle">1507</td>
+              <td align="left" valign="middle">843.3</td>
+            </tr>
+            <tr>
+              <td align="left" valign="middle">Medium</td>
+              <td align="left" valign="middle">1 to 4.5 ha</td>
+              <td align="left" valign="middle">Urban parks representing a borough or area of the city</td>
+              <td align="left" valign="middle">3314</td>
+              <td align="left" valign="middle">6488.4</td>
+            </tr>
+            <tr>
+              <td align="left" valign="middle" style="border-bottom:solid thin">Large</td>
+              <td align="left" valign="middle" style="border-bottom:solid thin">&gt;4.5 ha</td>
+              <td align="left" valign="middle" style="border-bottom:solid thin">Large metropolitan parks creating city identity</td>
+              <td align="left" valign="middle" style="border-bottom:solid thin">943</td>
+              <td align="left" valign="middle" style="border-bottom:solid thin">14,777.6</td>
+            </tr>
+          </tbody>
+        </table>
+        <table-wrap-foot>
+          <fn>
+            <p>Source: Prepared by the authors based on [<xref ref-type="bibr" rid="B12-land-14-01773">12</xref>,<xref ref-type="bibr" rid="B14-land-14-01773">14</xref>,<xref ref-type="bibr" rid="B35-land-14-01773">35</xref>].</p>
+          </fn>
+        </table-wrap-foot>
+      </table-wrap>
+      <table-wrap id="land-14-01773-t002" position="float">
+        <object-id pub-id-type="pii">land-14-01773-t002_Table 2</object-id>
+        <label>Table 2</label>
+        <caption>
+          <p>Characteristics of the Mexico City Public Transportation System.</p>
+        </caption>
+        <table>
+          <thead>
+            <tr>
+              <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin">Public Transportation</th>
+              <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin">Number of Lines or Routes</th>
+              <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin">Length (km)</th>
+              <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin">Number of Stops</th>
+              <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin">Vehicle Fleet (Units)</th>
+              <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin">Average Distance Between Stations (m)</th>
+              <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin">Average Commercial Speed (km/h)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td align="left" valign="middle">Metro</td>
+              <td align="left" valign="middle">12</td>
+              <td align="left" valign="middle">226.5</td>
+              <td align="left" valign="middle">195</td>
+              <td align="left" valign="middle">390</td>
+              <td align="left" valign="middle">947</td>
+              <td align="left" valign="middle">36</td>
+            </tr>
+            <tr>
+              <td align="left" valign="middle">Bus Rapid Transit System (Metrob&#xFA;s)</td>
+              <td align="left" valign="middle">7</td>
+              <td align="left" valign="middle">239.9</td>
+              <td align="left" valign="middle">237</td>
+              <td align="left" valign="middle">657</td>
+              <td align="left" valign="middle">568</td>
+              <td align="left" valign="middle">16.3</td>
+            </tr>
+            <tr>
+              <td align="left" valign="middle">Electric Transport System (STE)</td>
+              <td align="left" valign="middle">9</td>
+              <td align="left" valign="middle">217.3</td>
+              <td align="left" valign="middle">649</td>
+              <td align="left" valign="middle">377</td>
+              <td align="left" valign="middle">400&#x2013;737</td>
+              <td align="left" valign="middle">16.1</td>
+            </tr>
+            <tr>
+              <td align="left" valign="middle">Passenger Transport Network (RTP)</td>
+              <td align="left" valign="middle">94</td>
+              <td align="left" valign="middle">3232.6</td>
+              <td align="left" valign="middle">8833</td>
+              <td align="left" valign="middle">1139</td>
+              <td align="left" valign="middle">400</td>
+              <td align="left" valign="middle">20.6</td>
+            </tr>
+            <tr>
+              <td align="left" valign="middle" style="border-bottom:solid thin">Concessioned transport</td>
+              <td align="left" valign="middle" style="border-bottom:solid thin">NA</td>
+              <td align="left" valign="middle" style="border-bottom:solid thin">NA</td>
+              <td align="left" valign="middle" style="border-bottom:solid thin">NA</td>
+              <td align="left" valign="middle" style="border-bottom:solid thin">29,128</td>
+              <td align="left" valign="middle" style="border-bottom:solid thin">NA</td>
+              <td align="left" valign="middle" style="border-bottom:solid thin">12 *</td>
+            </tr>
+          </tbody>
+        </table>
+        <table-wrap-foot>
+          <fn>
+            <p>Source: Prepared by the authors based on [<xref ref-type="bibr" rid="B37-land-14-01773">37</xref>,<xref ref-type="bibr" rid="B38-land-14-01773">38</xref>]. * Estimated value based on various studies on public transportation in Mexico City.</p>
+          </fn>
+        </table-wrap-foot>
+      </table-wrap>
+    </sec>
+    <fn-group>
+      <fn>
+        <p><bold>Disclaimer/Publisher&#x2019;s Note:</bold> The statements, opinions and data contained in all publications are solely those of the individual author(s) and contributor(s) and not of MDPI and/or the editor(s). MDPI and/or the editor(s) disclaim responsibility for any injury to people or property resulting from any ideas, methods, instructions or products referred to in the content.</p>
+      </fn>
+    </fn-group>
+  </back>
+</article>
