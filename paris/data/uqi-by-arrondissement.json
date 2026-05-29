@@ -1,14 +1,22 @@
 {
   "city": "Paris",
   "decades": [
+    "1861",
+    "1872",
+    "1881",
+    "1891",
+    "1901",
+    "1911",
+    "1921",
+    "1931",
+    "1936",
+    "1946",
+    "1962",
     "1968",
-    "1975",
     "1982",
     "1990",
     "1999",
-    "2006",
     "2011",
-    "2016",
     "2022"
   ],
   "variables": [
@@ -18,7 +26,7 @@
       "unit": "residents",
       "higherIsBetter": false,
       "defaultSelected": false,
-      "description": "INSEE census population by arrondissement."
+      "description": "Census population by arrondissement (Demographia 1861–1999; INSEE 1968–2022)."
     },
     {
       "key": "density",
@@ -34,7 +42,7 @@
       "unit": "persons",
       "higherIsBetter": false,
       "defaultSelected": true,
-      "description": "Household crowding proxy from INSEE housing tables."
+      "description": "Household crowding proxy from INSEE housing tables (1968+ only)."
     },
     {
       "key": "transit_access",
@@ -71,796 +79,112 @@
   ],
   "arrondissements": [
     {
-      "name": "1er — Louvre",
-      "values": {
-        "1968": {
-          "population": 32332.0,
-          "density": 17667.8,
-          "persons_per_dwelling": 2.05,
-          "transit_access": 18.55746628726958,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "1975": {
-          "population": 22793.0,
-          "density": 12455.2,
-          "persons_per_dwelling": 1.91,
-          "transit_access": 26.323871364015268,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "1982": {
-          "population": 18509.0,
-          "density": 10114.2,
-          "persons_per_dwelling": 1.78,
-          "transit_access": 37.81943919174456,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "1990": {
-          "population": 18360.0,
-          "density": 10032.8,
-          "persons_per_dwelling": 1.77,
-          "transit_access": 38.126361655773415,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "1999": {
-          "population": 16888.0,
-          "density": 9228.4,
-          "persons_per_dwelling": 1.7,
-          "transit_access": 41.44954997631454,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "2006": {
-          "population": 17745.0,
-          "density": 9696.7,
-          "persons_per_dwelling": 1.72,
-          "transit_access": 39.44773175542406,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "2011": {
-          "population": 17443.0,
-          "density": 9531.7,
-          "persons_per_dwelling": 1.7,
-          "transit_access": 40.1307114601846,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "2016": {
-          "population": 16252.0,
-          "density": 8880.9,
-          "persons_per_dwelling": 1.73,
-          "transit_access": 43.07162195422102,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "2022": {
-          "population": 15475.0,
-          "density": 8456.3,
-          "persons_per_dwelling": 1.63,
-          "transit_access": 45.23424878836834,
-          "green_space": 3.262681744749596,
-          "third_spaces": 71.08239095315024,
-          "median_income": 35030.0
-        }
-      }
-    },
-    {
-      "name": "2e — Bourse",
-      "values": {
-        "1968": {
-          "population": 35357.0,
-          "density": 35714.1,
-          "persons_per_dwelling": 2.0,
-          "transit_access": 14.141471278671832,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "1975": {
-          "population": 26328.0,
-          "density": 26593.9,
-          "persons_per_dwelling": 1.87,
-          "transit_access": 18.99118808872683,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "1982": {
-          "population": 21203.0,
-          "density": 21417.2,
-          "persons_per_dwelling": 1.72,
-          "transit_access": 23.581568645946327,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "1990": {
-          "population": 20738.0,
-          "density": 20947.5,
-          "persons_per_dwelling": 1.76,
-          "transit_access": 24.110328864885716,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "1999": {
-          "population": 19585.0,
-          "density": 19782.8,
-          "persons_per_dwelling": 1.7,
-          "transit_access": 25.529742149604292,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "2006": {
-          "population": 21259.0,
-          "density": 21473.7,
-          "persons_per_dwelling": 1.7,
-          "transit_access": 23.51945058563432,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "2011": {
-          "population": 22927.0,
-          "density": 23158.6,
-          "persons_per_dwelling": 1.7,
-          "transit_access": 21.808348235704628,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "2016": {
-          "population": 20260.0,
-          "density": 20464.6,
-          "persons_per_dwelling": 1.72,
-          "transit_access": 24.679170779861796,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "2022": {
-          "population": 20433.0,
-          "density": 20639.4,
-          "persons_per_dwelling": 1.67,
-          "transit_access": 24.47021974257329,
-          "green_space": 0.2473449811579308,
-          "third_spaces": 14.682131845543973,
-          "median_income": 34050.0
-        }
-      }
-    },
-    {
-      "name": "3e — Temple",
-      "values": {
-        "1968": {
-          "population": 56252.0,
-          "density": 48078.6,
-          "persons_per_dwelling": 2.11,
-          "transit_access": 8.888572850743085,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "1975": {
-          "population": 41706.0,
-          "density": 35646.2,
-          "persons_per_dwelling": 1.91,
-          "transit_access": 11.988682683546731,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "1982": {
-          "population": 36094.0,
-          "density": 30849.6,
-          "persons_per_dwelling": 1.81,
-          "transit_access": 13.85271790325262,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "1990": {
-          "population": 35102.0,
-          "density": 30001.7,
-          "persons_per_dwelling": 1.78,
-          "transit_access": 14.244202609537917,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "1999": {
-          "population": 34248.0,
-          "density": 29271.8,
-          "persons_per_dwelling": 1.75,
-          "transit_access": 14.599392665265125,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "2006": {
-          "population": 34721.0,
-          "density": 29676.1,
-          "persons_per_dwelling": 1.74,
-          "transit_access": 14.400506897842803,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "2011": {
-          "population": 36120.0,
-          "density": 30871.8,
-          "persons_per_dwelling": 1.71,
-          "transit_access": 13.842746400885936,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "2016": {
-          "population": 34788.0,
-          "density": 29733.3,
-          "persons_per_dwelling": 1.72,
-          "transit_access": 14.372772220305851,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "2022": {
-          "population": 32772.0,
-          "density": 28010.3,
-          "persons_per_dwelling": 1.66,
-          "transit_access": 15.256926644696692,
-          "green_space": 0.8730623703161235,
-          "third_spaces": 30.513853289393385,
-          "median_income": 34800.0
-        }
-      }
-    },
-    {
-      "name": "4e — Hôtel-de-Ville",
-      "values": {
-        "1968": {
-          "population": 54029.0,
-          "density": 33768.1,
-          "persons_per_dwelling": 2.16,
-          "transit_access": 11.105147235743768,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "1975": {
-          "population": 40466.0,
-          "density": 25291.3,
-          "persons_per_dwelling": 1.93,
-          "transit_access": 14.82726239312015,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "1982": {
-          "population": 33990.0,
-          "density": 21243.8,
-          "persons_per_dwelling": 1.79,
-          "transit_access": 17.6522506619594,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "1990": {
-          "population": 32226.0,
-          "density": 20141.3,
-          "persons_per_dwelling": 1.79,
-          "transit_access": 18.618506795754982,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "1999": {
-          "population": 30675.0,
-          "density": 19171.9,
-          "persons_per_dwelling": 1.66,
-          "transit_access": 19.559902200489,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "2006": {
-          "population": 29138.0,
-          "density": 18211.3,
-          "persons_per_dwelling": 1.72,
-          "transit_access": 20.591667238657422,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "2011": {
-          "population": 27887.0,
-          "density": 17429.4,
-          "persons_per_dwelling": 1.69,
-          "transit_access": 21.515401441531896,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "2016": {
-          "population": 27487.0,
-          "density": 17179.4,
-          "persons_per_dwelling": 1.73,
-          "transit_access": 21.82850074580711,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "2022": {
-          "population": 28039.0,
-          "density": 17524.4,
-          "persons_per_dwelling": 1.72,
-          "transit_access": 21.39876600449374,
-          "green_space": 2.583722671992582,
-          "third_spaces": 49.9304540104854,
-          "median_income": 33040.0
-        }
-      }
-    },
-    {
-      "name": "5e — Panthéon",
-      "values": {
-        "1968": {
-          "population": 83721.0,
-          "density": 32961.0,
-          "persons_per_dwelling": 2.06,
-          "transit_access": 7.166660694449422,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "1975": {
-          "population": 67668.0,
-          "density": 26640.9,
-          "persons_per_dwelling": 1.89,
-          "transit_access": 8.866820358219542,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "1982": {
-          "population": 62173.0,
-          "density": 24477.6,
-          "persons_per_dwelling": 1.76,
-          "transit_access": 9.650491370852299,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "1990": {
-          "population": 61222.0,
-          "density": 24103.1,
-          "persons_per_dwelling": 1.76,
-          "transit_access": 9.800398549541015,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "1999": {
-          "population": 58849.0,
-          "density": 23168.9,
-          "persons_per_dwelling": 1.71,
-          "transit_access": 10.195585311560095,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "2006": {
-          "population": 61475.0,
-          "density": 24202.8,
-          "persons_per_dwelling": 1.75,
-          "transit_access": 9.760065067100447,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "2011": {
-          "population": 60800.0,
-          "density": 23937.0,
-          "persons_per_dwelling": 1.72,
-          "transit_access": 9.868421052631579,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "2016": {
-          "population": 59108.0,
-          "density": 23270.9,
-          "persons_per_dwelling": 1.74,
-          "transit_access": 10.150910198281112,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "2022": {
-          "population": 55925.0,
-          "density": 22017.7,
-          "persons_per_dwelling": 1.71,
-          "transit_access": 10.728654447921324,
-          "green_space": 1.6639606616003575,
-          "third_spaces": 25.033527045149757,
-          "median_income": 35960.0
-        }
-      }
-    },
-    {
-      "name": "6e — Luxembourg",
-      "values": {
-        "1968": {
-          "population": 70891.0,
-          "density": 32972.6,
-          "persons_per_dwelling": 2.16,
-          "transit_access": 16.92739557912852,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "1975": {
-          "population": 56331.0,
-          "density": 26200.5,
-          "persons_per_dwelling": 1.98,
-          "transit_access": 21.30265750652394,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "1982": {
-          "population": 48905.0,
-          "density": 22746.5,
-          "persons_per_dwelling": 1.86,
-          "transit_access": 24.537368367242614,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "1990": {
-          "population": 47891.0,
-          "density": 22274.9,
-          "persons_per_dwelling": 1.82,
-          "transit_access": 25.056900043849577,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "1999": {
-          "population": 44919.0,
-          "density": 20892.6,
-          "persons_per_dwelling": 1.75,
-          "transit_access": 26.71475322246711,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "2006": {
-          "population": 45278.0,
-          "density": 21059.5,
-          "persons_per_dwelling": 1.74,
-          "transit_access": 26.502937408896152,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "2011": {
-          "population": 43880.0,
-          "density": 20409.3,
-          "persons_per_dwelling": 1.76,
-          "transit_access": 27.347310847766636,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "2016": {
-          "population": 40916.0,
-          "density": 19030.7,
-          "persons_per_dwelling": 1.72,
-          "transit_access": 29.328380095806043,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "2022": {
-          "population": 40432.0,
-          "density": 18805.6,
-          "persons_per_dwelling": 1.71,
-          "transit_access": 29.679461812425803,
-          "green_space": 0.7867530668777206,
-          "third_spaces": 34.62603878116344,
-          "median_income": 41750.0
-        }
-      }
-    },
-    {
-      "name": "7e — Palais-Bourbon",
-      "values": {
-        "1968": {
-          "population": 87811.0,
-          "density": 21469.7,
-          "persons_per_dwelling": 2.29,
-          "transit_access": 10.249285397045929,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "1975": {
-          "population": 74250.0,
-          "density": 18154.0,
-          "persons_per_dwelling": 2.09,
-          "transit_access": 12.121212121212121,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "1982": {
-          "population": 67461.0,
-          "density": 16494.1,
-          "persons_per_dwelling": 1.94,
-          "transit_access": 13.341041490639038,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "1990": {
-          "population": 62939.0,
-          "density": 15388.5,
-          "persons_per_dwelling": 1.92,
-          "transit_access": 14.299559891323344,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "1999": {
-          "population": 56985.0,
-          "density": 13932.8,
-          "persons_per_dwelling": 1.84,
-          "transit_access": 15.793629902605948,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "2006": {
-          "population": 56612.0,
-          "density": 13841.6,
-          "persons_per_dwelling": 1.82,
-          "transit_access": 15.897689535787466,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "2011": {
-          "population": 57786.0,
-          "density": 14128.6,
-          "persons_per_dwelling": 1.83,
-          "transit_access": 15.574706676357595,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "2016": {
-          "population": 52512.0,
-          "density": 12839.1,
-          "persons_per_dwelling": 1.82,
-          "transit_access": 17.13893967093236,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "2022": {
-          "population": 48196.0,
-          "density": 11783.9,
-          "persons_per_dwelling": 1.8,
-          "transit_access": 18.67374885882646,
-          "green_space": 8.309382521371068,
-          "third_spaces": 31.122914764710764,
-          "median_income": 45380.0
-        }
-      }
-    },
-    {
-      "name": "8e — Élysée",
-      "values": {
-        "1968": {
-          "population": 67897.0,
-          "density": 17499.2,
-          "persons_per_dwelling": 2.33,
-          "transit_access": 19.146648600085424,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "1975": {
-          "population": 52999.0,
-          "density": 13659.5,
-          "persons_per_dwelling": 2.11,
-          "transit_access": 24.528764693673466,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "1982": {
-          "population": 46403.0,
-          "density": 11959.5,
-          "persons_per_dwelling": 2.02,
-          "transit_access": 28.01543003685107,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "1990": {
-          "population": 40814.0,
-          "density": 10519.1,
-          "persons_per_dwelling": 2.03,
-          "transit_access": 31.85181555348655,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "1999": {
-          "population": 39314.0,
-          "density": 10132.5,
-          "persons_per_dwelling": 1.99,
-          "transit_access": 33.06710077834868,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "2006": {
-          "population": 39088.0,
-          "density": 10074.2,
-          "persons_per_dwelling": 2.03,
-          "transit_access": 33.25828898894801,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "2011": {
-          "population": 40589.0,
-          "density": 10461.1,
-          "persons_per_dwelling": 2.06,
-          "transit_access": 32.02838207396093,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "2016": {
-          "population": 36453.0,
-          "density": 9395.1,
-          "persons_per_dwelling": 2.02,
-          "transit_access": 35.66235975091213,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "2022": {
-          "population": 35418.0,
-          "density": 9128.4,
-          "persons_per_dwelling": 1.99,
-          "transit_access": 36.70450053645039,
-          "green_space": 6.687644700434807,
-          "third_spaces": 25.410808063696425,
-          "median_income": 44100.0
-        }
-      }
-    },
-    {
-      "name": "9e — Opéra",
-      "values": {
-        "1968": {
-          "population": 84969.0,
-          "density": 38976.6,
-          "persons_per_dwelling": 2.09,
-          "transit_access": 15.299697536748697,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "1975": {
-          "population": 70270.0,
-          "density": 32233.9,
-          "persons_per_dwelling": 1.93,
-          "transit_access": 18.500071154119826,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "1982": {
-          "population": 64134.0,
-          "density": 29419.3,
-          "persons_per_dwelling": 1.83,
-          "transit_access": 20.270059562790408,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "1990": {
-          "population": 58019.0,
-          "density": 26614.2,
-          "persons_per_dwelling": 1.88,
-          "transit_access": 22.406453058480842,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "1999": {
-          "population": 55838.0,
-          "density": 25613.8,
-          "persons_per_dwelling": 1.82,
-          "transit_access": 23.281636161753646,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "2006": {
-          "population": 58497.0,
-          "density": 26833.5,
-          "persons_per_dwelling": 1.86,
-          "transit_access": 22.223361881805904,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "2011": {
-          "population": 60120.0,
-          "density": 27578.0,
-          "persons_per_dwelling": 1.87,
-          "transit_access": 21.62341982701264,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "2016": {
-          "population": 59629.0,
-          "density": 27352.8,
-          "persons_per_dwelling": 1.86,
-          "transit_access": 21.80147243790773,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "2022": {
-          "population": 58419.0,
-          "density": 26797.7,
-          "persons_per_dwelling": 1.82,
-          "transit_access": 22.253034115613072,
-          "green_space": 0.3619370410311713,
-          "third_spaces": 15.405946695424436,
-          "median_income": 37220.0
-        }
-      }
-    },
-    {
       "name": "10e — Entrepôt",
       "values": {
+        "1861": {
+          "population": 113571.0,
+          "density": 39270.74688796681,
+          "persons_per_dwelling": null,
+          "transit_access": 0.0,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1872": {
+          "population": 135392.0,
+          "density": 46816.04426002767,
+          "persons_per_dwelling": null,
+          "transit_access": 0.0,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1881": {
+          "population": 159809.0,
+          "density": 55258.99031811895,
+          "persons_per_dwelling": null,
+          "transit_access": 0.0,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1891": {
+          "population": 155344.0,
+          "density": 53715.07607192254,
+          "persons_per_dwelling": null,
+          "transit_access": 0.0,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1901": {
+          "population": 154852.0,
+          "density": 53544.95159059475,
+          "persons_per_dwelling": null,
+          "transit_access": 5.812001136569111,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1911": {
+          "population": 151161.0,
+          "density": 52268.67219917013,
+          "persons_per_dwelling": null,
+          "transit_access": 6.615462983176878,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1921": {
+          "population": 145722.0,
+          "density": 50387.96680497925,
+          "persons_per_dwelling": null,
+          "transit_access": 6.862381795473573,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1931": {
+          "population": 131150.0,
+          "density": 45349.23928077455,
+          "persons_per_dwelling": null,
+          "transit_access": 7.624857033930614,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1936": {
+          "population": 125374.0,
+          "density": 43352.00553250346,
+          "persons_per_dwelling": null,
+          "transit_access": 7.976135402874599,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1946": {
+          "population": 123939.0,
+          "density": 42855.80912863071,
+          "persons_per_dwelling": null,
+          "transit_access": 8.06848530325402,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1962": {
+          "population": 122251.0,
+          "density": 42272.13001383126,
+          "persons_per_dwelling": null,
+          "transit_access": 8.179892189020949,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
         "1968": {
           "population": 113372.0,
           "density": 39229.1,
           "persons_per_dwelling": 2.15,
           "transit_access": 8.82052005786261,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "1975": {
-          "population": 94046.0,
-          "density": 32541.9,
-          "persons_per_dwelling": 1.99,
-          "transit_access": 10.633094443144845,
           "green_space": null,
           "third_spaces": null,
           "median_income": null
@@ -892,29 +216,11 @@
           "third_spaces": null,
           "median_income": null
         },
-        "2006": {
-          "population": 92082.0,
-          "density": 31862.3,
-          "persons_per_dwelling": 1.89,
-          "transit_access": 10.85988575400187,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
         "2011": {
           "population": 94027.0,
           "density": 32535.3,
           "persons_per_dwelling": 1.9,
           "transit_access": 10.63524306848033,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "2016": {
-          "population": 91932.0,
-          "density": 31810.4,
-          "persons_per_dwelling": 1.89,
-          "transit_access": 10.877605186442153,
           "green_space": null,
           "third_spaces": null,
           "median_income": null
@@ -933,20 +239,110 @@
     {
       "name": "11e — Popincourt",
       "values": {
+        "1861": {
+          "population": 125718.0,
+          "density": 34292.962356792144,
+          "persons_per_dwelling": null,
+          "transit_access": 0.0,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1872": {
+          "population": 167393.0,
+          "density": 45660.93835242772,
+          "persons_per_dwelling": null,
+          "transit_access": 0.0,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1881": {
+          "population": 209246.0,
+          "density": 57077.46863066012,
+          "persons_per_dwelling": null,
+          "transit_access": 0.0,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1891": {
+          "population": 217016.0,
+          "density": 59196.94489907256,
+          "persons_per_dwelling": null,
+          "transit_access": 0.0,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1901": {
+          "population": 239149.0,
+          "density": 65234.31533006001,
+          "persons_per_dwelling": null,
+          "transit_access": 7.9448377371429535,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1911": {
+          "population": 242295.0,
+          "density": 66092.47135842881,
+          "persons_per_dwelling": null,
+          "transit_access": 7.841680595967725,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1921": {
+          "population": 229855.0,
+          "density": 62699.12711402073,
+          "persons_per_dwelling": null,
+          "transit_access": 8.2660807900633,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1931": {
+          "population": 219471.0,
+          "density": 59866.61211129296,
+          "persons_per_dwelling": null,
+          "transit_access": 8.65718021971012,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1936": {
+          "population": 204542.0,
+          "density": 55794.32624113475,
+          "persons_per_dwelling": null,
+          "transit_access": 9.289045770550793,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1946": {
+          "population": 188547.0,
+          "density": 51431.26022913257,
+          "persons_per_dwelling": null,
+          "transit_access": 10.077063013466137,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1962": {
+          "population": 189550.0,
+          "density": 51704.85542825968,
+          "persons_per_dwelling": null,
+          "transit_access": 10.023740437879189,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
         "1968": {
           "population": 179727.0,
           "density": 48971.9,
           "persons_per_dwelling": 2.1,
           "transit_access": 10.571589132406372,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "1975": {
-          "population": 159317.0,
-          "density": 43410.6,
-          "persons_per_dwelling": 1.97,
-          "transit_access": 11.925908722860711,
           "green_space": null,
           "third_spaces": null,
           "median_income": null
@@ -978,29 +374,11 @@
           "third_spaces": null,
           "median_income": null
         },
-        "2006": {
-          "population": 152436.0,
-          "density": 41535.7,
-          "persons_per_dwelling": 1.75,
-          "transit_access": 12.464247290666245,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
         "2011": {
           "population": 154647.0,
           "density": 42138.1,
           "persons_per_dwelling": 1.75,
           "transit_access": 12.28604499279003,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "2016": {
-          "population": 147017.0,
-          "density": 40059.1,
-          "persons_per_dwelling": 1.74,
-          "transit_access": 12.923675493310297,
           "green_space": null,
           "third_spaces": null,
           "median_income": null
@@ -1019,20 +397,110 @@
     {
       "name": "12e — Reuilly",
       "values": {
+        "1861": {
+          "population": 65748.0,
+          "density": 10310.17719931002,
+          "persons_per_dwelling": null,
+          "transit_access": 0.0,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1872": {
+          "population": 87678.0,
+          "density": 13749.09832209503,
+          "persons_per_dwelling": null,
+          "transit_access": 0.0,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1881": {
+          "population": 102435.0,
+          "density": 16063.195860122316,
+          "persons_per_dwelling": null,
+          "transit_access": 0.0,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1891": {
+          "population": 111665.0,
+          "density": 17510.584914536616,
+          "persons_per_dwelling": null,
+          "transit_access": 0.0,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1901": {
+          "population": 130062.0,
+          "density": 20395.483769797716,
+          "persons_per_dwelling": null,
+          "transit_access": 11.532961203118512,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1911": {
+          "population": 151014.0,
+          "density": 23681.041241963307,
+          "persons_per_dwelling": null,
+          "transit_access": 9.932853907584727,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1921": {
+          "population": 151810.0,
+          "density": 23805.86482672103,
+          "persons_per_dwelling": null,
+          "transit_access": 9.880772017653646,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1931": {
+          "population": 157277.0,
+          "density": 24663.164497412577,
+          "persons_per_dwelling": null,
+          "transit_access": 9.537313148139907,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1936": {
+          "population": 156729.0,
+          "density": 24577.23067273013,
+          "persons_per_dwelling": null,
+          "transit_access": 9.570660184139502,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1946": {
+          "population": 153633.0,
+          "density": 24091.735925984005,
+          "persons_per_dwelling": null,
+          "transit_access": 9.76352736716721,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1962": {
+          "population": 163899.0,
+          "density": 25701.583816841776,
+          "persons_per_dwelling": null,
+          "transit_access": 9.15197774239013,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
         "1968": {
           "population": 155982.0,
           "density": 9557.7,
           "persons_per_dwelling": 2.22,
           "transit_access": 9.616494210870485,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "1975": {
-          "population": 140900.0,
-          "density": 8633.6,
-          "persons_per_dwelling": 2.04,
-          "transit_access": 10.645848119233499,
           "green_space": null,
           "third_spaces": null,
           "median_income": null
@@ -1064,29 +532,11 @@
           "third_spaces": null,
           "median_income": null
         },
-        "2006": {
-          "population": 141519.0,
-          "density": 8671.5,
-          "persons_per_dwelling": 1.83,
-          "transit_access": 10.599283488436182,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
         "2011": {
           "population": 144402.0,
           "density": 8848.2,
           "persons_per_dwelling": 1.85,
           "transit_access": 10.387667760834336,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "2016": {
-          "population": 141494.0,
-          "density": 8670.0,
-          "persons_per_dwelling": 1.86,
-          "transit_access": 10.601156232773121,
           "green_space": null,
           "third_spaces": null,
           "median_income": null
@@ -1105,20 +555,110 @@
     {
       "name": "13e — Gobelins",
       "values": {
+        "1861": {
+          "population": 56798.0,
+          "density": 7948.222781975931,
+          "persons_per_dwelling": null,
+          "transit_access": 0.0,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1872": {
+          "population": 69431.0,
+          "density": 9716.06493143017,
+          "persons_per_dwelling": null,
+          "transit_access": 0.0,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1881": {
+          "population": 91315.0,
+          "density": 12778.477469913238,
+          "persons_per_dwelling": null,
+          "transit_access": 0.0,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1891": {
+          "population": 110056.0,
+          "density": 15401.0635320459,
+          "persons_per_dwelling": null,
+          "transit_access": 0.0,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1901": {
+          "population": 127874.0,
+          "density": 17894.486425972573,
+          "persons_per_dwelling": null,
+          "transit_access": 13.294336612603033,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1911": {
+          "population": 142386.0,
+          "density": 19925.27287993283,
+          "persons_per_dwelling": null,
+          "transit_access": 11.939376062253311,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1921": {
+          "population": 150883.0,
+          "density": 21114.32969493423,
+          "persons_per_dwelling": null,
+          "transit_access": 11.267008211660691,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1931": {
+          "population": 164671.0,
+          "density": 23043.80072767982,
+          "persons_per_dwelling": null,
+          "transit_access": 10.32361496559807,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1936": {
+          "population": 170442.0,
+          "density": 23851.38539042821,
+          "persons_per_dwelling": null,
+          "transit_access": 9.974067424695791,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1946": {
+          "population": 159722.0,
+          "density": 22351.24545200112,
+          "persons_per_dwelling": null,
+          "transit_access": 10.643493069207748,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1962": {
+          "population": 164342.0,
+          "density": 22997.76098516653,
+          "persons_per_dwelling": null,
+          "transit_access": 10.344282045977291,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
         "1968": {
           "population": 158280.0,
           "density": 22137.1,
           "persons_per_dwelling": 2.32,
           "transit_access": 10.740459944402325,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "1975": {
-          "population": 163313.0,
-          "density": 22841.0,
-          "persons_per_dwelling": 2.14,
-          "transit_access": 10.409459136749676,
           "green_space": null,
           "third_spaces": null,
           "median_income": null
@@ -1150,29 +690,11 @@
           "third_spaces": null,
           "median_income": null
         },
-        "2006": {
-          "population": 178716.0,
-          "density": 24995.2,
-          "persons_per_dwelling": 1.93,
-          "transit_access": 9.512298842856824,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
         "2011": {
           "population": 183260.0,
           "density": 25630.8,
           "persons_per_dwelling": 1.95,
           "transit_access": 9.276437847866418,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "2016": {
-          "population": 181552.0,
-          "density": 25391.9,
-          "persons_per_dwelling": 1.95,
-          "transit_access": 9.363708469198906,
           "green_space": null,
           "third_spaces": null,
           "median_income": null
@@ -1191,20 +713,110 @@
     {
       "name": "14e — Observatoire",
       "values": {
+        "1861": {
+          "population": 52594.0,
+          "density": 9356.698096424125,
+          "persons_per_dwelling": null,
+          "transit_access": 0.0,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1872": {
+          "population": 69611.0,
+          "density": 12384.095356698095,
+          "persons_per_dwelling": null,
+          "transit_access": 0.0,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1881": {
+          "population": 91713.0,
+          "density": 16316.135918875643,
+          "persons_per_dwelling": null,
+          "transit_access": 0.0,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1891": {
+          "population": 112638.0,
+          "density": 20038.783134673544,
+          "persons_per_dwelling": null,
+          "transit_access": 0.0,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1901": {
+          "population": 142695.0,
+          "density": 25386.05230386052,
+          "persons_per_dwelling": null,
+          "transit_access": 7.708749430603735,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1911": {
+          "population": 163523.0,
+          "density": 29091.44280377157,
+          "persons_per_dwelling": null,
+          "transit_access": 6.7268824569020875,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1921": {
+          "population": 171292.0,
+          "density": 30473.58121330724,
+          "persons_per_dwelling": null,
+          "transit_access": 6.421782686873876,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1931": {
+          "population": 178230.0,
+          "density": 31707.88115993595,
+          "persons_per_dwelling": null,
+          "transit_access": 6.171800482522583,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1936": {
+          "population": 178612.0,
+          "density": 31775.840597758404,
+          "persons_per_dwelling": null,
+          "transit_access": 6.158600765905986,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1946": {
+          "population": 175581.0,
+          "density": 31236.612702366125,
+          "persons_per_dwelling": null,
+          "transit_access": 6.26491476868226,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1962": {
+          "population": 175524.0,
+          "density": 31226.47215797901,
+          "persons_per_dwelling": null,
+          "transit_access": 6.266949249105535,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
         "1968": {
           "population": 167093.0,
           "density": 29626.4,
           "persons_per_dwelling": 2.17,
           "transit_access": 6.583160276013956,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "1975": {
-          "population": 149137.0,
-          "density": 26442.7,
-          "persons_per_dwelling": 1.98,
-          "transit_access": 7.3757685886131545,
           "green_space": null,
           "third_spaces": null,
           "median_income": null
@@ -1236,29 +848,11 @@
           "third_spaces": null,
           "median_income": null
         },
-        "2006": {
-          "population": 134370.0,
-          "density": 23824.5,
-          "persons_per_dwelling": 1.82,
-          "transit_access": 8.186351120041675,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
         "2011": {
           "population": 140317.0,
           "density": 24878.9,
           "persons_per_dwelling": 1.81,
           "transit_access": 7.8393922333003125,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "2016": {
-          "population": 137105.0,
-          "density": 24309.4,
-          "persons_per_dwelling": 1.84,
-          "transit_access": 8.023048028882972,
           "green_space": null,
           "third_spaces": null,
           "median_income": null
@@ -1277,20 +871,110 @@
     {
       "name": "15e — Vaugirard",
       "values": {
+        "1861": {
+          "population": 56041.0,
+          "density": 6591.507880498706,
+          "persons_per_dwelling": null,
+          "transit_access": 0.0,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1872": {
+          "population": 75449.0,
+          "density": 8874.264878852035,
+          "persons_per_dwelling": null,
+          "transit_access": 0.0,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1881": {
+          "population": 100679.0,
+          "density": 11841.801928957892,
+          "persons_per_dwelling": null,
+          "transit_access": 0.0,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1891": {
+          "population": 119307.0,
+          "density": 14032.815808045165,
+          "persons_per_dwelling": null,
+          "transit_access": 0.0,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1901": {
+          "population": 153185.0,
+          "density": 18017.52528816749,
+          "persons_per_dwelling": null,
+          "transit_access": 12.403303195482586,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1911": {
+          "population": 199010.0,
+          "density": 23407.43354504822,
+          "persons_per_dwelling": null,
+          "transit_access": 9.547258931711974,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1921": {
+          "population": 225331.0,
+          "density": 26503.293342742883,
+          "persons_per_dwelling": null,
+          "transit_access": 9.319623132192199,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1931": {
+          "population": 238797.0,
+          "density": 28087.15596330275,
+          "persons_per_dwelling": null,
+          "transit_access": 8.794080327642307,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1936": {
+          "population": 243687.0,
+          "density": 28662.314749470712,
+          "persons_per_dwelling": null,
+          "transit_access": 8.61761193662362,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1946": {
+          "population": 244981.0,
+          "density": 28814.51423194542,
+          "persons_per_dwelling": null,
+          "transit_access": 8.572093346014588,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1962": {
+          "population": 249464.0,
+          "density": 29341.80192895789,
+          "persons_per_dwelling": null,
+          "transit_access": 8.418048295545649,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
         "1968": {
           "population": 244080.0,
           "density": 28783.0,
           "persons_per_dwelling": 2.14,
           "transit_access": 8.603736479842674,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "1975": {
-          "population": 231301.0,
-          "density": 27276.1,
-          "persons_per_dwelling": 1.98,
-          "transit_access": 9.07907877614018,
           "green_space": null,
           "third_spaces": null,
           "median_income": null
@@ -1322,29 +1006,11 @@
           "third_spaces": null,
           "median_income": null
         },
-        "2006": {
-          "population": 232949.0,
-          "density": 27470.4,
-          "persons_per_dwelling": 1.81,
-          "transit_access": 9.014848743716435,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
         "2011": {
           "population": 238395.0,
           "density": 28112.6,
           "persons_per_dwelling": 1.84,
           "transit_access": 8.808909582835211,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "2016": {
-          "population": 233484.0,
-          "density": 27533.5,
-          "persons_per_dwelling": 1.84,
-          "transit_access": 8.994192321529527,
           "green_space": null,
           "third_spaces": null,
           "median_income": null
@@ -1363,20 +1029,110 @@
     {
       "name": "16e — Passy",
       "values": {
+        "1861": {
+          "population": 36728.0,
+          "density": 4681.1113943410655,
+          "persons_per_dwelling": null,
+          "transit_access": 0.0,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1872": {
+          "population": 43332.0,
+          "density": 5522.814172826918,
+          "persons_per_dwelling": null,
+          "transit_access": 0.0,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1881": {
+          "population": 60702.0,
+          "density": 7736.681111394341,
+          "persons_per_dwelling": null,
+          "transit_access": 0.0,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1891": {
+          "population": 89226.0,
+          "density": 11372.16416008157,
+          "persons_per_dwelling": null,
+          "transit_access": 0.0,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1901": {
+          "population": 121131.0,
+          "density": 15438.567422890645,
+          "persons_per_dwelling": null,
+          "transit_access": 16.511050020226037,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1911": {
+          "population": 150174.0,
+          "density": 19140.19882742799,
+          "persons_per_dwelling": null,
+          "transit_access": 13.317884587212166,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1921": {
+          "population": 162819.0,
+          "density": 20751.84807545246,
+          "persons_per_dwelling": null,
+          "transit_access": 12.283578697817822,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1931": {
+          "population": 176868.0,
+          "density": 22542.44200866684,
+          "persons_per_dwelling": null,
+          "transit_access": 11.307868014564534,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1936": {
+          "population": 189571.0,
+          "density": 24161.483558501142,
+          "persons_per_dwelling": null,
+          "transit_access": 10.550136888026122,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1946": {
+          "population": 197732.0,
+          "density": 25201.631404537344,
+          "persons_per_dwelling": null,
+          "transit_access": 10.620435741306416,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1962": {
+          "population": 224089.0,
+          "density": 28560.92276319144,
+          "persons_per_dwelling": null,
+          "transit_access": 9.371276590997327,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
         "1968": {
           "population": 214120.0,
           "density": 13080.0,
           "persons_per_dwelling": 2.41,
           "transit_access": 9.807584532038108,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "1975": {
-          "population": 193590.0,
-          "density": 11825.9,
-          "persons_per_dwelling": 2.14,
-          "transit_access": 10.847667751433441,
           "green_space": null,
           "third_spaces": null,
           "median_income": null
@@ -1408,29 +1164,11 @@
           "third_spaces": null,
           "median_income": null
         },
-        "2006": {
-          "population": 153920.0,
-          "density": 9402.6,
-          "persons_per_dwelling": 1.97,
-          "transit_access": 13.643451143451145,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
         "2011": {
           "population": 169942.0,
           "density": 10381.3,
           "persons_per_dwelling": 1.96,
           "transit_access": 12.357157147732757,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "2016": {
-          "population": 165446.0,
-          "density": 10106.7,
-          "persons_per_dwelling": 1.97,
-          "transit_access": 12.692963262937756,
           "green_space": null,
           "third_spaces": null,
           "median_income": null
@@ -1449,20 +1187,110 @@
     {
       "name": "17e — Batignolles",
       "values": {
+        "1861": {
+          "population": 75228.0,
+          "density": 13270.0652672429,
+          "persons_per_dwelling": null,
+          "transit_access": 0.0,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1872": {
+          "population": 101804.0,
+          "density": 17958.01728699947,
+          "persons_per_dwelling": null,
+          "transit_access": 0.0,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1881": {
+          "population": 143187.0,
+          "density": 25257.893808431825,
+          "persons_per_dwelling": null,
+          "transit_access": 0.0,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1891": {
+          "population": 175742.0,
+          "density": 31000.52919386135,
+          "persons_per_dwelling": null,
+          "transit_access": 0.0,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1901": {
+          "population": 206208.0,
+          "density": 36374.669253836655,
+          "persons_per_dwelling": null,
+          "transit_access": 3.8795779019242707,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1911": {
+          "population": 215832.0,
+          "density": 38072.32316105133,
+          "persons_per_dwelling": null,
+          "transit_access": 3.7065866043960116,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1921": {
+          "population": 220965.0,
+          "density": 38977.77385782325,
+          "persons_per_dwelling": null,
+          "transit_access": 4.073043242142421,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1931": {
+          "population": 220716.0,
+          "density": 38933.8507673311,
+          "persons_per_dwelling": null,
+          "transit_access": 4.077638231936063,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1936": {
+          "population": 221260.0,
+          "density": 39029.81125418945,
+          "persons_per_dwelling": null,
+          "transit_access": 4.067612763264937,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1946": {
+          "population": 218341.0,
+          "density": 38514.905627094726,
+          "persons_per_dwelling": null,
+          "transit_access": 4.12199266285306,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1962": {
+          "population": 223823.0,
+          "density": 39481.91920973717,
+          "persons_per_dwelling": null,
+          "transit_access": 4.021034478136742,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
         "1968": {
           "population": 210299.0,
           "density": 37089.8,
           "persons_per_dwelling": 2.18,
           "transit_access": 4.279620920689114,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "1975": {
-          "population": 186293.0,
-          "density": 32855.9,
-          "persons_per_dwelling": 1.99,
-          "transit_access": 4.8310993971861524,
           "green_space": null,
           "third_spaces": null,
           "median_income": null
@@ -1494,29 +1322,11 @@
           "third_spaces": null,
           "median_income": null
         },
-        "2006": {
-          "population": 161327.0,
-          "density": 28452.7,
-          "persons_per_dwelling": 1.88,
-          "transit_access": 5.578731396480441,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
         "2011": {
           "population": 170174.0,
           "density": 30013.1,
           "persons_per_dwelling": 1.88,
           "transit_access": 5.288704502450433,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "2016": {
-          "population": 167835.0,
-          "density": 29600.5,
-          "persons_per_dwelling": 1.87,
-          "transit_access": 5.362409509339529,
           "green_space": null,
           "third_spaces": null,
           "median_income": null
@@ -1535,20 +1345,110 @@
     {
       "name": "18e — Buttes-Montmartre",
       "values": {
+        "1861": {
+          "population": 106356.0,
+          "density": 17711.240632805995,
+          "persons_per_dwelling": null,
+          "transit_access": 0.0,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1872": {
+          "population": 138109.0,
+          "density": 22999.000832639467,
+          "persons_per_dwelling": null,
+          "transit_access": 0.0,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1881": {
+          "population": 178836.0,
+          "density": 29781.182348043298,
+          "persons_per_dwelling": null,
+          "transit_access": 0.0,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1891": {
+          "population": 214258.0,
+          "density": 35679.93338884263,
+          "persons_per_dwelling": null,
+          "transit_access": 0.0,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1901": {
+          "population": 253591.0,
+          "density": 42229.97502081599,
+          "persons_per_dwelling": null,
+          "transit_access": 5.520700655780371,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1911": {
+          "population": 274717.0,
+          "density": 45748.04329725229,
+          "persons_per_dwelling": null,
+          "transit_access": 5.0961534961433035,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1921": {
+          "population": 284986.0,
+          "density": 47458.11823480433,
+          "persons_per_dwelling": null,
+          "transit_access": 4.912522018625476,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1931": {
+          "population": 288810.0,
+          "density": 48094.92089925063,
+          "persons_per_dwelling": null,
+          "transit_access": 4.84747758041619,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1936": {
+          "population": 276727.0,
+          "density": 46082.76436303081,
+          "persons_per_dwelling": null,
+          "transit_access": 5.05913770611469,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1946": {
+          "population": 259589.0,
+          "density": 43228.80932556203,
+          "persons_per_dwelling": null,
+          "transit_access": 5.393140695484015,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1962": {
+          "population": 250040.0,
+          "density": 41638.63447127394,
+          "persons_per_dwelling": null,
+          "transit_access": 5.599104143337066,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
         "1968": {
           "population": 236776.0,
           "density": 39397.0,
           "persons_per_dwelling": 2.08,
           "transit_access": 5.9127614285231616,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "1975": {
-          "population": 208970.0,
-          "density": 34770.4,
-          "persons_per_dwelling": 1.95,
-          "transit_access": 6.699526247786764,
           "green_space": null,
           "third_spaces": null,
           "median_income": null
@@ -1580,29 +1480,11 @@
           "third_spaces": null,
           "median_income": null
         },
-        "2006": {
-          "population": 190854.0,
-          "density": 31756.1,
-          "persons_per_dwelling": 1.85,
-          "transit_access": 7.335450134657905,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
         "2011": {
           "population": 203127.0,
           "density": 33798.2,
           "persons_per_dwelling": 1.87,
           "transit_access": 6.892239830253979,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "2016": {
-          "population": 195060.0,
-          "density": 32455.9,
-          "persons_per_dwelling": 1.85,
-          "transit_access": 7.17727878601456,
           "green_space": null,
           "third_spaces": null,
           "median_income": null
@@ -1621,20 +1503,110 @@
     {
       "name": "19e — Buttes-Chaumont",
       "values": {
+        "1861": {
+          "population": 76445.0,
+          "density": 11265.104627173594,
+          "persons_per_dwelling": null,
+          "transit_access": 0.0,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1872": {
+          "population": 93174.0,
+          "density": 13730.327144120249,
+          "persons_per_dwelling": null,
+          "transit_access": 0.0,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1881": {
+          "population": 117885.0,
+          "density": 17371.79487179487,
+          "persons_per_dwelling": null,
+          "transit_access": 0.0,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1891": {
+          "population": 128388.0,
+          "density": 18919.54022988506,
+          "persons_per_dwelling": null,
+          "transit_access": 0.0,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1901": {
+          "population": 144953.0,
+          "density": 21360.595343353965,
+          "persons_per_dwelling": null,
+          "transit_access": 11.727939401047236,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1911": {
+          "population": 155864.0,
+          "density": 22968.464485705867,
+          "persons_per_dwelling": null,
+          "transit_access": 10.906944515731663,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1921": {
+          "population": 156243.0,
+          "density": 23024.31476569408,
+          "persons_per_dwelling": null,
+          "transit_access": 10.880487445837574,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1931": {
+          "population": 165757.0,
+          "density": 24426.31889183613,
+          "persons_per_dwelling": null,
+          "transit_access": 10.255977123138088,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1936": {
+          "population": 163094.0,
+          "density": 24033.89330975538,
+          "persons_per_dwelling": null,
+          "transit_access": 10.423436791053012,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1946": {
+          "population": 149297.0,
+          "density": 22000.73681108164,
+          "persons_per_dwelling": null,
+          "transit_access": 11.386698995961071,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1962": {
+          "population": 156417.0,
+          "density": 23049.955791335105,
+          "persons_per_dwelling": null,
+          "transit_access": 10.868383871318334,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
         "1968": {
           "population": 148862.0,
           "density": 21923.7,
           "persons_per_dwelling": 2.34,
           "transit_access": 11.419972860770377,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "1975": {
-          "population": 144357.0,
-          "density": 21260.2,
-          "persons_per_dwelling": 2.18,
-          "transit_access": 11.776359996397819,
           "green_space": null,
           "third_spaces": null,
           "median_income": null
@@ -1666,29 +1638,11 @@
           "third_spaces": null,
           "median_income": null
         },
-        "2006": {
-          "population": 186180.0,
-          "density": 27419.7,
-          "persons_per_dwelling": 2.2,
-          "transit_access": 9.130948544419379,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
         "2011": {
           "population": 186090.0,
           "density": 27406.5,
           "persons_per_dwelling": 2.17,
           "transit_access": 9.135364608522757,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "2016": {
-          "population": 186393.0,
-          "density": 27451.1,
-          "persons_per_dwelling": 2.13,
-          "transit_access": 9.120514182399553,
           "green_space": null,
           "third_spaces": null,
           "median_income": null
@@ -1705,22 +1659,270 @@
       }
     },
     {
+      "name": "1er — Louvre",
+      "values": {
+        "1861": {
+          "population": 89519.0,
+          "density": 49024.644030668125,
+          "persons_per_dwelling": null,
+          "transit_access": 0.0,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1872": {
+          "population": 74286.0,
+          "density": 40682.36582694414,
+          "persons_per_dwelling": null,
+          "transit_access": 0.0,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1881": {
+          "population": 75390.0,
+          "density": 41286.96604600219,
+          "persons_per_dwelling": null,
+          "transit_access": 0.0,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1891": {
+          "population": 66399.0,
+          "density": 36363.08871851041,
+          "persons_per_dwelling": null,
+          "transit_access": 0.0,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1901": {
+          "population": 63768.0,
+          "density": 34922.23439211391,
+          "persons_per_dwelling": null,
+          "transit_access": 9.40910801656003,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1911": {
+          "population": 59037.0,
+          "density": 32331.32530120482,
+          "persons_per_dwelling": null,
+          "transit_access": 10.163118044616088,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1921": {
+          "population": 52277.0,
+          "density": 28629.244249726176,
+          "persons_per_dwelling": null,
+          "transit_access": 11.477322723186104,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1931": {
+          "population": 42166.0,
+          "density": 23092.00438116101,
+          "persons_per_dwelling": null,
+          "transit_access": 14.2294739837784,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1936": {
+          "population": 38436.0,
+          "density": 21049.28806133625,
+          "persons_per_dwelling": null,
+          "transit_access": 15.610365282547612,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1946": {
+          "population": 36478.0,
+          "density": 19976.998904709748,
+          "persons_per_dwelling": null,
+          "transit_access": 16.44827019025166,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1962": {
+          "population": 33830.0,
+          "density": 18526.83461117196,
+          "persons_per_dwelling": null,
+          "transit_access": 17.735737511084835,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1968": {
+          "population": 32332.0,
+          "density": 17667.8,
+          "persons_per_dwelling": 2.05,
+          "transit_access": 18.55746628726958,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1982": {
+          "population": 18509.0,
+          "density": 10114.2,
+          "persons_per_dwelling": 1.78,
+          "transit_access": 37.81943919174456,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1990": {
+          "population": 18360.0,
+          "density": 10032.8,
+          "persons_per_dwelling": 1.77,
+          "transit_access": 38.126361655773415,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1999": {
+          "population": 16888.0,
+          "density": 9228.4,
+          "persons_per_dwelling": 1.7,
+          "transit_access": 41.44954997631454,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "2011": {
+          "population": 17443.0,
+          "density": 9531.7,
+          "persons_per_dwelling": 1.7,
+          "transit_access": 40.1307114601846,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "2022": {
+          "population": 15475.0,
+          "density": 8456.3,
+          "persons_per_dwelling": 1.63,
+          "transit_access": 45.23424878836834,
+          "green_space": 3.262681744749596,
+          "third_spaces": 71.08239095315024,
+          "median_income": 35030.0
+        }
+      }
+    },
+    {
       "name": "20e — Ménilmontant",
       "values": {
+        "1861": {
+          "population": 70060.0,
+          "density": 11707.88770053476,
+          "persons_per_dwelling": null,
+          "transit_access": 0.0,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1872": {
+          "population": 92772.0,
+          "density": 15503.342245989305,
+          "persons_per_dwelling": null,
+          "transit_access": 0.0,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1881": {
+          "population": 126917.0,
+          "density": 21209.391711229942,
+          "persons_per_dwelling": null,
+          "transit_access": 0.0,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1891": {
+          "population": 142744.0,
+          "density": 23854.27807486631,
+          "persons_per_dwelling": null,
+          "transit_access": 0.0,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1901": {
+          "population": 166115.0,
+          "density": 27759.85962566845,
+          "persons_per_dwelling": null,
+          "transit_access": 7.223911145892905,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1911": {
+          "population": 180594.0,
+          "density": 30179.47860962567,
+          "persons_per_dwelling": null,
+          "transit_access": 6.64473902787468,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1921": {
+          "population": 187697.0,
+          "density": 31366.477272727272,
+          "persons_per_dwelling": null,
+          "transit_access": 6.393282790881048,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1931": {
+          "population": 195731.0,
+          "density": 32709.057486631016,
+          "persons_per_dwelling": null,
+          "transit_access": 6.130863276639879,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1936": {
+          "population": 208115.0,
+          "density": 34778.576203208555,
+          "persons_per_dwelling": null,
+          "transit_access": 5.766042812867886,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1946": {
+          "population": 193406.0,
+          "density": 32320.52139037433,
+          "persons_per_dwelling": null,
+          "transit_access": 6.2045644912774165,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1962": {
+          "population": 198463.0,
+          "density": 33165.608288770054,
+          "persons_per_dwelling": null,
+          "transit_access": 6.046467099660894,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
         "1968": {
           "population": 188921.0,
           "density": 31592.1,
           "persons_per_dwelling": 2.3,
           "transit_access": 6.351861360039381,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "1975": {
-          "population": 175795.0,
-          "density": 29397.2,
-          "persons_per_dwelling": 2.1,
-          "transit_access": 6.826132711396797,
           "green_space": null,
           "third_spaces": null,
           "median_income": null
@@ -1752,29 +1954,11 @@
           "third_spaces": null,
           "median_income": null
         },
-        "2006": {
-          "population": 193205.0,
-          "density": 32308.5,
-          "persons_per_dwelling": 1.99,
-          "transit_access": 6.2110193835563265,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
         "2011": {
           "population": 198042.0,
           "density": 33117.4,
           "persons_per_dwelling": 2.01,
           "transit_access": 6.059320750143908,
-          "green_space": null,
-          "third_spaces": null,
-          "median_income": null
-        },
-        "2016": {
-          "population": 195604.0,
-          "density": 32709.7,
-          "persons_per_dwelling": 1.97,
-          "transit_access": 6.1348438682235535,
           "green_space": null,
           "third_spaces": null,
           "median_income": null
@@ -1789,10 +1973,1276 @@
           "median_income": 23570.0
         }
       }
+    },
+    {
+      "name": "2e — Bourse",
+      "values": {
+        "1861": {
+          "population": 81609.0,
+          "density": 82267.1370967742,
+          "persons_per_dwelling": null,
+          "transit_access": 0.0,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1872": {
+          "population": 73578.0,
+          "density": 74171.37096774194,
+          "persons_per_dwelling": null,
+          "transit_access": 0.0,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1881": {
+          "population": 76394.0,
+          "density": 77010.08064516129,
+          "persons_per_dwelling": null,
+          "transit_access": 0.0,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1891": {
+          "population": 69802.0,
+          "density": 70364.91935483871,
+          "persons_per_dwelling": null,
+          "transit_access": 0.0,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1901": {
+          "population": 64267.0,
+          "density": 64785.28225806452,
+          "persons_per_dwelling": null,
+          "transit_access": 7.780042634633638,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1911": {
+          "population": 60404.0,
+          "density": 60891.12903225807,
+          "persons_per_dwelling": null,
+          "transit_access": 8.27759751009867,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1921": {
+          "population": 53317.0,
+          "density": 53746.97580645161,
+          "persons_per_dwelling": null,
+          "transit_access": 9.377871973291821,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1931": {
+          "population": 44311.0,
+          "density": 44668.346774193546,
+          "persons_per_dwelling": null,
+          "transit_access": 11.283879849247366,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1936": {
+          "population": 41780.0,
+          "density": 42116.93548387097,
+          "persons_per_dwelling": null,
+          "transit_access": 11.967448539971278,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1946": {
+          "population": 41419.0,
+          "density": 41753.02419354839,
+          "persons_per_dwelling": null,
+          "transit_access": 12.071754508800309,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1962": {
+          "population": 40055.0,
+          "density": 40378.02419354839,
+          "persons_per_dwelling": null,
+          "transit_access": 12.482836100362002,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1968": {
+          "population": 35357.0,
+          "density": 35714.1,
+          "persons_per_dwelling": 2.0,
+          "transit_access": 14.141471278671832,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1982": {
+          "population": 21203.0,
+          "density": 21417.2,
+          "persons_per_dwelling": 1.72,
+          "transit_access": 23.581568645946327,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1990": {
+          "population": 20738.0,
+          "density": 20947.5,
+          "persons_per_dwelling": 1.76,
+          "transit_access": 24.110328864885716,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1999": {
+          "population": 19585.0,
+          "density": 19782.8,
+          "persons_per_dwelling": 1.7,
+          "transit_access": 25.529742149604292,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "2011": {
+          "population": 22927.0,
+          "density": 23158.6,
+          "persons_per_dwelling": 1.7,
+          "transit_access": 21.808348235704628,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "2022": {
+          "population": 20433.0,
+          "density": 20639.4,
+          "persons_per_dwelling": 1.67,
+          "transit_access": 24.47021974257329,
+          "green_space": 0.2473449811579308,
+          "third_spaces": 14.682131845543973,
+          "median_income": 34050.0
+        }
+      }
+    },
+    {
+      "name": "3e — Temple",
+      "values": {
+        "1861": {
+          "population": 99116.0,
+          "density": 84642.18616567037,
+          "persons_per_dwelling": null,
+          "transit_access": 0.0,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1872": {
+          "population": 89687.0,
+          "density": 76590.09393680615,
+          "persons_per_dwelling": null,
+          "transit_access": 0.0,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1881": {
+          "population": 94254.0,
+          "density": 80490.17933390265,
+          "persons_per_dwelling": null,
+          "transit_access": 0.0,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1891": {
+          "population": 90000.0,
+          "density": 76857.38684884713,
+          "persons_per_dwelling": null,
+          "transit_access": 0.0,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1901": {
+          "population": 90230.0,
+          "density": 77053.80017079419,
+          "persons_per_dwelling": null,
+          "transit_access": 5.54139421478444,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1911": {
+          "population": 86811.0,
+          "density": 74134.07344150299,
+          "persons_per_dwelling": null,
+          "transit_access": 5.7596387554572575,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1921": {
+          "population": 77627.0,
+          "density": 66291.20409906063,
+          "persons_per_dwelling": null,
+          "transit_access": 6.441057879346103,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1931": {
+          "population": 70971.0,
+          "density": 60607.17335610589,
+          "persons_per_dwelling": null,
+          "transit_access": 7.045131109889955,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1936": {
+          "population": 66233.0,
+          "density": 56561.058923996585,
+          "persons_per_dwelling": null,
+          "transit_access": 7.549106940648921,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1946": {
+          "population": 64393.0,
+          "density": 54989.75234842015,
+          "persons_per_dwelling": null,
+          "transit_access": 7.764819157361826,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1962": {
+          "population": 61546.0,
+          "density": 52558.49701110162,
+          "persons_per_dwelling": null,
+          "transit_access": 8.124004809410847,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1968": {
+          "population": 56252.0,
+          "density": 48078.6,
+          "persons_per_dwelling": 2.11,
+          "transit_access": 8.888572850743085,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1982": {
+          "population": 36094.0,
+          "density": 30849.6,
+          "persons_per_dwelling": 1.81,
+          "transit_access": 13.85271790325262,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1990": {
+          "population": 35102.0,
+          "density": 30001.7,
+          "persons_per_dwelling": 1.78,
+          "transit_access": 14.244202609537917,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1999": {
+          "population": 34248.0,
+          "density": 29271.8,
+          "persons_per_dwelling": 1.75,
+          "transit_access": 14.599392665265125,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "2011": {
+          "population": 36120.0,
+          "density": 30871.8,
+          "persons_per_dwelling": 1.71,
+          "transit_access": 13.842746400885936,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "2022": {
+          "population": 32772.0,
+          "density": 28010.3,
+          "persons_per_dwelling": 1.66,
+          "transit_access": 15.256926644696692,
+          "green_space": 0.8730623703161235,
+          "third_spaces": 30.513853289393385,
+          "median_income": 34800.0
+        }
+      }
+    },
+    {
+      "name": "4e — Hôtel-de-Ville",
+      "values": {
+        "1861": {
+          "population": 108520.0,
+          "density": 67782.63585259212,
+          "persons_per_dwelling": null,
+          "transit_access": 0.0,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1872": {
+          "population": 95003.0,
+          "density": 59339.787632729545,
+          "persons_per_dwelling": null,
+          "transit_access": 0.0,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1881": {
+          "population": 103760.0,
+          "density": 64809.49406620862,
+          "persons_per_dwelling": null,
+          "transit_access": 0.0,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1891": {
+          "population": 100046.0,
+          "density": 62489.6939412867,
+          "persons_per_dwelling": null,
+          "transit_access": 0.0,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1901": {
+          "population": 100329.0,
+          "density": 62666.45846346034,
+          "persons_per_dwelling": null,
+          "transit_access": 5.980324731632928,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1911": {
+          "population": 100377.0,
+          "density": 62696.43972517177,
+          "persons_per_dwelling": null,
+          "transit_access": 5.977464957111689,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1921": {
+          "population": 91741.0,
+          "density": 57302.31105559026,
+          "persons_per_dwelling": null,
+          "transit_access": 6.540151077489891,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1931": {
+          "population": 83063.0,
+          "density": 51881.94878201124,
+          "persons_per_dwelling": null,
+          "transit_access": 7.223432816055284,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1936": {
+          "population": 70944.0,
+          "density": 44312.30480949407,
+          "persons_per_dwelling": null,
+          "transit_access": 8.457374830852505,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1946": {
+          "population": 60082.0,
+          "density": 37527.79512804497,
+          "persons_per_dwelling": null,
+          "transit_access": 9.986351985619653,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1962": {
+          "population": 60763.0,
+          "density": 37953.15427857589,
+          "persons_per_dwelling": null,
+          "transit_access": 9.874430163092672,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1968": {
+          "population": 54029.0,
+          "density": 33768.1,
+          "persons_per_dwelling": 2.16,
+          "transit_access": 11.105147235743768,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1982": {
+          "population": 33990.0,
+          "density": 21243.8,
+          "persons_per_dwelling": 1.79,
+          "transit_access": 17.6522506619594,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1990": {
+          "population": 32226.0,
+          "density": 20141.3,
+          "persons_per_dwelling": 1.79,
+          "transit_access": 18.618506795754982,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1999": {
+          "population": 30675.0,
+          "density": 19171.9,
+          "persons_per_dwelling": 1.66,
+          "transit_access": 19.559902200489,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "2011": {
+          "population": 27887.0,
+          "density": 17429.4,
+          "persons_per_dwelling": 1.69,
+          "transit_access": 21.515401441531896,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "2022": {
+          "population": 28039.0,
+          "density": 17524.4,
+          "persons_per_dwelling": 1.72,
+          "transit_access": 21.39876600449374,
+          "green_space": 2.583722671992582,
+          "third_spaces": 49.9304540104854,
+          "median_income": 33040.0
+        }
+      }
+    },
+    {
+      "name": "5e — Panthéon",
+      "values": {
+        "1861": {
+          "population": 107754.0,
+          "density": 42406.13931523023,
+          "persons_per_dwelling": null,
+          "transit_access": 0.0,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1872": {
+          "population": 96689.0,
+          "density": 38051.554506099965,
+          "persons_per_dwelling": null,
+          "transit_access": 0.0,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1881": {
+          "population": 114444.0,
+          "density": 45038.96103896104,
+          "persons_per_dwelling": null,
+          "transit_access": 0.0,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1891": {
+          "population": 117549.0,
+          "density": 46260.92089728454,
+          "persons_per_dwelling": null,
+          "transit_access": 0.0,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1901": {
+          "population": 119198.0,
+          "density": 46909.878000787096,
+          "persons_per_dwelling": null,
+          "transit_access": 5.033641504052081,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1911": {
+          "population": 121378.0,
+          "density": 47767.80794962613,
+          "persons_per_dwelling": null,
+          "transit_access": 4.943235182652541,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1921": {
+          "population": 121242.0,
+          "density": 47714.28571428572,
+          "persons_per_dwelling": null,
+          "transit_access": 4.948780125699015,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1931": {
+          "population": 117770.0,
+          "density": 46347.89452971272,
+          "persons_per_dwelling": null,
+          "transit_access": 5.094676063513628,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1936": {
+          "population": 107120.0,
+          "density": 42156.63124754034,
+          "persons_per_dwelling": null,
+          "transit_access": 5.601194921583271,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1946": {
+          "population": 102608.0,
+          "density": 40380.95238095238,
+          "persons_per_dwelling": null,
+          "transit_access": 5.84749727116794,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1962": {
+          "population": 95473.0,
+          "density": 37573.00275482094,
+          "persons_per_dwelling": null,
+          "transit_access": 6.284499282519666,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1968": {
+          "population": 83721.0,
+          "density": 32961.0,
+          "persons_per_dwelling": 2.06,
+          "transit_access": 7.166660694449422,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1982": {
+          "population": 62173.0,
+          "density": 24477.6,
+          "persons_per_dwelling": 1.76,
+          "transit_access": 9.650491370852299,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1990": {
+          "population": 61222.0,
+          "density": 24103.1,
+          "persons_per_dwelling": 1.76,
+          "transit_access": 9.800398549541015,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1999": {
+          "population": 58849.0,
+          "density": 23168.9,
+          "persons_per_dwelling": 1.71,
+          "transit_access": 10.195585311560095,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "2011": {
+          "population": 60800.0,
+          "density": 23937.0,
+          "persons_per_dwelling": 1.72,
+          "transit_access": 9.868421052631579,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "2022": {
+          "population": 55925.0,
+          "density": 22017.7,
+          "persons_per_dwelling": 1.71,
+          "transit_access": 10.728654447921324,
+          "green_space": 1.6639606616003575,
+          "third_spaces": 25.033527045149757,
+          "median_income": 35960.0
+        }
+      }
+    },
+    {
+      "name": "6e — Luxembourg",
+      "values": {
+        "1861": {
+          "population": 95931.0,
+          "density": 44536.21169916435,
+          "persons_per_dwelling": null,
+          "transit_access": 0.0,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1872": {
+          "population": 90288.0,
+          "density": 41916.43454038997,
+          "persons_per_dwelling": null,
+          "transit_access": 0.0,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1881": {
+          "population": 97735.0,
+          "density": 45373.72330547818,
+          "persons_per_dwelling": null,
+          "transit_access": 0.0,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1891": {
+          "population": 100143.0,
+          "density": 46491.643454039,
+          "persons_per_dwelling": null,
+          "transit_access": 0.0,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1901": {
+          "population": 102782.0,
+          "density": 47716.805942432686,
+          "persons_per_dwelling": null,
+          "transit_access": 11.675196046000273,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1911": {
+          "population": 102993.0,
+          "density": 47814.76323119777,
+          "persons_per_dwelling": null,
+          "transit_access": 11.651277271270864,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1921": {
+          "population": 101584.0,
+          "density": 47160.63138347261,
+          "persons_per_dwelling": null,
+          "transit_access": 11.812883918727358,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1931": {
+          "population": 100046.0,
+          "density": 46446.61095636026,
+          "persons_per_dwelling": null,
+          "transit_access": 11.994482538032505,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1936": {
+          "population": 89506.0,
+          "density": 41553.38904363974,
+          "persons_per_dwelling": null,
+          "transit_access": 13.40692244095368,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1946": {
+          "population": 83963.0,
+          "density": 38980.03714020427,
+          "persons_per_dwelling": null,
+          "transit_access": 14.292009575646416,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1962": {
+          "population": 79699.0,
+          "density": 37000.46425255339,
+          "persons_per_dwelling": null,
+          "transit_access": 15.056650648063338,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1968": {
+          "population": 70891.0,
+          "density": 32972.6,
+          "persons_per_dwelling": 2.16,
+          "transit_access": 16.92739557912852,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1982": {
+          "population": 48905.0,
+          "density": 22746.5,
+          "persons_per_dwelling": 1.86,
+          "transit_access": 24.537368367242614,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1990": {
+          "population": 47891.0,
+          "density": 22274.9,
+          "persons_per_dwelling": 1.82,
+          "transit_access": 25.056900043849577,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1999": {
+          "population": 44919.0,
+          "density": 20892.6,
+          "persons_per_dwelling": 1.75,
+          "transit_access": 26.71475322246711,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "2011": {
+          "population": 43880.0,
+          "density": 20409.3,
+          "persons_per_dwelling": 1.76,
+          "transit_access": 27.347310847766636,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "2022": {
+          "population": 40432.0,
+          "density": 18805.6,
+          "persons_per_dwelling": 1.71,
+          "transit_access": 29.679461812425803,
+          "green_space": 0.7867530668777206,
+          "third_spaces": 34.62603878116344,
+          "median_income": 41750.0
+        }
+      }
+    },
+    {
+      "name": "7e — Palais-Bourbon",
+      "values": {
+        "1861": {
+          "population": 72965.0,
+          "density": 17848.58121330724,
+          "persons_per_dwelling": null,
+          "transit_access": 0.0,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1872": {
+          "population": 78553.0,
+          "density": 19215.50880626223,
+          "persons_per_dwelling": null,
+          "transit_access": 0.0,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1881": {
+          "population": 83327.0,
+          "density": 20383.317025440312,
+          "persons_per_dwelling": null,
+          "transit_access": 0.0,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1891": {
+          "population": 97950.0,
+          "density": 23960.37181996086,
+          "persons_per_dwelling": null,
+          "transit_access": 0.0,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1901": {
+          "population": 102497.0,
+          "density": 25072.65166340509,
+          "persons_per_dwelling": null,
+          "transit_access": 8.780744802286897,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1911": {
+          "population": 106279.0,
+          "density": 25997.79843444227,
+          "persons_per_dwelling": null,
+          "transit_access": 8.468276893836036,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1921": {
+          "population": 110345.0,
+          "density": 26992.4168297456,
+          "persons_per_dwelling": null,
+          "transit_access": 8.156237255879287,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1931": {
+          "population": 107567.0,
+          "density": 26312.866927592957,
+          "persons_per_dwelling": null,
+          "transit_access": 8.366878317699666,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1936": {
+          "population": 104154.0,
+          "density": 25477.9843444227,
+          "persons_per_dwelling": null,
+          "transit_access": 8.641050751771415,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1946": {
+          "population": 102559.0,
+          "density": 25087.818003913893,
+          "persons_per_dwelling": null,
+          "transit_access": 8.775436577969753,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1962": {
+          "population": 98246.0,
+          "density": 24032.778864970645,
+          "persons_per_dwelling": null,
+          "transit_access": 9.160678297335261,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1968": {
+          "population": 87811.0,
+          "density": 21469.7,
+          "persons_per_dwelling": 2.29,
+          "transit_access": 10.249285397045929,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1982": {
+          "population": 67461.0,
+          "density": 16494.1,
+          "persons_per_dwelling": 1.94,
+          "transit_access": 13.341041490639038,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1990": {
+          "population": 62939.0,
+          "density": 15388.5,
+          "persons_per_dwelling": 1.92,
+          "transit_access": 14.299559891323344,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1999": {
+          "population": 56985.0,
+          "density": 13932.8,
+          "persons_per_dwelling": 1.84,
+          "transit_access": 15.793629902605948,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "2011": {
+          "population": 57786.0,
+          "density": 14128.6,
+          "persons_per_dwelling": 1.83,
+          "transit_access": 15.574706676357595,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "2022": {
+          "population": 48196.0,
+          "density": 11783.9,
+          "persons_per_dwelling": 1.8,
+          "transit_access": 18.67374885882646,
+          "green_space": 8.309382521371068,
+          "third_spaces": 31.122914764710764,
+          "median_income": 45380.0
+        }
+      }
+    },
+    {
+      "name": "8e — Élysée",
+      "values": {
+        "1861": {
+          "population": 69814.0,
+          "density": 17988.6627157949,
+          "persons_per_dwelling": null,
+          "transit_access": 0.0,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1872": {
+          "population": 75796.0,
+          "density": 19530.01803658851,
+          "persons_per_dwelling": null,
+          "transit_access": 0.0,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1881": {
+          "population": 89004.0,
+          "density": 22933.26462251997,
+          "persons_per_dwelling": null,
+          "transit_access": 0.0,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1891": {
+          "population": 107485.0,
+          "density": 27695.181654212836,
+          "persons_per_dwelling": null,
+          "transit_access": 0.0,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1901": {
+          "population": 107171.0,
+          "density": 27614.274671476425,
+          "persons_per_dwelling": null,
+          "transit_access": 11.197058905860727,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1911": {
+          "population": 104635.0,
+          "density": 26960.83483638238,
+          "persons_per_dwelling": null,
+          "transit_access": 12.424141061786209,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1921": {
+          "population": 97344.0,
+          "density": 25082.19531048699,
+          "persons_per_dwelling": null,
+          "transit_access": 13.354700854700855,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1931": {
+          "population": 84851.0,
+          "density": 21863.17959288843,
+          "persons_per_dwelling": null,
+          "transit_access": 15.320974413972728,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1936": {
+          "population": 77543.0,
+          "density": 19980.159752641077,
+          "persons_per_dwelling": null,
+          "transit_access": 16.764891737487588,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1946": {
+          "population": 72438.0,
+          "density": 18664.77711929915,
+          "persons_per_dwelling": null,
+          "transit_access": 17.946381733344378,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1962": {
+          "population": 73430.0,
+          "density": 18920.38134501417,
+          "persons_per_dwelling": null,
+          "transit_access": 17.70393572109492,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1968": {
+          "population": 67897.0,
+          "density": 17499.2,
+          "persons_per_dwelling": 2.33,
+          "transit_access": 19.146648600085424,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1982": {
+          "population": 46403.0,
+          "density": 11959.5,
+          "persons_per_dwelling": 2.02,
+          "transit_access": 28.01543003685107,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1990": {
+          "population": 40814.0,
+          "density": 10519.1,
+          "persons_per_dwelling": 2.03,
+          "transit_access": 31.85181555348655,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1999": {
+          "population": 39314.0,
+          "density": 10132.5,
+          "persons_per_dwelling": 1.99,
+          "transit_access": 33.06710077834868,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "2011": {
+          "population": 40589.0,
+          "density": 10461.1,
+          "persons_per_dwelling": 2.06,
+          "transit_access": 32.02838207396093,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "2022": {
+          "population": 35418.0,
+          "density": 9128.4,
+          "persons_per_dwelling": 1.99,
+          "transit_access": 36.70450053645039,
+          "green_space": 6.687644700434807,
+          "third_spaces": 25.410808063696425,
+          "median_income": 44100.0
+        }
+      }
+    },
+    {
+      "name": "9e — Opéra",
+      "values": {
+        "1861": {
+          "population": 107326.0,
+          "density": 49254.70399265719,
+          "persons_per_dwelling": null,
+          "transit_access": 0.0,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1872": {
+          "population": 103767.0,
+          "density": 47621.38595686095,
+          "persons_per_dwelling": null,
+          "transit_access": 0.0,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1881": {
+          "population": 122896.0,
+          "density": 56400.183570445166,
+          "persons_per_dwelling": null,
+          "transit_access": 0.0,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1891": {
+          "population": 121289.0,
+          "density": 55662.68930702157,
+          "persons_per_dwelling": null,
+          "transit_access": 0.0,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1901": {
+          "population": 124011.0,
+          "density": 56911.88618632401,
+          "persons_per_dwelling": null,
+          "transit_access": 10.48294102942481,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1911": {
+          "population": 119626.0,
+          "density": 54899.495181275815,
+          "persons_per_dwelling": null,
+          "transit_access": 10.867202782003913,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1921": {
+          "population": 113392.0,
+          "density": 52038.54979348325,
+          "persons_per_dwelling": null,
+          "transit_access": 11.464653591082264,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1931": {
+          "population": 102797.0,
+          "density": 47176.227627352,
+          "persons_per_dwelling": null,
+          "transit_access": 12.646283451851707,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1936": {
+          "population": 95877.0,
+          "density": 44000.4589261129,
+          "persons_per_dwelling": null,
+          "transit_access": 13.559039185623247,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1946": {
+          "population": 96666.0,
+          "density": 44362.55162918771,
+          "persons_per_dwelling": null,
+          "transit_access": 13.448368609438687,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1962": {
+          "population": 92110.0,
+          "density": 42271.68425883433,
+          "persons_per_dwelling": null,
+          "transit_access": 14.11355987406362,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1968": {
+          "population": 84969.0,
+          "density": 38976.6,
+          "persons_per_dwelling": 2.09,
+          "transit_access": 15.299697536748697,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1982": {
+          "population": 64134.0,
+          "density": 29419.3,
+          "persons_per_dwelling": 1.83,
+          "transit_access": 20.270059562790408,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1990": {
+          "population": 58019.0,
+          "density": 26614.2,
+          "persons_per_dwelling": 1.88,
+          "transit_access": 22.406453058480842,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "1999": {
+          "population": 55838.0,
+          "density": 25613.8,
+          "persons_per_dwelling": 1.82,
+          "transit_access": 23.281636161753646,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "2011": {
+          "population": 60120.0,
+          "density": 27578.0,
+          "persons_per_dwelling": 1.87,
+          "transit_access": 21.62341982701264,
+          "green_space": null,
+          "third_spaces": null,
+          "median_income": null
+        },
+        "2022": {
+          "population": 58419.0,
+          "density": 26797.7,
+          "persons_per_dwelling": 1.82,
+          "transit_access": 22.253034115613072,
+          "green_space": 0.3619370410311713,
+          "third_spaces": 15.405946695424436,
+          "median_income": 37220.0
+        }
+      }
     }
   ],
   "sourceNotes": {
-    "population": "INSEE dossier complet, arrondissement tables.",
+    "population": "Demographia (French census) 1861–1999; INSEE dossier complet 1968–2022.",
+    "density": "Population ÷ fixed arrondissement area (post-1860 boundaries).",
+    "persons_per_dwelling": "INSEE housing tables; available 1968+ only.",
     "transit_access": "Metro opening years from Wikidata/OSM; cumulative stations by decade.",
     "green_space": "opendata.paris.fr espaces verts, 2022 only.",
     "third_spaces": "Libraries + museums per 100k, 2022 only.",

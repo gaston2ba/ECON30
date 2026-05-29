@@ -1,13 +1,13 @@
 const CFG = {
-  cityTag: "Paris",
-  entitiesKey: "arrondissements",
-  entityLabel: "arrondissement",
-  entityCount: 20,
-  uqiUrl: "../data/paris/uqi-by-arrondissement.json",
-  geoUrl: "../data/paris/arrondissements.geojson",
-  hdiUrl: "../data/paris/hdi-by-arrondissement.json",
-  hdiEarliest: "2010",
-  pathClass: "arrondissement-path"
+  cityTag: "CDMX",
+  entitiesKey: "alcaldias",
+  entityLabel: "alcaldía",
+  entityCount: 16,
+  uqiUrl: "../data/cdmx/uqi-by-alcaldia.json",
+  geoUrl: "../data/cdmx/alcaldias.geojson",
+  hdiUrl: "../data/cdmx/hdi-by-alcaldia.json",
+  hdiEarliest: "2000",
+  pathClass: "alcaldia-path"
 };
 
 const state = {
@@ -22,7 +22,10 @@ const state = {
   timer: null
 };
 
-const aliases = new Map();
+const aliases = new Map([
+  ["magdalena_contreras", "la_magdalena_contreras"],
+  ["cuajimalpa", "cuajimalpa_de_morelos"]
+]);
 
 const tooltip = document.getElementById("tooltip");
 const palette = ["#d95f59", "#e79262", "#f1d36b", "#9cc77b", "#5aac72"];
@@ -126,7 +129,7 @@ function setDecadeByIndex(index) {
 function syncDecadeLabels() {
   const index = state.data.decades.indexOf(state.decade);
   document.getElementById("decadeLabel").textContent = state.decade;
-  document.getElementById("mapStatus").textContent = `${state.decade} · Paris UQI`;
+  document.getElementById("mapStatus").textContent = `${state.decade} · CDMX UQI`;
   document.getElementById("decadeSlider").value = index;
   document.getElementById("mapDecadeSlider").value = index;
 }
@@ -213,7 +216,7 @@ function colorFor(score) {
 }
 
 function featureName(feature) {
-  return feature.properties?.name || feature.properties?.NOMGEO || feature.properties?.nomgeo || "";
+  return feature.properties?.alcaldia || feature.properties?.NOMGEO || feature.properties?.nomgeo || "";
 }
 
 function getAllPoints(geometry) {
@@ -290,12 +293,12 @@ function renderMap() {
   }).join("");
   const labels = state.boundaries.features.map(feature => {
     const [x, y] = geometryCentroid(feature.geometry, project);
-    const name = featureName(feature);
+    const name = featureName(feature).replace("La Magdalena Contreras", "Magdalena C.").replace("Gustavo A. Madero", "G.A. Madero").replace("Venustiano Carranza", "V. Carranza").replace("Cuajimalpa de Morelos", "Cuajimalpa");
     return `<text class="map-label" x="${x.toFixed(1)}" y="${y.toFixed(1)}">${name}</text>`;
   }).join("");
 
   document.getElementById("map").innerHTML = `
-    <svg viewBox="0 0 ${width} ${height}" role="img" aria-label="Paris UQI by arrondissement">
+    <svg viewBox="0 0 ${width} ${height}" role="img" aria-label="Mexico City UQI by alcaldía">
       <rect width="${width}" height="${height}" fill="#f1f3f0"></rect>
       <g>${paths}</g>
       <g>${labels}</g>
@@ -348,7 +351,7 @@ function renderLineChart() {
   }).join("");
 
   document.getElementById("lineChart").innerHTML = `
-    <svg viewBox="0 0 ${width} ${height}" role="img" aria-label="UQI score by decade for each arrondissement">
+    <svg viewBox="0 0 ${width} ${height}" role="img" aria-label="UQI score by decade for each alcaldía">
       <rect width="${width}" height="${height}" fill="#fff"></rect>
       ${grid}
       <line class="axis" x1="${margin.left}" x2="${width - margin.right}" y1="${height - margin.bottom}" y2="${height - margin.bottom}"></line>
@@ -361,7 +364,7 @@ function renderLineChart() {
 
   document.querySelectorAll(".chart-line").forEach(line => {
     line.addEventListener("mousemove", event => {
-      tooltip.innerHTML = `<strong>${line.dataset.name}</strong>Line shows UQI score from 1870 to 2020 for the selected variables.`;
+      tooltip.innerHTML = `<strong>${line.dataset.name}</strong>Line shows UQI score from 1860 to 2020 for the selected variables.`;
       tooltip.style.display = "block";
       tooltip.style.left = `${event.clientX + 14}px`;
       tooltip.style.top = `${event.clientY + 14}px`;

@@ -1,0 +1,18 @@
+{
+  "description": "Paris arrondissement population, post-1860 boundaries",
+  "year_range": [
+    1861,
+    2022
+  ],
+  "years_count": 27,
+  "arrondissements": 20,
+  "sources": {
+    "1861_1999": "http://demographia.com/db-paris-arr1999.htm",
+    "1968_2022": "C:\\Users\\gba09\\OneDrive\\Bureau\\ECON 30 PROJECT\\data\\paris\\paris_population.csv"
+  },
+  "notes": [
+    "1860 boundary expansion: use only post-1860 arrondissement numbering (I-XX / 1-20).",
+    "persons_per_dwelling available from INSEE for 1968+ only in current pipeline.",
+    "green_space, third_spaces, median_income remain 2022 snapshots when exported to UQI JSON."
+  ]
+}

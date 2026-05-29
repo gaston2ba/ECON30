@@ -1,0 +1,833 @@
+{
+  "title": "Paris Human Development Index",
+  "description": "Arrondissement HDI 2020 (2010 rough backcast) via UN HDR 2022 geometric mean.",
+  "decades": [
+    "1870",
+    "1880",
+    "1890",
+    "1900",
+    "1910",
+    "1920",
+    "1930",
+    "1940",
+    "1950",
+    "1960",
+    "1970",
+    "1980",
+    "1990",
+    "2000",
+    "2010",
+    "2020"
+  ],
+  "variables": [
+    {
+      "key": "hdi",
+      "label": "HDI",
+      "unit": "index",
+      "higherIsBetter": true,
+      "defaultSelected": true
+    }
+  ],
+  "arrondissements": [
+    {
+      "name": "1er Louvre",
+      "id": 1,
+      "values": {
+        "1870": null,
+        "1880": null,
+        "1890": null,
+        "1900": null,
+        "1910": null,
+        "1920": null,
+        "1930": null,
+        "1940": null,
+        "1950": null,
+        "1960": null,
+        "1970": null,
+        "1980": null,
+        "1990": null,
+        "2000": null,
+        "2010": {
+          "hdi": 0.8899,
+          "life_exp_index": 0.9877,
+          "education_index": 0.8194,
+          "income_index": 0.9309,
+          "life_expectancy": 84.2,
+          "mean_years_schooling": 12.78,
+          "expected_years_schooling": 14.16,
+          "gni_per_capita_ppp": 47466.0
+        },
+        "2020": {
+          "hdi": 0.9099,
+          "life_exp_index": 0.9877,
+          "education_index": 0.8194,
+          "income_index": 0.9309,
+          "life_expectancy": 84.2,
+          "mean_years_schooling": 12.78,
+          "expected_years_schooling": 14.16,
+          "gni_per_capita_ppp": 47466.0
+        }
+      }
+    },
+    {
+      "name": "2e Bourse",
+      "id": 2,
+      "values": {
+        "1870": null,
+        "1880": null,
+        "1890": null,
+        "1900": null,
+        "1910": null,
+        "1920": null,
+        "1930": null,
+        "1940": null,
+        "1950": null,
+        "1960": null,
+        "1970": null,
+        "1980": null,
+        "1990": null,
+        "2000": null,
+        "2010": {
+          "hdi": 0.8845,
+          "life_exp_index": 0.9928,
+          "education_index": 0.8044,
+          "income_index": 0.9266,
+          "life_expectancy": 84.53,
+          "mean_years_schooling": 12.48,
+          "expected_years_schooling": 13.99,
+          "gni_per_capita_ppp": 46138.0
+        },
+        "2020": {
+          "hdi": 0.9045,
+          "life_exp_index": 0.9928,
+          "education_index": 0.8044,
+          "income_index": 0.9266,
+          "life_expectancy": 84.53,
+          "mean_years_schooling": 12.48,
+          "expected_years_schooling": 13.99,
+          "gni_per_capita_ppp": 46138.0
+        }
+      }
+    },
+    {
+      "name": "3e Temple",
+      "id": 3,
+      "values": {
+        "1870": null,
+        "1880": null,
+        "1890": null,
+        "1900": null,
+        "1910": null,
+        "1920": null,
+        "1930": null,
+        "1940": null,
+        "1950": null,
+        "1960": null,
+        "1970": null,
+        "1980": null,
+        "1990": null,
+        "2000": null,
+        "2010": {
+          "hdi": 0.8907,
+          "life_exp_index": 0.9954,
+          "education_index": 0.8159,
+          "income_index": 0.9299,
+          "life_expectancy": 84.7,
+          "mean_years_schooling": 12.71,
+          "expected_years_schooling": 14.12,
+          "gni_per_capita_ppp": 47154.0
+        },
+        "2020": {
+          "hdi": 0.9107,
+          "life_exp_index": 0.9954,
+          "education_index": 0.8159,
+          "income_index": 0.9299,
+          "life_expectancy": 84.7,
+          "mean_years_schooling": 12.71,
+          "expected_years_schooling": 14.12,
+          "gni_per_capita_ppp": 47154.0
+        }
+      }
+    },
+    {
+      "name": "4e Hôtel-de-Ville",
+      "id": 4,
+      "values": {
+        "1870": null,
+        "1880": null,
+        "1890": null,
+        "1900": null,
+        "1910": null,
+        "1920": null,
+        "1930": null,
+        "1940": null,
+        "1950": null,
+        "1960": null,
+        "1970": null,
+        "1980": null,
+        "1990": null,
+        "2000": null,
+        "2010": {
+          "hdi": 0.8761,
+          "life_exp_index": 0.9893,
+          "education_index": 0.789,
+          "income_index": 0.9221,
+          "life_expectancy": 84.3,
+          "mean_years_schooling": 12.16,
+          "expected_years_schooling": 13.81,
+          "gni_per_capita_ppp": 44770.0
+        },
+        "2020": {
+          "hdi": 0.8961,
+          "life_exp_index": 0.9893,
+          "education_index": 0.789,
+          "income_index": 0.9221,
+          "life_expectancy": 84.3,
+          "mean_years_schooling": 12.16,
+          "expected_years_schooling": 13.81,
+          "gni_per_capita_ppp": 44770.0
+        }
+      }
+    },
+    {
+      "name": "5e Panthéon",
+      "id": 5,
+      "values": {
+        "1870": null,
+        "1880": null,
+        "1890": null,
+        "1900": null,
+        "1910": null,
+        "1920": null,
+        "1930": null,
+        "1940": null,
+        "1950": null,
+        "1960": null,
+        "1970": null,
+        "1980": null,
+        "1990": null,
+        "2000": null,
+        "2010": {
+          "hdi": 0.9001,
+          "life_exp_index": 0.9995,
+          "education_index": 0.8336,
+          "income_index": 0.9349,
+          "life_expectancy": 84.97,
+          "mean_years_schooling": 13.07,
+          "expected_years_schooling": 14.33,
+          "gni_per_capita_ppp": 48726.0
+        },
+        "2020": {
+          "hdi": 0.9201,
+          "life_exp_index": 0.9995,
+          "education_index": 0.8336,
+          "income_index": 0.9349,
+          "life_expectancy": 84.97,
+          "mean_years_schooling": 13.07,
+          "expected_years_schooling": 14.33,
+          "gni_per_capita_ppp": 48726.0
+        }
+      }
+    },
+    {
+      "name": "6e Luxembourg",
+      "id": 6,
+      "values": {
+        "1870": null,
+        "1880": null,
+        "1890": null,
+        "1900": null,
+        "1910": null,
+        "1920": null,
+        "1930": null,
+        "1940": null,
+        "1950": null,
+        "1960": null,
+        "1970": null,
+        "1980": null,
+        "1990": null,
+        "2000": null,
+        "2010": {
+          "hdi": 0.9394,
+          "life_exp_index": 1.0,
+          "education_index": 0.9222,
+          "income_index": 0.9574,
+          "life_expectancy": 86.28,
+          "mean_years_schooling": 14.87,
+          "expected_years_schooling": 15.35,
+          "gni_per_capita_ppp": 56572.0
+        },
+        "2020": {
+          "hdi": 0.9594,
+          "life_exp_index": 1.0,
+          "education_index": 0.9222,
+          "income_index": 0.9574,
+          "life_expectancy": 86.28,
+          "mean_years_schooling": 14.87,
+          "expected_years_schooling": 15.35,
+          "gni_per_capita_ppp": 56572.0
+        }
+      }
+    },
+    {
+      "name": "7e Palais-Bourbon",
+      "id": 7,
+      "values": {
+        "1870": null,
+        "1880": null,
+        "1890": null,
+        "1900": null,
+        "1910": null,
+        "1920": null,
+        "1930": null,
+        "1940": null,
+        "1950": null,
+        "1960": null,
+        "1970": null,
+        "1980": null,
+        "1990": null,
+        "2000": null,
+        "2010": {
+          "hdi": 0.9512,
+          "life_exp_index": 1.0,
+          "education_index": 0.9444,
+          "income_index": 0.97,
+          "life_expectancy": 86.2,
+          "mean_years_schooling": 16.0,
+          "expected_years_schooling": 16.0,
+          "gni_per_capita_ppp": 61491.0
+        },
+        "2020": {
+          "hdi": 0.9712,
+          "life_exp_index": 1.0,
+          "education_index": 0.9444,
+          "income_index": 0.97,
+          "life_expectancy": 86.2,
+          "mean_years_schooling": 16.0,
+          "expected_years_schooling": 16.0,
+          "gni_per_capita_ppp": 61491.0
+        }
+      }
+    },
+    {
+      "name": "8e Élysée",
+      "id": 8,
+      "values": {
+        "1870": null,
+        "1880": null,
+        "1890": null,
+        "1900": null,
+        "1910": null,
+        "1920": null,
+        "1930": null,
+        "1940": null,
+        "1950": null,
+        "1960": null,
+        "1970": null,
+        "1980": null,
+        "1990": null,
+        "2000": null,
+        "2010": {
+          "hdi": 0.9476,
+          "life_exp_index": 1.0,
+          "education_index": 0.9381,
+          "income_index": 0.9657,
+          "life_expectancy": 85.8,
+          "mean_years_schooling": 15.6,
+          "expected_years_schooling": 15.77,
+          "gni_per_capita_ppp": 59756.0
+        },
+        "2020": {
+          "hdi": 0.9676,
+          "life_exp_index": 1.0,
+          "education_index": 0.9381,
+          "income_index": 0.9657,
+          "life_expectancy": 85.8,
+          "mean_years_schooling": 15.6,
+          "expected_years_schooling": 15.77,
+          "gni_per_capita_ppp": 59756.0
+        }
+      }
+    },
+    {
+      "name": "9e Opéra",
+      "id": 9,
+      "values": {
+        "1870": null,
+        "1880": null,
+        "1890": null,
+        "1900": null,
+        "1910": null,
+        "1920": null,
+        "1930": null,
+        "1940": null,
+        "1950": null,
+        "1960": null,
+        "1970": null,
+        "1980": null,
+        "1990": null,
+        "2000": null,
+        "2010": {
+          "hdi": 0.909,
+          "life_exp_index": 1.0,
+          "education_index": 0.8529,
+          "income_index": 0.9401,
+          "life_expectancy": 85.25,
+          "mean_years_schooling": 13.46,
+          "expected_years_schooling": 14.55,
+          "gni_per_capita_ppp": 50434.0
+        },
+        "2020": {
+          "hdi": 0.929,
+          "life_exp_index": 1.0,
+          "education_index": 0.8529,
+          "income_index": 0.9401,
+          "life_expectancy": 85.25,
+          "mean_years_schooling": 13.46,
+          "expected_years_schooling": 14.55,
+          "gni_per_capita_ppp": 50434.0
+        }
+      }
+    },
+    {
+      "name": "10e Entrepôt",
+      "id": 10,
+      "values": {
+        "1870": null,
+        "1880": null,
+        "1890": null,
+        "1900": null,
+        "1910": null,
+        "1920": null,
+        "1930": null,
+        "1940": null,
+        "1950": null,
+        "1960": null,
+        "1970": null,
+        "1980": null,
+        "1990": null,
+        "2000": null,
+        "2010": {
+          "hdi": 0.8458,
+          "life_exp_index": 0.9769,
+          "education_index": 0.7343,
+          "income_index": 0.9048,
+          "life_expectancy": 83.5,
+          "mean_years_schooling": 11.05,
+          "expected_years_schooling": 13.17,
+          "gni_per_capita_ppp": 39932.0
+        },
+        "2020": {
+          "hdi": 0.8658,
+          "life_exp_index": 0.9769,
+          "education_index": 0.7343,
+          "income_index": 0.9048,
+          "life_expectancy": 83.5,
+          "mean_years_schooling": 11.05,
+          "expected_years_schooling": 13.17,
+          "gni_per_capita_ppp": 39932.0
+        }
+      }
+    },
+    {
+      "name": "11e Popincourt",
+      "id": 11,
+      "values": {
+        "1870": null,
+        "1880": null,
+        "1890": null,
+        "1900": null,
+        "1910": null,
+        "1920": null,
+        "1930": null,
+        "1940": null,
+        "1950": null,
+        "1960": null,
+        "1970": null,
+        "1980": null,
+        "1990": null,
+        "2000": null,
+        "2010": {
+          "hdi": 0.8522,
+          "life_exp_index": 0.9794,
+          "education_index": 0.7456,
+          "income_index": 0.9085,
+          "life_expectancy": 83.66,
+          "mean_years_schooling": 11.28,
+          "expected_years_schooling": 13.3,
+          "gni_per_capita_ppp": 40935.0
+        },
+        "2020": {
+          "hdi": 0.8722,
+          "life_exp_index": 0.9794,
+          "education_index": 0.7456,
+          "income_index": 0.9085,
+          "life_expectancy": 83.66,
+          "mean_years_schooling": 11.28,
+          "expected_years_schooling": 13.3,
+          "gni_per_capita_ppp": 40935.0
+        }
+      }
+    },
+    {
+      "name": "12e Reuilly",
+      "id": 12,
+      "values": {
+        "1870": null,
+        "1880": null,
+        "1890": null,
+        "1900": null,
+        "1910": null,
+        "1920": null,
+        "1930": null,
+        "1940": null,
+        "1950": null,
+        "1960": null,
+        "1970": null,
+        "1980": null,
+        "1990": null,
+        "2000": null,
+        "2010": {
+          "hdi": 0.8499,
+          "life_exp_index": 0.9785,
+          "education_index": 0.7415,
+          "income_index": 0.9072,
+          "life_expectancy": 83.6,
+          "mean_years_schooling": 11.2,
+          "expected_years_schooling": 13.26,
+          "gni_per_capita_ppp": 40569.0
+        },
+        "2020": {
+          "hdi": 0.8699,
+          "life_exp_index": 0.9785,
+          "education_index": 0.7415,
+          "income_index": 0.9072,
+          "life_expectancy": 83.6,
+          "mean_years_schooling": 11.2,
+          "expected_years_schooling": 13.26,
+          "gni_per_capita_ppp": 40569.0
+        }
+      }
+    },
+    {
+      "name": "13e Gobelins",
+      "id": 13,
+      "values": {
+        "1870": null,
+        "1880": null,
+        "1890": null,
+        "1900": null,
+        "1910": null,
+        "1920": null,
+        "1930": null,
+        "1940": null,
+        "1950": null,
+        "1960": null,
+        "1970": null,
+        "1980": null,
+        "1990": null,
+        "2000": null,
+        "2010": {
+          "hdi": 0.8141,
+          "life_exp_index": 0.9708,
+          "education_index": 0.6762,
+          "income_index": 0.8839,
+          "life_expectancy": 83.1,
+          "mean_years_schooling": 9.87,
+          "expected_years_schooling": 12.5,
+          "gni_per_capita_ppp": 34783.0
+        },
+        "2020": {
+          "hdi": 0.8341,
+          "life_exp_index": 0.9708,
+          "education_index": 0.6762,
+          "income_index": 0.8839,
+          "life_expectancy": 83.1,
+          "mean_years_schooling": 9.87,
+          "expected_years_schooling": 12.5,
+          "gni_per_capita_ppp": 34783.0
+        }
+      }
+    },
+    {
+      "name": "14e Observatoire",
+      "id": 14,
+      "values": {
+        "1870": null,
+        "1880": null,
+        "1890": null,
+        "1900": null,
+        "1910": null,
+        "1920": null,
+        "1930": null,
+        "1940": null,
+        "1950": null,
+        "1960": null,
+        "1970": null,
+        "1980": null,
+        "1990": null,
+        "2000": null,
+        "2010": {
+          "hdi": 0.8457,
+          "life_exp_index": 0.9768,
+          "education_index": 0.7342,
+          "income_index": 0.9047,
+          "life_expectancy": 83.49,
+          "mean_years_schooling": 11.05,
+          "expected_years_schooling": 13.17,
+          "gni_per_capita_ppp": 39919.0
+        },
+        "2020": {
+          "hdi": 0.8657,
+          "life_exp_index": 0.9768,
+          "education_index": 0.7342,
+          "income_index": 0.9047,
+          "life_expectancy": 83.49,
+          "mean_years_schooling": 11.05,
+          "expected_years_schooling": 13.17,
+          "gni_per_capita_ppp": 39919.0
+        }
+      }
+    },
+    {
+      "name": "15e Vaugirard",
+      "id": 15,
+      "values": {
+        "1870": null,
+        "1880": null,
+        "1890": null,
+        "1900": null,
+        "1910": null,
+        "1920": null,
+        "1930": null,
+        "1940": null,
+        "1950": null,
+        "1960": null,
+        "1970": null,
+        "1980": null,
+        "1990": null,
+        "2000": null,
+        "2010": {
+          "hdi": 0.874,
+          "life_exp_index": 0.9884,
+          "education_index": 0.785,
+          "income_index": 0.9209,
+          "life_expectancy": 84.25,
+          "mean_years_schooling": 12.08,
+          "expected_years_schooling": 13.76,
+          "gni_per_capita_ppp": 44417.0
+        },
+        "2020": {
+          "hdi": 0.894,
+          "life_exp_index": 0.9884,
+          "education_index": 0.785,
+          "income_index": 0.9209,
+          "life_expectancy": 84.25,
+          "mean_years_schooling": 12.08,
+          "expected_years_schooling": 13.76,
+          "gni_per_capita_ppp": 44417.0
+        }
+      }
+    },
+    {
+      "name": "16e Passy",
+      "id": 16,
+      "values": {
+        "1870": null,
+        "1880": null,
+        "1890": null,
+        "1900": null,
+        "1910": null,
+        "1920": null,
+        "1930": null,
+        "1940": null,
+        "1950": null,
+        "1960": null,
+        "1970": null,
+        "1980": null,
+        "1990": null,
+        "2000": null,
+        "2010": {
+          "hdi": 0.938,
+          "life_exp_index": 1.0,
+          "education_index": 0.9192,
+          "income_index": 0.9567,
+          "life_expectancy": 87.1,
+          "mean_years_schooling": 14.81,
+          "expected_years_schooling": 15.32,
+          "gni_per_capita_ppp": 56301.0
+        },
+        "2020": {
+          "hdi": 0.958,
+          "life_exp_index": 1.0,
+          "education_index": 0.9192,
+          "income_index": 0.9567,
+          "life_expectancy": 87.1,
+          "mean_years_schooling": 14.81,
+          "expected_years_schooling": 15.32,
+          "gni_per_capita_ppp": 56301.0
+        }
+      }
+    },
+    {
+      "name": "17e Batignolles",
+      "id": 17,
+      "values": {
+        "1870": null,
+        "1880": null,
+        "1890": null,
+        "1900": null,
+        "1910": null,
+        "1920": null,
+        "1930": null,
+        "1940": null,
+        "1950": null,
+        "1960": null,
+        "1970": null,
+        "1980": null,
+        "1990": null,
+        "2000": null,
+        "2010": {
+          "hdi": 0.8791,
+          "life_exp_index": 0.9905,
+          "education_index": 0.7943,
+          "income_index": 0.9237,
+          "life_expectancy": 84.38,
+          "mean_years_schooling": 12.27,
+          "expected_years_schooling": 13.87,
+          "gni_per_capita_ppp": 45244.0
+        },
+        "2020": {
+          "hdi": 0.8991,
+          "life_exp_index": 0.9905,
+          "education_index": 0.7943,
+          "income_index": 0.9237,
+          "life_expectancy": 84.38,
+          "mean_years_schooling": 12.27,
+          "expected_years_schooling": 13.87,
+          "gni_per_capita_ppp": 45244.0
+        }
+      }
+    },
+    {
+      "name": "18e Buttes-Montmartre",
+      "id": 18,
+      "values": {
+        "1870": null,
+        "1880": null,
+        "1890": null,
+        "1900": null,
+        "1910": null,
+        "1920": null,
+        "1930": null,
+        "1940": null,
+        "1950": null,
+        "1960": null,
+        "1970": null,
+        "1980": null,
+        "1990": null,
+        "2000": null,
+        "2010": {
+          "hdi": 0.8052,
+          "life_exp_index": 0.9615,
+          "education_index": 0.6645,
+          "income_index": 0.8794,
+          "life_expectancy": 82.5,
+          "mean_years_schooling": 9.63,
+          "expected_years_schooling": 12.36,
+          "gni_per_capita_ppp": 33753.0
+        },
+        "2020": {
+          "hdi": 0.8252,
+          "life_exp_index": 0.9615,
+          "education_index": 0.6645,
+          "income_index": 0.8794,
+          "life_expectancy": 82.5,
+          "mean_years_schooling": 9.63,
+          "expected_years_schooling": 12.36,
+          "gni_per_capita_ppp": 33753.0
+        }
+      }
+    },
+    {
+      "name": "19e Buttes-Chaumont",
+      "id": 19,
+      "values": {
+        "1870": null,
+        "1880": null,
+        "1890": null,
+        "1900": null,
+        "1910": null,
+        "1920": null,
+        "1930": null,
+        "1940": null,
+        "1950": null,
+        "1960": null,
+        "1970": null,
+        "1980": null,
+        "1990": null,
+        "2000": null,
+        "2010": {
+          "hdi": 0.7894,
+          "life_exp_index": 0.9662,
+          "education_index": 0.6333,
+          "income_index": 0.8665,
+          "life_expectancy": 82.8,
+          "mean_years_schooling": 9.0,
+          "expected_years_schooling": 12.0,
+          "gni_per_capita_ppp": 30989.0
+        },
+        "2020": {
+          "hdi": 0.8094,
+          "life_exp_index": 0.9662,
+          "education_index": 0.6333,
+          "income_index": 0.8665,
+          "life_expectancy": 82.8,
+          "mean_years_schooling": 9.0,
+          "expected_years_schooling": 12.0,
+          "gni_per_capita_ppp": 30989.0
+        }
+      }
+    },
+    {
+      "name": "20e Ménilmontant",
+      "id": 20,
+      "values": {
+        "1870": null,
+        "1880": null,
+        "1890": null,
+        "1900": null,
+        "1910": null,
+        "1920": null,
+        "1930": null,
+        "1940": null,
+        "1950": null,
+        "1960": null,
+        "1970": null,
+        "1980": null,
+        "1990": null,
+        "2000": null,
+        "2010": {
+          "hdi": 0.7927,
+          "life_exp_index": 0.9569,
+          "education_index": 0.644,
+          "income_index": 0.871,
+          "life_expectancy": 82.2,
+          "mean_years_schooling": 9.22,
+          "expected_years_schooling": 12.12,
+          "gni_per_capita_ppp": 31938.0
+        },
+        "2020": {
+          "hdi": 0.8127,
+          "life_exp_index": 0.9569,
+          "education_index": 0.644,
+          "income_index": 0.871,
+          "life_expectancy": 82.2,
+          "mean_years_schooling": 9.22,
+          "expected_years_schooling": 12.12,
+          "gni_per_capita_ppp": 31938.0
+        }
+      }
+    }
+  ]
+}

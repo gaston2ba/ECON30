@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CDMX Urban Quality Index Map</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <main class="app-shell">
+    <aside class="panel" aria-label="Map controls">
+      <p class="eyebrow">Mexico City, 1860-2020</p>
+      <h1>Urban Quality Index</h1>
+      <p class="lede">Pick a decade and the variables you want in the index. The map and trend chart update together.</p>
+
+      <section class="control-block">
+        <label for="decadeSlider">Decade <strong id="decadeLabel">2020</strong></label>
+        <input id="decadeSlider" type="range" min="0" max="16" value="16" step="1">
+        <div id="decadeTicks" class="ticks"></div>
+      </section>
+
+      <section class="control-block">
+        <div class="control-row">
+          <div class="control-heading">Variables Included</div>
+          <button id="resetVariables" type="button">Reset</button>
+        </div>
+        <div id="variableControls" class="variable-grid"></div>
+      </section>
+
+      <section class="summary-card">
+        <div class="control-heading">Index Method</div>
+        <p id="methodSummary">Loading index method...</p>
+      </section>
+
+      <section class="summary-card top-card">
+        <div class="control-heading">Current Ranking</div>
+        <ol id="rankingList"></ol>
+      </section>
+    </aside>
+
+    <section class="viz-wrap" aria-label="Mexico City UQI visualization">
+      <div class="viz-toolbar">
+        <button id="playButton" type="button">Play</button>
+        <strong id="mapStatus">2020 · CDMX UQI</strong>
+        <input id="mapDecadeSlider" type="range" min="0" max="16" value="16" step="1" aria-label="Map decade">
+      </div>
+
+      <section class="map-card">
+        <div class="chart-header"><div><p class="eyebrow">Urban Quality Index</p><h2>UQI by alcaldía</h2></div></div>
+        <div id="map" class="svg-frame"></div>
+        <div class="legend" aria-label="Color legend">
+          <span>Lower UQI</span>
+          <div class="legend-gradient"></div>
+          <span>Higher UQI</span>
+        </div>
+      </section>
+
+      <section class="map-card">
+        <div class="chart-header"><div><p class="eyebrow">Human Development Index</p><h2>HDI by alcaldía</h2></div></div>
+        <div id="hdiMap" class="svg-frame"></div>
+        <div class="legend" aria-label="HDI legend">
+          <span>Lower HDI</span>
+          <div class="legend-gradient hdi-gradient"></div>
+          <span>Higher HDI</span>
+        </div>
+      </section>
+
+      <section class="chart-card">
+        <div class="chart-header">
+          <div><p class="eyebrow">Trend by alcaldía</p><h2>UQI Score Over Time</h2></div>
+          <p>Each line is one alcaldía.</p>
+        </div>
+        <div id="lineChart" class="svg-frame chart-frame"></div>
+      </section>
+
+      <section class="chart-card">
+        <div class="chart-header">
+          <div><p class="eyebrow">HDI trend</p><h2>HDI Over Time</h2></div>
+        </div>
+        <div id="hdiLineChart" class="svg-frame chart-frame"></div>
+      </section>
+
+      <section class="chart-card">
+        <div class="chart-header">
+          <div><p class="eyebrow">Cross-section</p><h2>UQI × HDI</h2></div>
+          <p>One point per alcaldía at the selected decade.</p>
+        </div>
+        <div id="scatterChart" class="svg-frame chart-frame"></div>
+      </section>
+    </section>
+  </main>
+
+  <div id="tooltip" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
