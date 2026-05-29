@@ -47,6 +47,7 @@ ALC_NAME_TO_ID = {
     "cuajimalpa de morelos": 5,
     "cuauhtemoc": 6,
     "gustavo a madero": 7,
+    "gustavo a. madero": 7,
     "iztacalco": 8,
     "iztapalapa": 9,
     "la magdalena contreras": 10,
@@ -65,10 +66,35 @@ def norm(s: str) -> str:
     return "".join(c for c in s if unicodedata.category(c) != "Mn")
 
 
+CVE_MUN_TO_ID = {
+    "010": 1,
+    "002": 2,
+    "014": 3,
+    "003": 4,
+    "004": 5,
+    "015": 6,
+    "005": 7,
+    "006": 8,
+    "007": 9,
+    "008": 10,
+    "016": 11,
+    "009": 12,
+    "011": 13,
+    "012": 14,
+    "017": 15,
+    "013": 16,
+}
+
+
 def match_alc(name: str) -> int | None:
     n = norm(name)
+    if not n or len(n) < 3:
+        return None
     for key, aid in ALC_NAME_TO_ID.items():
-        if key in n or n in key:
+        if n == key:
+            return aid
+    for key, aid in ALC_NAME_TO_ID.items():
+        if len(key) >= 5 and (key in n or n in key):
             return aid
     return None
 
@@ -114,16 +140,9 @@ def prepare_mexico() -> None:
     out_features = []
     for feat in raw["features"]:
         props = feat["properties"]
-        name = (
-            props.get("ALCALDIA")
-            or props.get("NOMGEO")
-            or props.get("nombre")
-            or props.get("NOMBRE")
-            or props.get("alcaldia")
-            or props.get("name")
-            or ""
-        )
-        aid = match_alc(name)
+        name = props.get("NOM_MUN") or props.get("ALCALDIA") or props.get("NOMGEO") or props.get("nombre") or props.get("NOMBRE") or props.get("alcaldia") or props.get("name") or ""
+        cve = str(props.get("CVE_MUN", "")).zfill(3)
+        aid = match_alc(name) or CVE_MUN_TO_ID.get(cve)
         if aid is None:
             for k, v in props.items():
                 if isinstance(v, str) and match_alc(v):
